@@ -10,15 +10,16 @@ from collections import defaultdict, deque
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel
 
-from backend import catalog, config
+from backend import catalog, config, credits
 from backend.pipeline.run import run_plan
 from backend.schemas.catalog import CatalogPersona, CatalogPublisher
-from backend.schemas.events import PlanEvent, PlanRequest
+from backend.schemas.events import DoneEvent, PlanEvent, PlanRequest
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s %(message)s")
+log = logging.getLogger(__name__)
 
 app = FastAPI(title="Offer Planner", version="0.1.0")
 
@@ -51,6 +52,13 @@ class CachedRun(BaseModel):
     id: str
     brief: str
     events: list[PlanEvent]
+
+
+class Credits(BaseModel):
+    limit_usd: float
+    spent_usd: float
+    remaining_usd: float
+    run_reserve_usd: float
 
 
 class Catalog(BaseModel):
@@ -131,12 +139,32 @@ def get_catalog() -> Catalog:
     )
 
 
+@app.get("/api/credits", response_model=Credits | None)
+async def get_credits() -> JSONResponse:
+    """How much of the live-run spending limit is left; null when there's no limit."""
+    try:
+        s = await credits.status()
+    except credits.CreditsUnavailable:
+        raise HTTPException(503, "Can't check the spending limit right now.") from None
+    body = None if s is None else Credits(
+        limit_usd=s[0], spent_usd=round(s[1], 2), remaining_usd=round(max(s[0] - s[1], 0), 2),
+        run_reserve_usd=config.RUN_RESERVE_USD,
+    ).model_dump()
+    return JSONResponse(body, headers={"Cache-Control": "no-store"})
+
+
 @app.post("/api/plan", response_class=StreamingResponse,
           responses={200: {"content": {"text/event-stream": {}}}})
 async def plan(req: PlanRequest, request: Request) -> StreamingResponse:
     _rate_limit(_client_ip(request))
     if req.model and req.model not in {m["id"] for m in config.SELECTABLE_MODELS}:
         raise HTTPException(400, f"Unknown model {req.model}")
+    try:
+        held = await credits.reserve()
+    except credits.OutOfCredits as e:
+        raise HTTPException(402, str(e)) from None
+    except credits.CreditsUnavailable:
+        raise HTTPException(503, "Can't check the spending limit right now. Try again shortly.") from None
 
     async def stream():
         agen = run_plan(req).__aiter__()
@@ -153,6 +181,12 @@ async def plan(req: PlanRequest, request: Request) -> StreamingResponse:
                 except StopAsyncIteration:
                     break
                 pending = None
+                if isinstance(ev, DoneEvent):
+                    # Charge the real cost. If the user leaves before this, the hold stays.
+                    try:
+                        await credits.settle(held, ev.cost_usd)
+                    except credits.CreditsUnavailable:
+                        log.warning("couldn't settle run %s; its hold stays", ev.run_id)
                 yield f"data: {ev.model_dump_json()}\n\n"
         finally:
             if pending and not pending.done():

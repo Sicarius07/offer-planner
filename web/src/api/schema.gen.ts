@@ -89,6 +89,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/credits": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Get Credits
+         * @description How much of the live-run spending limit is left; null when there's no limit.
+         */
+        get: operations["get_credits_api_credits_get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/plan": {
         parameters: {
             query?: never;
@@ -437,6 +457,17 @@ export interface components {
             weight: number;
             /** Status */
             status: string;
+        };
+        /** Credits */
+        Credits: {
+            /** Limit Usd */
+            limit_usd: number;
+            /** Spent Usd */
+            spent_usd: number;
+            /** Remaining Usd */
+            remaining_usd: number;
+            /** Run Reserve Usd */
+            run_reserve_usd: number;
         };
         /** Critique */
         Critique: {
@@ -1244,6 +1275,26 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["Catalog"];
+                };
+            };
+        };
+    };
+    get_credits_api_credits_get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["Credits"] | null;
                 };
             };
         };

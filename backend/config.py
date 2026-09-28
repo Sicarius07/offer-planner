@@ -94,3 +94,10 @@ ATTRIBUTION_WINDOW_DAYS = 7
 # ── Guardrails ────────────────────────────────────────────────────────────────
 MAX_BRIEF_CHARS = 1000
 RATE_LIMIT_PER_HOUR = int(os.getenv("RATE_LIMIT_PER_HOUR", "20"))
+# Total spend allowed on live runs, across all users (unset = no limit). Each run holds
+# RUN_RESERVE_USD up front and is charged its real cost when it finishes; a typical run is
+# about $0.55. Shared across instances when Upstash Redis is configured, else per process.
+SPEND_LIMIT_USD = float(os.getenv("SPEND_LIMIT_USD") or 0) or None
+RUN_RESERVE_USD = 1.00
+REDIS_URL = os.getenv("KV_REST_API_URL") or os.getenv("UPSTASH_REDIS_REST_URL")
+REDIS_TOKEN = os.getenv("KV_REST_API_TOKEN") or os.getenv("UPSTASH_REDIS_REST_TOKEN")

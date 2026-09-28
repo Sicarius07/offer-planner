@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-import type { Example, Meta } from "@/api/types"
+import type { Credits, Example, Meta } from "@/api/types"
 import { cn } from "@/lib/utils"
 
 /** Short names for the sample briefs. Vague ones are shown verbatim because the vagueness is the point. */
@@ -31,9 +31,10 @@ export type RunOptions = {
 }
 
 export function BriefForm({
-  meta, examples, running, value, onChange, onSubmit, onExample, options, setOptions,
+  meta, credits, examples, running, value, onChange, onSubmit, onExample, options, setOptions,
 }: {
   meta: Meta | null
+  credits: Credits | null
   examples: Example[]
   running: boolean
   value: string
@@ -46,13 +47,15 @@ export function BriefForm({
   const [showSettings, setShowSettings] = useState(false)
   const max = meta?.max_brief_chars ?? 1000
   const tooLong = value.length > max
+  const outOfCredit = !!credits && credits.remaining_usd < credits.run_reserve_usd
+  const blocked = running || !value.trim() || tooLong || outOfCredit
 
   return (
     <div className="rounded-xl border border-line bg-paper p-5 sm:p-6">
       <form
         onSubmit={(e) => {
           e.preventDefault()
-          if (!running && value.trim() && !tooLong) onSubmit()
+          if (!blocked) onSubmit()
         }}
       >
         <label htmlFor="brief" className="mb-2 block font-serif text-lg text-ink">
@@ -65,7 +68,7 @@ export function BriefForm({
           onKeyDown={(e) => {
             if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) {
               e.preventDefault()
-              if (!running && value.trim() && !tooLong) onSubmit()
+              if (!blocked) onSubmit()
             }
           }}
           rows={3}
@@ -75,7 +78,7 @@ export function BriefForm({
         <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-3">
           <button
             type="submit"
-            disabled={running || !value.trim() || tooLong}
+            disabled={blocked}
             className="h-9 rounded-md bg-emerald px-4 text-sm font-medium text-paper transition-colors hover:bg-[#0c6646] focus-visible:ring-3 focus-visible:ring-emerald/30 focus-visible:outline-none disabled:opacity-45"
           >
             {running ? "Drafting…" : "Draft campaign"}
@@ -99,6 +102,13 @@ export function BriefForm({
             </span>
           )}
         </div>
+        {credits && (
+          <p className={cn("mt-2.5 text-2xs", outOfCredit ? "text-rust" : "text-soft")}>
+            {outOfCredit
+              ? "The demo credit for live drafts is used up. The sample briefs below still work."
+              : `${usd(credits.remaining_usd)} of ${usd(credits.limit_usd)} demo credit left for live drafts.`}
+          </p>
+        )}
 
         {showSettings && (
           <div className="mt-4 grid gap-4 border-t border-line pt-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -164,6 +174,8 @@ export function BriefForm({
     </div>
   )
 }
+
+const usd = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD" })
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (

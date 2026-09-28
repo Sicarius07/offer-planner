@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useReducer, useRef, useState } from "react"
 
-import { getCatalog, getExampleRun, getExamples, getMeta, streamPlan } from "@/api/client"
-import type { Catalog, Example, Meta, PlanEvent } from "@/api/types"
+import { getCatalog, getCredits, getExampleRun, getExamples, getMeta, streamPlan } from "@/api/client"
+import type { Catalog, Credits, Example, Meta, PlanEvent } from "@/api/types"
 import { Audiences } from "@/components/Audiences"
 import { BriefForm, type RunOptions } from "@/components/BriefForm"
 import { CampaignView } from "@/components/CampaignView"
@@ -21,6 +21,7 @@ const REPLAY_DELAY: Partial<Record<PlanEvent["type"], number>> = {
 export default function App() {
   const [plan, dispatch] = useReducer(reducer, initialPlan)
   const [meta, setMeta] = useState<Meta | null>(null)
+  const [credits, setCredits] = useState<Credits | null>(null)
   const [examples, setExamples] = useState<Example[]>([])
   const [catalog, setCatalog] = useState<Catalog | null>(null)
   const [brief, setBrief] = useState("")
@@ -30,6 +31,8 @@ export default function App() {
   const [drawer, setDrawer] = useState(false)
   const abort = useRef<AbortController | null>(null)
   const replayRef = useRef<((ex: Example) => void) | null>(null)
+
+  const refreshCredits = useCallback(() => { getCredits().then(setCredits).catch(() => {}) }, [])
 
   useEffect(() => {
     getMeta().then((m) => {
@@ -47,7 +50,8 @@ export default function App() {
       }
     }).catch(() => {})
     getCatalog().then(setCatalog).catch(() => {})
-  }, [])
+    refreshCredits()
+  }, [refreshCredits])
 
   const pubs = useMemo(() => new Map(catalog?.publishers.map((p) => [p.publisher.id, p]) ?? []), [catalog])
   const personas = useMemo(() => new Map(catalog?.personas.map((p) => [p.persona.id, p]) ?? []), [catalog])
@@ -74,7 +78,8 @@ export default function App() {
     } catch (e) {
       if (!ctrl.signal.aborted) dispatch({ type: "fail", message: e instanceof Error ? e.message : String(e) })
     }
-  }, [options])
+    refreshCredits()
+  }, [options, refreshCredits])
 
   const replay = useCallback(async (ex: Example) => {
     abort.current?.abort()
@@ -137,6 +142,7 @@ export default function App() {
       <main className="mx-auto max-w-[1180px] px-4 pt-6 pb-24 sm:px-6 sm:pt-8">
         <BriefForm
           meta={meta}
+          credits={credits}
           examples={examples}
           running={running}
           value={brief}

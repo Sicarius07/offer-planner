@@ -1,4 +1,4 @@
-import type { Catalog, Example, Meta, PlanEvent, PlanRequest } from "./types"
+import type { Catalog, Credits, Example, Meta, PlanEvent, PlanRequest } from "./types"
 
 async function getJSON<T>(url: string): Promise<T> {
   const res = await fetch(url)
@@ -7,6 +7,7 @@ async function getJSON<T>(url: string): Promise<T> {
 }
 
 export const getMeta = () => getJSON<Meta>("/api/meta")
+export const getCredits = () => getJSON<Credits | null>("/api/credits")
 export const getExamples = () => getJSON<Example[]>("/api/examples")
 export const getCatalog = () => getJSON<Catalog>("/api/catalog")
 export const getExampleRun = (id: string) =>
