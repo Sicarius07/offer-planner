@@ -86,10 +86,10 @@ function Summary({ cfg, personaName, summaryPending }: {
             <thead>
               <tr className="text-2xs tracking-[0.06em] text-soft uppercase">
                 <th className="py-2 text-left font-medium">Publisher</th>
-                <th className="py-2 text-left font-medium">Role</th>
-                <th className="py-2 text-right font-medium">Share</th>
-                <th className="py-2 text-right font-medium">Budget</th>
-                <th className="py-2 text-right font-medium">Est. customers</th>
+                <th className="py-2 pl-6 text-left font-medium">Role</th>
+                <th className="py-2 pl-6 text-right font-medium">Share</th>
+                <th className="py-2 pl-6 text-right font-medium">Budget</th>
+                <th className="py-2 pl-6 text-right font-medium whitespace-nowrap">Est. customers</th>
               </tr>
             </thead>
             <tbody>
@@ -117,10 +117,10 @@ function Summary({ cfg, personaName, summaryPending }: {
                       </span>
                     )}
                   </td>
-                  <td className="py-2.5 text-soft">{p.role === "core" ? "Core" : "Test"}</td>
-                  <td className="py-2.5 text-right">{p.allocation_pct}%</td>
-                  <td className="py-2.5 text-right">{money(p.budget_usd)}</td>
-                  <td className="py-2.5 text-right">{Math.round(p.est_conversions)}</td>
+                  <td className="py-2.5 pl-6 text-soft">{p.role === "core" ? "Core" : "Test"}</td>
+                  <td className="py-2.5 pl-6 text-right tabular-nums whitespace-nowrap">{p.allocation_pct}%</td>
+                  <td className="py-2.5 pl-6 text-right tabular-nums whitespace-nowrap">{money(p.budget_usd)}</td>
+                  <td className="py-2.5 pl-6 text-right tabular-nums">{Math.round(p.est_conversions)}</td>
                 </tr>
               ))}
             </tbody>
