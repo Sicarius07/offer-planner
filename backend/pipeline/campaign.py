@@ -192,7 +192,10 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
                      for c in creatives]
 
     flagged = [c for c in creatives if c.status == "flagged"]
-    if flagged:
+    if flagged and p.clarity == "unusable":
+        warnings.append("The brief doesn't say what's being sold, so the ads can't pass review and are "
+                        "paused. They're shown as drafts; answer the questions to get launchable ads.")
+    elif flagged:
         warnings.append(f"{len(flagged)} creative(s) failed review twice and are paused: "
                         + ", ".join(c.persona_name for c in flagged) + ".")
     if not pubs.explained:
@@ -210,6 +213,9 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
     elif not pubs.recommended:
         warnings.append("No publisher cleared the recommended bar, so the whole budget is a test. "
                         "Treat results as exploratory.")
+    if p.clarity == "unusable" and creatives:
+        warnings.append("The brief doesn't say what's being sold, so the ads are generic placeholders. "
+                        "Rewrite them once the product is known.")
     if p.first_order_value_usd.source == "assumed":
         warnings.append("Target CPA is based on an assumed order value. Confirm price before launch.")
 

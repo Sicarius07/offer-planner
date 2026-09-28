@@ -100,7 +100,7 @@ async def _pipeline(req: PlanRequest, run_id: str, emit) -> None:
     try:
         brief = guard(req.brief)
         with observability.observe("understand"):
-            profile = await understand(brief, model)
+            profile = await understand(brief, model, draft_anyway=req.force)
     except BriefRejected as e:
         emit(StageEvent(stage="understand", status="failed"))
         emit(ErrorEvent(stage="understand", message=str(e), retryable=False))
@@ -253,6 +253,10 @@ async def _review(profile, persona_plan: PersonaPlan, cards: list[Creative], pla
         final[c.persona_id] = c
         if r.passed:
             emit(CreativeEvent(creative=c))
+        elif profile.clarity == "unusable" and any(x.name == "specific" and not x.passed for x in r.checks):
+            # No rewrite can name a product nobody has described: pause it now.
+            final[c.persona_id] = c.model_copy(update={"status": "flagged"})
+            emit(CreativeEvent(creative=final[c.persona_id]))
         else:
             failed.append(c)
 

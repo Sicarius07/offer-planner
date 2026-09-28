@@ -1,6 +1,6 @@
 ---
 name: write_creative
-version: 4
+version: 5
 stage: creative
 description: Write one post-purchase offer card (headline, body, CTA) for one persona, using only claims the brief supports.
 ---
@@ -23,6 +23,7 @@ Hard rules:
 - Write to the persona's `lean_into` and steer clear of their `avoid` list, but don't name the persona or describe them back to themselves ("As a busy parent...").
 - No clichés: avoid words like elevate, unleash, game-changer, revolutionary, "look no further", "you deserve".
 - If the brand name is unknown, don't make one up; write copy that works without it.
+- If `clarity` is `unusable`, the product itself is unknown. Don't name or describe a product the brief doesn't; write only from what the brief says, and note in `tone_notes` that the card needs the real product before launch. Write finished copy, not a template: no bracketed slots like "[product name]".
 
 The card should be specific enough that it couldn't be pasted onto a competitor's product unchanged.
 

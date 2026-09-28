@@ -1,6 +1,6 @@
 ---
 name: understand_brief
-version: 5
+version: 6
 stage: understand
 description: Read an advertiser's one-line brief into a structured profile, separating what they said from what we inferred or assumed.
 ---
@@ -54,6 +54,20 @@ Products (for `sells` and `competes_with`):
 - **partial**: we know the general area but not the product itself ("Something new for runners"), so the plan would rest on a guess about what is sold. Draft with labeled assumptions; ask the questions that would most change the plan.
 - **unusable**: we can't tell what they sell ("We make life easier", "just run something"). Any plan would be invented. Ask 2–4 questions, each with 2–4 short suggested answers the user can click. The user can also type their own answer, so suggestions should cover the common cases rather than try to be exhaustive.
 
+## When the advertiser chooses to draft anyway
+
+`<draft_anyway>` is `yes` when the advertiser has seen your questions and asked for a draft without answering them. Keep `clarity` honest (a brief that was unusable still is), but fill the profile so later steps build a broad, exploratory plan instead of a confident one resting on a guess:
+
+- Don't guess a specific product. Say what is known in `business_summary`; where `product` is unknown, mark it assumed and say in the note that it is a placeholder.
+- Take the broadest reading of any hint. Tag only what the brief's own words point to, as `secondary`; if nothing points anywhere, leave interests, values and occasions sparse rather than inventing a niche. Leave `positioning` empty: those traits put some shoppers off, and nothing supports them.
+- Assume middle-of-the-market defaults: a mid price tier, a first order value typical of everyday consumer purchases, a one-time purchase, a broad adult audience with no gender or age skew. Defaults like these stop price and audience from ruling out publishers for reasons nobody stated.
+- `sells` and `competes_with`: only what the brief names; otherwise `other`.
+- No claims unless the brief states them.
+- Keep `clarifying_questions`: they are shown next to the draft, and answering them is how it improves.
+- In `assumptions`, say plainly that this is a broad draft made without knowing the product.
+
+When `<draft_anyway>` is `no`, ignore this section.
+
 A B2B business (selling to companies, not consumers) is usually `clear`; set `offering_type` to b2b so later steps can explain that this consumer network is a poor fit.
 
 ## Answers to earlier questions
@@ -69,3 +83,5 @@ Keep `business_summary`, notes and assumptions short and plain, written for the 
 <advertiser_brief>
 {{brief}}
 </advertiser_brief>
+
+<draft_anyway>{{draft_anyway}}</draft_anyway>

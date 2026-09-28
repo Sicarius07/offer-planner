@@ -301,3 +301,29 @@ async def test_launch_summary_failure_keeps_the_config(fake, monkeypatch):
     assert cfg.placements and cfg.review.launch_summary is None
     assert any(e.type == "error" and "launch summary" in e.message for e in events)
     assert any(e.type == "stage" and e.stage == "campaign" and e.status == "done" for e in events)
+
+
+async def test_draft_anyway_pauses_unspecific_ads_without_a_rewrite(fake, monkeypatch):
+    vague = ProfileDraft.model_validate({**PROFILE.model_dump(), "clarity": "unusable"})
+    orig = fake.generate_structured
+
+    async def gen(**kw):
+        if kw["schema"] is ProfileDraft:
+            assert "<draft_anyway>yes</draft_anyway>" in kw["user"]
+            return LLMResult(parsed=vague, model="m", usage=Usage(), cost_usd=0, latency_ms=1, stop_reason="end_turn")
+        if kw["schema"] is CritiqueDraft:
+            import json
+            cards = json.loads(kw["user"].split("<cards>")[1].split("</cards>")[0])
+            fake.critique_calls += 1
+            return LLMResult(parsed=CritiqueDraft.model_validate({"reviews": [
+                {"persona_id": c["persona_id"], "fix": "name the product",
+                 "checks": [{"name": "specific", "passed": False, "reason": "no product named"}]}
+                for c in cards]}), model="m", usage=Usage(), cost_usd=0, latency_ms=1, stop_reason="end_turn")
+        return await orig(**kw)
+    monkeypatch.setattr(fake, "generate_structured", gen)
+    events = await collect(PlanRequest(brief="idk just try it", model="fake:test", force=True))
+    ads = list({e.creative.persona_id: e.creative for e in events if e.type == "creative"}.values())
+    assert ads and all(a.status == "flagged" and a.revision_of is None for a in ads)
+    assert fake.critique_calls == 1
+    cfg = [e for e in events if e.type == "config"][-1].config
+    assert any("doesn't say what's being sold" in w for w in cfg.review.warnings)

@@ -26,7 +26,7 @@ def advertiser_for_prompt(p: AdvertiserProfile) -> str:
     return json.dumps({
         "brief": p.brief, "brand_name": p.brand_name, "product": p.product.value,
         "summary": p.business_summary, "price_tier": p.price_tier.value,
-        "business_model": p.business_model.value,
+        "business_model": p.business_model.value, "clarity": p.clarity,
     }, indent=1)
 
 
@@ -142,7 +142,7 @@ async def critique(p: AdvertiserProfile, cards: list[Creative], publisher_ids: l
     draft: CritiqueDraft = await generate(
         stage="critique", name="critique_creative", prompt="critique_creative",
         schema=CritiqueDraft, model=model,
-        variables={"brief": p.brief, "claims": claims_for_prompt(p),
+        variables={"brief": p.brief, "clarity": p.clarity, "claims": claims_for_prompt(p),
                    "placements": placements_for_prompt(publisher_ids), "cards": payload},
     )
     by_persona = {r.persona_id: r for r in draft.reviews}

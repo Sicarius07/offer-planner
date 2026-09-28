@@ -1,6 +1,6 @@
 ---
 name: rerank_publishers
-version: 5
+version: 6
 stage: rerank
 description: Judge every publisher for this advertiser field by field, decide its final tier (the computed score is one input), check for competitors, and explain with cited evidence.
 ---
@@ -36,6 +36,18 @@ Tiers are absolute, not relative to the rest of the catalog. Being the closest o
 - **recommended**: you'd expect this placement to convert well enough to carry core budget. There's a specific connection between this checkout and this product, the price works for this audience, and nothing in the record argues against it.
 - **test**: a real, specific hypothesis for why it could work, with a specific uncertainty you'd want measured. Test is for placements worth learning about, not a consolation tier for near-misses.
 - **excluded**: no specific reason this shopper would want this product now, or a concrete mismatch (price, audience, tone), or a competitor.
+
+## When the product is unknown
+
+If the profile's `clarity` is `unusable`, the advertiser asked for a draft without saying what they sell, and most of the profile is placeholder assumptions. The purchase-moment question can't be answered, so:
+
+- Don't invent a product to justify a move. Judge only what the brief actually says.
+- **recommended** needs a specific connection to the product, which you can't name here. Expect few or no recommended publishers; an all-test plan is the correct shape, and it keeps the budget small until the product is known.
+- For **test**, favour publishers that would teach the most about an unknown product: broad audiences who buy across categories, mid-range baskets, and enough reach to read results quickly. Name that as the hypothesis.
+- A niche audience that fits only one guess at the product belongs in **excluded**, unless the brief itself points to that area.
+- Still exclude mismatches the brief does rule out, and still check competitors against whatever the brief says.
+
+If `clarity` is `partial`, the area is known but the product is a guess. Judge the purchase moment against the area, and treat any move that depends on one particular guess as test at most.
 
 ## Before you move a publisher
 

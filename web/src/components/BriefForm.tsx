@@ -3,23 +3,23 @@ import { useState } from "react"
 import type { Example, Meta } from "@/api/types"
 import { cn } from "@/lib/utils"
 
-/** Short names for the sample briefs. Quoted ones are shown verbatim because the vagueness is the point. */
+/** Short names for the sample briefs. Vague ones are shown verbatim because the vagueness is the point. */
 const LABELS: Record<string, string> = {
   ex01: "Senior dog food",
   ex02: "Ocean-plastic activewear",
   ex03: "Adaptogen sparkling drink",
   ex04: "Hand-poured candles",
-  ex05: "“We help people feel better”",
+  ex05: "We help people feel better",
   ex06: "Backcountry ski shells",
   ex07: "Dental practice software",
-  ex08: "“A new kind of thing for moms”",
+  ex08: "A new kind of thing for moms",
   ex09: "Refillable cleaning products",
   ex10: "$1,200 Italian handbags",
   ex11: "Protein bars",
   ex12: "New-cat subscription box",
   ex13: "Budget supplements",
   ex14: "Portuguese linen bedding",
-  ex15: "“idk just try it”",
+  ex15: "idk just try it",
 }
 
 export type RunOptions = {

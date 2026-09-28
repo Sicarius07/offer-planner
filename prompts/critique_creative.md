@@ -1,6 +1,6 @@
 ---
 name: critique_creative
-version: 3
+version: 4
 stage: critique
 description: Review each offer card against a five-point rubric; failed cards get one rewrite.
 ---
@@ -19,6 +19,8 @@ Check every card on these five points. Each is pass or fail, with a one-line rea
 
 A fix must never require adding a claim the brief doesn't support.
 
+If `<brief_clarity>` is `unusable`, the advertiser asked for a draft without saying what they sell, so no card can name the product. Judge `specific` against what the brief does say: pass it when the card invents nothing about the product and is clearly written for this persona and this moment, and say in the reason that it is a placeholder until the product is known. Bracketed template slots ("[product name]") still fail: the card must read as finished copy. The other four checks apply as usual.
+
 Return one review per card, in the same order, keyed by persona_id. Set `fix` to null when all five pass.
 
 # User
@@ -26,6 +28,8 @@ Return one review per card, in the same order, keyed by persona_id. Set `fix` to
 <advertiser_brief>
 {{brief}}
 </advertiser_brief>
+
+<brief_clarity>{{clarity}}</brief_clarity>
 
 <allowed_claims>
 {{claims}}

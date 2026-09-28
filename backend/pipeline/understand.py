@@ -32,12 +32,14 @@ def guard(brief: str) -> str:
     return brief
 
 
-async def understand(brief: str, model: str | None = None) -> AdvertiserProfile:
+async def understand(brief: str, model: str | None = None, draft_anyway: bool = False) -> AdvertiserProfile:
+    """`draft_anyway`: the advertiser skipped the questions, so fill the gaps broadly."""
     draft = await generate(
         stage="understand", name="understand_brief", prompt="understand_brief",
         schema=ProfileDraft, model=model,
         variables={
             "brief": brief,
+            "draft_anyway": "yes" if draft_anyway else "no",
             "interests": taxonomy.describe("interests"),
             "values": taxonomy.describe("values"),
             "occasions": taxonomy.describe("occasions"),

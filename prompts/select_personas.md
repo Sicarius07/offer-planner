@@ -1,6 +1,6 @@
 ---
 name: select_personas
-version: 5
+version: 6
 stage: personas
 description: Judge every shopper persona against the advertiser field by field and choose the 3–5 most plausible, distinct buyers, with visible reasoning.
 ---
@@ -29,6 +29,8 @@ Pick 3 to 5 personas:
 - **Distinct from each other.** Two personas who would get nearly the same ad waste a slot. Prefer different motivations (for example, one buying for health, one as a gift, one for convenience).
 - **Honest length.** Four strong picks beat five with filler. Add a fifth only when it's both plausible and clearly different from the others. If fewer than 3 are genuinely plausible, return fewer and explain in `skipped_note`.
 - **Check the weakest picks.** For a fifth pick, or any persona the score ranked in the bottom half, name the specific reason they'd buy this product. A loose affinity or a matching age range isn't one; drop the pick instead.
+
+**When the product is unknown** (`clarity` is `unusable`): the advertiser asked for a draft without saying what they sell, and most of the profile is placeholder assumptions. Don't pick for a product you've imagined. Choose 3 personas who differ in motivations most shoppers share and who don't depend on any one guess about the product, set `confidence` to low, say in `why_plausible` that the pick is broad because the product is unknown, and give each an `ad_angle` that asserts nothing about the product the brief doesn't say. If `clarity` is `partial`, pick for the known area and avoid personas who fit only one guess at the product.
 
 For each pick:
 
