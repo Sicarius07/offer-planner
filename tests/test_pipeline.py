@@ -247,3 +247,10 @@ def test_code_review_catches_claims_not_in_brief():
                               ClaimUse(claim="vet-recommended", source_quote="recommended by vets")])
     issues = code_issues(c, [c], BRIEF)
     assert len(issues) == 1 and "recommended by vets" in issues[0]
+
+
+def test_guard_keeps_the_answers_block_as_lines():
+    from backend.pipeline.understand import guard
+    raw = "We sell   candles.\n\n\n\nAnswers to your questions:\n-  What do you sell?  Soy candles \n- Who buys? Women"
+    assert guard(raw) == ("We sell candles.\n\nAnswers to your questions:\n"
+                          "- What do you sell? Soy candles\n- Who buys? Women")

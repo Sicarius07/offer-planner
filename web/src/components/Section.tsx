@@ -4,7 +4,7 @@ export function Section({
   id, title, aside, children,
 }: { id: string; title: string; aside?: ReactNode; children: ReactNode }) {
   return (
-    <section id={id} className="scroll-mt-6">
+    <section id={id} className="scroll-mt-16 lg:scroll-mt-6">
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
         <h2 className="text-xl text-ink">{title}</h2>
         {aside && <div className="text-sm text-soft">{aside}</div>}

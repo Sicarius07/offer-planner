@@ -9,7 +9,8 @@ import { FitMatrix } from "@/components/FitMatrix"
 import { RunDrawer } from "@/components/RunDrawer"
 import { Panel, Section, SkeletonRows } from "@/components/Section"
 import { StageDots, StageRail } from "@/components/StageRail"
-import { NeedsInput, Understanding } from "@/components/Understanding"
+import { NeedsInput, Understanding, type AnswerHandlers } from "@/components/Understanding"
+import { withAnswers } from "@/lib/brief"
 import { seconds } from "@/lib/format"
 import { initialPlan, reducer } from "@/state/plan"
 
@@ -97,10 +98,14 @@ export default function App() {
     else run(ex.brief)
   }
 
-  const refine = (addition: string) => {
-    const next = `${plan.brief.trim()} ${addition}`
-    setBrief(next)
-    run(next)
+  // Answers to clarifying questions: previewed in the brief box as they're picked, sent together.
+  const answers: AnswerHandlers = {
+    onChange: (qa) => setBrief(withAnswers(plan.brief, qa)),
+    onSubmit: (qa) => {
+      const next = withAnswers(plan.brief, qa)
+      setBrief(next)
+      run(next)
+    },
   }
 
   const running = plan.status === "running"
@@ -166,7 +171,7 @@ export default function App() {
                 aside={plan.source === "cached" && "Saved run of this sample. Edit the text and draft again for a live run."}
               >
                 {plan.profile ? (
-                  <Understanding profile={plan.profile} animate onRefine={refine} />
+                  <Understanding profile={plan.profile} animate answers={answers} key={plan.brief} />
                 ) : plan.stages.understand.status === "failed" ? null : (
                   <Panel className="px-8 py-8">
                     <div className="h-6 w-4/5 animate-pulse rounded-sm bg-track" />
@@ -178,7 +183,8 @@ export default function App() {
                     <NeedsInput
                       reason={plan.needsInput.reason}
                       questions={plan.needsInput.questions}
-                      onAnswer={refine}
+                      handlers={answers}
+                      key={plan.brief}
                       onForce={() => run(plan.brief, { force: true })}
                     />
                   </div>
@@ -206,7 +212,7 @@ export default function App() {
                   title="Who to reach, and what to say"
                   aside={plan.personas && `${plan.personas.picks.length} personas, ${creativeCount} ads`}
                 >
-                  <span id="creative" className="block -translate-y-6" />
+                  <span id="creative" className="block -translate-y-6 scroll-mt-10 lg:scroll-mt-0" />
                   <StageErrors plan={plan} stage="personas" />
                   <StageErrors plan={plan} stage="creative" />
                   {plan.personas ? (

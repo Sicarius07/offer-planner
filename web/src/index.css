@@ -147,6 +147,10 @@
   font-variant-numeric: tabular-nums;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mark-draw { animation: none; }
   *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }

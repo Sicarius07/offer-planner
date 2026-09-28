@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 
 from backend import config, taxonomy
 from backend.llm.client import generate
@@ -20,7 +21,10 @@ class BriefRejected(ValueError):
 
 
 def guard(brief: str) -> str:
-    brief = " ".join(brief.split())
+    # Tidy spaces within each line but keep line breaks: an answers block (one answer per
+    # line, appended by the UI) has to stay readable as a list.
+    lines = [" ".join(line.split()) for line in brief.splitlines()]
+    brief = re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
     if not brief:
         raise BriefRejected("Describe what you sell in a sentence or two.")
     if len(brief) > config.MAX_BRIEF_CHARS:
