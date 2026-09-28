@@ -1,0 +1,2086 @@
+{
+ "id": "ex06",
+ "brief": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear. Starts at $650, goes up from there.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear. Starts at $650, goes up from there.",
+    "business_summary": "A technical outerwear brand making high-end ski shells for serious backcountry skiers, starting at $650.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Technical ski shells and outerwear for backcountry skiing",
+     "source": "stated",
+     "evidence": {
+      "text": "Technical outerwear for serious backcountry skiers",
+      "start": 0,
+      "end": 50
+     },
+     "note": null
+    },
+    "sells": [
+     "outerwear"
+    ],
+    "competes_with": [
+     "outerwear",
+     "activewear"
+    ],
+    "interests": {
+     "outdoor_technical": 1.0,
+     "fitness": 0.5,
+     "activewear": 0.5
+    },
+    "values": {
+     "performance": 1.0,
+     "premium_quality": 1.0
+    },
+    "occasions": {
+     "self_treat": 0.5,
+     "gift": 0.5
+    },
+    "positioning": [
+     "performance_only"
+    ],
+    "price_tier": {
+     "value": "premium",
+     "source": "inferred",
+     "evidence": {
+      "text": "Starts at $650, goes up from there",
+      "start": 89,
+      "end": 123
+     },
+     "note": "$650+ shells sit at the premium end of outerwear"
+    },
+    "first_order_value_usd": {
+     "value": 700.0,
+     "source": "inferred",
+     "evidence": {
+      "text": "Starts at $650, goes up from there",
+      "start": 89,
+      "end": 123
+     },
+     "note": "Entry price plus some upsell"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief does not specify a gender"
+    },
+    "age_range": {
+     "value": "25-45",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical age range for serious backcountry skiers"
+    },
+    "audience": {
+     "value": "Experienced backcountry skiers and ski professionals who buy technical gear",
+     "source": "inferred",
+     "evidence": {
+      "text": "serious backcountry skiers",
+      "start": 24,
+      "end": 50
+     },
+     "note": "Read directly from who the product is for"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Hard goods with a per-item price, no subscription mentioned"
+    },
+    "claims": [
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "evidence": {
+       "text": "Technical outerwear for serious backcountry skiers",
+       "start": 0,
+       "end": 50
+      }
+     },
+     {
+      "claim": "Worn by ski patrollers",
+      "evidence": {
+       "text": "Our shells are what patrollers wear",
+       "start": 52,
+       "end": 87
+      }
+     },
+     {
+      "claim": "Prices start at $650",
+      "evidence": {
+       "text": "Starts at $650, goes up from there",
+       "start": 89,
+       "end": 123
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "We know the product (technical ski shells), the price point, and who buys it.",
+    "assumptions": [
+     "Assumed the product is sold to both men and women since the brief doesn't say.",
+     "Assumed a typical first order of about $700 based on the $650 starting price.",
+     "Assumed a one-time purchase, not a subscription."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "Do you sell to men, women, or both?",
+      "why": "Determines which shopper personas and publishers we target.",
+      "suggested_answers": [
+       "Both",
+       "Mostly men",
+       "Mostly women"
+      ]
+     },
+     {
+      "question": "What's your typical order value, not just the starting price?",
+      "why": "Sets conversion expectations and how premium the ad copy should feel.",
+      "suggested_answers": [
+       "Around $650",
+       "$700-900",
+       "$1,000+"
+      ]
+     },
+     {
+      "question": "Besides shells, do you sell other gear (layers, pants, accessories)?",
+      "why": "Widens the products we can feature and the publishers we can avoid as competitors.",
+      "suggested_answers": [
+       "Shells only",
+       "Shells and pants",
+       "Full outerwear line"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 18474
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_009",
+      "name": "The Fitness Enthusiast",
+      "score": 63,
+      "why_plausible": "Buys performance apparel, is brand-loyal to things that perform, and responds to technical fabrics and performance claims (price_sensitivity: low-medium). Backcountry skiing is an athletic identity purchase, exactly his mode.",
+      "lean_into": [
+       "performance claims",
+       "technical fabrics",
+       "gear trusted by ski patrollers"
+      ],
+      "avoid": [
+       "fashion-only positioning",
+       "lifestyle/leisure framing",
+       "discount language"
+      ],
+      "ad_angle": "Worn by ski patrollers — the pro-grade shell that earns its keep on the skin track.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_002"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 60,
+      "why_plausible": "Price_sensitivity: low and shops fitness/activewear, willing to pay premiums for products that demonstrably deliver outcomes. An outcome-focused, spec-driven pitch on a $650 shell fits her optimizer mindset.",
+      "lean_into": [
+       "outcome-focused claims",
+       "technical spec transparency (fabrics, construction)",
+       "premium quality justified by performance"
+      ],
+      "avoid": [
+       "novelty framing",
+       "fast-fashion or trend language",
+       "vague hype"
+      ],
+      "ad_angle": "Spec-by-spec: why this shell keeps you dry and moving on long backcountry days — buy once, buy right.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_002"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 44,
+      "why_plausible": "Price_sensitivity: low, apparel affinity, and the brief flags gift as an occasion (0.5) with a high, impressive AOV. A $650 shell is a flagship gift for the skier in someone's life.",
+      "lean_into": [
+       "giftable, premium presentation",
+       "impressive high-end gift for the skier who has everything"
+      ],
+      "avoid": [
+       "subscription framing",
+       "self-care-only framing",
+       "overly technical jargon with no payoff"
+      ],
+      "ad_angle": "The gift a serious skier would never buy themselves — pro-level shell, season-ready shipping.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_002"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_009",
+      "score": 63,
+      "affinity": 43,
+      "values": 50,
+      "price": 100,
+      "reach": 83,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "shops fitness, activewear, outdoor_technical≈activewear; responds to performance"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 60,
+      "affinity": 39,
+      "values": 25,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "shops fitness, activewear≈fitness, self_treat; responds to performance"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 44,
+      "affinity": 19,
+      "values": 40,
+      "price": 100,
+      "reach": 53,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "shops gift, activewear≈apparel_women; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 42,
+      "affinity": 0,
+      "values": 46,
+      "price": 100,
+      "reach": 71,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "responds to premium_quality, performance≈science_backed"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 42,
+      "affinity": 6,
+      "values": 9,
+      "price": 100,
+      "reach": 93,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "shops activewear≈apparel_women, fitness≈footwear; responds to premium_quality≈heritage"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 40,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 98,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 38,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 90,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 34,
+      "affinity": 23,
+      "values": 50,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, activewear≈apparel_women, gift; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 20,
+      "affinity": 5,
+      "values": 0,
+      "price": 30,
+      "reach": 56,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002"
+      ],
+      "detail": "shops activewear≈apparel_women; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 0,
+      "affinity": 24,
+      "values": 15,
+      "price": 30,
+      "reach": 25,
+      "conflicts": [
+       "performance_only"
+      ],
+      "reach_publishers": [],
+      "detail": "shops self_treat, fitness≈functional_beverages, activewear≈apparel_women; responds to premium_quality≈aesthetic; price-mismatched for premium; dislikes performance_only"
+     }
+    ],
+    "skipped_note": "Pet Parent, Sustainability Buyer and Convenience-First Millennial have no genuine fit: no outdoor/technical affinity, and the brief offers no sustainability certifications or fast-subscription hooks to honestly deliver on their preferences."
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 10721
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Pro-grade credibility: the shell patrollers actually work in",
+    "headline": "The shell ski patrollers work in",
+    "body": "Technical outerwear built for backcountry skiing — tested by people on the mountain every day. Shells start at $650.",
+    "cta": "See the shells",
+    "claims_used": [
+     {
+      "claim": "The shell ski patrollers work in",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "Shells start at $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": null,
+    "tone_notes": "Leads with pro endorsement rather than style; plain performance framing, no discount language, price stated upfront as a signal of seriousness for a low-medium price-sensitivity buyer.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "The flagship gift a serious skier won't buy for themselves",
+    "headline": "The Shell They'd Never Buy Themselves",
+    "body": "Technical outerwear built for backcountry skiing — the same shells ski patrollers wear. From $650, in time for the season.",
+    "cta": "Shop the shells",
+    "claims_used": [
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the same shells ski patrollers wear",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "From $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": "Free gift box and expedited shipping on orders placed before the holiday cutoff",
+    "tone_notes": "Frames a high-ticket technical piece as a gift with obvious status, no jargon dump, no subscription or self-care angle. Price stated plainly since this shopper reads it as proof of impressiveness.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Buy once, buy right: a technical shell built for full backcountry days",
+    "headline": "Built for full days in the backcountry",
+    "body": "Technical ski shells made for backcountry touring — the same ones ski patrollers wear. From $650, bought once.",
+    "cta": "See the shells",
+    "claims_used": [
+     {
+      "claim": "Technical ski shells made for backcountry touring",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the same ones ski patrollers wear",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "From $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": "Free sizing/fit consult or extended return window on a first shell purchase — reduces risk at a $650 entry point",
+    "tone_notes": "Plain, spec-minded and outcome-led: names the use case (long backcountry days), cites the patroller proof point instead of hype, and states the price openly so the premium reads as justified rather than hidden. No novelty or trend language.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "This catalog has no outdoor or technical-gear publisher, so the plan reduces to a single activewear test on Movewell, with Cloudfoot as the best male-skewing backup if that underdelivers.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 52,
+        "neutral": false,
+        "detail": "matches activewear, fitness, outdoor_technical≈activewear"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 3,
+        "neutral": false,
+        "detail": "$700 vs $78 typical order (9.0×)"
+       },
+       {
+        "name": "values",
+        "score": 34,
+        "neutral": false,
+        "detail": "shares performance, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 53,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 53,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells activewear, a close substitute",
+      "rationale": "Movewell's \"Fitness-engaged shoppers\" at 25-44 with mid-high income are the closest thing in this catalog to an active, gear-buying audience, and 22M impressions gives a $650 shell enough volume to find its few qualified buyers. The 82% female, studio-fitness skew is a long way from backcountry touring, so treat it as a prospecting test, not a core placement.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Fitness-engaged shoppers"
+       },
+       {
+        "field": "monthly_impressions",
+        "quote": "22000000"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "78.0"
+       }
+      ],
+      "risk": "$700 against a $78 typical order is a 9x ask, and an activewear publisher may view technical outerwear as adjacent competition."
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 36,
+        "neutral": false,
+        "detail": "matches activewear, fitness≈activewear, outdoor_technical≈activewear"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 29,
+        "neutral": false,
+        "detail": "$700 vs $118 typical order (5.9×)"
+       },
+       {
+        "name": "values",
+        "score": 15,
+        "neutral": false,
+        "detail": "shares performance"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 45,
+      "adjustment": 6,
+      "adjustment_reason": "Notes show a near-even gender split (47% male) and 25-45 age band matching the brief's audience, plus 'activewear' and 'sustainable' subcategories — a better outdoor-adjacent read than the 36 category score suggests.",
+      "fit": 51,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells activewear, a close substitute",
+      "rationale": "Cloudfoot is the only balanced-gender activewear publisher here, with \"Tech-adjacent urban professionals\" at a $118 AOV — the least painful price gap among apparel options. Still excluded on fit, but it's the first place to look if the Movewell test underdelivers on male reach.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Tech-adjacent urban professionals. Comfort + sustainability messaging"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "118.0"
+       }
+      ],
+      "risk": "Comfort and sustainability messaging is a poor match for a performance-only brand that leads with ski patrollers."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 48,
+        "neutral": false,
+        "detail": "matches fitness, activewear≈fitness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $42 typical order (16.7×)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 48,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 48,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "High-income fitness bookers, but $42 class purchases are 16.7x below a $650 shell and self-care spending doesn't imply backcountry gear.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 11,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 26,
+        "neutral": false,
+        "detail": "$700 vs $112 typical order (6.2×)"
+       },
+       {
+        "name": "values",
+        "score": 50,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Affluent women aged 45-65 buying workwear and casual apparel; no backcountry overlap despite quality-responsive messaging.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 10,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 35,
+        "neutral": false,
+        "detail": "$700 vs $128 typical order (5.5×)"
+       },
+       {
+        "name": "values",
+        "score": 45,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "A 50-70, 98% female classic apparel audience with \"Conservative brand sensibility\" is the wrong end of the market for technical ski shells.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches self_treat, fitness≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 51,
+        "neutral": false,
+        "detail": "$700 vs $164 typical order (4.3×)"
+       },
+       {
+        "name": "values",
+        "score": 35,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 38,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 38,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Bedding buyers with high income but no outdoor or performance signal; category overlap is essentially nil.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 63,
+        "neutral": false,
+        "detail": "$700 vs $198 typical order (3.5×)"
+       },
+       {
+        "name": "values",
+        "score": 30,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 38,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 38,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Cookware gifting audience at 2.8M impressions — smallest reach in the set and no outdoor interest.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 20,
+        "neutral": false,
+        "detail": "matches activewear≈footwear, fitness≈footwear, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 41,
+        "neutral": false,
+        "detail": "$700 vs $142 typical order (4.9×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Professional women's footwear where \"machine-washable claims resonate\"; shares no values with a performance-only outerwear brand.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 12,
+        "neutral": false,
+        "detail": "matches fitness≈supplements"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $38 typical order (18.4×)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 31,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Supplement buyers at a $38 order size, 18x below the shell price, with no apparel or outdoor overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $64 typical order (10.9×)"
+       },
+       {
+        "name": "values",
+        "score": 45,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Premium-responsive pet owners, but zero shared interests with backcountry ski gear.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches fitness≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 9,
+        "neutral": false,
+        "detail": "$700 vs $86 typical order (8.1×)"
+       },
+       {
+        "name": "values",
+        "score": 4,
+        "neutral": false,
+        "detail": "shares performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Values-driven grocery shoppers respond to clean-ingredient claims, which this performance-only brand doesn't make.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $74 typical order (9.5×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 28,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 28,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "36M impressions is the second-largest reach here, but meal-kit convenience buyers share no interests or values with the brand.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 11,
+        "neutral": false,
+        "detail": "matches fitness≈functional_beverages, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $42 typical order (16.7×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 28,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 28,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "\"Health-curious but indulgence-seeking\" soda buyers at $42 orders are far from a $650 technical purchase.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches gift, activewear≈apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $52 typical order (13.5×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 27,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 27,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Socks and basics gifting with \"social-good messaging\" appeal; a 13.5x price jump and no performance angle.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $28 typical order (25.0×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 23,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 23,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Huge reach but 18-34 mid-income impulse buyers at $28 orders — the worst possible context for a $650 shell.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 10,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 11,
+        "neutral": false,
+        "detail": "$700 vs $89 typical order (7.9×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 23,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 23,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Mid-income women's workwear and intimates; inclusive-fit messaging doesn't intersect with backcountry performance.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $73 typical order (9.6×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 22,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 22,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Largest audience in the catalog, but mid-income pet repeat-buyers have no overlap with technical outerwear.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $61 typical order (11.5×)"
+       },
+       {
+        "name": "values",
+        "score": 15,
+        "neutral": false,
+        "detail": "shares premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 21,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 21,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Gen Z beauty buyers at mid income; identity-driven skincare purchasing won't carry a $650 shell.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $35 typical order (20.0×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 18,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 18,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "A \"Fun, playful brand voice converts best\" audience is tonally opposite to patroller-grade technical gear.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$700 vs $48 typical order (14.6×)"
+       },
+       {
+        "name": "values",
+        "score": 12,
+        "neutral": false,
+        "detail": "shares performance≈science_backed, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 18,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 18,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Personalized haircare at $48 orders, mid income, no outdoor or apparel overlap.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 26143
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Pro-grade credibility: the shell patrollers wear to work",
+    "headline": "The shell ski patrollers wear",
+    "body": "Technical outerwear built for backcountry skiing — worn by ski patrollers. Shells start at $650.",
+    "cta": "See the shells",
+    "claims_used": [
+     {
+      "claim": "The shell ski patrollers wear",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "Shells start at $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": null,
+    "tone_notes": "Leads with the pro-endorsement angle, not style or leisure. Plain performance framing, technical category language, price stated upfront as a seriousness signal for a low-medium price-sensitivity buyer. No discount language.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims map directly to allowed claims with no upgrades."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on technical fabric and patroller credibility, no fashion-only framing."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Patroller-worn shells at $650 entry is specific to this advertiser."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, factual, no urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims; fits Movewell's fitness audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Pro-grade credibility: the shell patrollers actually work in",
+     "headline": "The shell ski patrollers work in",
+     "body": "Technical outerwear built for backcountry skiing — tested by people on the mountain every day. Shells start at $650.",
+     "cta": "See the shells",
+     "claims_used": [
+      {
+       "claim": "The shell ski patrollers work in",
+       "source_quote": "Our shells are what patrollers wear"
+      },
+      {
+       "claim": "Technical outerwear built for backcountry skiing",
+       "source_quote": "Technical outerwear for serious backcountry skiers"
+      },
+      {
+       "claim": "Shells start at $650",
+       "source_quote": "Starts at $650, goes up from there"
+      }
+     ],
+     "offer_suggestion": "",
+     "tone_notes": "Leads with pro endorsement rather than style; plain performance framing, no discount language, price stated upfront as a signal of seriousness for a low-medium price-sensitivity buyer."
+    }
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Buy once, buy right: a technical shell built for full backcountry days",
+    "headline": "Built for full days in the backcountry",
+    "body": "Technical ski shells made for backcountry skiing — the same ones ski patrollers wear. From $650.",
+    "cta": "See the shells",
+    "claims_used": [
+     {
+      "claim": "Technical ski shells made for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the same ones ski patrollers wear",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "From $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": "Free sizing/fit consult or extended return window on a first shell purchase — reduces risk at a $650 entry point",
+    "tone_notes": "Plain and spec-minded: names the use case (long backcountry days), leans on the patroller proof point rather than hype, and states the entry price openly so the premium reads as justified. No novelty or trend language.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Headline and body stay within backcountry/patroller/$650 claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Outcome-focused and durable-quality framing; avoids fast-fashion tone, and doesn't fake science backing the brief can't support."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Patroller detail and price floor are advertiser-specific."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads as a quiet recommendation, no pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated wellness or health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Buy once, buy right: a technical shell built for full backcountry days",
+     "headline": "Built for full days in the backcountry",
+     "body": "Technical ski shells made for backcountry touring — the same ones ski patrollers wear. From $650, bought once.",
+     "cta": "See the shells",
+     "claims_used": [
+      {
+       "claim": "Technical ski shells made for backcountry touring",
+       "source_quote": "Technical outerwear for serious backcountry skiers"
+      },
+      {
+       "claim": "the same ones ski patrollers wear",
+       "source_quote": "Our shells are what patrollers wear"
+      },
+      {
+       "claim": "From $650",
+       "source_quote": "Starts at $650, goes up from there"
+      }
+     ],
+     "offer_suggestion": "Free sizing/fit consult or extended return window on a first shell purchase — reduces risk at a $650 entry point",
+     "tone_notes": "Plain, spec-minded and outcome-led: names the use case (long backcountry days), cites the patroller proof point instead of hype, and states the price openly so the premium reads as justified rather than hidden. No novelty or trend language."
+    }
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "49785bdc81-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "The flagship gift a serious skier won't buy for themselves",
+    "headline": "The Shell They'd Never Buy Themselves",
+    "body": "Technical outerwear built for backcountry skiing — the same shells ski patrollers wear. From $650.",
+    "cta": "Shop the shells",
+    "claims_used": [
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the same shells ski patrollers wear",
+      "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "From $650",
+      "source_quote": "Starts at $650, goes up from there"
+     }
+    ],
+    "offer_suggestion": "Free gift box and expedited shipping on orders placed before the holiday cutoff",
+    "tone_notes": "Frames a high-ticket technical piece as a gift with obvious status, no jargon dump, no subscription or self-care angle. Price stated plainly since this shopper reads it as proof of impressiveness. Shipping timing left out since the brief doesn't support it.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "No invented gifting perks, shipping promises or discounts; claims match brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Gift framing plus premium positioning; no subscription or self-care-only angle."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Patroller-worn backcountry shells from $650 can't be swapped to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Neutral gift suggestion without deadline pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Nothing conflicting with Movewell's apparel/wellness audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "The flagship gift a serious skier won't buy for themselves",
+     "headline": "The Shell They'd Never Buy Themselves",
+     "body": "Technical outerwear built for backcountry skiing — the same shells ski patrollers wear. From $650, in time for the season.",
+     "cta": "Shop the shells",
+     "claims_used": [
+      {
+       "claim": "Technical outerwear built for backcountry skiing",
+       "source_quote": "Technical outerwear for serious backcountry skiers"
+      },
+      {
+       "claim": "the same shells ski patrollers wear",
+       "source_quote": "Our shells are what patrollers wear"
+      },
+      {
+       "claim": "From $650",
+       "source_quote": "Starts at $650, goes up from there"
+      }
+     ],
+     "offer_suggestion": "Free gift box and expedited shipping on orders placed before the holiday cutoff",
+     "tone_notes": "Frames a high-ticket technical piece as a gift with obvious status, no jargon dump, no subscription or self-care angle. Price stated plainly since this shopper reads it as proof of impressiveness."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 44890
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Technical ski shells and outerwear for backcountry skiing · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 210.0,
+     "max_cpa_usd": 273.0,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 700.0,
+     "first_order_value_source": "inferred",
+     "learning_period_days": 14,
+     "rationale": "$700 first order × 0.30 = $210.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 53,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 23.8,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "publisher_name": "Cloudfoot",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 51,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 23.8,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_009",
+      "persona_001",
+      "persona_010"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "25-45",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-South",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "outdoor_technical",
+      "fitness",
+      "activewear"
+     ],
+     "exclusions": [
+      "activewear",
+      "outerwear"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "49785bdc81-persona_009",
+      "persona_id": "persona_009",
+      "weight": 0.333,
+      "status": "revised"
+     },
+     {
+      "creative_id": "49785bdc81-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.333,
+      "status": "revised"
+     },
+     {
+      "creative_id": "49785bdc81-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.333,
+      "status": "revised"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 100.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed the product is sold to both men and women since the brief doesn't say.",
+      "Assumed a typical first order of about $700 based on the $650 starting price.",
+      "Assumed a one-time purchase, not a subscription.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "49785bdc81",
+   "total_ms": 63375,
+   "cost_usd": 0.4561,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 18471,
+     "input_tokens": 7351,
+     "output_tokens": 1481,
+     "cost_usd": 0.07378,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 1,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 10720,
+     "input_tokens": 4604,
+     "output_tokens": 748,
+     "cost_usd": 0.04172,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5056,
+     "input_tokens": 2559,
+     "output_tokens": 306,
+     "cost_usd": 0.020445,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5585,
+     "input_tokens": 2572,
+     "output_tokens": 344,
+     "cost_usd": 0.02146,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8663,
+     "input_tokens": 2566,
+     "output_tokens": 568,
+     "cost_usd": 0.02703,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 26134,
+     "input_tokens": 13720,
+     "output_tokens": 2310,
+     "cost_usd": 0.12635,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 10771,
+     "input_tokens": 2710,
+     "output_tokens": 1013,
+     "cost_usd": 0.038875,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4268,
+     "input_tokens": 3143,
+     "output_tokens": 352,
+     "cost_usd": 0.024515,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4524,
+     "input_tokens": 3154,
+     "output_tokens": 339,
+     "cost_usd": 0.024245,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4592,
+     "input_tokens": 3107,
+     "output_tokens": 311,
+     "cost_usd": 0.02331,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 10133,
+     "input_tokens": 2700,
+     "output_tokens": 836,
+     "cost_usd": 0.0344,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "pub_001",
+    "name": "Swiftcart",
+    "category": "instant_delivery",
+    "subcategories": ["convenience", "groceries", "alcohol", "household"],
+    "monthly_impressions": 84000000,
+    "avg_order_value_usd": 28,
+    "audience": {
+      "age_skew": "18-34",
+      "gender_split": {"female": 0.48, "male": 0.51, "other": 0.01},
+      "top_geos": ["US-East", "US-Midwest"],
+      "income_tier": "mid"
+    },
+    "notes": "High-frequency purchasers. Late-night traffic spike. Impulse-friendly."
+  },
+  {
+    "id": "pub_002",
+    "name": "Movewell",
+    "category": "apparel",
+    "subcategories": ["activewear", "women", "men", "subscription"],
+    "monthly_impressions": 22000000,
+    "avg_order_value_usd": 78,
+    "audience": {
+      "age_skew": "25-44",
+      "gender_split": {"female": 0.82, "male": 0.17, "other": 0.01},
+      "top_geos": ["US-West", "US-South"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Fitness-engaged shoppers. Strong crossover with wellness and beauty."
+  },
+  {
+    "id": "pub_003",
+    "name": "Studiogrid",
+    "category": "wellness_services",
+    "subcategories": ["fitness_classes", "spa", "yoga", "personal_training"],
+    "monthly_impressions": 13600000,
+    "avg_order_value_usd": 42,
+    "audience": {
+      "age_skew": "28-50",
+      "gender_split": {"female": 0.74, "male": 0.25, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "high"
+    },
+    "notes": "Appointment-based booking. Users are actively spending on self-care and fitness."
+  },
+  {
+    "id": "pub_004",
+    "name": "Marlowe & Co.",
+    "category": "apparel",
+    "subcategories": ["women", "mid-life", "workwear", "casual"],
+    "monthly_impressions": 8400000,
+    "avg_order_value_usd": 112,
+    "audience": {
+      "age_skew": "45-65",
+      "gender_split": {"female": 0.96, "male": 0.04, "other": 0.0},
+      "top_geos": ["US-South", "US-Northeast"],
+      "income_tier": "high"
+    },
+    "notes": "Older affluent women. Lower impulse but high AOV. Responds to quality messaging."
+  },
+  {
+    "id": "pub_005",
+    "name": "Linden Park",
+    "category": "apparel",
+    "subcategories": ["women", "mid-life", "classic", "workwear"],
+    "monthly_impressions": 6200000,
+    "avg_order_value_usd": 128,
+    "audience": {
+      "age_skew": "50-70",
+      "gender_split": {"female": 0.98, "male": 0.02, "other": 0.0},
+      "top_geos": ["US-Northeast", "US-South"],
+      "income_tier": "high"
+    },
+    "notes": "Highest-AOV apparel publisher in the catalog. Conservative brand sensibility."
+  },
+  {
+    "id": "pub_006",
+    "name": "Everbody",
+    "category": "apparel",
+    "subcategories": ["women", "plus_size", "workwear", "intimates"],
+    "monthly_impressions": 7600000,
+    "avg_order_value_usd": 89,
+    "audience": {
+      "age_skew": "30-55",
+      "gender_split": {"female": 0.99, "male": 0.01, "other": 0.0},
+      "top_geos": ["US-South", "US-Midwest"],
+      "income_tier": "mid"
+    },
+    "notes": "Inclusive sizing across the full range. Audience values representation and fit-focused messaging."
+  },
+  {
+    "id": "pub_007",
+    "name": "Pawline",
+    "category": "pet",
+    "subcategories": ["pet_food", "pet_supplies", "subscription"],
+    "monthly_impressions": 4800000,
+    "avg_order_value_usd": 64,
+    "audience": {
+      "age_skew": "30-55",
+      "gender_split": {"female": 0.62, "male": 0.37, "other": 0.01},
+      "top_geos": ["US-West", "US-South"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Subscription-heavy. Owners are health-conscious about pets, responsive to premium positioning."
+  },
+  {
+    "id": "pub_008",
+    "name": "Pantrygood",
+    "category": "groceries",
+    "subcategories": ["organic", "natural", "subscription", "pantry"],
+    "monthly_impressions": 10400000,
+    "avg_order_value_usd": 86,
+    "audience": {
+      "age_skew": "28-48",
+      "gender_split": {"female": 0.71, "male": 0.28, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "high"
+    },
+    "notes": "Values-driven shoppers. Responsive to clean-ingredient, sustainability, and wellness claims."
+  },
+  {
+    "id": "pub_009",
+    "name": "Ruffco",
+    "category": "pet",
+    "subcategories": ["pet_food", "pet_supplies", "pet_pharmacy"],
+    "monthly_impressions": 62000000,
+    "avg_order_value_usd": 73,
+    "audience": {
+      "age_skew": "25-55",
+      "gender_split": {"female": 0.64, "male": 0.35, "other": 0.01},
+      "top_geos": ["nationwide"],
+      "income_tier": "mid"
+    },
+    "notes": "Largest pet audience in the catalog. Broad demographics, repeat-purchase behavior."
+  },
+  {
+    "id": "pub_010",
+    "name": "Heartfoot",
+    "category": "apparel",
+    "subcategories": ["socks", "underwear", "basics", "gifting"],
+    "monthly_impressions": 5800000,
+    "avg_order_value_usd": 52,
+    "audience": {
+      "age_skew": "25-54",
+      "gender_split": {"female": 0.58, "male": 0.41, "other": 0.01},
+      "top_geos": ["nationwide"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Strong gifting season uplift (Nov-Dec). Audience responds to social-good messaging."
+  },
+  {
+    "id": "pub_011",
+    "name": "Northbed",
+    "category": "home",
+    "subcategories": ["bedding", "bath", "home_textiles"],
+    "monthly_impressions": 3600000,
+    "avg_order_value_usd": 164,
+    "audience": {
+      "age_skew": "28-48",
+      "gender_split": {"female": 0.69, "male": 0.30, "other": 0.01},
+      "top_geos": ["US-Northeast", "US-West"],
+      "income_tier": "high"
+    },
+    "notes": "Design-conscious urban/suburban buyers. High cross-sell with home and wellness."
+  },
+  {
+    "id": "pub_012",
+    "name": "Daily Form",
+    "category": "wellness_dtc",
+    "subcategories": ["vitamins", "supplements", "subscription", "women"],
+    "monthly_impressions": 4200000,
+    "avg_order_value_usd": 38,
+    "audience": {
+      "age_skew": "22-42",
+      "gender_split": {"female": 0.89, "male": 0.10, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Science-forward wellness. Audience skeptical of unsubstantiated health claims."
+  },
+  {
+    "id": "pub_013",
+    "name": "Velvetline",
+    "category": "beauty",
+    "subcategories": ["skincare", "makeup", "dtc"],
+    "monthly_impressions": 6800000,
+    "avg_order_value_usd": 61,
+    "audience": {
+      "age_skew": "18-34",
+      "gender_split": {"female": 0.91, "male": 0.07, "other": 0.02},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "mid"
+    },
+    "notes": "Gen Z and younger millennial. Minimalist aesthetic, identity-driven purchasing."
+  },
+  {
+    "id": "pub_014",
+    "name": "Hearthstone Goods",
+    "category": "home",
+    "subcategories": ["cookware", "kitchen", "non_toxic"],
+    "monthly_impressions": 2800000,
+    "avg_order_value_usd": 198,
+    "audience": {
+      "age_skew": "28-48",
+      "gender_split": {"female": 0.78, "male": 0.21, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "high"
+    },
+    "notes": "Sustainability-motivated kitchen buyers. Gifting and new-home life events drive purchase."
+  },
+  {
+    "id": "pub_015",
+    "name": "Kitchenly",
+    "category": "meal_kits",
+    "subcategories": ["meal_kits", "subscription", "groceries"],
+    "monthly_impressions": 36000000,
+    "avg_order_value_usd": 74,
+    "audience": {
+      "age_skew": "28-52",
+      "gender_split": {"female": 0.67, "male": 0.32, "other": 0.01},
+      "top_geos": ["nationwide"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Family and couples households. Convenience-motivated but food-interested."
+  },
+  {
+    "id": "pub_016",
+    "name": "Stride & Stem",
+    "category": "apparel",
+    "subcategories": ["shoes", "women", "sustainable"],
+    "monthly_impressions": 3200000,
+    "avg_order_value_usd": 142,
+    "audience": {
+      "age_skew": "28-48",
+      "gender_split": {"female": 0.94, "male": 0.05, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "high"
+    },
+    "notes": "Professional women. Sustainability and machine-washable claims resonate."
+  },
+  {
+    "id": "pub_017",
+    "name": "Cloudfoot",
+    "category": "apparel",
+    "subcategories": ["shoes", "activewear", "sustainable"],
+    "monthly_impressions": 5800000,
+    "avg_order_value_usd": 118,
+    "audience": {
+      "age_skew": "25-45",
+      "gender_split": {"female": 0.52, "male": 0.47, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Tech-adjacent urban professionals. Comfort + sustainability messaging."
+  },
+  {
+    "id": "pub_018",
+    "name": "Tailcrate",
+    "category": "pet",
+    "subcategories": ["pet_supplies", "subscription", "toys", "treats"],
+    "monthly_impressions": 8400000,
+    "avg_order_value_usd": 35,
+    "audience": {
+      "age_skew": "25-45",
+      "gender_split": {"female": 0.73, "male": 0.26, "other": 0.01},
+      "top_geos": ["nationwide"],
+      "income_tier": "mid"
+    },
+    "notes": "Millennials treating dogs as family. Fun, playful brand voice converts best."
+  },
+  {
+    "id": "pub_019",
+    "name": "Strandlab",
+    "category": "beauty",
+    "subcategories": ["haircare", "personalized", "dtc"],
+    "monthly_impressions": 3800000,
+    "avg_order_value_usd": 48,
+    "audience": {
+      "age_skew": "18-38",
+      "gender_split": {"female": 0.93, "male": 0.06, "other": 0.01},
+      "top_geos": ["nationwide"],
+      "income_tier": "mid"
+    },
+    "notes": "Personalization-motivated audience. Quiz-based onboarding elsewhere."
+  },
+  {
+    "id": "pub_020",
+    "name": "Pop & Sip",
+    "category": "beverages",
+    "subcategories": ["functional_beverages", "soda_alternative", "gut_health"],
+    "monthly_impressions": 5200000,
+    "avg_order_value_usd": 42,
+    "audience": {
+      "age_skew": "22-42",
+      "gender_split": {"female": 0.71, "male": 0.28, "other": 0.01},
+      "top_geos": ["US-West", "US-Northeast"],
+      "income_tier": "mid-high"
+    },
+    "notes": "Health-curious but indulgence-seeking. Strong overlap with wellness and premium grocery."
+  }
+]

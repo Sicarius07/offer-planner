@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+web/dist/
+.DS_Store
+.specstory/
+.vercel
+.pytest_cache/
+evals/reports/raw/
+.cursorindexingignore

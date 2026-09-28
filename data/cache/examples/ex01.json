@@ -1,0 +1,2205 @@
+{
+ "id": "ex01",
+ "brief": "We sell premium dog food for senior dogs, targeting owners who care about joint health and longevity. Grain-free, vet-formulated, subscription-based.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "We sell premium dog food for senior dogs, targeting owners who care about joint health and longevity. Grain-free, vet-formulated, subscription-based.",
+    "business_summary": "A premium, grain-free dog food made for senior dogs, sold by subscription and focused on joint health and longevity.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Premium grain-free, vet-formulated dog food for senior dogs, sold on subscription",
+     "source": "stated",
+     "evidence": {
+      "text": "premium dog food for senior dogs",
+      "start": 8,
+      "end": 40
+     },
+     "note": null
+    },
+    "sells": [
+     "pet_food"
+    ],
+    "competes_with": [
+     "pet_food",
+     "pet_treats",
+     "pet_pharmacy"
+    ],
+    "interests": {
+     "pets": 1.0,
+     "pet_health": 1.0,
+     "natural_food": 0.5
+    },
+    "values": {
+     "science_backed": 1.0,
+     "premium_quality": 1.0,
+     "clean_ingredients": 0.5
+    },
+    "occasions": {
+     "replenishment": 1.0
+    },
+    "positioning": [
+     "subscription_only"
+    ],
+    "price_tier": {
+     "value": "premium",
+     "source": "stated",
+     "evidence": {
+      "text": "premium dog food",
+      "start": 8,
+      "end": 24
+     },
+     "note": null
+    },
+    "first_order_value_usd": {
+     "value": 75.0,
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical first order for a premium dog food subscription; no price given"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No gender indicated; dog owners skew broad"
+    },
+    "age_range": {
+     "value": "35-65",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Owners of senior dogs tend to be older, longer-tenured pet parents"
+    },
+    "audience": {
+     "value": "Owners of senior dogs who care about joint health and longevity",
+     "source": "stated",
+     "evidence": {
+      "text": "targeting owners who care about joint health and longevity",
+      "start": 42,
+      "end": 100
+     },
+     "note": null
+    },
+    "business_model": {
+     "value": "subscription",
+     "source": "stated",
+     "evidence": {
+      "text": "subscription-based",
+      "start": 130,
+      "end": 148
+     },
+     "note": null
+    },
+    "claims": [
+     {
+      "claim": "Grain-free",
+      "evidence": {
+       "text": "Grain-free",
+       "start": 102,
+       "end": 112
+      }
+     },
+     {
+      "claim": "Vet-formulated",
+      "evidence": {
+       "text": "vet-formulated",
+       "start": 114,
+       "end": 128
+      }
+     },
+     {
+      "claim": "Made for senior dogs",
+      "evidence": {
+       "text": "dog food for senior dogs",
+       "start": 16,
+       "end": 40
+      }
+     },
+     {
+      "claim": "Premium",
+      "evidence": {
+       "text": "premium dog food",
+       "start": 8,
+       "end": 24
+      }
+     },
+     {
+      "claim": "Supports joint health and longevity",
+      "evidence": {
+       "text": "owners who care about joint health and longevity",
+       "start": 52,
+       "end": 100
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "The product, audience and business model are all stated; only price is missing and has a sensible default.",
+    "assumptions": [
+     "We assumed a first order of about $75, typical for premium dog food subscriptions.",
+     "We assumed the audience is any gender, skewing 35-65.",
+     "We treated the product as subscription-only since only a subscription is mentioned."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What does a typical first order cost?",
+      "why": "First order value drives which publishers and shopper price points we target.",
+      "suggested_answers": [
+       "Under $40",
+       "$40-$70",
+       "$70-$120",
+       "$120+"
+      ]
+     },
+     {
+      "question": "Can shoppers buy a one-time bag, or is it subscription only?",
+      "why": "Subscription-only offers convert differently post-purchase and need different ad copy.",
+      "suggested_answers": [
+       "Subscription only",
+       "One-time purchase available",
+       "Trial box then subscription"
+      ]
+     },
+     {
+      "question": "Is there a starter or trial offer for new customers?",
+      "why": "A discounted trial is usually the strongest post-checkout offer.",
+      "suggested_answers": [
+       "Yes, discounted first box",
+       "Yes, free trial bag",
+       "No intro offer"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 13283
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_004",
+      "name": "The Pet Parent",
+      "score": 82,
+      "why_plausible": "Treats the pet as family, reads ingredient labels and pays a premium for health — exactly the senior-dog joint-health buyer. Affinities include pet_food, pet_health and subscription_boxes with price_sensitivity low-medium and AOV $72, matching the $75 first order.",
+      "lean_into": [
+       "vet-formulated by veterinarians",
+       "full ingredient transparency, grain-free",
+       "emotional connection: more good years with your dog"
+      ],
+      "avoid": [
+       "generic pet brand comparisons",
+       "ultra-cheap or discount positioning",
+       "claiming 'vet-recommended' (brief only supports vet-formulated)"
+      ],
+      "ad_angle": "Emotional longevity: the food that helps your aging best friend keep up, formulated by vets with ingredients you can read.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_008",
+       "pub_018",
+       "pub_012"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_002",
+      "name": "The Busy Parent",
+      "score": 64,
+      "why_plausible": "Has pet_food in affinities, 'loves subscriptions' and is convenience-motivated, so auto-delivery of the right senior formula fits a time-poor household. Price sensitivity medium but typical AOV $78 covers the first order.",
+      "lean_into": [
+       "time-saving: the right food shows up automatically",
+       "trusted, no-guesswork formula for an older dog",
+       "family-friendly — the dog is part of the family too"
+      ],
+      "avoid": [
+       "luxury/gourmet positioning",
+       "complicated onboarding or long science explanations"
+      ],
+      "ad_angle": "One less thing to remember: senior-dog nutrition on autopilot, delivered before you run out.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_018",
+       "pub_008",
+       "pub_012"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 64,
+      "why_plausible": "Pays premiums for evidence-backed products and wants science-backed claims and ingredient transparency — a natural fit for a vet-formulated joint-health formula, applied to her dog. price_sensitivity: low, AOV $95.",
+      "lean_into": [
+       "science-backed, vet-formulated nutrition",
+       "outcome-focused: mobility and joint support",
+       "ingredient transparency, grain-free"
+      ],
+      "avoid": [
+       "ultra-processed filler framing",
+       "novelty or gimmicky tone",
+       "cute-only messaging with no evidence"
+      ],
+      "ad_angle": "Optimize your dog's healthspan: the same evidence-first standard you use for yourself, in his bowl.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_018",
+       "pub_012",
+       "pub_008"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_007",
+      "name": "The Convenience-First Millennial",
+      "score": 52,
+      "why_plausible": "Heavy subscription user who defaults to whatever is frictionless; the brand is subscription-only replenishment, which matches rather than annoys him. Mid-to-high income, medium price sensitivity, AOV $55 is a modest stretch.",
+      "lean_into": [
+       "subscription perks and set-and-forget delivery",
+       "one-click start, skip or pause anytime",
+       "no more last-minute pet store runs"
+      ],
+      "avoid": [
+       "multi-step quizzes or heavy onboarding",
+       "dense clinical copy",
+       "vague delivery timelines"
+      ],
+      "ad_angle": "Frictionless resupply: pick your dog's size, click once, and premium senior food arrives on schedule forever.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_018",
+       "pub_008",
+       "pub_012"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_004",
+      "score": 82,
+      "affinity": 83,
+      "values": 74,
+      "price": 100,
+      "reach": 76,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008",
+       "pub_018",
+       "pub_012"
+      ],
+      "detail": "shops pets, pet_health, replenishment; responds to clean_ingredients, science_backed"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 64,
+      "affinity": 30,
+      "values": 58,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_018",
+       "pub_012",
+       "pub_008"
+      ],
+      "detail": "shops natural_food, replenishment; responds to science_backed, clean_ingredients"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 64,
+      "affinity": 67,
+      "values": 0,
+      "price": 100,
+      "reach": 90,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_018",
+       "pub_008",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, pets, pet_health≈pets"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 52,
+      "affinity": 26,
+      "values": 26,
+      "price": 100,
+      "reach": 88,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_018",
+       "pub_008",
+       "pub_012"
+      ],
+      "detail": "shops natural_food, replenishment; responds to clean_ingredients, science_backed≈clean_ingredients"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 52,
+      "affinity": 31,
+      "values": 0,
+      "price": 100,
+      "reach": 97,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_018",
+       "pub_008",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, natural_food≈groceries"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 51,
+      "affinity": 24,
+      "values": 28,
+      "price": 100,
+      "reach": 82,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_012",
+       "pub_018",
+       "pub_008"
+      ],
+      "detail": "shops replenishment, natural_food≈functional_beverages; responds to science_backed, clean_ingredients≈science_backed"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 31,
+      "affinity": 28,
+      "values": 0,
+      "price": 30,
+      "reach": 60,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008",
+       "pub_018"
+      ],
+      "detail": "shops replenishment, natural_food≈groceries; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 25,
+      "affinity": 6,
+      "values": 40,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops natural_food; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 17,
+      "affinity": 5,
+      "values": 16,
+      "price": 30,
+      "reach": 29,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_012"
+      ],
+      "detail": "shops natural_food≈functional_beverages; responds to premium_quality≈aesthetic, clean_ingredients≈sustainability; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 10,
+      "affinity": 0,
+      "values": 32,
+      "price": 100,
+      "reach": 53,
+      "conflicts": [
+       "subscription_only"
+      ],
+      "reach_publishers": [
+       "pub_018",
+       "pub_008"
+      ],
+      "detail": "responds to premium_quality; dislikes subscription_only"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 13736
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Senior-dog food on autopilot — one less thing to remember",
+    "headline": "His food shows up. You forget nothing.",
+    "body": "Vet-formulated, grain-free food made for senior dogs, on a subscription that arrives before the bag runs out.",
+    "cta": "Set up delivery",
+    "claims_used": [
+     {
+      "claim": "Vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "subscription delivery",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "Free swap or pause on the first delivery, so signing up feels low-commitment",
+    "tone_notes": "Leads with time-saving autopilot, plain language, no gourmet or luxury framing, no long science explanation. Treats the dog as part of the household routine.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Apply your own evidence-first standard to his bowl",
+    "headline": "The same standard, in his bowl",
+    "body": "Vet-formulated, grain-free food made for senior dogs, built around joint health and longevity. Delivered on subscription.",
+    "cta": "See the formula",
+    "claims_used": [
+     {
+      "claim": "Vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "built around joint health and longevity",
+      "source_quote": "owners who care about joint health and longevity"
+     },
+     {
+      "claim": "Delivered on subscription",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box 20% off, with full ingredient panel shown at checkout",
+    "tone_notes": "Evidence-first and plain: leads with the formulation standard rather than cuteness, names the grain-free ingredient stance and the joint/longevity outcome, no gimmicks or urgency.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "Set-and-forget resupply for the senior dog's food bag",
+    "headline": "Senior dog food, on repeat",
+    "body": "Grain-free, vet-formulated food made for senior dogs, sent on a schedule you set. Skip the pet store run.",
+    "cta": "Set up delivery",
+    "claims_used": [
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "sent on a schedule (subscription)",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box discount, plus clear skip/pause anytime messaging on the landing page",
+    "tone_notes": "Plain and quick, leads with replenishment convenience rather than health science. No quiz, no clinical detail, no urgency. 'On repeat' and 'skip the pet store run' match the set-and-forget preference.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_004",
+    "persona_id": "persona_004",
+    "persona_name": "The Pet Parent",
+    "angle": "Emotional longevity — more good years with an aging dog",
+    "headline": "For the dog who's slowing down",
+    "body": "Grain-free food formulated by vets for senior dogs, made to support joint health and longevity. Arrives on subscription.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "formulated by vets",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "supports joint health and longevity",
+      "source_quote": "owners who care about joint health and longevity"
+     },
+     {
+      "claim": "Arrives on subscription",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box at a reduced rate, cancel anytime",
+    "tone_notes": "Warm and plain, centered on an aging dog rather than a product pitch. Uses 'formulated by vets' (never 'vet-recommended'), leads with the emotional longevity angle, and the CTA invites label-reading rather than discount-chasing.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "The two best pet audiences are direct pet-food competitors, so the plan rests on a capped Tailcrate pet test plus clean-ingredient grocery and science-forward wellness audiences that match on values and spending power but carry no pet-ownership signal.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 24,
+        "neutral": false,
+        "detail": "matches natural_food, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $86 typical order (0.9×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 32,
+        "neutral": false,
+        "detail": "shares clean_ingredients, science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 54,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 54,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pantrygood's notes describe shoppers 'Responsive to clean-ingredient, sustainability, and wellness claims' at a high income tier and $86 typical order, so grain-free and vet-formulated claims land and the $75 price is unremarkable to them.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Responsive to clean-ingredient, sustainability, and wellness claims"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "86.0"
+       }
+      ],
+      "risk": "No pet-ownership signal at all — you're paying for reach where a large share of impressions have no dog, let alone a senior one."
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 70,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 96,
+        "neutral": false,
+        "detail": "$75 vs $35 typical order (2.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 60,
+      "adjustment": -8,
+      "adjustment_reason": "Notes say the audience is 'Millennials treating dogs as family' with a '25-45' age skew and that a 'Fun, playful brand voice converts best' — both the likely dog life-stage and the required tone work against a vet-formulated senior-dog subscription.",
+      "fit": 52,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells pet_treats, a close substitute",
+      "rationale": "Tailcrate is the only reachable pet audience, and dog-owner intent plus a $35 basket means a $75 premium food offer is a real stretch but worth a contained test. The playful, younger-dog framing is the opposite of the clinical joint-health message this brand leads with.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Millennials treating dogs as family. Fun, playful brand voice converts best"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "35.0"
+       }
+      ],
+      "risk": "Younger owners with younger dogs are simply out of market for senior formula, and a treats/toys box makes it a partial substitute, so conversion may be thin at 2.1× the typical order."
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 16,
+        "neutral": false,
+        "detail": "matches replenishment, natural_food≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $38 typical order (2.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 48,
+        "neutral": false,
+        "detail": "shares science_backed, clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 52,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 52,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Daily Form's 'Science-forward wellness' audience is the rare group that rewards a vet-formulated, longevity claim, and the subscription-supplement habit mirrors your replenishment model.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Science-forward wellness. Audience skeptical of unsubstantiated health claims"
+       }
+      ],
+      "risk": "That same audience is 'skeptical of unsubstantiated health claims', so joint-health and longevity copy needs visible vet/evidence backing; the 22-42 skew also sits below your 35-65 target."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 72,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $64 typical order (1.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 52,
+        "neutral": false,
+        "detail": "shares premium_quality, clean_ingredients, science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 75,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 75,
+      "tier": "excluded",
+      "exclusion_reason": "competitor",
+      "conflict": "sells pet_food, like you",
+      "adjacent_conflict": null,
+      "rationale": "Excluded as a direct competitor: Pawline sells pet food on subscription, the same purchase you're asking for.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 72,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $73 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 66,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 66,
+      "tier": "excluded",
+      "exclusion_reason": "competitor",
+      "conflict": "sells pet_food, like you",
+      "adjacent_conflict": null,
+      "rationale": "Excluded as a competitor: Ruffco sells pet food and pet pharmacy, overlapping your core product.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches replenishment, natural_food≈groceries"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $74 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 49,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 49,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded on weak fit: food-interested family households, but no pet or health-values overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 11,
+        "neutral": false,
+        "detail": "matches natural_food≈wellness, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $42 typical order (1.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 16,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 48,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 48,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: shoppers book fitness and spa services, not replenishable goods.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches natural_food≈wellness, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $78 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 13,
+        "neutral": false,
+        "detail": "shares science_backed≈performance, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 47,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 47,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: activewear buyers with no pet or pet-health signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $112 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 40,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category, though its 45-65 affluent women are demographically close to senior-dog owners.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 12,
+        "neutral": false,
+        "detail": "matches natural_food, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $42 typical order (1.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 16,
+        "neutral": false,
+        "detail": "shares clean_ingredients, science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: functional beverages share clean-ingredient values but nothing else.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $128 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 36,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 44,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 44,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: apparel buyers, with only premium-quality values in common.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches natural_food"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 82,
+        "neutral": false,
+        "detail": "$75 vs $198 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 46,
+        "neutral": false,
+        "detail": "shares clean_ingredients, premium_quality, science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 43,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 43,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: cookware purchases are one-off and gift-driven, not replenishment.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches natural_food≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 94,
+        "neutral": false,
+        "detail": "$75 vs $164 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 28,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: bedding and bath buyers with no pet-health overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches natural_food≈groceries, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 81,
+        "neutral": false,
+        "detail": "$75 vs $28 typical order (2.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 41,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded on weak fit: huge reach but an 18-34, impulse-driven, mid-income audience far from a premium subscription.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $118 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 14,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈sustainability, science_backed≈performance"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 41,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: footwear buyers, no pet or food signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $52 typical order (1.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: socks and basics gifting, unrelated to pet food replenishment.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $142 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: women's footwear with no pet-related purchase intent.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $48 typical order (1.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 19,
+        "neutral": false,
+        "detail": "shares science_backed, premium_quality≈aesthetic, clean_ingredients≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: haircare subscribers, young and mid-income.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $61 typical order (1.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 12,
+        "neutral": false,
+        "detail": "shares premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: an 18-34 beauty audience, far from senior-dog ownership.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$75 vs $89 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded off-category: apparel with no shared interests or values.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 29796
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_004",
+    "persona_id": "persona_004",
+    "persona_name": "The Pet Parent",
+    "angle": "Emotional longevity — more good years with an aging dog",
+    "headline": "For the dog who's slowing down",
+    "body": "Grain-free food formulated by vets for senior dogs, made to support joint health and longevity. Arrives on subscription.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "formulated by vets",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "supports joint health and longevity",
+      "source_quote": "owners who care about joint health and longevity"
+     },
+     {
+      "claim": "Arrives on subscription",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box at a reduced rate, cancel anytime",
+    "tone_notes": "Warm and plain, centered on an aging dog rather than a product pitch. Uses 'formulated by vets' (never 'vet-recommended'), leads with the emotional longevity angle, and the CTA invites label-reading rather than discount-chasing.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All claims map to allowed claims; no upgrade to 'vet-recommended'."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Emotional headline plus ingredient-transparency CTA; avoids cheap/generic tone."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Senior-dog, grain-free, vet-formulated subscription is distinctive."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated health claims for Daily Form audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Senior-dog food on autopilot — one less thing to remember",
+    "headline": "His food shows up. You forget nothing.",
+    "body": "Vet-formulated, grain-free food made for senior dogs, on a subscription that arrives before the bag runs out.",
+    "cta": "Set up delivery",
+    "claims_used": [
+     {
+      "claim": "Vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "subscription delivery",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "Free swap or pause on the first delivery, so signing up feels low-commitment",
+    "tone_notes": "Leads with time-saving autopilot, plain language, no gourmet or luxury framing, no long science explanation. Treats the dog as part of the household routine.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims trace to brief; 'arrives before the bag runs out' is a scheduling framing, not a guarantee."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Time-saving, low-effort framing; avoids luxury positioning."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Senior-dog grain-free subscription specifics."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads naturally, no pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health overclaims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Apply your own evidence-first standard to his bowl",
+    "headline": "The same standard, in his bowl",
+    "body": "Vet-formulated, grain-free food made for senior dogs, built around joint health and longevity. Delivered on subscription.",
+    "cta": "See the formula",
+    "claims_used": [
+     {
+      "claim": "Vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "built around joint health and longevity",
+      "source_quote": "owners who care about joint health and longevity"
+     },
+     {
+      "claim": "Delivered on subscription",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box 20% off, with full ingredient panel shown at checkout",
+    "tone_notes": "Evidence-first and plain: leads with the formulation standard rather than cuteness, names the grain-free ingredient stance and the joint/longevity outcome, no gimmicks or urgency.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims stay within allowed list; no science/clinical invention."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Outcome-focused and formula-transparent without fabricating evidence."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Ties to senior-dog joint/longevity formula."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm and relevant."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Suitable for skeptical Daily Form audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e3d268ba0f-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "Set-and-forget resupply for the senior dog's food bag",
+    "headline": "Senior dog food, on repeat",
+    "body": "Grain-free, vet-formulated food made for senior dogs, sent on a schedule you set. Skip the pet store run.",
+    "cta": "Set up delivery",
+    "claims_used": [
+     {
+      "claim": "Grain-free",
+      "source_quote": "Grain-free"
+     },
+     {
+      "claim": "vet-formulated",
+      "source_quote": "vet-formulated"
+     },
+     {
+      "claim": "made for senior dogs",
+      "source_quote": "dog food for senior dogs"
+     },
+     {
+      "claim": "sent on a schedule (subscription)",
+      "source_quote": "subscription-based"
+     }
+    ],
+    "offer_suggestion": "First subscription box discount, plus clear skip/pause anytime messaging on the landing page",
+    "tone_notes": "Plain and quick, leads with replenishment convenience rather than health science. No quiz, no clinical detail, no urgency. 'On repeat' and 'skip the pet store run' match the set-and-forget preference.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All claims sourced; no invented perks."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Speed/convenience and subscription scheduling emphasized."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Senior grain-free vet-formulated specifics."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "No fake urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsupported health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 31833
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Premium grain-free, vet-formulated dog food for senior dogs, sold on subscription · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 45.0,
+     "max_cpa_usd": 58.5,
+     "allowable_cpa_ratio": 0.6,
+     "first_order_value_usd": 75.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$75 first order (assumed) × 0.60 = $45.00 target CPA: subscription revenue repeats, so a first order can be bought at a larger share of its value. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
+      "role": "test",
+      "fit_score": 54,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 74.1,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "publisher_name": "Tailcrate",
+      "category": "pet",
+      "role": "test",
+      "fit_score": 52,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 74.1,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
+      "role": "test",
+      "fit_score": 52,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 74.1,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_004",
+      "persona_002",
+      "persona_001",
+      "persona_007"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "35-65",
+      "source": "assumed"
+     },
+     "geo": [
+      "US (nationwide)"
+     ],
+     "contextual_interests": [
+      "pets",
+      "pet_health",
+      "natural_food"
+     ],
+     "exclusions": [
+      "pet_food",
+      "pet_pharmacy",
+      "pet_treats"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "e3d268ba0f-persona_004",
+      "persona_id": "persona_004",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e3d268ba0f-persona_002",
+      "persona_id": "persona_002",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e3d268ba0f-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e3d268ba0f-persona_007",
+      "persona_id": "persona_007",
+      "weight": 0.25,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 99.9,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "We assumed a first order of about $75, typical for premium dog food subscriptions.",
+      "We assumed the audience is any gender, skewing 35-65.",
+      "We treated the product as subscription-only since only a subscription is mentioned.",
+      "Allowable CPA is 60% of first order value (subscription); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "e3d268ba0f",
+   "total_ms": 45283,
+   "cost_usd": 0.3841,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 13282,
+     "input_tokens": 7357,
+     "output_tokens": 1146,
+     "cost_usd": 0.065435,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 1,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 13734,
+     "input_tokens": 4636,
+     "output_tokens": 1016,
+     "cost_usd": 0.04858,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_002",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5092,
+     "input_tokens": 2707,
+     "output_tokens": 310,
+     "cost_usd": 0.021285,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5445,
+     "input_tokens": 2712,
+     "output_tokens": 354,
+     "cost_usd": 0.02241,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5568,
+     "input_tokens": 2705,
+     "output_tokens": 338,
+     "cost_usd": 0.021975,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_004",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8389,
+     "input_tokens": 2741,
+     "output_tokens": 636,
+     "cost_usd": 0.029605,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 29794,
+     "input_tokens": 13928,
+     "output_tokens": 2668,
+     "cost_usd": 0.13634,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 9701,
+     "input_tokens": 3265,
+     "output_tokens": 887,
+     "cost_usd": 0.0385,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

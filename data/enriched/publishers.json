@@ -1,0 +1,473 @@
+[
+  {
+    "id": "pub_001",
+    "interests": {
+      "convenience": 1.0,
+      "groceries": 0.8,
+      "alcohol": 0.7,
+      "household": 0.6,
+      "snacks": 0.6
+    },
+    "values": {
+      "convenience_speed": 1.0,
+      "value_price": 0.4
+    },
+    "occasions": {
+      "impulse": 1.0,
+      "replenishment": 0.7
+    },
+    "sells": [
+      "groceries",
+      "alcohol",
+      "cleaning_products",
+      "soft_drinks"
+    ],
+    "evidence": {
+      "impulse": "Impulse-friendly.",
+      "convenience_speed": "High-frequency purchasers."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_002",
+    "interests": {
+      "activewear": 1.0,
+      "fitness": 0.9,
+      "wellness": 0.6,
+      "beauty": 0.4,
+      "apparel_women": 0.6
+    },
+    "values": {
+      "performance": 0.6,
+      "aesthetic": 0.3
+    },
+    "occasions": {
+      "replenishment": 0.4,
+      "self_treat": 0.5
+    },
+    "sells": [
+      "activewear",
+      "womens_apparel",
+      "mens_apparel"
+    ],
+    "evidence": {
+      "fitness": "Fitness-engaged shoppers.",
+      "wellness": "Strong crossover with wellness and beauty."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_003",
+    "interests": {
+      "self_care_services": 1.0,
+      "fitness": 0.9,
+      "wellness": 0.9
+    },
+    "values": {
+      "premium_quality": 0.4
+    },
+    "occasions": {
+      "self_treat": 1.0,
+      "replenishment": 0.4
+    },
+    "sells": [
+      "fitness_classes",
+      "spa_services"
+    ],
+    "evidence": {
+      "self_treat": "Users are actively spending on self-care and fitness."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_004",
+    "interests": {
+      "apparel_women": 1.0,
+      "basics": 0.3
+    },
+    "values": {
+      "premium_quality": 1.0,
+      "heritage": 0.4
+    },
+    "occasions": {
+      "self_treat": 0.5
+    },
+    "sells": [
+      "womens_apparel"
+    ],
+    "evidence": {
+      "premium_quality": "Responds to quality messaging."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_005",
+    "interests": {
+      "apparel_women": 1.0
+    },
+    "values": {
+      "premium_quality": 0.9,
+      "heritage": 0.7
+    },
+    "occasions": {
+      "self_treat": 0.4
+    },
+    "sells": [
+      "womens_apparel"
+    ],
+    "evidence": {
+      "heritage": "Conservative brand sensibility.",
+      "premium_quality": "Highest-AOV apparel publisher in the catalog."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_006",
+    "interests": {
+      "apparel_women": 1.0,
+      "basics": 0.5
+    },
+    "values": {
+      "inclusivity": 1.0
+    },
+    "occasions": {
+      "self_treat": 0.4
+    },
+    "sells": [
+      "womens_apparel",
+      "plus_size_apparel",
+      "intimates"
+    ],
+    "evidence": {
+      "inclusivity": "Audience values representation and fit-focused messaging."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_007",
+    "interests": {
+      "pets": 1.0,
+      "pet_health": 0.8
+    },
+    "values": {
+      "premium_quality": 0.9,
+      "clean_ingredients": 0.5
+    },
+    "occasions": {
+      "replenishment": 1.0
+    },
+    "sells": [
+      "pet_food",
+      "pet_supplies"
+    ],
+    "evidence": {
+      "pet_health": "Owners are health-conscious about pets",
+      "premium_quality": "responsive to premium positioning.",
+      "replenishment": "Subscription-heavy."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_008",
+    "interests": {
+      "natural_food": 1.0,
+      "groceries": 0.8,
+      "wellness": 0.6,
+      "household": 0.3
+    },
+    "values": {
+      "clean_ingredients": 1.0,
+      "sustainability": 0.9,
+      "science_backed": 0.2
+    },
+    "occasions": {
+      "replenishment": 0.9
+    },
+    "sells": [
+      "groceries"
+    ],
+    "evidence": {
+      "clean_ingredients": "Responsive to clean-ingredient, sustainability, and wellness claims.",
+      "sustainability": "Values-driven shoppers."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_009",
+    "interests": {
+      "pets": 1.0,
+      "pet_health": 0.6
+    },
+    "values": {
+      "value_price": 0.4
+    },
+    "occasions": {
+      "replenishment": 1.0
+    },
+    "sells": [
+      "pet_food",
+      "pet_supplies",
+      "pet_pharmacy"
+    ],
+    "evidence": {
+      "replenishment": "repeat-purchase behavior."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_010",
+    "interests": {
+      "basics": 1.0,
+      "apparel_women": 0.4,
+      "apparel_men": 0.4
+    },
+    "values": {
+      "social_good": 1.0
+    },
+    "occasions": {
+      "gift": 1.0,
+      "replenishment": 0.3
+    },
+    "sells": [
+      "socks_basics",
+      "intimates"
+    ],
+    "evidence": {
+      "gift": "Strong gifting season uplift (Nov-Dec).",
+      "social_good": "Audience responds to social-good messaging."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_011",
+    "interests": {
+      "home_textiles": 1.0,
+      "home_decor": 0.6,
+      "wellness": 0.4
+    },
+    "values": {
+      "aesthetic": 1.0,
+      "premium_quality": 0.7
+    },
+    "occasions": {
+      "life_event": 0.5,
+      "self_treat": 0.5
+    },
+    "sells": [
+      "bedding_bath"
+    ],
+    "evidence": {
+      "aesthetic": "Design-conscious urban/suburban buyers.",
+      "wellness": "High cross-sell with home and wellness."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_012",
+    "interests": {
+      "supplements": 1.0,
+      "wellness": 0.9
+    },
+    "values": {
+      "science_backed": 1.0,
+      "clean_ingredients": 0.4
+    },
+    "occasions": {
+      "replenishment": 1.0
+    },
+    "sells": [
+      "vitamins_supplements"
+    ],
+    "evidence": {
+      "science_backed": "Science-forward wellness. Audience skeptical of unsubstantiated health claims."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_013",
+    "interests": {
+      "beauty": 1.0
+    },
+    "values": {
+      "aesthetic": 1.0,
+      "playful": 0.4
+    },
+    "occasions": {
+      "self_treat": 0.8,
+      "impulse": 0.4
+    },
+    "sells": [
+      "skincare",
+      "makeup"
+    ],
+    "evidence": {
+      "aesthetic": "Minimalist aesthetic, identity-driven purchasing."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_014",
+    "interests": {
+      "kitchen": 1.0,
+      "home_decor": 0.3,
+      "natural_food": 0.3
+    },
+    "values": {
+      "sustainability": 1.0,
+      "clean_ingredients": 0.7,
+      "premium_quality": 0.6
+    },
+    "occasions": {
+      "gift": 0.8,
+      "life_event": 0.9
+    },
+    "sells": [
+      "cookware"
+    ],
+    "evidence": {
+      "sustainability": "Sustainability-motivated kitchen buyers.",
+      "life_event": "Gifting and new-home life events drive purchase."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_015",
+    "interests": {
+      "meal_kits": 1.0,
+      "groceries": 0.6,
+      "kids_family": 0.6,
+      "kitchen": 0.4
+    },
+    "values": {
+      "convenience_speed": 1.0
+    },
+    "occasions": {
+      "replenishment": 1.0
+    },
+    "sells": [
+      "meal_kits",
+      "groceries"
+    ],
+    "evidence": {
+      "convenience_speed": "Convenience-motivated but food-interested.",
+      "kids_family": "Family and couples households."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_016",
+    "interests": {
+      "footwear": 1.0,
+      "apparel_women": 0.7
+    },
+    "values": {
+      "sustainability": 1.0,
+      "convenience_speed": 0.3
+    },
+    "occasions": {
+      "self_treat": 0.5
+    },
+    "sells": [
+      "footwear"
+    ],
+    "evidence": {
+      "sustainability": "Sustainability and machine-washable claims resonate."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_017",
+    "interests": {
+      "footwear": 1.0,
+      "activewear": 0.7,
+      "fitness": 0.4
+    },
+    "values": {
+      "sustainability": 0.9,
+      "performance": 0.3
+    },
+    "occasions": {
+      "self_treat": 0.4
+    },
+    "sells": [
+      "footwear",
+      "activewear"
+    ],
+    "evidence": {
+      "sustainability": "Comfort + sustainability messaging."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_018",
+    "interests": {
+      "pets": 1.0,
+      "pet_health": 0.3
+    },
+    "values": {
+      "playful": 1.0
+    },
+    "occasions": {
+      "replenishment": 0.8,
+      "gift": 0.3
+    },
+    "sells": [
+      "pet_toys",
+      "pet_treats",
+      "pet_supplies",
+      "pet_subscription_box"
+    ],
+    "evidence": {
+      "playful": "Fun, playful brand voice converts best."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_019",
+    "interests": {
+      "haircare": 1.0,
+      "beauty": 0.6
+    },
+    "values": {
+      "aesthetic": 0.4,
+      "science_backed": 0.3
+    },
+    "occasions": {
+      "replenishment": 0.6
+    },
+    "sells": [
+      "haircare"
+    ],
+    "evidence": {
+      "haircare": "Personalization-motivated audience."
+    },
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "pub_020",
+    "interests": {
+      "functional_beverages": 1.0,
+      "wellness": 0.6,
+      "natural_food": 0.5,
+      "snacks": 0.3
+    },
+    "values": {
+      "playful": 0.4,
+      "clean_ingredients": 0.5
+    },
+    "occasions": {
+      "impulse": 0.6,
+      "replenishment": 0.5,
+      "self_treat": 0.6
+    },
+    "sells": [
+      "functional_beverages",
+      "soft_drinks"
+    ],
+    "evidence": {
+      "wellness": "Strong overlap with wellness and premium grocery.",
+      "self_treat": "Health-curious but indulgence-seeking."
+    },
+    "enrichment_version": "v1-reviewed"
+  }
+]

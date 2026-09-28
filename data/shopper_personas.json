@@ -1,0 +1,122 @@
+[
+  {
+    "id": "persona_001",
+    "name": "The Wellness Optimizer",
+    "age_range": "28-40",
+    "gender_skew": "female",
+    "description": "Tracks sleep, supplements, and workouts. Treats her body like a system to optimize. Willing to pay premiums for evidence-backed products.",
+    "category_affinities": ["wellness", "fitness", "supplements", "clean_beauty", "organic_grocery"],
+    "price_sensitivity": "low",
+    "messaging_preferences": ["science-backed claims", "ingredient transparency", "outcome-focused"],
+    "disinterested_in": ["fast_fashion", "ultra-processed food", "novelty"],
+    "typical_aov_usd": 95
+  },
+  {
+    "id": "persona_002",
+    "name": "The Busy Parent",
+    "age_range": "32-45",
+    "gender_skew": "balanced",
+    "description": "Dual-income household with kids. Time-poor, convenience-motivated. Buys in bulk, loves subscriptions, trusts brands that have been recommended by other parents.",
+    "category_affinities": ["meal_kits", "household", "kids_products", "pet_food", "convenience"],
+    "price_sensitivity": "medium",
+    "messaging_preferences": ["time-saving", "family-friendly", "trusted by parents", "easy returns"],
+    "disinterested_in": ["luxury positioning", "complicated onboarding"],
+    "typical_aov_usd": 78
+  },
+  {
+    "id": "persona_003",
+    "name": "The Gen Z Aesthete",
+    "age_range": "19-27",
+    "gender_skew": "female-leaning",
+    "description": "Highly visual, identity-expressive buyer. Discovers through TikTok and Instagram. Cares about brand voice, packaging, and whether the brand stands for something.",
+    "category_affinities": ["beauty", "fashion", "functional_beverages", "home_decor", "small_batch"],
+    "price_sensitivity": "medium-high",
+    "messaging_preferences": ["aesthetic-forward", "values-aligned", "novelty", "playful"],
+    "disinterested_in": ["corporate voice", "performance claims without vibe"],
+    "typical_aov_usd": 48
+  },
+  {
+    "id": "persona_004",
+    "name": "The Pet Parent",
+    "age_range": "28-50",
+    "gender_skew": "balanced",
+    "description": "Treats their pet as a family member. Reads ingredient labels on pet food. Will pay a premium for health and quality. Often owns multiple pets.",
+    "category_affinities": ["pet_food", "pet_supplies", "pet_health", "subscription_boxes"],
+    "price_sensitivity": "low-medium",
+    "messaging_preferences": ["vet-recommended", "ingredient transparency", "emotional connection"],
+    "disinterested_in": ["generic pet brands", "ultra-cheap positioning"],
+    "typical_aov_usd": 72
+  },
+  {
+    "id": "persona_005",
+    "name": "The Affluent Classic",
+    "age_range": "50-68",
+    "gender_skew": "female",
+    "description": "Established career or retired, disposable income, values quality and longevity over trends. Shops less frequently but at higher AOVs. Loyal to brands she trusts.",
+    "category_affinities": ["classic_apparel", "home_goods", "travel", "premium_grocery"],
+    "price_sensitivity": "low",
+    "messaging_preferences": ["craftsmanship", "heritage", "quality-focused", "understated"],
+    "disinterested_in": ["trendy language", "loud aesthetics", "influencer positioning"],
+    "typical_aov_usd": 145
+  },
+  {
+    "id": "persona_006",
+    "name": "The Sustainability Buyer",
+    "age_range": "25-45",
+    "gender_skew": "balanced",
+    "description": "Makes purchase decisions based on environmental and ethical footprint. Researches supply chains. Will pay more for genuinely sustainable options and is skeptical of greenwashing.",
+    "category_affinities": ["sustainable_apparel", "clean_beauty", "home_goods", "organic_grocery", "refillable_products"],
+    "price_sensitivity": "medium",
+    "messaging_preferences": ["specific sustainability claims", "supply chain transparency", "certifications"],
+    "disinterested_in": ["vague eco claims", "fast fashion", "excessive packaging"],
+    "typical_aov_usd": 92
+  },
+  {
+    "id": "persona_007",
+    "name": "The Convenience-First Millennial",
+    "age_range": "28-38",
+    "gender_skew": "balanced",
+    "description": "Urban, mid-to-high income, values speed and frictionlessness. Default to what's easy. Heavy subscription user. Low brand loyalty if another option is just as convenient.",
+    "category_affinities": ["instant_delivery", "meal_kits", "subscription_services", "quick_commerce"],
+    "price_sensitivity": "medium",
+    "messaging_preferences": ["speed", "one-click", "subscription perks"],
+    "disinterested_in": ["multi-step purchases", "delayed fulfillment"],
+    "typical_aov_usd": 55
+  },
+  {
+    "id": "persona_008",
+    "name": "The Value-Conscious Shopper",
+    "age_range": "30-55",
+    "gender_skew": "female-leaning",
+    "description": "Budget-aware but not low-end. Looks for deals, reads reviews, comparison shops. Responds well to bundles, first-order discounts, and clear value articulation.",
+    "category_affinities": ["apparel", "household", "groceries", "family_products"],
+    "price_sensitivity": "high",
+    "messaging_preferences": ["discount-forward", "clear value props", "bundle offers", "reviews"],
+    "disinterested_in": ["luxury-only messaging", "vague premium positioning"],
+    "typical_aov_usd": 58
+  },
+  {
+    "id": "persona_009",
+    "name": "The Fitness Enthusiast",
+    "age_range": "22-42",
+    "gender_skew": "balanced",
+    "description": "Works out 4+ times a week, follows fitness creators, buys performance apparel and supplements. Brand-loyal to things that perform. Identity-adjacent purchasing.",
+    "category_affinities": ["activewear", "supplements", "fitness_services", "functional_beverages", "recovery"],
+    "price_sensitivity": "low-medium",
+    "messaging_preferences": ["performance claims", "athlete endorsements", "technical fabrics"],
+    "disinterested_in": ["sedentary-lifestyle products", "fashion-only positioning"],
+    "typical_aov_usd": 88
+  },
+  {
+    "id": "persona_010",
+    "name": "The Gifter",
+    "age_range": "25-60",
+    "gender_skew": "balanced",
+    "description": "Not a persistent persona so much as a mode: any shopper within 30 days of a gifting holiday or life event. Higher AOV, looking for 'impressive-looking' purchases. Very responsive to gift-wrap and gifting messaging.",
+    "category_affinities": ["apparel", "home_goods", "beauty", "gourmet_food", "premium_basics"],
+    "price_sensitivity": "low",
+    "messaging_preferences": ["giftable", "premium presentation", "last-minute shipping", "gift sets"],
+    "disinterested_in": ["subscription-only", "self-care-only framing"],
+    "typical_aov_usd": 95
+  }
+]

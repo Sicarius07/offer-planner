@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/newsreader/opsz.css";
+
+/*
+  Tokens follow tuneloop's palette (paper, ink, emerald) so the two apps read as siblings.
+  shadcn's semantic variables are mapped onto them below, so primitives inherit the look.
+*/
+
+@theme inline {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Newsreader Variable", Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --font-heading: var(--font-serif);
+
+  --color-bg: #f5f3ee;
+  --color-paper: #fffdf9;
+  --color-ink: #1b1a17;
+  --color-soft: #79746b;
+  --color-line: #e6e1d6;
+  --color-track: #ece7dc;
+  --color-emerald: #0f7a55;
+  --color-emerald-wash: #e3f0e8;
+  --color-amber: #b8860b;
+  --color-amber-wash: #f6ecd2;
+  --color-rust: #b4452f;
+  --color-rust-wash: #f5e1dc;
+
+  --text-2xs: 0.75rem;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+:root {
+  --background: #f5f3ee;
+  --foreground: #1b1a17;
+  --card: #fffdf9;
+  --card-foreground: #1b1a17;
+  --popover: #fffdf9;
+  --popover-foreground: #1b1a17;
+  --primary: #0f7a55;
+  --primary-foreground: #fffdf9;
+  --secondary: #ece7dc;
+  --secondary-foreground: #1b1a17;
+  --muted: #ece7dc;
+  --muted-foreground: #79746b;
+  --accent: #ece7dc;
+  --accent-foreground: #1b1a17;
+  --destructive: #b4452f;
+  --border: #e6e1d6;
+  --input: #ddd7ca;
+  --ring: #0f7a55;
+  --radius: 8px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-bg text-ink text-base;
+    font-variant-numeric: tabular-nums;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    font-optical-sizing: auto;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+  ::selection {
+    background: var(--color-emerald-wash);
+  }
+}
+
+/* ── The annotated brief ──────────────────────────────────────────────────────
+   Each phrase the system relied on gets an underline that encodes where the
+   conclusion came from. The underline is a background image so it can be drawn
+   left to right once when the profile arrives (and it wraps across lines). */
+
+.mark {
+  --mark-color: var(--color-emerald);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  padding-bottom: 3px;
+  cursor: default;
+  transition: background-color 150ms ease;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.mark[data-source="stated"] {
+  background-image: linear-gradient(var(--mark-color), var(--mark-color));
+}
+.mark[data-source="inferred"] {
+  --mark-color: var(--color-ink);
+  background-image: repeating-linear-gradient(90deg, var(--mark-color) 0 2px, transparent 2px 5px);
+}
+.mark[data-source="assumed"] {
+  --mark-color: var(--color-amber);
+  background-image: repeating-linear-gradient(90deg, var(--mark-color) 0 2px, transparent 2px 5px);
+}
+.mark[data-active="true"] {
+  background-color: color-mix(in srgb, var(--mark-color) 12%, transparent);
+}
+.mark-draw {
+  animation: mark-draw 260ms cubic-bezier(0.3, 0.6, 0.3, 1) both;
+  animation-delay: calc(var(--i, 0) * 70ms + 120ms);
+}
+@keyframes mark-draw {
+  from { background-size: 0% 2px; }
+  to { background-size: 100% 2px; }
+}
+
+.heat {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark-draw { animation: none; }
+  *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+}

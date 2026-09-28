@@ -1,0 +1,27 @@
+import type { components } from "./schema.gen"
+
+type S = components["schemas"]
+
+export type PlanRequest = S["PlanRequest"]
+export type PlanEvent = S["CachedRun"]["events"][number]
+export type AdvertiserProfile = S["AdvertiserProfile"]
+export type Span = S["Span"]
+export type ClarifyingQuestion = S["ClarifyingQuestion"]
+export type PublisherPlan = S["PublisherPlan"]
+export type PublisherResult = S["PublisherResult"]
+export type Signal = S["Signal"]
+export type EvidenceRef = S["EvidenceRef"]
+export type PersonaPlan = S["PersonaPlan"]
+export type PersonaPick = S["PersonaPick"]
+export type Creative = S["Creative"]
+export type CampaignConfig = S["CampaignConfig"]
+export type Placement = S["Placement"]
+export type StageTrace = S["StageTrace"]
+export type Example = S["Example"]
+export type Meta = S["Meta"]
+export type Catalog = S["Catalog"]
+export type CatalogPublisher = S["CatalogPublisher"]
+export type CatalogPersona = S["CatalogPersona"]
+export type StageName = S["StageEvent"]["stage"]
+export type StageStatus = S["StageEvent"]["status"]
+export type Source = "stated" | "inferred" | "assumed"

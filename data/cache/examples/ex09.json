@@ -1,0 +1,2176 @@
+{
+ "id": "ex09",
+ "brief": "Refillable, concentrated cleaning products. Skip the single-use plastic bottles. Works as well as the big brands. We want to show up where people who already care about sustainability are checking out.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Refillable, concentrated cleaning products. Skip the single-use plastic bottles. Works as well as the big brands. We want to show up where people who already care about sustainability are checking out.",
+    "business_summary": "A cleaning-product brand selling concentrated refills that cut single-use plastic bottles, aimed at sustainability-minded shoppers.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Refillable, concentrated household cleaning products sold as refills to replace single-use plastic bottles",
+     "source": "stated",
+     "evidence": {
+      "text": "Refillable, concentrated cleaning products",
+      "start": 0,
+      "end": 42
+     },
+     "note": null
+    },
+    "sells": [
+     "cleaning_products"
+    ],
+    "competes_with": [
+     "cleaning_products"
+    ],
+    "interests": {
+     "household": 1.0,
+     "home_decor": 0.5,
+     "wellness": 0.5
+    },
+    "values": {
+     "sustainability": 1.0,
+     "value_price": 0.5,
+     "clean_ingredients": 0.5
+    },
+    "occasions": {
+     "replenishment": 1.0,
+     "life_event": 0.5
+    },
+    "positioning": [],
+    "price_tier": {
+     "value": "mid",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No pricing given; refill cleaning brands typically sit mid-market"
+    },
+    "first_order_value_usd": {
+     "value": 35.0,
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical starter kit plus refills order for this category"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief names no gender; household cleaning skews female but is bought by all"
+    },
+    "age_range": {
+     "value": "25-54",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Household-goods buyers running their own home"
+    },
+    "audience": {
+     "value": "Eco-conscious household shoppers who want to reduce plastic waste without giving up cleaning performance",
+     "source": "inferred",
+     "evidence": {
+      "text": "people who already care about sustainability",
+      "start": 139,
+      "end": 183
+     },
+     "note": "Brief describes its target as sustainability-minded shoppers"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No subscription mentioned, though refills imply repeat purchase"
+    },
+    "claims": [
+     {
+      "claim": "Refillable, concentrated formulas",
+      "evidence": {
+       "text": "Refillable, concentrated cleaning products",
+       "start": 0,
+       "end": 42
+      }
+     },
+     {
+      "claim": "Avoids single-use plastic bottles",
+      "evidence": {
+       "text": "Skip the single-use plastic bottles",
+       "start": 44,
+       "end": 79
+      }
+     },
+     {
+      "claim": "Cleans as well as major brands",
+      "evidence": {
+       "text": "Works as well as the big brands",
+       "start": 81,
+       "end": 112
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "We know the product (refillable concentrated cleaning products) and the target shopper; only price and model details are missing.",
+    "assumptions": [
+     "Assumed a mid-market price and about $35 first order since no pricing was given.",
+     "Assumed one-time purchases with repeat refills rather than a subscription.",
+     "Assumed a broad adult household audience, any gender."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What does a typical first order cost?",
+      "why": "First-order value sets which publishers and offers make economic sense.",
+      "suggested_answers": [
+       "Under $25",
+       "$25-$50",
+       "$50-$100"
+      ]
+     },
+     {
+      "question": "Do you offer a refill subscription?",
+      "why": "Subscription offers are framed differently in the ad and change the occasion targeting.",
+      "suggested_answers": [
+       "One-time purchases only",
+       "Optional subscription",
+       "Subscription only"
+      ]
+     },
+     {
+      "question": "What's your brand name and hero product?",
+      "why": "Ads need the brand name and a specific lead product.",
+      "suggested_answers": [
+       "All-purpose spray starter kit",
+       "Full home bundle",
+       "Laundry or dish focus"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 17702
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_006",
+      "name": "The Sustainability Buyer",
+      "score": 68,
+      "why_plausible": "The brief targets sustainability-minded shoppers and this persona lists refillable_products and home_goods as affinities with sustainability as the core purchase driver. Price sensitivity medium fits a $35 mid-tier order.",
+      "lean_into": [
+       "specific sustainability claims: concentrated refills replace single-use plastic bottles",
+       "concrete counts of bottles avoided",
+       "honest performance claim: cleans as well as major brands"
+      ],
+      "avoid": [
+       "vague 'eco-friendly' language with no specifics",
+       "excessive packaging imagery",
+       "unsubstantiated certification claims"
+      ],
+      "ad_angle": "Count the plastic bottles you stop buying — concrete, specific plastic reduction, not vague green talk.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_008"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_002",
+      "name": "The Busy Parent",
+      "score": 64,
+      "why_plausible": "Household and replenishment are top affinities and the brand sells recurring cleaning refills; the parent is time-poor and buys household staples in bulk. Mid price tier fits medium price sensitivity.",
+      "lean_into": [
+       "family-friendly household staple",
+       "stock up once, refills take less space than bottles",
+       "simple, no complicated setup"
+      ],
+      "avoid": [
+       "luxury or premium-only positioning",
+       "preachy environmental lecturing",
+       "complicated multi-step ordering"
+      ],
+      "ad_angle": "One shelf of refills replaces a cabinet of bulky bottles — fewer restock runs for a busy household.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_008"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_008",
+      "name": "The Value-Conscious Shopper",
+      "score": 55,
+      "why_plausible": "Household and groceries affinities plus replenishment behavior match cleaning refills, and concentrates genuinely cost less per use since you stop repurchasing the bottle. High price sensitivity is served by the value_price signal in the brief.",
+      "lean_into": [
+       "clear value props: you pay for cleaner, not water and plastic",
+       "bundle the starter set",
+       "performance equal to big brands"
+      ],
+      "avoid": [
+       "premium eco-luxury tone",
+       "vague sustainability-as-justification-for-price"
+      ],
+      "ad_angle": "Concentrate math: stop paying to ship water and plastic — cost per bottle beats the big brands.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_008"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_007",
+      "name": "The Convenience-First Millennial",
+      "score": 55,
+      "why_plausible": "Replenishment plus household/convenience affinity fits a repeat-purchase cleaning refill, and refills ship small and light, which suits an urban apartment shopper. Medium price sensitivity fits the $35 order.",
+      "lean_into": [
+       "speed and one-click reordering",
+       "lightweight refills that fit a small apartment",
+       "no hauling heavy bottles home"
+      ],
+      "avoid": [
+       "multi-step or fussy refill rituals",
+       "long sustainability manifestos",
+       "delayed fulfillment"
+      ],
+      "ad_angle": "Refills arrive in a padded envelope, not a heavy jug — the easiest way to restock in a city apartment.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_008"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_006",
+      "score": 68,
+      "affinity": 47,
+      "values": 65,
+      "price": 100,
+      "reach": 85,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops household, home_decor, replenishment; responds to sustainability, clean_ingredients"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 64,
+      "affinity": 38,
+      "values": 45,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops wellness, replenishment, household≈natural_food; responds to clean_ingredients, sustainability≈clean_ingredients"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 64,
+      "affinity": 54,
+      "values": 12,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops replenishment, household; responds to value_price"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 57,
+      "affinity": 26,
+      "values": 45,
+      "price": 100,
+      "reach": 91,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops replenishment; responds to clean_ingredients, sustainability≈clean_ingredients"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 55,
+      "affinity": 37,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops replenishment, household≈convenience"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 55,
+      "affinity": 43,
+      "values": 25,
+      "price": 100,
+      "reach": 72,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops household, replenishment; responds to value_price"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 45,
+      "affinity": 29,
+      "values": 4,
+      "price": 100,
+      "reach": 70,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops replenishment, wellness≈supplements; responds to clean_ingredients≈science_backed"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 34,
+      "affinity": 13,
+      "values": 0,
+      "price": 100,
+      "reach": 57,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008"
+      ],
+      "detail": "shops home_decor, wellness≈beauty"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 26,
+      "affinity": 16,
+      "values": 25,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops home_decor, wellness≈functional_beverages; responds to sustainability, clean_ingredients≈sustainability"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 11,
+      "affinity": 15,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops home_decor, wellness≈natural_food, household≈natural_food; price-mismatched for mid"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 13944
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Every refill is one plastic bottle you never buy",
+    "headline": "Each refill is one less plastic bottle",
+    "body": "Concentrated cleaners sold as refills, so you stop buying single-use plastic bottles. They clean as well as the big brands.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "sold as refills / concentrated cleaners",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "stop buying single-use plastic bottles",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Free reusable bottle with a first refill bundle, if the advertiser can support it",
+    "tone_notes": "Specific and countable rather than vaguely green: one refill = one bottle avoided. Plain performance claim answers the skeptic's 'but does it work' without hype, certifications or eco-adjectives.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Refills take up a shelf, not a cabinet — fewer restock runs",
+    "headline": "A shelf of refills, not a cabinet",
+    "body": "Concentrated refills stack small and stock up far. Same clean as the big brands, minus the pile of single-use bottles.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "Same clean as the big brands",
+      "source_quote": "Works as well as the big brands"
+     },
+     {
+      "claim": "minus the pile of single-use bottles",
+      "source_quote": "Skip the single-use plastic bottles"
+     }
+    ],
+    "offer_suggestion": "Bundle price on a starter set of three refills",
+    "tone_notes": "Practical and household-first: space saved, fewer restock trips, no lecturing about the planet and no premium posturing. Plain words, one idea, easy next step.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "You're paying for cleaner, not water and a plastic bottle",
+    "headline": "Buy the cleaner, not the bottle",
+    "body": "Concentrated refills instead of another single-use plastic bottle — and they clean as well as the big brands.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "instead of another single-use plastic bottle",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Starter bundle (bottle + 3 refills) with a first-order discount, plus a lower per-refill price when buying the multi-pack",
+    "tone_notes": "Plain value framing — what your money buys versus what it doesn't — with no price or savings figures invented. Performance parity with big brands answers the 'is the cheaper-seeming option worse?' question. No eco-luxury tone, no sustainability used to justify a premium; the bundle and discount live in the offer suggestion, not the copy.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "Light refills replace heavy bottles — easy restocking for a small apartment",
+    "headline": "Restock without hauling bottles home",
+    "body": "Concentrated refills instead of bulky plastic bottles. They clean as well as the big brands, with no single-use bottle to lug or bin.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "no single-use bottle to lug or bin",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Free shipping on a first refill set, or a reminder-based reorder option at checkout",
+    "tone_notes": "Leads with the logistics win (light refills, nothing heavy to carry) rather than a sustainability manifesto; plain and quick to scan, matching a convenience-first reader. Restocking framing nods to easy repeat ordering without promising a subscription the brief doesn't support.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Every refill is one plastic bottle you never buy",
+    "headline": "Each refill is one less plastic bottle",
+    "body": "Concentrated cleaners sold as refills, so you stop buying single-use plastic bottles. They clean as well as the big brands.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "sold as refills / concentrated cleaners",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "stop buying single-use plastic bottles",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Free reusable bottle with a first refill bundle, if the advertiser can support it",
+    "tone_notes": "Specific and countable rather than vaguely green: one refill = one bottle avoided. Plain performance claim answers the skeptic's 'but does it work' without hype, certifications or eco-adjectives.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims map directly to allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Concrete plastic-avoidance claim, no vague eco language; certifications absent but brief can't back them."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Refill/concentrate model is the product's distinguishing mechanic."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Sustainability framing fits Pantrygood; no unsubstantiated health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "You're paying for cleaner, not water and a plastic bottle",
+    "headline": "Buy the cleaner, not the bottle",
+    "body": "Concentrated refills instead of another single-use plastic bottle — and they clean as well as the big brands.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "instead of another single-use plastic bottle",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Starter bundle (bottle + 3 refills) with a first-order discount, plus a lower per-refill price when buying the multi-pack",
+    "tone_notes": "Plain value framing — what your money buys versus what it doesn't — with no price or savings figures invented. Performance parity with big brands answers the 'is the cheaper-seeming option worse?' question. No eco-luxury tone, no sustainability used to justify a premium; the bundle and discount live in the offer suggestion, not the copy.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims track the brief with no invented discounts or ratings."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "'Buy the cleaner, not the bottle' is a clear value prop with no premium posturing."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Concentrated-refill positioning is product-specific."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no fake urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsupported claims for a values-driven grocery audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "Light refills replace heavy bottles — easy restocking for a small apartment",
+    "headline": "Restock without hauling bottles home",
+    "body": "Concentrated refills instead of bulky plastic bottles. They clean as well as the big brands, with no single-use bottle to lug or bin.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "no single-use bottle to lug or bin",
+      "source_quote": "Skip the single-use plastic bottles"
+     },
+     {
+      "claim": "clean as well as the big brands",
+      "source_quote": "Works as well as the big brands"
+     }
+    ],
+    "offer_suggestion": "Free shipping on a first refill set, or a reminder-based reorder option at checkout",
+    "tone_notes": "Leads with the logistics win (light refills, nothing heavy to carry) rather than a sustainability manifesto; plain and quick to scan, matching a convenience-first reader. Restocking framing nods to easy repeat ordering without promising a subscription the brief doesn't support.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Refill, no-single-use-bottle and parity claims all trace to the brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on effortless restocking; subscription perks not claimable from brief."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Refill-instead-of-bottle restocking is this product's model."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads naturally at checkout, no pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Sustainability angle only, no health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "The only strong match is Pantrygood's values-driven natural-grocery audience; Swiftcart is a direct cleaning-products competitor, most of the catalog is apparel, beauty or pet, so the plan is a single anchor test plus a small sustainability-led home test at Hearthstone Goods.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 34,
+        "neutral": false,
+        "detail": "matches wellness, replenishment, household≈groceries"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 87,
+        "neutral": false,
+        "detail": "$35 vs $86 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 70,
+        "neutral": false,
+        "detail": "shares clean_ingredients, sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 54,
+      "adjustment": 8,
+      "adjustment_reason": "Category scored 34 by treating this as groceries only, but the notes say shoppers are 'Responsive to clean-ingredient, sustainability, and wellness claims' — the exact buying trigger for a plastic-free refill pitch.",
+      "fit": 62,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pantrygood is the clearest match in the catalog: values-driven natural-grocery buyers on a subscription/pantry replenishment cadence, and a $35 refill order is an easy add against an $86 typical basket.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Values-driven shoppers. Responsive to clean-ingredient, sustainability, and wellness claims"
+       },
+       {
+        "field": "subcategories",
+        "quote": "organic"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "86.0"
+       }
+      ],
+      "risk": "High-income West/Northeast buyers may already subscribe to an incumbent refill brand, so the offer must lead on performance parity, not novelty."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 28,
+        "neutral": false,
+        "detail": "matches household, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $28 typical order (1.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares value_price"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 50,
+      "tier": "excluded",
+      "exclusion_reason": "competitor",
+      "conflict": "sells cleaning_products, like you",
+      "adjacent_conflict": null,
+      "rationale": "Swiftcart sells cleaning_products itself, so it is a direct competitor and stays excluded despite 84M impressions.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 16,
+        "neutral": false,
+        "detail": "matches life_event, home_decor≈kitchen, wellness≈natural_food"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 32,
+        "neutral": false,
+        "detail": "$35 vs $198 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 68,
+        "neutral": false,
+        "detail": "shares sustainability, clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 35,
+      "adjustment": 12,
+      "adjustment_reason": "Category scored 16 as cookware, but the notes read 'Sustainability-motivated kitchen buyers' with a 'non_toxic' subcategory and 'new-home life events' — the closest home-and-values intent in the catalog.",
+      "fit": 47,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Hearthstone's buyers are sustainability-motivated and often setting up a new home, which is exactly when a refill system gets adopted; the tradeoff is only 2.8M impressions and a $198 typical basket.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Sustainability-motivated kitchen buyers. Gifting and new-home life events drive purchase"
+       },
+       {
+        "field": "subcategories",
+        "quote": "non_toxic"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "198.0"
+       }
+      ],
+      "risk": "A $35 refill looks trivial next to a $198 cookware order, and low reach means slow learning."
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 23,
+        "neutral": false,
+        "detail": "matches replenishment, household≈groceries, home_decor≈kitchen"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 96,
+        "neutral": false,
+        "detail": "$35 vs $74 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 44,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 44,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Kitchenly's family households buy on convenience, not values — the notes describe them as 'Convenience-motivated but food-interested', with no sustainability signal to hook a refill pitch.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Convenience-motivated but food-interested"
+       }
+      ],
+      "risk": "Meal-kit checkout attention is on tonight's dinner, not household restocking."
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 25,
+        "neutral": false,
+        "detail": "matches wellness, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $38 typical order (0.9×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares clean_ingredients, sustainability≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 43,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 43,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Daily Form's audience is 'skeptical of unsubstantiated health claims', so a 'cleans as well as major brands' claim needs proof, and 4.2M impressions cap the upside anyway.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "skeptical of unsubstantiated health claims"
+       },
+       {
+        "field": "monthly_impressions",
+        "quote": "4200000"
+       }
+      ],
+      "risk": "Unsubstantiated performance claims would be actively penalized by this audience."
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 19,
+        "neutral": false,
+        "detail": "matches wellness, replenishment, household≈natural_food"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $42 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 25,
+        "neutral": false,
+        "detail": "shares clean_ingredients, sustainability≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pop & Sip shoppers are 'Health-curious but indulgence-seeking' beverage buyers — adjacent on wellness values but with no household-supply intent at checkout.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Health-curious but indulgence-seeking"
+       }
+      ],
+      "risk": "Indulgence mindset converts poorly to a chore-category refill purchase."
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 20,
+        "neutral": false,
+        "detail": "matches wellness, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $42 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 41,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Studiogrid users are booking fitness and spa appointments, a services context with no shared values tags and no link to restocking the cleaning cupboard.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Appointment-based booking. Users are actively spending on self-care and fitness"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 9,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 97,
+        "neutral": false,
+        "detail": "$35 vs $73 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares value_price"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 41,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Ruffco is off-category pet retail; big reach but shoppers here buy pet food, not household supplies.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches wellness, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$35 vs $78 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Movewell sells activewear to fitness-engaged shoppers with no sustainability or household signal in its notes.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 9,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $64 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 25,
+        "neutral": false,
+        "detail": "shares clean_ingredients, sustainability≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 38,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 38,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pawline is off-category pet supplies, and its 4.8M impressions would not justify a test even if adjacency were stronger.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches wellness≈fitness"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 66,
+        "neutral": false,
+        "detail": "$35 vs $118 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 56,
+        "neutral": false,
+        "detail": "shares sustainability, clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Cloudfoot's 'Comfort + sustainability messaging' matches the values story, but footwear is off-category so it stays excluded.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Comfort + sustainability messaging"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $35 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Tailcrate is off-category pet, and its notes say a 'Fun, playful brand voice converts best' — a tone a performance-and-sustainability refill pitch won't naturally hit.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Fun, playful brand voice converts best"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 9,
+        "neutral": false,
+        "detail": "matches replenishment, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $48 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 2,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Strandlab is off-category haircare with a personalization hook that doesn't carry over to household refills.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $61 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Velvetline is off-category beauty skewing 18-34, younger than the 25-54 household-shopper target.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $52 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Heartfoot's audience 'responds to social-good messaging', but socks and basics are off-category with only replenishment in common.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Audience responds to social-good messaging"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 54,
+        "neutral": false,
+        "detail": "$35 vs $142 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 62,
+        "neutral": false,
+        "detail": "shares sustainability, clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Stride & Stem shares the sustainability value but sells footwear at a $142 average order, so it's off-category and price-mismatched.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 84,
+        "neutral": false,
+        "detail": "$35 vs $89 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 29,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 29,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Everbody is off-category apparel focused on inclusive sizing, with no household or sustainability overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 20,
+        "neutral": false,
+        "detail": "matches home_decor, wellness, life_event"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 45,
+        "neutral": false,
+        "detail": "$35 vs $164 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 29,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 29,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Northbed's design-conscious home buyers are directionally relevant, but no shared values tags and a $164 typical order make a $35 refill an awkward add-on.",
+      "evidence": [
+       {
+        "field": "avg_order_value_usd",
+        "quote": "164.0"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 69,
+        "neutral": false,
+        "detail": "$35 vs $112 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 27,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 27,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Marlowe & Co. is off-category apparel skewing 45-65, older than the target and described as 'Lower impulse'.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 61,
+        "neutral": false,
+        "detail": "$35 vs $128 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 25,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 25,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Linden Park is off-category apparel with a 50-70 skew and 'Conservative brand sensibility', a poor match for a sustainability-led pitch.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 36302
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1893b65cff-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Refills take up a shelf, not a cabinet",
+    "headline": "A shelf of refills, not a cabinet",
+    "body": "Concentrated refills stack small on the shelf. Same clean as the big brands, minus the pile of single-use plastic bottles.",
+    "cta": "See the refills",
+    "claims_used": [
+     {
+      "claim": "Concentrated refills",
+      "source_quote": "Refillable, concentrated cleaning products"
+     },
+     {
+      "claim": "Same clean as the big brands",
+      "source_quote": "Works as well as the big brands"
+     },
+     {
+      "claim": "minus the pile of single-use plastic bottles",
+      "source_quote": "Skip the single-use plastic bottles"
+     }
+    ],
+    "offer_suggestion": "Bundle price on a starter set of three refills",
+    "tone_notes": "Practical and household-first: space saved, plain words, no lecturing about the planet and no premium posturing. One idea, easy next step.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims map directly to allowed claims with no upgrades."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Practical, household, no luxury tone; parent-trust claims correctly omitted as unsupported."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Shelf-stacking concentrated refills framing is tied to this product format."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Sustainability angle fits Pantrygood with no unsubstantiated health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Refills take up a shelf, not a cabinet — fewer restock runs",
+     "headline": "A shelf of refills, not a cabinet",
+     "body": "Concentrated refills stack small and stock up far. Same clean as the big brands, minus the pile of single-use bottles.",
+     "cta": "See the refills",
+     "claims_used": [
+      {
+       "claim": "Concentrated refills",
+       "source_quote": "Refillable, concentrated cleaning products"
+      },
+      {
+       "claim": "Same clean as the big brands",
+       "source_quote": "Works as well as the big brands"
+      },
+      {
+       "claim": "minus the pile of single-use bottles",
+       "source_quote": "Skip the single-use plastic bottles"
+      }
+     ],
+     "offer_suggestion": "Bundle price on a starter set of three refills",
+     "tone_notes": "Practical and household-first: space saved, fewer restock trips, no lecturing about the planet and no premium posturing. Plain words, one idea, easy next step."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 53736
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Refillable, concentrated household cleaning products sold as refills to replace single-use plastic bottles · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 10.5,
+     "max_cpa_usd": 13.65,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 35.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$35 first order (assumed) × 0.30 = $10.50 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
+      "role": "test",
+      "fit_score": 62,
+      "allocation_pct": 100.0,
+      "budget_usd": 10000.0,
+      "est_conversions": 952.4,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_006",
+      "persona_002",
+      "persona_008",
+      "persona_007"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "25-54",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "household",
+      "home_decor",
+      "wellness"
+     ],
+     "exclusions": [
+      "cleaning_products"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "1893b65cff-persona_006",
+      "persona_id": "persona_006",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "1893b65cff-persona_002",
+      "persona_id": "persona_002",
+      "weight": 0.25,
+      "status": "revised"
+     },
+     {
+      "creative_id": "1893b65cff-persona_008",
+      "persona_id": "persona_008",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "1893b65cff-persona_007",
+      "persona_id": "persona_007",
+      "weight": 0.25,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 100.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed a mid-market price and about $35 first order since no pricing was given.",
+      "Assumed one-time purchases with repeat refills rather than a subscription.",
+      "Assumed a broad adult household audience, any gender.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "1893b65cff",
+   "total_ms": 71448,
+   "cost_usd": 0.4857,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 17701,
+     "input_tokens": 7366,
+     "output_tokens": 1399,
+     "cost_usd": 0.071805,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 2,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 13943,
+     "input_tokens": 4625,
+     "output_tokens": 951,
+     "cost_usd": 0.0469,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_006",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7669,
+     "input_tokens": 2675,
+     "output_tokens": 525,
+     "cost_usd": 0.0265,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_002",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 9503,
+     "input_tokens": 2755,
+     "output_tokens": 304,
+     "cost_usd": 0.021375,
+     "retries": 1,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_008",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 10001,
+     "input_tokens": 2613,
+     "output_tokens": 659,
+     "cost_usd": 0.02954,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 10720,
+     "input_tokens": 2624,
+     "output_tokens": 678,
+     "cost_usd": 0.03007,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 11307,
+     "input_tokens": 3068,
+     "output_tokens": 955,
+     "cost_usd": 0.039215,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 36299,
+     "input_tokens": 14037,
+     "output_tokens": 3299,
+     "cost_usd": 0.15266,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_002",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4146,
+     "input_tokens": 3230,
+     "output_tokens": 293,
+     "cost_usd": 0.023475,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 13607,
+     "input_tokens": 3074,
+     "output_tokens": 1150,
+     "cost_usd": 0.04412,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2173 @@
+{
+ "id": "ex14",
+ "brief": "Bedding. Linen. Actually-breathable stuff made in Portugal. Our customers are mostly people who got tired of the Brooklinen/Parachute aesthetic and want something a little more grown-up.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Bedding. Linen. Actually-breathable stuff made in Portugal. Our customers are mostly people who got tired of the Brooklinen/Parachute aesthetic and want something a little more grown-up.",
+    "business_summary": "A linen bedding brand, made in Portugal, positioned as breathable and more grown-up than mainstream direct-to-consumer bedding brands.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Linen bedding made in Portugal",
+     "source": "stated",
+     "evidence": {
+      "text": "Bedding. Linen. Actually-breathable stuff made in Portugal",
+      "start": 0,
+      "end": 58
+     },
+     "note": null
+    },
+    "sells": [
+     "bedding_bath"
+    ],
+    "competes_with": [
+     "bedding_bath"
+    ],
+    "interests": {
+     "home_textiles": 1.0,
+     "home_decor": 0.5,
+     "wellness": 0.5
+    },
+    "values": {
+     "premium_quality": 1.0,
+     "aesthetic": 1.0,
+     "heritage": 0.5
+    },
+    "occasions": {
+     "self_treat": 1.0,
+     "life_event": 0.5,
+     "gift": 0.5
+    },
+    "positioning": [],
+    "price_tier": {
+     "value": "premium",
+     "source": "inferred",
+     "evidence": {
+      "text": "want something a little more grown-up",
+      "start": 148,
+      "end": 185
+     },
+     "note": "European linen positioned above Brooklinen/Parachute suggests premium pricing"
+    },
+    "first_order_value_usd": {
+     "value": 280.0,
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical linen sheet set order at a premium bedding brand"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief does not specify; bedding sells to all, with some female skew"
+    },
+    "age_range": {
+     "value": "30-55",
+     "source": "inferred",
+     "evidence": {
+      "text": "something a little more grown-up",
+      "start": 153,
+      "end": 185
+     },
+     "note": "Grown-up positioning points to older, established households"
+    },
+    "audience": {
+     "value": "Design-conscious adults furnishing their homes who have outgrown mainstream DTC bedding brands",
+     "source": "inferred",
+     "evidence": {
+      "text": "people who got tired of the Brooklinen/Parachute aesthetic",
+      "start": 85,
+      "end": 143
+     },
+     "note": "Directly describes the stated customer base"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Bedding is typically a one-time purchase; no subscription mentioned"
+    },
+    "claims": [
+     {
+      "claim": "Made in Portugal",
+      "evidence": {
+       "text": "made in Portugal",
+       "start": 42,
+       "end": 58
+      }
+     },
+     {
+      "claim": "Linen bedding",
+      "evidence": {
+       "text": "Bedding. Linen",
+       "start": 0,
+       "end": 14
+      }
+     },
+     {
+      "claim": "Breathable",
+      "evidence": {
+       "text": "Actually-breathable stuff",
+       "start": 16,
+       "end": 41
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "We know the product (linen bedding) and the customer (design-conscious adults trading up from mainstream DTC bedding); only price and audience details are assumed.",
+    "assumptions": [
+     "We assumed a first order of about $280, typical for a premium linen sheet set.",
+     "We assumed the product sells to all genders, ages roughly 30-55.",
+     "We assumed one-time purchases rather than a subscription."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What does a typical first order come to?",
+      "why": "Sets the payout target and which publishers are worth buying on.",
+      "suggested_answers": [
+       "Under $150",
+       "$150-$250",
+       "$250-$400",
+       "$400+"
+      ]
+     },
+     {
+      "question": "Do you have a brand name and hero product to feature in ads?",
+      "why": "Ads need a specific product and name to convert.",
+      "suggested_answers": [
+       "Yes, a linen sheet set",
+       "Yes, duvet covers",
+       "Bundles only",
+       "Not yet"
+      ]
+     },
+     {
+      "question": "Does your customer base skew to any gender or age group?",
+      "why": "Shapes persona selection and creative tone.",
+      "suggested_answers": [
+       "Mostly women 30-55",
+       "Even split",
+       "Skews 40+",
+       "Not sure"
+      ]
+     },
+     {
+      "question": "Beyond breathability and Portuguese manufacture, are there proof points we can use (flax source, OEKO-TEX, thread details)?",
+      "why": "Gives the ads credible claims against Brooklinen and Parachute.",
+      "suggested_answers": [
+       "European flax",
+       "OEKO-TEX certified",
+       "Family-run mill",
+       "No extra claims"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": [
+     "home_textiles"
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 17915
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_005",
+      "name": "The Affluent Classic",
+      "score": 49,
+      "why_plausible": "Values \"quality and longevity over trends\" with home_goods affinity and low price sensitivity, matching premium Portuguese linen at ~$280. Her preference for craftsmanship, heritage and understated tone fits a brand positioned as more grown-up than mainstream DTC.",
+      "lean_into": [
+       "craftsmanship",
+       "heritage — woven and made in Portugal",
+       "quality-focused, linen that lasts and softens with years",
+       "understated tone"
+      ],
+      "avoid": [
+       "trendy DTC language",
+       "influencer name-drops",
+       "loud, maximalist aesthetics"
+      ],
+      "ad_angle": "Old-world craft: Portuguese-made linen built to outlast trends and soften for decades.",
+      "confidence": "high",
+      "reached_via": [],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 57,
+      "why_plausible": "The brief lists gift and life_event occasions, and this persona is in-market for \"impressive-looking\" higher-AOV home goods with low price sensitivity. Linen bedding is a classic wedding/housewarming gift.",
+      "lean_into": [
+       "giftable for weddings and housewarmings",
+       "premium presentation",
+       "a gift that looks more expensive than the usual registry pick"
+      ],
+      "avoid": [
+       "subscription framing",
+       "purely self-care/me-time framing"
+      ],
+      "ad_angle": "The grown-up housewarming/wedding gift: linen bedding that impresses without being obvious.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_014"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 49,
+      "why_plausible": "Tracks sleep and pays premiums for outcome-focused products; the brief's core claim is \"actually-breathable\" linen, a direct sleep-quality lever.",
+      "lean_into": [
+       "outcome-focused: cooler, less-interrupted sleep",
+       "transparency about the material — pure linen, made in Portugal",
+       "breathability as the reason, not a buzzword"
+      ],
+      "avoid": [
+       "novelty or gimmick framing",
+       "unsupported clinical/science claims the brand can't back",
+       "fast-fashion-adjacent trend talk"
+      ],
+      "ad_angle": "Sleep temperature: linen that actually breathes, for people who wake up hot at 3am.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_014"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_006",
+      "name": "The Sustainability Buyer",
+      "score": 47,
+      "why_plausible": "Home_goods affinity and willingness to pay more for genuinely made-well goods; European manufacturing and a durable natural fiber are concrete, non-greenwashed claims. Medium price sensitivity is the main risk at $280.",
+      "lean_into": [
+       "specific claim: made in Portugal, not vaguely 'ethically sourced'",
+       "linen is a natural fiber that wears for years instead of pilling out",
+       "buy-once longevity over replacement cycles"
+      ],
+      "avoid": [
+       "vague eco language like 'sustainable' with no detail",
+       "certifications the brand doesn't hold",
+       "excessive packaging"
+      ],
+      "ad_angle": "Known supply chain: one fiber, one country, sheets you won't replace in two years.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_014"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_010",
+      "score": 57,
+      "affinity": 36,
+      "values": 66,
+      "price": 100,
+      "reach": 57,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "shops gift, home_decor, home_textiles; responds to premium_quality, aesthetic"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 49,
+      "affinity": 22,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "shops wellness, self_treat"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 49,
+      "affinity": 49,
+      "values": 72,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops home_textiles, home_decor, self_treat; responds to premium_quality, heritage"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 47,
+      "affinity": 21,
+      "values": 13,
+      "price": 100,
+      "reach": 85,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "shops home_decor, home_textiles, wellness≈natural_food; responds to heritage, premium_quality≈heritage"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 45,
+      "affinity": 0,
+      "values": 38,
+      "price": 100,
+      "reach": 91,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "responds to premium_quality, heritage≈premium_quality"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 40,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 40,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 36,
+      "affinity": 8,
+      "values": 0,
+      "price": 100,
+      "reach": 70,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "shops wellness≈supplements"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 32,
+      "affinity": 42,
+      "values": 52,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, home_decor, wellness≈functional_beverages; responds to aesthetic, premium_quality≈aesthetic; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 22,
+      "affinity": 0,
+      "values": 0,
+      "price": 30,
+      "reach": 72,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_014"
+      ],
+      "detail": "price-mismatched for premium"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 14090
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Traceable simplicity: one fiber, one country",
+    "headline": "One fiber. One country: Portugal.",
+    "body": "Linen bedding made in Portugal. No blends to decode, no vague sourcing — one natural fiber that breathes, and a place you can name.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "breathes",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set so shoppers can feel the linen before committing at a premium price point",
+    "tone_notes": "Concrete over adjectival: names the fiber and the country instead of saying 'sustainable' or 'ethically sourced'. No certifications claimed, no durability promises beyond what's stated. Plain, adult tone that matches a skeptical researcher.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Sleep temperature — breathability as the reason, not a buzzword",
+    "headline": "For the people who wake up hot",
+    "body": "Linen bedding, made in Portugal. Breathable because of the material, not a finish. Worth a look if temperature is your sleep variable.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "Made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "Breathable",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set so she can feel the weight before committing to a full set",
+    "tone_notes": "Outcome-first and plain: names the 3am overheating problem, then gives the material reason. No clinical or sleep-score claims the brand can't back, no trend talk, no novelty. Transparency reads as spec-sheet honesty, which suits someone who reads labels.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Linen bedding as the grown-up wedding or housewarming gift",
+    "headline": "A housewarming gift they'll keep",
+    "body": "Linen bedding, made in Portugal and genuinely breathable. Quieter than the usual registry pick, and it reads that way in the room.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "genuinely breathable",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Optional gift note or gift box add-on at checkout, if the brand offers one",
+    "tone_notes": "Frames the purchase as a gift for a wedding or new home rather than self-care, with understated premium language ('quieter', 'reads that way in the room') for a low-price-sensitivity shopper who wants to look tasteful, not flashy. No subscription framing, no urgency.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-world Portuguese craft over DTC trend cycles",
+    "headline": "Portuguese linen, quietly made",
+    "body": "Linen bedding made in Portugal. Breathable by nature, plain in the best sense, and indifferent to whatever bedding is trending.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "Breathable by nature",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set on request, so she can judge the weave before buying",
+    "tone_notes": "Understated and craft-led: origin first, no hype words, no influencer or DTC language. 'Quietly made' and 'plain in the best sense' signal grown-up restraint; the trend line stakes out the brief's positioning without naming competitors.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "The one true category match (Northbed) is a bedding competitor and stays excluded, leaving a thin plan built on a single premium-home test at Hearthstone Goods while the rest of the catalog is apparel, pet, and grocery inventory with no home-textile intent.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 30,
+        "neutral": false,
+        "detail": "matches life_event, home_textiles≈kitchen, home_decor≈kitchen"
+       },
+       {
+        "name": "audience",
+        "score": 86,
+        "neutral": false,
+        "detail": "ages 28-48 cover 72% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$280 vs $198 typical order (1.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 38,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 52,
+      "adjustment": 8,
+      "adjustment_reason": "Notes say 'new-home life events drive purchase', a moment when people replace bedding; the category tag only saw kitchen adjacency.",
+      "fit": 60,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Hearthstone's high-income, 28-48 buyers spending ~$198 on premium kitchen goods are the closest non-competing proxy for design-led home shoppers, and its notes name new-home life events that also trigger bedding replacement.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Gifting and new-home life events drive purchase"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "198.0"
+       }
+      ],
+      "risk": "Motivation is sustainability and non-toxic cookware rather than aesthetics, so 'made in Portugal' craft messaging may need a durability/natural-fiber angle to land; 2.8M impressions cap the test size."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 56,
+        "neutral": false,
+        "detail": "matches home_textiles, home_decor, wellness"
+       },
+       {
+        "name": "audience",
+        "score": 86,
+        "neutral": false,
+        "detail": "ages 28-48 cover 72% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$280 vs $164 typical order (1.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 76,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality, heritage≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 69,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 69,
+      "tier": "excluded",
+      "exclusion_reason": "competitor",
+      "conflict": "sells bedding_bath, like you",
+      "adjacent_conflict": null,
+      "rationale": "Northbed sells bedding and bath itself, a direct conflict, even though its design-conscious, high-income buyers would have been the single best match.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 70,
+        "neutral": false,
+        "detail": "ages 45-65 cover 40% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 86,
+        "neutral": false,
+        "detail": "$280 vs $112 typical order (2.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 64,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 43,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 43,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel; the affluent quality-driven women here are appealing but skew 45-65, above the 30-55 target.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 14,
+        "neutral": false,
+        "detail": "matches wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 78,
+        "neutral": false,
+        "detail": "ages 25-44 cover 56% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 62,
+        "neutral": false,
+        "detail": "$280 vs $78 typical order (3.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 16,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category activewear with a $78 order value, far below a $280 bedding purchase.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 23,
+        "neutral": false,
+        "detail": "matches wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 90,
+        "neutral": false,
+        "detail": "ages 28-50 cover 80% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 22,
+        "neutral": false,
+        "detail": "$280 vs $42 typical order (6.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 26,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Weak fit: $42 class bookings are 6.7x below the offer price despite an ideal 28-50 high-income audience.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": false,
+        "detail": "ages 50-70 cover 20% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 94,
+        "neutral": false,
+        "detail": "$280 vs $128 typical order (2.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 61,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel, and its 50-70 'conservative brand sensibility' audience sits outside the 30-55 design-led target.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "ages 30-55 cover 100% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 49,
+        "neutral": false,
+        "detail": "$280 vs $64 typical order (4.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 58,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category pet food; the age match is perfect but there is no home or textile purchase intent.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches home_textiles≈kitchen, home_decor≈kitchen"
+       },
+       {
+        "name": "audience",
+        "score": 94,
+        "neutral": false,
+        "detail": "ages 28-52 cover 88% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 59,
+        "neutral": false,
+        "detail": "$280 vs $74 typical order (3.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category meal kits; convenience-motivated households share no values with a premium craft bedding pitch.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 10,
+        "neutral": false,
+        "detail": "matches wellness"
+       },
+       {
+        "name": "audience",
+        "score": 86,
+        "neutral": false,
+        "detail": "ages 28-48 cover 72% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 68,
+        "neutral": false,
+        "detail": "$280 vs $86 typical order (3.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category groceries; its clean-ingredient values hook doesn't map to aesthetic-led linen.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 86,
+        "neutral": false,
+        "detail": "ages 28-48 cover 72% of 30–55; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$280 vs $142 typical order (2.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category footwear, though professional women at a $142 order value would be a reasonable price match if category rules allowed.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches wellness≈fitness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 80,
+        "neutral": false,
+        "detail": "ages 25-45 cover 60% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 89,
+        "neutral": false,
+        "detail": "$280 vs $118 typical order (2.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 36,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 36,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category footwear; comfort-and-sustainability messaging shares no values with the premium-aesthetic brief.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 82,
+        "neutral": false,
+        "detail": "ages 25-55 cover 100% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 58,
+        "neutral": false,
+        "detail": "$280 vs $73 typical order (3.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category pet retail; huge reach but a mid-income, no-values-overlap audience for a $280 purchase.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 82,
+        "neutral": false,
+        "detail": "ages 30-55 cover 100% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 71,
+        "neutral": false,
+        "detail": "$280 vs $89 typical order (3.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel with a mid-income audience well below premium bedding price points.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 12,
+        "neutral": false,
+        "detail": "matches self_treat, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 40,
+        "neutral": false,
+        "detail": "ages 18-34 cover 16% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 46,
+        "neutral": false,
+        "detail": "$280 vs $61 typical order (4.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 52,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category beauty skewing 18-34, the mainstream-DTC crowd this brand is positioning away from.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 98,
+        "neutral": false,
+        "detail": "ages 25-54 cover 96% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 36,
+        "neutral": false,
+        "detail": "$280 vs $52 typical order (5.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category basics; a $52 sock order is a weak lead-in to $280 linen despite the near-perfect age spread.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 74,
+        "neutral": false,
+        "detail": "ages 22-42 cover 48% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 22,
+        "neutral": false,
+        "detail": "$280 vs $42 typical order (6.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 28,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 28,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Weak fit: $42 beverage buyers skewing 22-42 with no shared values.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches wellness"
+       },
+       {
+        "name": "audience",
+        "score": 74,
+        "neutral": false,
+        "detail": "ages 22-42 cover 48% of 30–55; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 15,
+        "neutral": false,
+        "detail": "$280 vs $38 typical order (7.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 26,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 26,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Weak fit: $38 supplement orders and a claims-skeptical audience offer no route to a premium home purchase.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 48,
+        "neutral": false,
+        "detail": "ages 18-38 cover 32% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 31,
+        "neutral": false,
+        "detail": "$280 vs $48 typical order (5.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 21,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 21,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 21,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category haircare skewing 18-38 and mid income, far from the target buyer.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 1,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 62,
+        "neutral": false,
+        "detail": "ages 25-45 cover 60% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 10,
+        "neutral": false,
+        "detail": "$280 vs $35 typical order (8.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 19,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 19,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category pet subscription; its playful voice and $35 orders clash with a grown-up premium positioning.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 40,
+        "neutral": false,
+        "detail": "ages 18-34 cover 16% of 30–55; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$280 vs $28 typical order (10.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 18,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 18,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category instant delivery; $28 impulse orders from an 18-34 audience are the worst price match in the set.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 25666
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-world Portuguese craft over DTC trend cycles",
+    "headline": "Portuguese linen, quietly made",
+    "body": "Linen bedding made in Portugal. Breathable by nature, plain in the best sense, and indifferent to whatever bedding is trending.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "Breathable by nature",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set on request, so she can judge the weave before buying",
+    "tone_notes": "Understated and craft-led: origin first, no hype words, no influencer or DTC language. 'Quietly made' and 'plain in the best sense' signal grown-up restraint; the trend line stakes out the brief's positioning without naming competitors.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Portugal, linen, breathable all map to allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Understated, craft-leaning, explicitly anti-trend."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Portuguese-made linen is not swappable to a generic competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health or eco claims beyond brief."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Linen bedding as the grown-up wedding or housewarming gift",
+    "headline": "A housewarming gift they'll keep",
+    "body": "Linen bedding, made in Portugal and genuinely breathable. Quieter than the usual registry pick, and it reads that way in the room.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "genuinely breathable",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Optional gift note or gift box add-on at checkout, if the brand offers one",
+    "tone_notes": "Frames the purchase as a gift for a wedding or new home rather than self-care, with understated premium language ('quieter', 'reads that way in the room') for a low-price-sensitivity shopper who wants to look tasteful, not flashy. No subscription framing, no urgency.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims traced to brief; no invented shipping or gift-set promises."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans into housewarming gifting without self-care framing."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Portuguese linen and registry contrast tie it to this product."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads naturally on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Matches Hearthstone's gifting/new-home driver."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Sleep temperature: linen that breathes, for people who wake up hot",
+    "headline": "For the people who wake up hot",
+    "body": "Breathable linen, made in Portugal. Worth a look if temperature is the variable you keep adjusting at 3am.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "Made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "Breathable",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set so she can feel the weight before committing to a full set",
+    "tone_notes": "Outcome-first and plain: names the overheating problem, then states the material and origin without embellishment. No sleep-score or clinical claims, no trend talk, no novelty framing.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only linen, made in Portugal, and breathable are claimed, all in allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Outcome-focused (temperature at 3am) without inventing clinical or science claims the brief can't back."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Portuguese linen and the overheating angle don't transfer to a generic competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated health claims; home/sustainability audience fine."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Sleep temperature — breathability as the reason, not a buzzword",
+     "headline": "For the people who wake up hot",
+     "body": "Linen bedding, made in Portugal. Breathable because of the material, not a finish. Worth a look if temperature is your sleep variable.",
+     "cta": "See the linen",
+     "claims_used": [
+      {
+       "claim": "Linen bedding",
+       "source_quote": "Bedding. Linen"
+      },
+      {
+       "claim": "Made in Portugal",
+       "source_quote": "made in Portugal"
+      },
+      {
+       "claim": "Breathable",
+       "source_quote": "Actually-breathable stuff"
+      }
+     ],
+     "offer_suggestion": "Free swatch set so she can feel the weight before committing to a full set",
+     "tone_notes": "Outcome-first and plain: names the 3am overheating problem, then gives the material reason. No clinical or sleep-score claims the brand can't back, no trend talk, no novelty. Transparency reads as spec-sheet honesty, which suits someone who reads labels."
+    }
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b500447973-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Traceable simplicity: one fiber, one country",
+    "headline": "Linen. Made in Portugal.",
+    "body": "Linen bedding made in Portugal. No vague sourcing — a natural fiber that breathes, and a place you can name.",
+    "cta": "See the linen",
+    "claims_used": [
+     {
+      "claim": "Made in Portugal",
+      "source_quote": "made in Portugal"
+     },
+     {
+      "claim": "Linen bedding",
+      "source_quote": "Bedding. Linen"
+     },
+     {
+      "claim": "a natural fiber that breathes",
+      "source_quote": "Actually-breathable stuff"
+     }
+    ],
+    "offer_suggestion": "Free swatch set so shoppers can feel the linen before committing at a premium price point",
+    "tone_notes": "Concrete over adjectival: names the fiber and the country rather than saying 'sustainable' or 'ethically sourced'. No certifications, no durability or eco promises beyond the brief. Plain, adult tone for a skeptical researcher who wants a supply chain they can point to.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "'Natural fiber that breathes' restates linen plus the allowed breathable claim; no certifications invented."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Names the country of manufacture for supply-chain transparency and avoids vague eco language."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Portugal-made linen framing is not swappable to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Understated, no urgency cues."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Fits Hearthstone's sustainability-motivated buyers without overclaiming."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Traceable simplicity: one fiber, one country",
+     "headline": "One fiber. One country: Portugal.",
+     "body": "Linen bedding made in Portugal. No blends to decode, no vague sourcing — one natural fiber that breathes, and a place you can name.",
+     "cta": "See the linen",
+     "claims_used": [
+      {
+       "claim": "Made in Portugal",
+       "source_quote": "made in Portugal"
+      },
+      {
+       "claim": "Linen bedding",
+       "source_quote": "Bedding. Linen"
+      },
+      {
+       "claim": "breathes",
+       "source_quote": "Actually-breathable stuff"
+      }
+     ],
+     "offer_suggestion": "Free swatch set so shoppers can feel the linen before committing at a premium price point",
+     "tone_notes": "Concrete over adjectival: names the fiber and the country instead of saying 'sustainable' or 'ethically sourced'. No certifications claimed, no durability promises beyond what's stated. Plain, adult tone that matches a skeptical researcher."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 56508
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Linen bedding made in portugal · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 84.0,
+     "max_cpa_usd": 109.2,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 280.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$280 first order (assumed) × 0.30 = $84.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_014",
+      "publisher_name": "Hearthstone Goods",
+      "category": "home",
+      "role": "test",
+      "fit_score": 60,
+      "allocation_pct": 100.0,
+      "budget_usd": 10000.0,
+      "est_conversions": 119.0,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_005",
+      "persona_010",
+      "persona_001",
+      "persona_006"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "30-55",
+      "source": "inferred"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "home_textiles",
+      "home_decor",
+      "wellness"
+     ],
+     "exclusions": [
+      "bedding_bath"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "b500447973-persona_005",
+      "persona_id": "persona_005",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "b500447973-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "b500447973-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.25,
+      "status": "revised"
+     },
+     {
+      "creative_id": "b500447973-persona_006",
+      "persona_id": "persona_006",
+      "weight": 0.25,
+      "status": "revised"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 100.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "We assumed a first order of about $280, typical for a premium linen sheet set.",
+      "We assumed the product sells to all genders, ages roughly 30-55.",
+      "We assumed one-time purchases rather than a subscription.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "b500447973",
+   "total_ms": 74438,
+   "cost_usd": 0.5011,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 17913,
+     "input_tokens": 7375,
+     "output_tokens": 1514,
+     "cost_usd": 0.074725,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 2,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 14088,
+     "input_tokens": 4625,
+     "output_tokens": 973,
+     "cost_usd": 0.04745,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_006",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8125,
+     "input_tokens": 2624,
+     "output_tokens": 527,
+     "cost_usd": 0.026295,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8576,
+     "input_tokens": 2588,
+     "output_tokens": 607,
+     "cost_usd": 0.028115,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 9521,
+     "input_tokens": 2586,
+     "output_tokens": 609,
+     "cost_usd": 0.028155,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_005",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 10479,
+     "input_tokens": 2599,
+     "output_tokens": 698,
+     "cost_usd": 0.030445,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 25663,
+     "input_tokens": 14373,
+     "output_tokens": 2281,
+     "cost_usd": 0.12889,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 13407,
+     "input_tokens": 2972,
+     "output_tokens": 1200,
+     "cost_usd": 0.04486,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4291,
+     "input_tokens": 3235,
+     "output_tokens": 288,
+     "cost_usd": 0.023375,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_006",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4792,
+     "input_tokens": 3300,
+     "output_tokens": 329,
+     "cost_usd": 0.024725,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 13722,
+     "input_tokens": 2965,
+     "output_tokens": 1169,
+     "cost_usd": 0.04405,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

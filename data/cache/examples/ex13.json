@@ -1,0 +1,2284 @@
+{
+ "id": "ex13",
+ "brief": "Workout supplements: pre-workout, creatine, protein. We compete on price, not on marketing. Same formulations as the expensive brands for half the cost.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Workout supplements: pre-workout, creatine, protein. We compete on price, not on marketing. Same formulations as the expensive brands for half the cost.",
+    "business_summary": "A budget-priced workout supplement brand selling pre-workout, creatine and protein at about half the cost of premium competitors.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Workout supplements including pre-workout, creatine and protein powder, sold at low prices",
+     "source": "stated",
+     "evidence": {
+      "text": "Workout supplements: pre-workout, creatine, protein",
+      "start": 0,
+      "end": 51
+     },
+     "note": null
+    },
+    "sells": [
+     "sports_nutrition"
+    ],
+    "competes_with": [
+     "sports_nutrition",
+     "vitamins_supplements",
+     "protein_snacks"
+    ],
+    "interests": {
+     "fitness": 1.0,
+     "supplements": 1.0,
+     "activewear": 0.5,
+     "wellness": 0.5
+    },
+    "values": {
+     "value_price": 1.0,
+     "performance": 0.5,
+     "science_backed": 0.5
+    },
+    "occasions": {
+     "replenishment": 1.0,
+     "self_treat": 0.5
+    },
+    "positioning": [
+     "budget_positioning"
+    ],
+    "price_tier": {
+     "value": "value",
+     "source": "stated",
+     "evidence": {
+      "text": "We compete on price",
+      "start": 53,
+      "end": 72
+     },
+     "note": null
+    },
+    "first_order_value_usd": {
+     "value": 40.0,
+     "source": "inferred",
+     "evidence": {
+      "text": "Same formulations as the expensive brands for half the cost",
+      "start": 92,
+      "end": 151
+     },
+     "note": "Typical supplement order at roughly half premium pricing"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief does not specify; sports nutrition skews male but sells to all"
+    },
+    "age_range": {
+     "value": "18-40",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical age range for pre-workout and creatine buyers"
+    },
+    "audience": {
+     "value": "Price-conscious gym-goers and lifters who buy supplements regularly and compare ingredient labels",
+     "source": "inferred",
+     "evidence": {
+      "text": "Same formulations as the expensive brands for half the cost",
+      "start": 92,
+      "end": 151
+     },
+     "note": "Implied by value-focused, label-comparing pitch"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No subscription mentioned; supplements often sold as repeat one-time purchases"
+    },
+    "claims": [
+     {
+      "claim": "Sells pre-workout, creatine and protein",
+      "evidence": {
+       "text": "pre-workout, creatine, protein",
+       "start": 21,
+       "end": 51
+      }
+     },
+     {
+      "claim": "Same formulations as expensive brands",
+      "evidence": {
+       "text": "Same formulations as the expensive brands",
+       "start": 92,
+       "end": 133
+      }
+     },
+     {
+      "claim": "Half the cost of expensive brands",
+      "evidence": {
+       "text": "for half the cost",
+       "start": 134,
+       "end": 151
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "The product category and value positioning are explicit; only price point, brand name and audience details are missing.",
+    "assumptions": [
+     "Assumed a first order of about $40, based on the half-price claim.",
+     "Assumed buyers are adults 18-40 of any gender who work out regularly.",
+     "Assumed one-time purchases rather than a subscription."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What is your average first order value?",
+      "why": "Sets payout economics and which publishers are worth targeting.",
+      "suggested_answers": [
+       "Under $30",
+       "$30-50",
+       "$50-80",
+       "Over $80"
+      ]
+     },
+     {
+      "question": "Do you offer a subscribe-and-save option?",
+      "why": "Changes whether ads lead with replenishment or one-time savings.",
+      "suggested_answers": [
+       "One-time only",
+       "Subscription available",
+       "Subscription only"
+      ]
+     },
+     {
+      "question": "Who is your core customer?",
+      "why": "Shapes persona selection and ad voice.",
+      "suggested_answers": [
+       "Male lifters",
+       "Mixed gym-goers",
+       "Women in fitness",
+       "Endurance athletes"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 14248
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_009",
+      "name": "The Fitness Enthusiast",
+      "score": 74,
+      "why_plausible": "Trains 4+ times a week and already buys supplements and recovery products, so replenishment volume is high. Price sensitivity is low-medium, so the pitch is not 'cheap' but 'same formula, more of it'.",
+      "lean_into": [
+       "performance claims",
+       "clinically used doses that actually perform",
+       "stock up without changing your stack"
+      ],
+      "avoid": [
+       "fashion-only positioning",
+       "sedentary-lifestyle framing",
+       "implying budget means weaker formulas"
+      ],
+      "ad_angle": "Same formulations the expensive brands use — keep your performance, double your supply.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_020",
+       "pub_012",
+       "pub_017",
+       "pub_002"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 66,
+      "why_plausible": "Tracks supplements and workouts and responds to science-backed claims and ingredient transparency, which fits the brand's 'same formulations' claim. Price sensitivity is low, so lead with label scrutiny rather than discounts.",
+      "lean_into": [
+       "ingredient transparency",
+       "science-backed claims",
+       "outcome-focused"
+      ],
+      "avoid": [
+       "novelty gimmicks",
+       "hype/bro-gym tone",
+       "cheapness as the main point"
+      ],
+      "ad_angle": "Compare the labels: identical ingredients to the premium tubs — you're paying for marketing, not efficacy.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_020",
+       "pub_012",
+       "pub_008",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_008",
+      "name": "The Value-Conscious Shopper",
+      "score": 48,
+      "why_plausible": "High price sensitivity and responds to discount-forward, clear value props and bundle offers, which is exactly this brand's whole positioning. Supplements are a recurring replenishment buy where cost adds up.",
+      "lean_into": [
+       "clear value props",
+       "bundle offers",
+       "reviews",
+       "half the cost of the big brands"
+      ],
+      "avoid": [
+       "vague premium positioning",
+       "luxury-only messaging",
+       "elite-athlete jargon"
+      ],
+      "ad_angle": "Half the price per serving — do the math on your monthly supplement bill.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_003",
+       "pub_008",
+       "pub_017",
+       "pub_002"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_002",
+      "name": "The Busy Parent",
+      "score": 51,
+      "why_plausible": "Medium price sensitivity, buys in bulk and replenishes household staples; a parent squeezing in gym time wants protein that doesn't blow the family budget. Disinterested in luxury positioning, which this brand never uses.",
+      "lean_into": [
+       "value for a household budget",
+       "easy bulk restock",
+       "no-nonsense, no complicated onboarding"
+      ],
+      "avoid": [
+       "luxury positioning",
+       "hardcore bodybuilder imagery",
+       "complicated stacking protocols"
+      ],
+      "ad_angle": "Protein that fits the family budget — bulk restock for the parent who still makes it to the gym.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_017",
+       "pub_008",
+       "pub_003",
+       "pub_002"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_009",
+      "score": 74,
+      "affinity": 76,
+      "values": 40,
+      "price": 100,
+      "reach": 83,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012",
+       "pub_017",
+       "pub_002",
+       "pub_008",
+       "pub_003"
+      ],
+      "detail": "shops fitness, activewear, supplements; responds to performance, science_backed"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 66,
+      "affinity": 76,
+      "values": 38,
+      "price": 30,
+      "reach": 96,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012",
+       "pub_008",
+       "pub_003",
+       "pub_002",
+       "pub_017"
+      ],
+      "detail": "shops wellness, supplements, fitness; responds to science_backed, performance; price-mismatched for value"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 51,
+      "affinity": 22,
+      "values": 25,
+      "price": 100,
+      "reach": 90,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_017",
+       "pub_008",
+       "pub_003",
+       "pub_002",
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops replenishment; responds to value_price"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 48,
+      "affinity": 20,
+      "values": 0,
+      "price": 100,
+      "reach": 98,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_017",
+       "pub_008",
+       "pub_003",
+       "pub_002",
+       "pub_012"
+      ],
+      "detail": "shops replenishment"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 48,
+      "affinity": 19,
+      "values": 50,
+      "price": 100,
+      "reach": 60,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_008",
+       "pub_017",
+       "pub_002"
+      ],
+      "detail": "shops replenishment, activewear≈apparel_women; responds to value_price"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 36,
+      "affinity": 21,
+      "values": 4,
+      "price": 30,
+      "reach": 88,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_017",
+       "pub_002",
+       "pub_020",
+       "pub_008",
+       "pub_003",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, wellness≈natural_food, activewear≈apparel_women; responds to science_backed≈clean_ingredients; price-mismatched for value"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 32,
+      "affinity": 24,
+      "values": 0,
+      "price": 100,
+      "reach": 28,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops self_treat, wellness≈functional_beverages, fitness≈functional_beverages"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 20,
+      "affinity": 4,
+      "values": 0,
+      "price": 30,
+      "reach": 54,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_017",
+       "pub_008",
+       "pub_002"
+      ],
+      "detail": "shops wellness≈beauty, activewear≈apparel_women; price-mismatched for value"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 12,
+      "affinity": 20,
+      "values": 28,
+      "price": 30,
+      "reach": 77,
+      "conflicts": [
+       "budget_positioning"
+      ],
+      "reach_publishers": [
+       "pub_003",
+       "pub_008",
+       "pub_017",
+       "pub_002",
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops replenishment; responds to science_backed, performance≈science_backed; price-mismatched for value; dislikes budget_positioning"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 10,
+      "affinity": 13,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, activewear≈apparel_women, wellness≈natural_food; price-mismatched for value"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 12161
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "Do the math on your monthly supplement spend",
+    "headline": "Same formulas. Half the price.",
+    "body": "Pre-workout, creatine and protein with the same formulations as the expensive brands, for half the cost. Add up what you spend monthly.",
+    "cta": "Compare prices",
+    "claims_used": [
+     {
+      "claim": "Same formulas",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "Half the price / half the cost",
+      "source_quote": "for half the cost"
+     },
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     }
+    ],
+    "offer_suggestion": "Bundle price on pre-workout + creatine + protein bought together, or 15% off first order",
+    "tone_notes": "Straight value math, no premium posturing or athlete jargon. Invites comparison shopping, which this shopper does anyway; CTA rewards the price-checking habit.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Protein as a household staple you restock, not a splurge",
+    "headline": "Protein that fits the grocery budget",
+    "body": "Same formulations as the expensive brands, half the cost. Stock up on protein, creatine and pre-workout with the rest of the shopping.",
+    "cta": "Stock up",
+    "claims_used": [
+     {
+      "claim": "Same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "half the cost",
+      "source_quote": "for half the cost"
+     },
+     {
+      "claim": "protein, creatine and pre-workout",
+      "source_quote": "pre-workout, creatine, protein"
+     }
+    ],
+    "offer_suggestion": "Multi-tub bundle price on protein (e.g. buy 2, save on the second) to suit bulk restockers",
+    "tone_notes": "Plain and household-framed: protein sits next to the groceries, not in a gym. No bodybuilder language, no luxury framing, no stacking protocols \\u2014 just price and restocking.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Same formulations as premium brands, so your stack stays identical while your supply doubles",
+    "headline": "Same formulas. Twice the tubs.",
+    "body": "Pre-workout, creatine and protein built on the same formulations as the expensive brands, at half the cost. Your stack doesn't change.",
+    "cta": "See the lineup",
+    "claims_used": [
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     },
+     {
+      "claim": "same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "at half the cost",
+      "source_quote": "for half the cost"
+     }
+    ],
+    "offer_suggestion": "Bundle price on a 3-item stack (pre-workout + creatine + protein) for first-time buyers",
+    "tone_notes": "Leads with formulation parity rather than 'cheap', so it reads as performance-first for someone loyal to what works. Plain, technical phrasing suits an audience skeptical of hype; no lifestyle or fashion framing, no suggestion the formula is lighter.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Label-for-label identical; the premium price is marketing, not efficacy",
+    "headline": "Read the label, not the branding",
+    "body": "Pre-workout, creatine and protein with the same formulations as the expensive brands, at half the cost. Compare them line by line.",
+    "cta": "Compare labels",
+    "claims_used": [
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     },
+     {
+      "claim": "same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "at half the cost",
+      "source_quote": "for half the cost"
+     }
+    ],
+    "offer_suggestion": "Link to a side-by-side ingredient/dose comparison page for first-time visitors",
+    "tone_notes": "Leads with label scrutiny and formulation sameness rather than cheapness or gym hype; invites her to verify rather than trust, which suits a low-price-sensitivity, evidence-driven reader.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Label-for-label identical; the premium price is marketing, not efficacy",
+    "headline": "Read the label, not the branding",
+    "body": "Pre-workout, creatine and protein with the same formulations as the expensive brands, at half the cost. Compare them line by line.",
+    "cta": "Compare labels",
+    "claims_used": [
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     },
+     {
+      "claim": "same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "at half the cost",
+      "source_quote": "for half the cost"
+     }
+    ],
+    "offer_suggestion": "Link to a side-by-side ingredient/dose comparison page for first-time visitors",
+    "tone_notes": "Leads with label scrutiny and formulation sameness rather than cheapness or gym hype; invites her to verify rather than trust, which suits a low-price-sensitivity, evidence-driven reader.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only formulation-parity, product list and half-cost claims, all in allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Label-comparison framing serves ingredient transparency without inventing science-backed claims."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Same-formulation-at-half-cost comparison is this advertiser's specific pitch."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Quiet, informational tone suited to an order-confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated health claims for Daily Form's skeptical audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "Do the math on your monthly supplement spend",
+    "headline": "Same formulas. Half the price.",
+    "body": "Pre-workout, creatine and protein with the same formulations as the expensive brands, for half the cost. Add up what you spend monthly.",
+    "cta": "Compare prices",
+    "claims_used": [
+     {
+      "claim": "Same formulas",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "Half the price / half the cost",
+      "source_quote": "for half the cost"
+     },
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     }
+    ],
+    "offer_suggestion": "Bundle price on pre-workout + creatine + protein bought together, or 15% off first order",
+    "tone_notes": "Straight value math, no premium posturing or athlete jargon. Invites comparison shopping, which this shopper does anyway; CTA rewards the price-checking habit.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims map directly to allowed formulation and half-cost language; no invented discount."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Clear value prop and price comparison; avoids luxury or vague premium positioning."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Formulation-parity-at-half-price is not transferable to a premium competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "No urgency or pressure language."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Price-only messaging, no health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "Protein as a household staple you restock, not a splurge",
+    "headline": "Protein that fits the grocery budget",
+    "body": "Same formulations as the expensive brands, half the cost. Stock up on protein, creatine and pre-workout with the rest of the shopping.",
+    "cta": "Stock up",
+    "claims_used": [
+     {
+      "claim": "Same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "half the cost",
+      "source_quote": "for half the cost"
+     },
+     {
+      "claim": "protein, creatine and pre-workout",
+      "source_quote": "pre-workout, creatine, protein"
+     }
+    ],
+    "offer_suggestion": "Multi-tub bundle price on protein (e.g. buy 2, save on the second) to suit bulk restockers",
+    "tone_notes": "Plain and household-framed: protein sits next to the groceries, not in a gym. No bodybuilder language, no luxury framing, no stacking protocols \\u2014 just price and restocking.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Formulation parity, half cost and product list all traceable to the brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Budget and stock-up-with-the-shopping framing fits; avoids luxury positioning and complexity."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Anchored in the same-formulation, half-cost supplement pitch."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm and relevant beside a grocery or wellness confirmation."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No clean-ingredient or health claims beyond what's supported."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "No direct supplement competitors block the plan, so it anchors on Movewell's fitness-engaged apparel audience with fitness-services, supplement and functional-beverage tests, while the long tail of apparel, pet and home publishers drops out as off-category.",
+    "recommended": [
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 64,
+        "neutral": false,
+        "detail": "matches activewear, fitness, wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $78 typical order (0.5×)"
+       },
+       {
+        "name": "values",
+        "score": 21,
+        "neutral": false,
+        "detail": "shares performance, science_backed≈performance"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 71,
+      "adjustment": 8,
+      "adjustment_reason": "Notes say 'Fitness-engaged shoppers', the single closest behavioral match to gym-goers buying supplements, and 22M impressions is the largest reach among non-excluded publishers — the values score (21) understates fit because it penalizes a price-led brand rather than a category mismatch.",
+      "fit": 79,
+      "tier": "recommended",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Movewell's 'Fitness-engaged shoppers' are the people who actually buy pre-workout and protein, and at $78 typical order a $40 supplement offer reads as an easy add-on. Highest usable reach in the plan at 22M monthly impressions.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Fitness-engaged shoppers"
+       },
+       {
+        "field": "monthly_impressions",
+        "quote": "22000000"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "78.0"
+       }
+      ],
+      "risk": "82% female and mid-high income; creatine/pre-workout creative skewed to male lifters or leaning hard on 'half the cost' may not land with this activewear buyer."
+     }
+    ],
+    "test": [
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 68,
+        "neutral": false,
+        "detail": "matches fitness, wellness, activewear≈fitness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $42 typical order (1.0×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 68,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 68,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Studiogrid books fitness classes and personal training, so buyers are mid-workout-routine and the $42 typical spend sits right at the $40 supplement price. Natural moment to pitch replenishable protein or creatine.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Users are actively spending on self-care and fitness"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "42.0"
+       }
+      ],
+      "risk": "A high-income, 28-50, spa-and-yoga audience skews away from price-led lifting supplements; the 'half the cost' hook is the weakest part of the pitch here."
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 61,
+        "neutral": false,
+        "detail": "matches supplements, wellness, fitness≈supplements"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $38 typical order (1.1×)"
+       },
+       {
+        "name": "values",
+        "score": 35,
+        "neutral": false,
+        "detail": "shares science_backed, performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 68,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 68,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells vitamins_supplements, a close substitute",
+      "rationale": "Closest category match in the catalog — this audience already buys vitamins and supplements at a near-identical $38 order — but that overlap is exactly why it is capped at test spend.",
+      "evidence": [
+       {
+        "field": "subcategories",
+        "quote": "supplements"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "38.0"
+       },
+       {
+        "field": "notes",
+        "quote": "Audience skeptical of unsubstantiated health claims"
+       }
+      ],
+      "risk": "Notes flag an audience 'skeptical of unsubstantiated health claims', and the brief's 'Same formulations as the expensive brands' is a bare assertion; without label proof this placement can backfire. Also 89% female versus a lifter-coded product."
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 35,
+        "neutral": false,
+        "detail": "matches wellness, replenishment, supplements≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 95,
+        "neutral": false,
+        "detail": "$40 vs $86 typical order (0.5×)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares science_backed≈clean_ingredients, performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 55,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 55,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pantrygood shoppers buy replenishable consumables and respond to 'clean-ingredient' and wellness claims, which is adjacent to protein but not the same intent as gym supplementation.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Responsive to clean-ingredient, sustainability, and wellness claims"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "86.0"
+       }
+      ],
+      "risk": "Notes describe 'Values-driven shoppers' at high income — a brand that competes on price rather than sourcing or sustainability has little to say to them."
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 35,
+        "neutral": false,
+        "detail": "matches activewear, fitness≈activewear, supplements≈fitness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 75,
+        "neutral": false,
+        "detail": "$40 vs $118 typical order (0.3×)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares performance, science_backed≈performance"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 50,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Activewear footwear gives a plausible fitness read, but at $118 a typical order this is a comfort-and-sustainability buyer, not a price-comparing lifter.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Comfort + sustainability messaging"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "118.0"
+       }
+      ],
+      "risk": "'Tech-adjacent urban professionals' at 5.8M impressions means thin volume and an audience unmoved by a budget pitch."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 9,
+        "neutral": false,
+        "detail": "matches replenishment, supplements≈snacks"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $28 typical order (1.4×)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares value_price"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 52,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 52,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded as off-category despite the best demographic match here — 18-34, 51% male, mid income, impulse-friendly, 84M impressions — worth revisiting if the category rule is ever relaxed.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $73 typical order (0.5×)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares value_price"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 50,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pet food and supplies buyers; no overlap with sports nutrition despite the large reach.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 35,
+        "neutral": false,
+        "detail": "matches wellness, supplements≈wellness, fitness≈functional_beverages"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $42 typical order (1.0×)"
+       },
+       {
+        "name": "values",
+        "score": 4,
+        "neutral": false,
+        "detail": "shares science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 53,
+      "adjustment": -6,
+      "adjustment_reason": "Notes describe the audience as 'Health-curious but indulgence-seeking', which is the opposite of the label-comparing lifter in the brief's audience; the category score treats functional beverages as a fitness proxy it isn't.",
+      "fit": 47,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Price match is perfect at $42 versus a $40 offer, but gut-health soda buyers are browsing wellness for fun, not tracking creatine doses.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Health-curious but indulgence-seeking"
+       },
+       {
+        "field": "subcategories",
+        "quote": "gut_health"
+       }
+      ],
+      "risk": "Low intent for performance supplements; expect clicks without conversion."
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $74 typical order (0.5×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Meal-kit households buy convenience dinners, not gym supplements; excluded off-category.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $64 typical order (0.6×)"
+       },
+       {
+        "name": "values",
+        "score": 4,
+        "neutral": false,
+        "detail": "shares science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pet food and supplies only; the health angle is about dogs, not lifters.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches self_treat, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $61 typical order (0.7×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Skincare and makeup buyers; no sports-nutrition overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $35 typical order (1.1×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Dog toys and treats; off-category for workout supplements.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 6,
+        "neutral": false,
+        "detail": "matches replenishment, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $48 typical order (0.8×)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares science_backed, performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Haircare personalization audience, 93% female; no supplement overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid income for value price"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$40 vs $89 typical order (0.4×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 41,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Workwear and intimates for women 30-55; off-category with no fitness signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $52 typical order (0.8×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Socks and basics with a gifting skew; no connection to supplement replenishment.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 78,
+        "neutral": false,
+        "detail": "$40 vs $112 typical order (0.4×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Affluent women 45-65 buying workwear; off-category and off-age for an 18-40 supplement brand.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 21,
+        "neutral": false,
+        "detail": "matches wellness, supplements≈wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 53,
+        "neutral": false,
+        "detail": "$40 vs $164 typical order (0.2×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Bedding buyers at a $164 order; weak fit and a price gulf against a $40 offer.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 19,
+        "neutral": false,
+        "detail": "matches activewear≈footwear, fitness≈footwear, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 63,
+        "neutral": false,
+        "detail": "$40 vs $142 typical order (0.3×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Professional women's footwear at $142; the sustainability pitch shares nothing with a budget supplement.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 69,
+        "neutral": false,
+        "detail": "$40 vs $128 typical order (0.3×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 37,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 37,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Classic womenswear for a 50-70 audience; off-category and far from the 18-40 target.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches wellness≈natural_food"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for value price"
+       },
+       {
+        "name": "price",
+        "score": 41,
+        "neutral": false,
+        "detail": "$40 vs $198 typical order (0.2×)"
+       },
+       {
+        "name": "values",
+        "score": 5,
+        "neutral": false,
+        "detail": "shares science_backed≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Cookware at a $198 order; off-category and the lowest reach in the catalog.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 37066
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "5b728db198-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Formulation parity means the stack stays the same while the spend halves",
+    "headline": "Same formulas. Half the cost.",
+    "body": "Pre-workout, creatine and protein built on the same formulations as the expensive brands. Your stack doesn't change — your supply doubles.",
+    "cta": "See the lineup",
+    "claims_used": [
+     {
+      "claim": "Pre-workout, creatine and protein",
+      "source_quote": "pre-workout, creatine, protein"
+     },
+     {
+      "claim": "the same formulations as the expensive brands",
+      "source_quote": "Same formulations as the expensive brands"
+     },
+     {
+      "claim": "Half the cost",
+      "source_quote": "for half the cost"
+     }
+    ],
+    "offer_suggestion": "Bundle price on a 3-item stack (pre-workout + creatine + protein) for first-time buyers",
+    "tone_notes": "Leads on formulation parity, not on being cheap, so it reads performance-first for someone loyal to what already works. Plain and technical for a hype-skeptical reader; no lifestyle or fashion framing and no hint that a lower price means a lighter formula.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims map to allowed claims; no invented endorsements."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Speaks to training stack and supply without sedentary or fashion-only angles; athlete endorsements aren't available in brief."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Same-formulation-at-half-cost positioning with named product categories is distinctive."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated health or performance claims for science-skeptical audiences."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Same formulations as premium brands, so your stack stays identical while your supply doubles",
+     "headline": "Same formulas. Twice the tubs.",
+     "body": "Pre-workout, creatine and protein built on the same formulations as the expensive brands, at half the cost. Your stack doesn't change.",
+     "cta": "See the lineup",
+     "claims_used": [
+      {
+       "claim": "Pre-workout, creatine and protein",
+       "source_quote": "pre-workout, creatine, protein"
+      },
+      {
+       "claim": "same formulations as the expensive brands",
+       "source_quote": "Same formulations as the expensive brands"
+      },
+      {
+       "claim": "at half the cost",
+       "source_quote": "for half the cost"
+      }
+     ],
+     "offer_suggestion": "Bundle price on a 3-item stack (pre-workout + creatine + protein) for first-time buyers",
+     "tone_notes": "Leads with formulation parity rather than 'cheap', so it reads as performance-first for someone loyal to what works. Plain, technical phrasing suits an audience skeptical of hype; no lifestyle or fashion framing, no suggestion the formula is lighter."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 53231
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Workout supplements including pre-workout, creatine and protein powder, sold at low prices · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 12.0,
+     "max_cpa_usd": 15.6,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 40.0,
+     "first_order_value_source": "inferred",
+     "learning_period_days": 14,
+     "rationale": "$40 first order × 0.30 = $12.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
+      "role": "core",
+      "fit_score": 79,
+      "allocation_pct": 85.0,
+      "budget_usd": 8500.0,
+      "est_conversions": 708.3,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "test",
+      "fit_score": 68,
+      "allocation_pct": 3.8,
+      "budget_usd": 375.0,
+      "est_conversions": 31.2,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
+      "role": "test",
+      "fit_score": 68,
+      "allocation_pct": 3.8,
+      "budget_usd": 375.0,
+      "est_conversions": 31.2,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
+      "role": "test",
+      "fit_score": 55,
+      "allocation_pct": 3.8,
+      "budget_usd": 375.0,
+      "est_conversions": 31.2,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "publisher_name": "Cloudfoot",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 50,
+      "allocation_pct": 3.8,
+      "budget_usd": 375.0,
+      "est_conversions": 31.2,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_009",
+      "persona_001",
+      "persona_008",
+      "persona_002"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "18-40",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-South",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "fitness",
+      "supplements",
+      "activewear",
+      "wellness"
+     ],
+     "exclusions": [
+      "protein_snacks",
+      "sports_nutrition",
+      "vitamins_supplements"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "5b728db198-persona_009",
+      "persona_id": "persona_009",
+      "weight": 0.25,
+      "status": "revised"
+     },
+     {
+      "creative_id": "5b728db198-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "5b728db198-persona_008",
+      "persona_id": "persona_008",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "5b728db198-persona_002",
+      "persona_id": "persona_002",
+      "weight": 0.25,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 15.2,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": false,
+     "confidence": "high",
+     "assumptions": [
+      "Assumed a first order of about $40, based on the half-price claim.",
+      "Assumed buyers are adults 18-40 of any gender who work out regularly.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": []
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "5b728db198",
+   "total_ms": 67488,
+   "cost_usd": 0.4798,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 14248,
+     "input_tokens": 7357,
+     "output_tokens": 1197,
+     "cost_usd": 0.06671,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 12159,
+     "input_tokens": 4654,
+     "output_tokens": 849,
+     "cost_usd": 0.044495,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_008",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4930,
+     "input_tokens": 2770,
+     "output_tokens": 307,
+     "cost_usd": 0.021525,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_002",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5424,
+     "input_tokens": 2804,
+     "output_tokens": 328,
+     "cost_usd": 0.02222,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 6013,
+     "input_tokens": 2801,
+     "output_tokens": 361,
+     "cost_usd": 0.02303,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 6322,
+     "input_tokens": 2796,
+     "output_tokens": 424,
+     "cost_usd": 0.02458,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 15425,
+     "input_tokens": 3245,
+     "output_tokens": 1305,
+     "cost_usd": 0.04885,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 37063,
+     "input_tokens": 13799,
+     "output_tokens": 3237,
+     "cost_usd": 0.14992,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8360,
+     "input_tokens": 3480,
+     "output_tokens": 824,
+     "cost_usd": 0.038,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 10953,
+     "input_tokens": 3249,
+     "output_tokens": 967,
+     "cost_usd": 0.04042,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

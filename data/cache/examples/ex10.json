@@ -1,0 +1,2060 @@
+{
+ "id": "ex10",
+ "brief": "Custom-fit leather handbags, Italian-made, handcrafted in Florence. Minimum order ships in 6 weeks. Average price point $1,200.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Custom-fit leather handbags, Italian-made, handcrafted in Florence. Minimum order ships in 6 weeks. Average price point $1,200.",
+    "business_summary": "A Florence-based brand selling made-to-order Italian leather handbags at around $1,200, shipping in about six weeks.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Custom-fit handcrafted Italian leather handbags, made to order",
+     "source": "stated",
+     "evidence": {
+      "text": "Custom-fit leather handbags, Italian-made, handcrafted in Florence",
+      "start": 0,
+      "end": 66
+     },
+     "note": null
+    },
+    "sells": [
+     "handbags_leather_goods"
+    ],
+    "competes_with": [
+     "handbags_leather_goods"
+    ],
+    "interests": {
+     "luxury_fashion": 1.0,
+     "apparel_women": 0.5
+    },
+    "values": {
+     "heritage": 1.0,
+     "premium_quality": 1.0,
+     "aesthetic": 0.5
+    },
+    "occasions": {
+     "self_treat": 1.0,
+     "gift": 0.5
+    },
+    "positioning": [
+     "luxury_positioning",
+     "slow_fulfillment",
+     "complex_onboarding"
+    ],
+    "price_tier": {
+     "value": "luxury",
+     "source": "stated",
+     "evidence": {
+      "text": "Average price point $1,200",
+      "start": 100,
+      "end": 126
+     },
+     "note": null
+    },
+    "first_order_value_usd": {
+     "value": 1200.0,
+     "source": "stated",
+     "evidence": {
+      "text": "Average price point $1,200",
+      "start": 100,
+      "end": 126
+     },
+     "note": null
+    },
+    "gender": {
+     "value": "female",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Handbags are most often bought by women; brief does not say"
+    },
+    "age_range": {
+     "value": "30-60",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical buyers of $1,200 leather goods"
+    },
+    "audience": {
+     "value": "Affluent shoppers who buy high-end leather goods and value craftsmanship and customization",
+     "source": "inferred",
+     "evidence": {
+      "text": "handcrafted in Florence",
+      "start": 43,
+      "end": 66
+     },
+     "note": "Inferred from luxury price and made-to-order craftsmanship"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "inferred",
+     "evidence": {
+      "text": "Minimum order ships in 6 weeks",
+      "start": 68,
+      "end": 98
+     },
+     "note": "Made-to-order purchase, no subscription mentioned"
+    },
+    "claims": [
+     {
+      "claim": "Custom-fit handbags",
+      "evidence": {
+       "text": "Custom-fit leather handbags",
+       "start": 0,
+       "end": 27
+      }
+     },
+     {
+      "claim": "Italian-made",
+      "evidence": {
+       "text": "Italian-made",
+       "start": 29,
+       "end": 41
+      }
+     },
+     {
+      "claim": "Handcrafted in Florence",
+      "evidence": {
+       "text": "handcrafted in Florence",
+       "start": 43,
+       "end": 66
+      }
+     },
+     {
+      "claim": "Ships in 6 weeks",
+      "evidence": {
+       "text": "Minimum order ships in 6 weeks",
+       "start": 68,
+       "end": 98
+      }
+     },
+     {
+      "claim": "Average price around $1,200",
+      "evidence": {
+       "text": "Average price point $1,200",
+       "start": 100,
+       "end": 126
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "The product, price and production method are all clear; only audience details are assumed.",
+    "assumptions": [
+     "We assumed the main buyer is women aged roughly 30-60, since the brief does not say.",
+     "We assumed it's a one-time purchase, not a subscription."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "Who is your core customer?",
+      "why": "Determines which shopper personas and publishers we target.",
+      "suggested_answers": [
+       "Women 30-55",
+       "Men 30-55",
+       "Any gender, luxury shoppers",
+       "Gift buyers"
+      ]
+     },
+     {
+      "question": "How does the custom-fit process work at checkout?",
+      "why": "A long quiz or measurement step lowers post-purchase conversion and changes ad copy.",
+      "suggested_answers": [
+       "Short online quiz",
+       "Measurements submitted after order",
+       "Pick from preset sizes",
+       "Consultation call"
+      ]
+     },
+     {
+      "question": "Is there an entry-level product below $1,200?",
+      "why": "A lower-priced entry item converts far better on post-purchase placements.",
+      "suggested_answers": [
+       "Yes, small leather goods",
+       "Yes, under $500 bags",
+       "No, bags only",
+       "Gift cards available"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 15605
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_005",
+      "name": "The Affluent Classic",
+      "score": 79,
+      "why_plausible": "Price_sensitivity: low, high-AOV infrequent buyer who values 'quality and longevity over trends' — exactly the buyer for a $1,200 made-to-order Florentine bag. Her messaging preferences (craftsmanship, heritage, understated) map directly to the brand's stated heritage and handcrafted claims.",
+      "lean_into": [
+       "handcrafted in Florence by Italian artisans",
+       "heritage and craftsmanship",
+       "a bag made to last, not to trend",
+       "quality-focused, understated tone"
+      ],
+      "avoid": [
+       "trendy or hype language",
+       "influencer endorsements",
+       "loud, logo-heavy aesthetics",
+       "urgency/discount framing"
+      ],
+      "ad_angle": "Old-world Florentine craftsmanship: one artisan, six weeks, a bag you'll carry for decades.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_005",
+       "pub_004"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 46,
+      "why_plausible": "The brief lists gift as a secondary occasion, and this persona is a low-price-sensitivity mode buyer hunting 'impressive-looking' purchases. A custom-fit Italian leather bag is a high-impact milestone gift — and the 6-week lead time suits planned life events.",
+      "lean_into": [
+       "giftable, genuinely impressive premium presentation",
+       "made-to-order personalization as the thoughtful touch",
+       "plan ahead: order six weeks before the occasion"
+      ],
+      "avoid": [
+       "self-care-only framing",
+       "subscription framing",
+       "last-minute shipping promises the brand can't make"
+      ],
+      "ad_angle": "The milestone gift you commission, not buy off a shelf — order six weeks ahead of the anniversary or birthday.",
+      "confidence": "medium",
+      "reached_via": [],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_003",
+      "name": "The Gen Z Aesthete",
+      "score": 30,
+      "why_plausible": "Female-leaning fashion and small_batch affinity with strong aesthetic-forward, values-aligned preferences fits a Florence atelier's story. Price_sensitivity medium-high makes this a stretch, so treat it as aspirational/saved-for purchase rather than impulse.",
+      "lean_into": [
+       "aesthetic-forward visuals of the atelier and leather",
+       "a brand that stands for something: small-batch, human-made",
+       "custom-fit as self-expression, your spec not a mass drop"
+      ],
+      "avoid": [
+       "corporate or stuffy voice",
+       "status-signaling luxury clichés",
+       "hard-sell price framing"
+      ],
+      "ad_angle": "Anti-mass-market: your bag, built to your spec in a small Florence workshop — the opposite of a drop.",
+      "confidence": "low",
+      "reached_via": [],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_005",
+      "score": 79,
+      "affinity": 60,
+      "values": 86,
+      "price": 100,
+      "reach": 92,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_005",
+       "pub_004"
+      ],
+      "detail": "shops apparel_women, self_treat, luxury_fashion; responds to heritage, premium_quality"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 46,
+      "affinity": 27,
+      "values": 63,
+      "price": 100,
+      "reach": 30,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops gift, apparel_women, luxury_fashion≈apparel_women; responds to premium_quality, aesthetic"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 30,
+      "affinity": 48,
+      "values": 32,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops apparel_women, self_treat, luxury_fashion≈apparel_women; responds to aesthetic, premium_quality≈aesthetic; price-mismatched for luxury"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 20,
+      "affinity": 13,
+      "values": 0,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 15,
+      "affinity": 0,
+      "values": 42,
+      "price": 30,
+      "reach": 10,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "responds to premium_quality, heritage≈premium_quality; price-mismatched for luxury"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 14,
+      "affinity": 13,
+      "values": 19,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops apparel_women, luxury_fashion≈apparel_women; responds to heritage, premium_quality≈heritage; price-mismatched for luxury"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 7,
+      "affinity": 7,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops apparel_women≈activewear; price-mismatched for luxury"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 0,
+      "affinity": 0,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [
+       "complex_onboarding",
+       "luxury_positioning"
+      ],
+      "reach_publishers": [],
+      "detail": "price-mismatched for luxury; dislikes complex_onboarding, luxury_positioning"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 0,
+      "affinity": 0,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [
+       "complex_onboarding",
+       "slow_fulfillment"
+      ],
+      "reach_publishers": [],
+      "detail": "price-mismatched for luxury; dislikes complex_onboarding, slow_fulfillment"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 0,
+      "affinity": 19,
+      "values": 0,
+      "price": 30,
+      "reach": 30,
+      "conflicts": [
+       "luxury_positioning"
+      ],
+      "reach_publishers": [],
+      "detail": "shops apparel_women, luxury_fashion≈apparel_women; price-mismatched for luxury; dislikes luxury_positioning"
+     }
+    ],
+    "skipped_note": "Wellness Optimizer, Pet Parent and Sustainability Buyer were dropped: no handbag/luxury-fashion affinity, and the brief makes no sustainability or supply-chain claims to honestly serve persona_006."
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 13434
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "Anti-mass-market: made to your spec in a Florence workshop, not a drop",
+    "headline": "The opposite of a drop",
+    "body": "Custom-fit leather handbags, handcrafted in Florence to your spec. No restocks, no sizes to settle for. Yours ships in six weeks.",
+    "cta": "Make it yours",
+    "claims_used": [
+     {
+      "claim": "Custom-fit leather handbags",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "ships in six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     }
+    ],
+    "offer_suggestion": "Free leather-swatch and fit kit mailed before ordering",
+    "tone_notes": "Plain, slightly wry voice with a fashion-native reference point (drops, restocks) rather than luxury status language. Frames custom-fit as self-expression and small-workshop craft as the value, no price framing or hype.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "A milestone gift you commission six weeks ahead",
+    "headline": "A gift you commission, not buy",
+    "body": "Custom-fit leather bags, handcrafted in Florence. Made to order, ships in six weeks \n\n\n \n\n so count back from the date.",
+    "cta": "Start the order",
+    "claims_used": [
+     {
+      "claim": "Custom-fit leather bags",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "Made to order",
+      "source_quote": "made to order"
+     },
+     {
+      "claim": "ships in six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     }
+    ],
+    "offer_suggestion": "Offer a printed gift card noting the bag is being made, to hand over on the day while the order is in production",
+    "tone_notes": "Frames the six-week lead time as planning virtue rather than a delay, positions made-to-order as the thoughtful gesture, and avoids self-care or subscription framing. Plain, confident phrasing suits conservative high-AOV apparel placements.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-world Florentine craftsmanship over speed — a made-to-order bag built to be carried for decades",
+    "headline": "Handcrafted in Florence. Six weeks.",
+    "body": "A leather handbag made to your fit, by hand in Italy. It ships in about six weeks because that's how long it takes. Around $1,200.",
+    "cta": "See the work",
+    "claims_used": [
+     {
+      "claim": "Handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "Ships in about six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     },
+     {
+      "claim": "Made to your fit",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "By hand in Italy",
+      "source_quote": "Italian-made"
+     },
+     {
+      "claim": "Around $1,200",
+      "source_quote": "Average price point $1,200"
+     }
+    ],
+    "offer_suggestion": "Offer a complimentary leather swatch set or a personal fitting consultation before ordering — no discount framing.",
+    "tone_notes": "Understated, declarative sentences and no exclamation or trend language. Leads with place and craft, treats the six-week wait as evidence of care rather than a drawback, and states price plainly since price sensitivity is low.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "No true luxury-accessory publisher exists in this catalog, so the plan narrows to two high-income mature women's apparel tests (Marlowe & Co., Linden Park) while everything else falls out on category or a 10-40x price gap.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 41,
+        "neutral": false,
+        "detail": "matches apparel_women, luxury_fashion≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $112 typical order (10.7×)"
+       },
+       {
+        "name": "values",
+        "score": 70,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 52,
+      "adjustment": 8,
+      "adjustment_reason": "Notes say the audience 'Responds to quality messaging' and has 'Lower impulse but high AOV', which directly offsets the raw price-gap penalty for a craftsmanship-led luxury offer.",
+      "fit": 60,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Marlowe's 45-65, 96% female, high-income base is the closest thing in the catalog to affluent buyers of handcrafted Italian leather, and its notes explicitly say shoppers respond to quality messaging rather than impulse.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Responds to quality messaging"
+       },
+       {
+        "field": "notes",
+        "quote": "Older affluent women. Lower impulse but high AOV"
+       },
+       {
+        "field": "audience",
+        "quote": "high"
+       }
+      ],
+      "risk": "A $1,200 made-to-order bag is roughly 10x the $112 typical order, and the six-week wait will thin conversion even among interested shoppers."
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 40,
+        "neutral": false,
+        "detail": "matches apparel_women, luxury_fashion≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $128 typical order (9.4×)"
+       },
+       {
+        "name": "values",
+        "score": 69,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "adjustment": 6,
+      "adjustment_reason": "Notes flag it as the 'Highest-AOV apparel publisher in the catalog' with a 'Conservative brand sensibility', both of which favour a heritage, classic-leather pitch more than the price signal alone suggests.",
+      "fit": 56,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Linden Park's 50-70, 98% female, high-income readers of classic and workwear brands map onto timeless Italian leather, and its conservative sensibility suits heritage-and-craft copy.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Highest-AOV apparel publisher in the catalog"
+       },
+       {
+        "field": "subcategories",
+        "quote": "classic"
+       }
+      ],
+      "risk": "Smallest reach of the two apparel tests at 6.2M impressions, and the $128 typical order is still ~9x below the offer price."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 6,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 16,
+        "neutral": false,
+        "detail": "$1,200 vs $164 typical order (7.3×)"
+       },
+       {
+        "name": "values",
+        "score": 65,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality, heritage≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 37,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 37,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Design-conscious high-income bedding buyers, but home textiles share no purchase intent with handbags.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 30,
+        "neutral": false,
+        "detail": "matches apparel_women, self_treat, luxury_fashion≈apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 6,
+        "neutral": false,
+        "detail": "$1,200 vs $142 typical order (8.5×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 35,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 35,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Professional women fit demographically, but notes say 'Sustainability and machine-washable claims resonate' — a tone this Florence craft brand doesn't speak.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Sustainability and machine-washable claims resonate"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 11,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $42 typical order (28.6×)"
+       },
+       {
+        "name": "values",
+        "score": 28,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Self-care spenders, but $42 class bookings are 29x below the offer and wholly off-category.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 28,
+        "neutral": false,
+        "detail": "$1,200 vs $198 typical order (6.1×)"
+       },
+       {
+        "name": "values",
+        "score": 42,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Cookware gifting buyers skew sustainability-motivated, with no overlap into luxury leather goods.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 27,
+        "neutral": false,
+        "detail": "matches apparel_women, self_treat, luxury_fashion≈apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $78 typical order (15.4×)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Huge activewear reach, but fitness-engaged mid-high shoppers at $78 orders are 15x below a $1,200 bag.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 40,
+        "neutral": false,
+        "detail": "matches apparel_women, luxury_fashion≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $89 typical order (13.5×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 26,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 26,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Mid-income inclusive-sizing audience responds to fit messaging, but cannot support luxury pricing.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $64 typical order (18.8×)"
+       },
+       {
+        "name": "values",
+        "score": 63,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 26,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 26,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Premium-responsive pet owners, but pet food shares no interest overlap with handbags.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 22,
+        "neutral": false,
+        "detail": "matches apparel_women≈footwear, luxury_fashion≈footwear, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $118 typical order (10.2×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 26,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 26,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Half-male comfort-shoe audience with sustainability messaging; no values or price overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $86 typical order (14.0×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 25,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 25,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "High-income grocery shoppers, but clean-ingredient values and $86 baskets don't carry a luxury bag.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 20,
+        "neutral": false,
+        "detail": "matches gift, apparel_women≈basics, luxury_fashion≈apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $52 typical order (23.1×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 25,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 25,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Gifting uplift exists, but $52 sock orders sit 23x below this price point.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $74 typical order (16.2×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 21,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 21,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Enormous reach, but convenience-driven meal-kit households are off-category and mid-high income.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 7,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $42 typical order (28.6×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 19,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 19,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Young beverage buyers at $42 orders; no category or values overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 9,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $61 typical order (19.7×)"
+       },
+       {
+        "name": "values",
+        "score": 32,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 18,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 18,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Gen Z, mid-income beauty audience is far too young and price-constrained for a $1,200 bag.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $28 typical order (42.9×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 16,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 16,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Impulse late-night convenience buyers at $28 orders are the worst possible context for slow luxury.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid-high income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $38 typical order (31.6×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 16,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 16,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Supplement subscribers are off-category and skeptical by disposition; no fit.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $73 typical order (16.4×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 15,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 15,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Largest reach in the catalog, but mid-income pet buyers share nothing with luxury leather.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $35 typical order (34.3×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 11,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 11,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Playful dog-treat voice and $35 orders are the opposite of this brand's heritage register.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 30,
+        "neutral": false,
+        "detail": "mid income for luxury price"
+       },
+       {
+        "name": "price",
+        "score": 0,
+        "neutral": false,
+        "detail": "$1,200 vs $48 typical order (25.0×)"
+       },
+       {
+        "name": "values",
+        "score": 13,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 11,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 11,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Personalization motivation is a small hook, but an 18-38 mid-income haircare audience can't absorb $1,200.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 30861
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-world Florentine craftsmanship over speed — a made-to-order bag built to be carried for decades",
+    "headline": "Handcrafted in Florence. Six weeks.",
+    "body": "A leather handbag made to your fit, by hand in Italy. It ships in about six weeks because that's how long it takes. Around $1,200.",
+    "cta": "See the work",
+    "claims_used": [
+     {
+      "claim": "Handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "Ships in about six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     },
+     {
+      "claim": "Made to your fit",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "By hand in Italy",
+      "source_quote": "Italian-made"
+     },
+     {
+      "claim": "Around $1,200",
+      "source_quote": "Average price point $1,200"
+     }
+    ],
+    "offer_suggestion": "Offer a complimentary leather swatch set or a personal fitting consultation before ordering — no discount framing.",
+    "tone_notes": "Understated, declarative sentences and no exclamation or trend language. Leads with place and craft, treats the six-week wait as evidence of care rather than a drawback, and states price plainly since price sensitivity is low.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Every claim maps to an allowed claim with accurate hedging ('about six weeks', 'around $1,200')."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Understated, craftsmanship-led, no trend or influencer language."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Florence handcrafting, custom fit, six-week lead time and ~$1,200 are particular to this maker."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm and matter-of-fact; no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Quality messaging suits Marlowe & Co. and Linden Park's conservative tone."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "Anti-mass-market: made to your spec in a Florence workshop, not a drop",
+    "headline": "The opposite of a drop",
+    "body": "Custom-fit leather handbags, handcrafted in Florence to your spec. No restocks, no sizes to settle for. Yours ships in six weeks.",
+    "cta": "Make it yours",
+    "claims_used": [
+     {
+      "claim": "Custom-fit leather handbags",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "ships in six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     }
+    ],
+    "offer_suggestion": "Free leather-swatch and fit kit mailed before ordering",
+    "tone_notes": "Plain, slightly wry voice with a fashion-native reference point (drops, restocks) rather than luxury status language. Frames custom-fit as self-expression and small-workshop craft as the value, no price framing or hype.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Custom fit, Florence handcrafting and six-week shipping all trace to allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Playful anti-drop framing and novelty without corporate voice."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Florence-made custom-fit bags with a six-week build can't be swapped to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads calmly on a confirmation page; no countdowns or scarcity."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated claims; tone stays within conservative apparel limits."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "8696074e38-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "A milestone gift you commission six weeks ahead",
+    "headline": "A gift you commission, not buy",
+    "body": "Custom-fit leather handbags, handcrafted in Florence. Ships in six weeks, so it's a gift worth planning ahead for.",
+    "cta": "Start the order",
+    "claims_used": [
+     {
+      "claim": "Custom-fit leather handbags",
+      "source_quote": "Custom-fit leather handbags"
+     },
+     {
+      "claim": "handcrafted in Florence",
+      "source_quote": "handcrafted in Florence"
+     },
+     {
+      "claim": "Ships in six weeks",
+      "source_quote": "Minimum order ships in 6 weeks"
+     }
+    ],
+    "offer_suggestion": "A printed card noting the bag is being made in Florence, to hand over on the day while the order is in production",
+    "tone_notes": "Treats the six-week lead time as a planning virtue for an upcoming occasion rather than a delay. Plain, confident, no urgency tricks, no self-care or subscription framing — suited to conservative high-AOV apparel placements.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Custom-fit, Florence handcrafting, and six-week shipping all map to allowed claims; no invented offers."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on giftability and commissioned-gift premium framing; doesn't fake last-minute shipping the brief can't support."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Florence handcrafting plus custom-fit and six-week lead time is not transferable to a stock handbag brand."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, plan-ahead tone with no urgency pressure on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Quality-led and conservative; fits Marlowe & Co. and Linden Park sensibilities."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "A milestone gift you commission six weeks ahead",
+     "headline": "A gift you commission, not buy",
+     "body": "Custom-fit leather bags, handcrafted in Florence. Made to order, ships in six weeks \n\n\n \n\n so count back from the date.",
+     "cta": "Start the order",
+     "claims_used": [
+      {
+       "claim": "Custom-fit leather bags",
+       "source_quote": "Custom-fit leather handbags"
+      },
+      {
+       "claim": "handcrafted in Florence",
+       "source_quote": "handcrafted in Florence"
+      },
+      {
+       "claim": "Made to order",
+       "source_quote": "made to order"
+      },
+      {
+       "claim": "ships in six weeks",
+       "source_quote": "Minimum order ships in 6 weeks"
+      }
+     ],
+     "offer_suggestion": "Offer a printed gift card noting the bag is being made, to hand over on the day while the order is in production",
+     "tone_notes": "Frames the six-week lead time as planning virtue rather than a delay, positions made-to-order as the thoughtful gesture, and avoids self-care or subscription framing. Plain, confident phrasing suits conservative high-AOV apparel placements."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 54249
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Custom-fit handcrafted italian leather handbags, made to order · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 360.0,
+     "max_cpa_usd": 468.0,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 1200.0,
+     "first_order_value_source": "stated",
+     "learning_period_days": 14,
+     "rationale": "$1,200 first order × 0.30 = $360.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_004",
+      "publisher_name": "Marlowe & Co.",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 60,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 13.9,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "publisher_name": "Linden Park",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 56,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 13.9,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_005",
+      "persona_010",
+      "persona_003"
+     ],
+     "gender": {
+      "value": "female",
+      "source": "assumed"
+     },
+     "age_range": {
+      "value": "30-60",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-South"
+     ],
+     "contextual_interests": [
+      "luxury_fashion",
+      "apparel_women"
+     ],
+     "exclusions": [
+      "handbags_leather_goods"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "8696074e38-persona_005",
+      "persona_id": "persona_005",
+      "weight": 0.333,
+      "status": "passed"
+     },
+     {
+      "creative_id": "8696074e38-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.333,
+      "status": "revised"
+     },
+     {
+      "creative_id": "8696074e38-persona_003",
+      "persona_id": "persona_003",
+      "weight": 0.333,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 100.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "We assumed the main buyer is women aged roughly 30-60, since the brief does not say.",
+      "We assumed it's a one-time purchase, not a subscription.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "8696074e38",
+   "total_ms": 69860,
+   "cost_usd": 0.4538,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 15604,
+     "input_tokens": 7359,
+     "output_tokens": 1350,
+     "cost_usd": 0.070545,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 13433,
+     "input_tokens": 4762,
+     "output_tokens": 923,
+     "cost_usd": 0.046885,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_003",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7480,
+     "input_tokens": 2721,
+     "output_tokens": 528,
+     "cost_usd": 0.026805,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7712,
+     "input_tokens": 2732,
+     "output_tokens": 548,
+     "cost_usd": 0.02736,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_005",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 9768,
+     "input_tokens": 2727,
+     "output_tokens": 685,
+     "cost_usd": 0.03076,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 30859,
+     "input_tokens": 14033,
+     "output_tokens": 2811,
+     "cost_usd": 0.14044,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 14320,
+     "input_tokens": 2878,
+     "output_tokens": 1196,
+     "cost_usd": 0.04429,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4838,
+     "input_tokens": 3456,
+     "output_tokens": 428,
+     "cost_usd": 0.02798,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 11883,
+     "input_tokens": 2845,
+     "output_tokens": 979,
+     "cost_usd": 0.0387,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

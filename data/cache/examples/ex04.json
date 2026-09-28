@@ -1,0 +1,2209 @@
+{
+ "id": "ex04",
+ "brief": "Small-batch candles poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Mostly bought as gifts.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "Small-batch candles poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Mostly bought as gifts.",
+    "business_summary": "A Vermont brand that hand-pours small-batch soy candles with natural fragrances, mostly purchased as gifts.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "Hand-poured small-batch soy wax candles with no synthetic fragrances",
+     "source": "stated",
+     "evidence": {
+      "text": "Small-batch candles poured by hand in Vermont. Natural soy wax, no synthetic fragrances",
+      "start": 0,
+      "end": 87
+     },
+     "note": null
+    },
+    "sells": [
+     "candles_home_fragrance"
+    ],
+    "competes_with": [
+     "candles_home_fragrance"
+    ],
+    "interests": {
+     "home_decor": 1.0,
+     "home_textiles": 0.5,
+     "wellness": 0.5
+    },
+    "values": {
+     "clean_ingredients": 1.0,
+     "heritage": 1.0,
+     "premium_quality": 0.5,
+     "aesthetic": 0.5
+    },
+    "occasions": {
+     "gift": 1.0,
+     "self_treat": 0.5,
+     "impulse": 0.5
+    },
+    "positioning": [],
+    "price_tier": {
+     "value": "premium",
+     "source": "inferred",
+     "evidence": {
+      "text": "Small-batch candles poured by hand",
+      "start": 0,
+      "end": 34
+     },
+     "note": "Hand-poured small-batch production usually prices above mass-market candles"
+    },
+    "first_order_value_usd": {
+     "value": 40.0,
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical order for a premium artisan candle; no price given in the brief"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief names no audience; candle gifting spans genders though it skews female"
+    },
+    "age_range": {
+     "value": "28-55",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Common age band for home fragrance and gift buyers"
+    },
+    "audience": {
+     "value": "Home and gift shoppers who prefer natural, handmade goods",
+     "source": "inferred",
+     "evidence": {
+      "text": "Mostly bought as gifts",
+      "start": 89,
+      "end": 111
+     },
+     "note": "Brief points to gift buyers; natural-ingredient angle suggests clean-label preference"
+    },
+    "business_model": {
+     "value": "one_time",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No subscription mentioned; candles are typically one-off purchases"
+    },
+    "claims": [
+     {
+      "claim": "Small-batch, hand-poured",
+      "evidence": {
+       "text": "Small-batch candles poured by hand",
+       "start": 0,
+       "end": 34
+      }
+     },
+     {
+      "claim": "Made in Vermont",
+      "evidence": {
+       "text": "poured by hand in Vermont",
+       "start": 20,
+       "end": 45
+      }
+     },
+     {
+      "claim": "Natural soy wax",
+      "evidence": {
+       "text": "Natural soy wax",
+       "start": 47,
+       "end": 62
+      }
+     },
+     {
+      "claim": "No synthetic fragrances",
+      "evidence": {
+       "text": "no synthetic fragrances",
+       "start": 64,
+       "end": 87
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "We know exactly what is sold and can reasonably infer the buyer; only price and audience details are missing.",
+    "assumptions": [
+     "Assumed a first order around $40 since no pricing was given.",
+     "Assumed one-time purchases rather than a subscription.",
+     "Assumed a broad adult audience of home and gift shoppers."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What does a typical order cost?",
+      "why": "Sets the price tier and the payout math for per-conversion bidding.",
+      "suggested_answers": [
+       "Under $30",
+       "$30-50",
+       "$50-80",
+       "Over $80"
+      ]
+     },
+     {
+      "question": "Who buys most often?",
+      "why": "Determines which shopper personas and publishers we target.",
+      "suggested_answers": [
+       "Mostly women 25-45",
+       "Mostly women 45+",
+       "Even mix of genders",
+       "Corporate/bulk gifting"
+      ]
+     },
+     {
+      "question": "Do you offer bundles, gift sets, or a candle subscription?",
+      "why": "Changes the offer we feature and whether we lean on replenishment or gifting.",
+      "suggested_answers": [
+       "Single candles only",
+       "Gift sets and bundles",
+       "Subscription available",
+       "All of the above"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": [
+     "home_decor"
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 17112
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 58,
+      "why_plausible": "The brief says candles are 'mostly bought as gifts' and this persona is any shopper in gifting mode with low price sensitivity and high AOV. Hand-poured Vermont candles are exactly the 'impressive-looking' giftable object they seek.",
+      "lean_into": [
+       "giftable",
+       "premium presentation",
+       "gift sets"
+      ],
+      "avoid": [
+       "subscription framing",
+       "self-care-only framing"
+      ],
+      "ad_angle": "The gift that always lands: a hand-poured Vermont candle that looks more expensive than it is.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_003",
+       "pub_011"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_005",
+      "name": "The Affluent Classic",
+      "score": 44,
+      "why_plausible": "Affinities include home_goods and she responds to craftsmanship, heritage and quality over trends — a match for small-batch, hand-poured, Made in Vermont. Low price sensitivity fits a premium $40 candle.",
+      "lean_into": [
+       "craftsmanship",
+       "heritage",
+       "quality-focused",
+       "understated"
+      ],
+      "avoid": [
+       "trendy language",
+       "influencer positioning",
+       "loud aesthetics"
+      ],
+      "ad_angle": "Old-fashioned craft: poured by hand in small batches in Vermont, the way candles used to be made.",
+      "confidence": "medium",
+      "reached_via": [],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_006",
+      "name": "The Sustainability Buyer",
+      "score": 52,
+      "why_plausible": "Home_goods affinity plus values overlap on clean_ingredients and heritage; natural soy wax and no synthetic fragrances are the specific, non-vague claims they want. Medium price sensitivity is fine at $40.",
+      "lean_into": [
+       "specific claims: soy wax, no synthetic fragrance",
+       "small-batch local production in Vermont"
+      ],
+      "avoid": [
+       "vague eco buzzwords",
+       "excessive packaging",
+       "unsupported certification claims"
+      ],
+      "ad_angle": "Specific, not vague: soy wax, no synthetic fragrance, poured in small batches in one Vermont workshop.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_011",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 53,
+      "why_plausible": "Wellness affinity and clean-ingredient values line up with 'no synthetic fragrances' in a product she burns in her home nightly. Low price sensitivity supports a premium candle as a self-treat.",
+      "lean_into": [
+       "ingredient transparency",
+       "clean, no synthetic fragrance"
+      ],
+      "avoid": [
+       "novelty scents",
+       "unsupported health or science claims"
+      ],
+      "ad_angle": "What you breathe at home matters: a clean-burning soy candle with nothing synthetic in the scent.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_003",
+       "pub_011"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_010",
+      "score": 58,
+      "affinity": 51,
+      "values": 39,
+      "price": 100,
+      "reach": 60,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_011"
+      ],
+      "detail": "shops gift, home_decor, home_textiles; responds to premium_quality, aesthetic"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 53,
+      "affinity": 18,
+      "values": 30,
+      "price": 100,
+      "reach": 99,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_011"
+      ],
+      "detail": "shops wellness, self_treat; responds to clean_ingredients"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 52,
+      "affinity": 22,
+      "values": 33,
+      "price": 100,
+      "reach": 85,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_011",
+       "pub_003"
+      ],
+      "detail": "shops home_decor, home_textiles, wellness≈natural_food; responds to clean_ingredients, heritage"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 50,
+      "affinity": 0,
+      "values": 55,
+      "price": 100,
+      "reach": 96,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_011"
+      ],
+      "detail": "responds to clean_ingredients, premium_quality"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 44,
+      "affinity": 46,
+      "values": 55,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops home_decor, home_textiles, self_treat; responds to heritage, premium_quality"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 43,
+      "affinity": 8,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_011",
+       "pub_003"
+      ],
+      "detail": "shops impulse"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 40,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_011",
+       "pub_003"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 37,
+      "affinity": 8,
+      "values": 6,
+      "price": 100,
+      "reach": 70,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_011",
+       "pub_003"
+      ],
+      "detail": "shops wellness≈supplements; responds to clean_ingredients≈science_backed"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 29,
+      "affinity": 47,
+      "values": 28,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, impulse, home_decor; responds to aesthetic, premium_quality≈aesthetic; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 24,
+      "affinity": 0,
+      "values": 0,
+      "price": 30,
+      "reach": 76,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_011"
+      ],
+      "detail": "price-mismatched for premium"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 10364
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-fashioned craft: hand-poured in small batches in Vermont",
+    "headline": "Poured by hand, in small batches",
+    "body": "Vermont-made candles in natural soy wax, with no synthetic fragrances. Made the slow way, a few at a time.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Poured by hand, in small batches",
+      "source_quote": "Small-batch candles poured by hand"
+     },
+     {
+      "claim": "Vermont-made",
+      "source_quote": "poured by hand in Vermont"
+     },
+     {
+      "claim": "natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     }
+    ],
+    "offer_suggestion": "Free gift wrap or a handwritten note card on first order",
+    "tone_notes": "Understated, craft-first language with no trend words, exclamation, or urgency. Emphasizes making method and place rather than gifting or aesthetics.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Ingredient transparency for the air in your home",
+    "headline": "Two ingredients: soy wax and scent",
+    "body": "Small-batch candles hand-poured in Vermont. Natural soy wax, fragrance with nothing synthetic in it. Read the label, it's short.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "Natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     },
+     {
+      "claim": "Small-batch candles hand-poured in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     }
+    ],
+    "offer_suggestion": "Free scent sampler with first order, so she can vet the fragrances herself",
+    "tone_notes": "Leads with ingredient transparency rather than gifting or craft romance. Plain, label-reading tone she applies to supplements. No health, air-quality or burn-time claims, no novelty scent names.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Name the specifics instead of saying eco",
+    "headline": "Soy wax. No synthetic fragrance.",
+    "body": "Small-batch candles, poured by hand in Vermont. The claims are short because that's all there is to say about them.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "No synthetic fragrance",
+      "source_quote": "no synthetic fragrances"
+     },
+     {
+      "claim": "Small-batch, poured by hand in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     }
+    ],
+    "offer_suggestion": "Free shipping on first order, or a scent-sample set with purchase",
+    "tone_notes": "Leads with the two concrete material claims rather than any eco language, then grounds it in local small-batch production. Flat, unembellished phrasing signals no greenwashing; no certifications or footprint claims are implied.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Giftable object with presence — hand-poured Vermont candle as the easy, impressive present",
+    "headline": "A gift that looks like you tried",
+    "body": "Small-batch soy candles, poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Sets down well on anyone's table.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Small-batch soy candles, poured by hand in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     },
+     {
+      "claim": "Natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     }
+    ],
+    "offer_suggestion": "Test a free gift-wrap and handwritten note card option at checkout, plus a two-candle gift set bundle",
+    "tone_notes": "Leads with giftability and presentation rather than self-care or sustainability. Plain, confident phrasing for a low-price-sensitivity shopper; no discounts, no subscription language, no 'treat yourself' framing.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "No candle competitors in the catalog, so the plan rests on two home and self-care tests — Northbed and Studiogrid — plus a promoted look at Hearthstone Goods, whose gifting and non-toxic notes the category tags undercounted.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 45,
+        "neutral": false,
+        "detail": "matches home_textiles, home_decor, wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 53,
+        "neutral": false,
+        "detail": "$40 vs $164 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 42,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality, heritage≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 55,
+      "adjustment": 8,
+      "adjustment_reason": "Notes cite 'High cross-sell with home and wellness', a direct adjacency the category tag only partially credited for a home-fragrance product.",
+      "fit": 63,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Bedding and bath buyers are the closest thing in the catalog to a home-fragrance audience, and the notes' 'Design-conscious urban/suburban buyers' match the brand's handmade, aesthetic positioning.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "High cross-sell with home and wellness"
+       },
+       {
+        "field": "subcategories",
+        "quote": "home_textiles"
+       }
+      ],
+      "risk": "At $164 typical orders a $40 candle is a small add-on, and 3.6M impressions cap the volume of any test."
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 29,
+        "neutral": false,
+        "detail": "matches home_decor≈kitchen, home_textiles≈kitchen, gift"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 41,
+        "neutral": false,
+        "detail": "$40 vs $198 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 48,
+        "neutral": false,
+        "detail": "shares clean_ingredients, premium_quality, heritage≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 47,
+      "adjustment": 12,
+      "adjustment_reason": "Notes say 'Gifting and new-home life events drive purchase' and the non_toxic subcategory matches the brand's no-synthetic-fragrance claim — both under-credited by a fuzzy kitchen category match.",
+      "fit": 59,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Sustainability-motivated home buyers shopping for gifts and new homes are a natural audience for a $40 hand-poured Vermont candle, even though the kitchen subcategory scores as only a loose match.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Gifting and new-home life events drive purchase"
+       },
+       {
+        "field": "subcategories",
+        "quote": "non_toxic"
+       }
+      ],
+      "risk": "Only 2.8M impressions and a $198 typical order mean low volume and a big price gap."
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 19,
+        "neutral": false,
+        "detail": "matches wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $42 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 17,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 51,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 51,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Spa and yoga bookers are 'actively spending on self-care', which is exactly the self-treat candle purchase, and the $42 average order sits right on the $40 price point.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Users are actively spending on self-care and fitness"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "42.0"
+       }
+      ],
+      "risk": "Appointment-booking confirmations are a service context, not a shopping one, so gift intent may be weaker than on product checkouts."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 12,
+        "neutral": false,
+        "detail": "matches wellness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $78 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 6,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 48,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 48,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Activewear shoppers share little with home-fragrance gift buyers.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 10,
+        "neutral": false,
+        "detail": "matches wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 95,
+        "neutral": false,
+        "detail": "$40 vs $86 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 33,
+        "neutral": false,
+        "detail": "shares clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 48,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 48,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category groceries, though the notes' 'Responsive to clean-ingredient' shoppers would likely hear the natural soy wax claim.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Responsive to clean-ingredient"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches wellness, self_treat, impulse"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $42 typical order (1.0×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 17,
+        "neutral": false,
+        "detail": "shares clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 47,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 47,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Beverage buyers are too far from home decor despite a matching $42 order size.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $64 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 54,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pet food and supplies have no interest overlap with candles.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $38 typical order (1.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 13,
+        "neutral": false,
+        "detail": "shares clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Supplement buyers are off-category and 'skeptical of unsubstantiated health claims', a poor audience for scent messaging.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "skeptical of unsubstantiated health claims"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches home_decor≈kitchen, home_textiles≈kitchen"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $74 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 46,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Huge reach but meal-kit buyers share no stated values or home interests.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 78,
+        "neutral": false,
+        "detail": "$40 vs $112 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 42,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage≈premium_quality, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 43,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 43,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel, though the 'Responds to quality messaging' note would suit the craft story.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 69,
+        "neutral": false,
+        "detail": "$40 vs $128 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 43,
+        "neutral": false,
+        "detail": "shares premium_quality, heritage, aesthetic≈premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel with a 50-70 age skew above the brand's target range.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $52 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 42,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category basics, though its 'Strong gifting season uplift (Nov-Dec)' would be worth revisiting for Q4 gift inventory.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Strong gifting season uplift (Nov-Dec"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches impulse"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $28 typical order (1.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category convenience delivery with an 18-34, mid-income audience below the premium price point.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 6,
+        "neutral": false,
+        "detail": "matches wellness≈fitness, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 75,
+        "neutral": false,
+        "detail": "$40 vs $118 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 15,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 40,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Footwear is off-category; sustainability overlap alone isn't enough.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 10,
+        "neutral": false,
+        "detail": "matches self_treat, wellness≈beauty, impulse"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $61 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 22,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 39,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category beauty skewing 18-34 and mid income, young for a premium gift candle.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $73 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 37,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 37,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Largest reach in the catalog but pet supplies share no interests or values with candles.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 63,
+        "neutral": false,
+        "detail": "$40 vs $142 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 17,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 35,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 35,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category footwear with only 3.2M impressions to offset it.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $48 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 12,
+        "neutral": false,
+        "detail": "shares aesthetic, premium_quality≈aesthetic, clean_ingredients≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Haircare is off-category with a young, mid-income audience.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $35 typical order (1.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category pet; its 'Fun, playful brand voice' also clashes with a quiet artisanal story.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Fun, playful brand voice converts best"
+       }
+      ],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$40 vs $89 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category apparel with no shared values and a mid-income audience.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 29334
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Giftable object with presence — hand-poured Vermont candle as the easy, impressive present",
+    "headline": "A gift that looks like you tried",
+    "body": "Small-batch soy candles, poured by hand in Vermont. Natural soy wax, no synthetic fragrances. Sets down well on anyone's table.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Small-batch soy candles, poured by hand in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     },
+     {
+      "claim": "Natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     }
+    ],
+    "offer_suggestion": "Test a free gift-wrap and handwritten note card option at checkout, plus a two-candle gift set bundle",
+    "tone_notes": "Leads with giftability and presentation rather than self-care or sustainability. Plain, confident phrasing for a low-price-sensitivity shopper; no discounts, no subscription language, no 'treat yourself' framing.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All claims map directly to the brief; no invented offers or guarantees."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Gift framing and presentable table appeal, no subscription or self-care-only angle."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Vermont hand-poured small-batch soy detail is not generic."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm tone, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims; fits home and wellness placements."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Old-fashioned craft: hand-poured in small batches in Vermont",
+    "headline": "Poured by hand, in small batches",
+    "body": "Vermont-made candles in natural soy wax, with no synthetic fragrances. Made the slow way, a few at a time.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Poured by hand, in small batches",
+      "source_quote": "Small-batch candles poured by hand"
+     },
+     {
+      "claim": "Vermont-made",
+      "source_quote": "poured by hand in Vermont"
+     },
+     {
+      "claim": "natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     }
+    ],
+    "offer_suggestion": "Free gift wrap or a handwritten note card on first order",
+    "tone_notes": "Understated, craft-first language with no trend words, exclamation, or urgency. Emphasizes making method and place rather than gifting or aesthetics.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Every line traces to allowed claims; 'made the slow way' is a fair restatement of small-batch hand-pouring."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Understated craftsmanship tone, no trendy or influencer language."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Vermont-made, hand-poured soy specifics tie it to this advertiser."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Quiet and unhurried on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated claims for either publisher."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Name the specifics instead of saying eco",
+    "headline": "Soy wax. No synthetic fragrance.",
+    "body": "Small-batch candles, poured by hand in Vermont. The claims are short because that's all there is to say about them.",
+    "cta": "See the candles",
+    "claims_used": [
+     {
+      "claim": "Soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "No synthetic fragrance",
+      "source_quote": "no synthetic fragrances"
+     },
+     {
+      "claim": "Small-batch, poured by hand in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     }
+    ],
+    "offer_suggestion": "Free shipping on first order, or a scent-sample set with purchase",
+    "tone_notes": "Leads with the two concrete material claims rather than any eco language, then grounds it in local small-batch production. Flat, unembellished phrasing signals no greenwashing; no certifications or footprint claims are implied.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only the four allowed claims are used, and the body explicitly declines to add more."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Uses the specific material and sourcing facts available; avoids vague eco language, and correctly omits certifications the brief can't back."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Vermont small-batch detail prevents swapping to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Plain, low-pressure phrasing."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health or eco claims beyond the brief."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "e4123650d1-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Ingredient transparency for the air in your home",
+    "headline": "Natural soy wax, no synthetic fragrances",
+    "body": "Small-batch candles hand-poured in Vermont. Natural soy wax, no synthetic fragrances.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "Natural soy wax",
+      "source_quote": "Natural soy wax"
+     },
+     {
+      "claim": "no synthetic fragrances",
+      "source_quote": "no synthetic fragrances"
+     },
+     {
+      "claim": "Small-batch candles hand-poured in Vermont",
+      "source_quote": "Small-batch candles poured by hand in Vermont"
+     }
+    ],
+    "offer_suggestion": "Free scent sampler with first order, so she can vet the fragrances herself",
+    "tone_notes": "Leads with ingredients rather than gifting or craft romance, in the plain label-reading register she uses for supplements. No health, air-quality or burn claims, no novelty scent names.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "All three claims map verbatim to allowed claims."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on ingredient transparency without inventing science or certifications."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Vermont hand-poured small-batch soy detail is not generic."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health or wellness efficacy claims for the science-wary wellness audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Ingredient transparency for the air in your home",
+     "headline": "Two ingredients: soy wax and scent",
+     "body": "Small-batch candles hand-poured in Vermont. Natural soy wax, fragrance with nothing synthetic in it. Read the label, it's short.",
+     "cta": "See what's in it",
+     "claims_used": [
+      {
+       "claim": "Natural soy wax",
+       "source_quote": "Natural soy wax"
+      },
+      {
+       "claim": "no synthetic fragrances",
+       "source_quote": "no synthetic fragrances"
+      },
+      {
+       "claim": "Small-batch candles hand-poured in Vermont",
+       "source_quote": "Small-batch candles poured by hand in Vermont"
+      }
+     ],
+     "offer_suggestion": "Free scent sampler with first order, so she can vet the fragrances herself",
+     "tone_notes": "Leads with ingredient transparency rather than gifting or craft romance. Plain, label-reading tone she applies to supplements. No health, air-quality or burn-time claims, no novelty scent names."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 51328
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Hand-poured small-batch soy wax candles with no synthetic fragrances · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 12.0,
+     "max_cpa_usd": 15.6,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 40.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$40 first order (assumed) × 0.30 = $12.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_011",
+      "publisher_name": "Northbed",
+      "category": "home",
+      "role": "test",
+      "fit_score": 63,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 277.8,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "publisher_name": "Hearthstone Goods",
+      "category": "home",
+      "role": "test",
+      "fit_score": 59,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 277.8,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "test",
+      "fit_score": 51,
+      "allocation_pct": 33.3,
+      "budget_usd": 3333.33,
+      "est_conversions": 277.8,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_010",
+      "persona_005",
+      "persona_006",
+      "persona_001"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "28-55",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "home_decor",
+      "home_textiles",
+      "wellness"
+     ],
+     "exclusions": [
+      "candles_home_fragrance"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "e4123650d1-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e4123650d1-persona_005",
+      "persona_id": "persona_005",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e4123650d1-persona_006",
+      "persona_id": "persona_006",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "e4123650d1-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.25,
+      "status": "revised"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 99.9,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed a first order around $40 since no pricing was given.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Assumed a broad adult audience of home and gift shoppers.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "e4123650d1",
+   "total_ms": 68450,
+   "cost_usd": 0.4687,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 17110,
+     "input_tokens": 7354,
+     "output_tokens": 1451,
+     "cost_usd": 0.073045,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 10363,
+     "input_tokens": 4636,
+     "output_tokens": 823,
+     "cost_usd": 0.043755,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_005",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4689,
+     "input_tokens": 2605,
+     "output_tokens": 324,
+     "cost_usd": 0.021125,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5343,
+     "input_tokens": 2584,
+     "output_tokens": 330,
+     "cost_usd": 0.02117,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_006",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7512,
+     "input_tokens": 2642,
+     "output_tokens": 544,
+     "cost_usd": 0.02681,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 8426,
+     "input_tokens": 2622,
+     "output_tokens": 568,
+     "cost_usd": 0.02731,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 29331,
+     "input_tokens": 14023,
+     "output_tokens": 2688,
+     "cost_usd": 0.137315,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 14221,
+     "input_tokens": 3144,
+     "output_tokens": 1229,
+     "cost_usd": 0.046445,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 5905,
+     "input_tokens": 3302,
+     "output_tokens": 495,
+     "cost_usd": 0.028885,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 12407,
+     "input_tokens": 3133,
+     "output_tokens": 1085,
+     "cost_usd": 0.04279,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

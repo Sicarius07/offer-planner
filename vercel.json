@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd web && pnpm install --frozen-lockfile && pnpm build",
+  "functions": {
+    "backend/main.py": { "maxDuration": 300 }
+  }
+}

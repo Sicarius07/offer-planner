@@ -1,0 +1,2154 @@
+{
+ "id": "ex12",
+ "brief": "A subscription box for new cat owners. First three months of their cat's life. Toys, food samples, a little booklet about what to expect.",
+ "events": [
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "profile",
+   "profile": {
+    "brief": "A subscription box for new cat owners. First three months of their cat's life. Toys, food samples, a little booklet about what to expect.",
+    "business_summary": "A monthly subscription box for people who just got a kitten, covering the cat's first three months with toys, food samples, and a guide.",
+    "brand_name": null,
+    "offering_type": "consumer_product",
+    "product": {
+     "value": "A three-month starter subscription box for new cat owners containing toys, food samples and a booklet on what to expect",
+     "source": "stated",
+     "evidence": {
+      "text": "A subscription box for new cat owners. First three months of their cat's life. Toys, food samples, a little booklet about what to expect",
+      "start": 0,
+      "end": 136
+     },
+     "note": null
+    },
+    "sells": [
+     "pet_subscription_box"
+    ],
+    "competes_with": [
+     "pet_subscription_box",
+     "pet_toys",
+     "pet_supplies"
+    ],
+    "interests": {
+     "pets": 1.0,
+     "kids_family": 0.5,
+     "pet_health": 0.5
+    },
+    "values": {
+     "convenience_speed": 1.0,
+     "playful": 0.5
+    },
+    "occasions": {
+     "life_event": 1.0,
+     "replenishment": 0.5,
+     "gift": 0.5
+    },
+    "positioning": [
+     "subscription_only"
+    ],
+    "price_tier": {
+     "value": "mid",
+     "source": "assumed",
+     "evidence": null,
+     "note": "No price given; starter pet boxes typically sit mid-tier"
+    },
+    "first_order_value_usd": {
+     "value": 45.0,
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical first-box price for a pet subscription box"
+    },
+    "gender": {
+     "value": "any",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Brief does not name a gender; cat owners skew female but not stated"
+    },
+    "age_range": {
+     "value": "25-45",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Typical age band for first-time pet adopters"
+    },
+    "audience": {
+     "value": "People who just adopted a kitten and want help through the first months",
+     "source": "inferred",
+     "evidence": {
+      "text": "new cat owners",
+      "start": 23,
+      "end": 37
+     },
+     "note": "Directly from the stated audience plus the first-three-months framing"
+    },
+    "business_model": {
+     "value": "subscription",
+     "source": "stated",
+     "evidence": {
+      "text": "A subscription box",
+      "start": 0,
+      "end": 18
+     },
+     "note": null
+    },
+    "claims": [
+     {
+      "claim": "Subscription box made for new cat owners",
+      "evidence": {
+       "text": "A subscription box for new cat owners",
+       "start": 0,
+       "end": 37
+      }
+     },
+     {
+      "claim": "Covers the cat's first three months",
+      "evidence": {
+       "text": "First three months of their cat's life",
+       "start": 39,
+       "end": 77
+      }
+     },
+     {
+      "claim": "Includes toys, food samples and a booklet",
+      "evidence": {
+       "text": "Toys, food samples, a little booklet about what to expect",
+       "start": 79,
+       "end": 136
+      }
+     }
+    ],
+    "clarity": "clear",
+    "clarity_reason": "We know exactly what is sold and who buys it; only price and audience details are missing and have sensible defaults.",
+    "assumptions": [
+     "Assumed a first order of about $45, since no price was given.",
+     "Assumed a broad adult audience of roughly 25-45, since the brief names no gender or age.",
+     "Assumed the box is sold only as a subscription, based on the wording."
+    ],
+    "clarifying_questions": [
+     {
+      "question": "What does the first box or first month cost?",
+      "why": "First-order value drives which publishers and shopper price ranges we target.",
+      "suggested_answers": [
+       "Under $30",
+       "$30-$50",
+       "$50-$80",
+       "Over $80"
+      ]
+     },
+     {
+      "question": "Is it a fixed 3-month plan or an ongoing subscription?",
+      "why": "Changes whether we frame it as a one-time starter kit or a recurring commitment.",
+      "suggested_answers": [
+       "Fixed 3-month plan",
+       "Ongoing monthly",
+       "Both options"
+      ]
+     },
+     {
+      "question": "Is it often bought as a gift for someone else's new cat?",
+      "why": "If gifting matters, we can target gift-minded shoppers and write gift-led ads.",
+      "suggested_answers": [
+       "Mostly for own cat",
+       "Often a gift",
+       "Even split"
+      ]
+     }
+    ],
+    "dropped_quotes": [],
+    "dropped_tags": []
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "understand",
+   "status": "done",
+   "ms": 16135
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_004",
+      "name": "The Pet Parent",
+      "score": 58,
+      "why_plausible": "Brief is a kitten-focused box with food samples and a care booklet; this persona has affinities for pet_food, pet_supplies, pet_health and subscription_boxes with low-medium price sensitivity. They treat pets as family, which matches the emotional 'first three months' framing.",
+      "lean_into": [
+       "emotional connection with a new kitten",
+       "guidance on what to expect in the first months",
+       "curated for cats specifically, not generic pet stuff"
+      ],
+      "avoid": [
+       "claiming vet-recommended (brief doesn't support it)",
+       "ultra-cheap or bargain framing",
+       "generic 'any pet' positioning"
+      ],
+      "ad_angle": "Give your new kitten the right start: a box built around their first three months of development.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_009",
+       "pub_007"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_002",
+      "name": "The Busy Parent",
+      "score": 72,
+      "why_plausible": "Time-poor dual-income parents with pet_food and convenience affinities often adopt a kitten for the kids and want one decision made for them. Medium price sensitivity fits a $45 box.",
+      "lean_into": [
+       "time-saving: everything the kitten needs shows up monthly",
+       "family-friendly, kids get toys to play with the kitten",
+       "simple setup, nothing to research"
+      ],
+      "avoid": [
+       "luxury positioning",
+       "complicated onboarding or long ingredient deep-dives"
+      ],
+      "ad_angle": "The whole family wanted a kitten; this box means nobody has to figure out what to buy.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_009",
+       "pub_007"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_007",
+      "name": "The Convenience-First Millennial",
+      "score": 57,
+      "why_plausible": "Heavy subscription user who defaults to whatever is easiest, and the brief is subscription-only with a fixed three-month run. Urban mid-to-high income at a $45 price point fits their $55 AOV.",
+      "lean_into": [
+       "one subscription, three months, done",
+       "subscription perks and automatic monthly delivery",
+       "zero research required"
+      ],
+      "avoid": [
+       "multi-step signup messaging",
+       "sentimental slow-burn storytelling",
+       "delayed shipping"
+      ],
+      "ad_angle": "Sign up once and the kitten essentials just arrive — no pet-store trips, no guesswork.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_009",
+       "pub_007"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_008",
+      "name": "The Value-Conscious Shopper",
+      "score": 47,
+      "why_plausible": "The brief flags a gift occasion and this persona is female-leaning, family-product oriented, and responds to bundles and clear value. A $45 bundle of toys, food samples and a booklet is easy to articulate as value.",
+      "lean_into": [
+       "clear value: toys, food samples and a guide bundled in one box",
+       "reviews from other new cat owners",
+       "bundle framing versus buying pieces separately"
+      ],
+      "avoid": [
+       "vague premium positioning",
+       "luxury-only language"
+      ],
+      "ad_angle": "A ready-made gift for someone who just brought a kitten home — everything bundled in one box.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_009",
+       "pub_007"
+      ],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_002",
+      "score": 72,
+      "affinity": 47,
+      "values": 67,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops kids_family, replenishment, pets; responds to convenience_speed"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 58,
+      "affinity": 49,
+      "values": 0,
+      "price": 100,
+      "reach": 96,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops pets, pet_health, replenishment"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 57,
+      "affinity": 15,
+      "values": 67,
+      "price": 100,
+      "reach": 91,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops replenishment, kids_family≈convenience; responds to convenience_speed"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 47,
+      "affinity": 18,
+      "values": 0,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops kids_family, replenishment"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 41,
+      "affinity": 9,
+      "values": 0,
+      "price": 100,
+      "reach": 88,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops replenishment, kids_family≈household"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 39,
+      "affinity": 9,
+      "values": 0,
+      "price": 100,
+      "reach": 83,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops replenishment"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 37,
+      "affinity": 9,
+      "values": 0,
+      "price": 100,
+      "reach": 73,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops replenishment"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 24,
+      "affinity": 0,
+      "values": 30,
+      "price": 100,
+      "reach": 13,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "responds to playful"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 15,
+      "affinity": 12,
+      "values": 0,
+      "price": 100,
+      "reach": 79,
+      "conflicts": [
+       "subscription_only"
+      ],
+      "reach_publishers": [
+       "pub_009",
+       "pub_007"
+      ],
+      "detail": "shops gift; dislikes subscription_only"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 13,
+      "affinity": 5,
+      "values": 0,
+      "price": 30,
+      "reach": 25,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops gift; price-mismatched for mid"
+     }
+    ],
+    "skipped_note": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "personas",
+   "status": "done",
+   "ms": 13291
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_004",
+    "persona_id": "persona_004",
+    "persona_name": "The Pet Parent",
+    "angle": "A box built around the kitten's first three months, month by month",
+    "headline": "Built for a kitten's first 3 months",
+    "body": "A monthly box for new cat owners: toys, food samples, and a booklet on what to expect as your kitten grows.",
+    "cta": "See the box",
+    "claims_used": [
+     {
+      "claim": "Built for a kitten's first 3 months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "A monthly box for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "toys, food samples, and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "Option to gift the three-month box to a friend with a new kitten",
+    "tone_notes": "Cat-specific, not generic pet; leads with developmental staging and guidance rather than price. No vet claims, no bargain framing, warm but plain.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "One decision made for the whole family after the kitten arrives",
+    "headline": "New kitten? Nobody has to figure it out",
+    "body": "Toys, food samples and a booklet on what to expect, arriving monthly through your cat's first three months. One decision, done.",
+    "cta": "See what's inside",
+    "claims_used": [
+     {
+      "claim": "Box is for people who just got a kitten / new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "Arrives monthly across the cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Contains toys, food samples and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "Free shipping on the first box, or skip/cancel anytime messaging on the landing page",
+    "tone_notes": "Plain and practical, no luxury framing or ingredient detail. Leads with the assigned angle: the family got the kitten, the box removes the research. 'One decision, done' speaks to time-poor parents; 'toys' hints at kids playing with the kitten without naming them.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "Ready-made gift bundle for someone who just got a kitten",
+    "headline": "A new-kitten gift, already bundled",
+    "body": "Toys, food samples and a booklet on what to expect — one box a month, covering the cat's first three months.",
+    "cta": "See what's inside",
+    "claims_used": [
+     {
+      "claim": "a gift for someone who just got a kitten / made for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "covering the cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Toys, food samples and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "First box 20% off, or free gift note/gift wrap when bought as a present",
+    "tone_notes": "Plain value articulation: names every item in the bundle so the shopper can price it against buying pieces separately. No premium or luxury framing, no hype. Gift angle keeps it distinct from the pet-parent and convenience cards.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "One signup, three months of kitten supplies handled",
+    "headline": "Set it once. The kitten stuff shows up.",
+    "body": "One subscription covers your cat's first three months \"\" toys, food samples, and a booklet on what to expect. No pet-store guesswork.",
+    "cta": "Start the box",
+    "claims_used": [
+     {
+      "claim": "One subscription for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "Covers your cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Toys, food samples, and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "First month 20% off for sign-ups from this placement",
+    "tone_notes": "Leads with set-and-forget convenience and a single decision, matching a heavy subscriber who defaults to whatever is easiest. Plain, fast, no sentimentality, no multi-step signup language or shipping promises.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "publishers",
+   "plan": {
+    "summary": "The only true pet subscription publisher is a direct competitor, so the plan rests on two pet-retail tests — Ruffco for scale and Pawline for subscription-ready owners — with everything else excluded as off-category.",
+    "recommended": [],
+    "test": [
+     {
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 52,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $73 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 93,
+        "neutral": false,
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 57,
+      "adjustment": 8,
+      "adjustment_reason": "Notes call it the 'Largest pet audience in the catalog' with 'repeat-purchase behavior' at 62M impressions, so even a thin slice of new-kitten buyers is a meaningful volume of qualified traffic the category score undervalues.",
+      "fit": 65,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells pet_supplies, a close substitute",
+      "rationale": "Ruffco is the biggest pet reach available and its food/pharmacy mix means shoppers are actively provisioning a new animal, which is exactly when a kitten starter box lands; broad 25-55 demographics keep the kitten-owner segment addressable at scale.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Largest pet audience in the catalog. Broad demographics, repeat-purchase behavior"
+       },
+       {
+        "field": "monthly_impressions",
+        "quote": "62000000"
+       }
+      ],
+      "risk": "Ruffco already sells pet food and supplies, so kitten owners may feel they have provisioning covered; the audience is also heavily dog-weighted, so cat-specific creative is essential."
+     },
+     {
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 52,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $64 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 33,
+        "neutral": false,
+        "detail": "4.8M monthly impressions"
+       }
+      ],
+      "base_fit": 51,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 51,
+      "tier": "test",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": "sells pet_supplies, a close substitute",
+      "rationale": "Pawline is 'Subscription-heavy' with owners who are 'health-conscious about pets', so the audience is already comfortable with recurring pet billing and with food-sample-led value props.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Subscription-heavy. Owners are health-conscious about pets, responsive to premium positioning"
+       }
+      ],
+      "risk": "Only 4.8M impressions and a 30-55 skew that leans older than new-kitten adopters; a $45 box may read as cheap to an audience 'responsive to premium positioning'."
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 53,
+        "neutral": false,
+        "detail": "matches pets, pet_health≈pets, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $35 typical order (1.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 33,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 58,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 58,
+      "tier": "excluded",
+      "exclusion_reason": "competitor",
+      "conflict": "sells pet_subscription_box, like you",
+      "adjacent_conflict": null,
+      "rationale": "Excluded: Tailcrate sells a pet subscription box of its own, a direct conflict.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 14,
+        "neutral": false,
+        "detail": "matches kids_family, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $74 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 67,
+        "neutral": false,
+        "detail": "shares convenience_speed"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 51,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 51,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded as off-category, though 'Family and couples households' that are 'Convenience-motivated' is the closest non-pet proxy here.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 8,
+        "neutral": false,
+        "detail": "matches replenishment, kids_family≈convenience"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $28 typical order (1.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 67,
+        "neutral": false,
+        "detail": "shares convenience_speed"
+       },
+       {
+        "name": "reach",
+        "score": 100,
+        "neutral": false,
+        "detail": "84.0M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 50,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: instant-delivery grocery shoppers, and the 18-34 impulse traffic has no kitten signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $78 typical order (0.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 35,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 35,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: activewear buyers, no pet or life-event overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $42 typical order (1.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: fitness and spa bookings, unrelated to new pet ownership.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches replenishment, kids_family≈household"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $86 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 34,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: organic grocery shoppers with no pet purchase signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 5,
+        "neutral": false,
+        "detail": "matches gift, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $52 typical order (0.9×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded as apparel, despite gifting seasonality that could otherwise suit a gift box.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $61 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 13,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: beauty DTC with an 18-34 identity-driven audience, no kitten-ownership signal.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $42 typical order (1.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 13,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 33,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Off-category: shoppers here buy beverages, with little overlap with what you sell.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $38 typical order (1.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 32,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: supplements buyers, and the notes flag an audience 'skeptical of unsubstantiated health claims'.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $89 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 31,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: women's apparel, no category or occasion overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 86,
+        "neutral": false,
+        "detail": "$45 vs $112 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: apparel for 45-65 affluent women, off-category and off-age.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 2,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$45 vs $48 typical order (0.9×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 30,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: haircare DTC with no pet relevance.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 70,
+        "neutral": false,
+        "detail": "$45 vs $142 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares convenience_speed"
+       },
+       {
+        "name": "reach",
+        "score": 23,
+        "neutral": false,
+        "detail": "3.2M monthly impressions"
+       }
+      ],
+      "base_fit": 28,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 28,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: footwear, and a $142 typical order sits far from this offer.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 82,
+        "neutral": false,
+        "detail": "$45 vs $118 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 28,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 28,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: footwear and activewear, no pet overlap.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 77,
+        "neutral": false,
+        "detail": "$45 vs $128 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 27,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 27,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: apparel for a 50-70 audience, off-category and off-age.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_014",
+      "name": "Hearthstone Goods",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 11,
+        "neutral": false,
+        "detail": "matches life_event, gift"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 49,
+        "neutral": false,
+        "detail": "$45 vs $198 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 20,
+        "neutral": false,
+        "detail": "2.8M monthly impressions"
+       }
+      ],
+      "base_fit": 26,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 26,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded as cookware, though its 'new-home life events' driver is thematically adjacent to a new-pet life event.",
+      "evidence": [],
+      "risk": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 4,
+        "neutral": false,
+        "detail": "matches life_event"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 61,
+        "neutral": false,
+        "detail": "$45 vs $164 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 25,
+      "adjustment": 0,
+      "adjustment_reason": null,
+      "fit": 25,
+      "tier": "excluded",
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Excluded: bedding and bath, with a $164 order profile unrelated to a pet box.",
+      "evidence": [],
+      "risk": null
+     }
+    ]
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "publishers",
+   "status": "done",
+   "ms": 26520
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_004",
+    "persona_id": "persona_004",
+    "persona_name": "The Pet Parent",
+    "angle": "A box built around the kitten's first three months, month by month",
+    "headline": "Built for a kitten's first 3 months",
+    "body": "A monthly box for new cat owners: toys, food samples, and a booklet on what to expect as your kitten grows.",
+    "cta": "See the box",
+    "claims_used": [
+     {
+      "claim": "Built for a kitten's first 3 months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "A monthly box for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "toys, food samples, and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "Option to gift the three-month box to a friend with a new kitten",
+    "tone_notes": "Cat-specific, not generic pet; leads with developmental staging and guidance rather than price. No vet claims, no bargain framing, warm but plain.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Every claim maps to allowed claims; no vet or ingredient claims invented."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on kitten-growth warmth and avoids cheap positioning; unsupported vet claims correctly omitted."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Three-month kitten window plus box contents is particular to this product."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, informative, no urgency on a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims; fits Ruffco/Pawline notes."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "One decision made for the whole family after the kitten arrives",
+    "headline": "New kitten? Nobody has to figure it out",
+    "body": "Toys, food samples and a booklet on what to expect, arriving monthly through your cat's first three months. One decision, done.",
+    "cta": "See what's inside",
+    "claims_used": [
+     {
+      "claim": "Box is for people who just got a kitten / new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "Arrives monthly across the cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Contains toys, food samples and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "Free shipping on the first box, or skip/cancel anytime messaging on the landing page",
+    "tone_notes": "Plain and practical, no luxury framing or ingredient detail. Leads with the assigned angle: the family got the kitten, the box removes the research. 'One decision, done' speaks to time-poor parents; 'toys' hints at kids playing with the kitten without naming them.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Monthly delivery across first three months and contents all trace to the brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Time-saving 'One decision, done' with no luxury tone or complex onboarding."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "New-kitten first-three-months framing can't transfer unchanged."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Reads as a calm suggestion, no pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_008",
+    "persona_id": "persona_008",
+    "persona_name": "The Value-Conscious Shopper",
+    "angle": "Ready-made gift bundle for someone who just got a kitten",
+    "headline": "A new-kitten gift, already bundled",
+    "body": "Toys, food samples and a booklet on what to expect — one box a month, covering the cat's first three months.",
+    "cta": "See what's inside",
+    "claims_used": [
+     {
+      "claim": "a gift for someone who just got a kitten / made for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "covering the cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Toys, food samples and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "First box 20% off, or free gift note/gift wrap when bought as a present",
+    "tone_notes": "Plain value articulation: names every item in the bundle so the shopper can price it against buying pieces separately. No premium or luxury framing, no hype. Gift angle keeps it distinct from the pet-parent and convenience cards.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Bundle framing describes the stated contents; no invented discount or ratings."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Clear value-prop bundling, no vague premium language; discounts correctly not invented."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "First-three-months kitten box detail is product-specific."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Neutral tone, no urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Nothing unsubstantiated for pet publishers."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "b7461e22eb-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "One signup, three months of kitten supplies handled",
+    "headline": "Set it once. The kitten stuff shows up.",
+    "body": "One subscription covers your cat's first three months — toys, food samples, and a booklet on what to expect. No pet-store guesswork.",
+    "cta": "Start the box",
+    "claims_used": [
+     {
+      "claim": "One subscription for new cat owners",
+      "source_quote": "A subscription box for new cat owners"
+     },
+     {
+      "claim": "Covers your cat's first three months",
+      "source_quote": "First three months of their cat's life"
+     },
+     {
+      "claim": "Toys, food samples, and a booklet on what to expect",
+      "source_quote": "Toys, food samples, a little booklet about what to expect"
+     }
+    ],
+    "offer_suggestion": "First month 20% off for sign-ups from this placement",
+    "tone_notes": "Leads with set-and-forget convenience and a single decision, matching a heavy subscriber who defaults to whatever is easiest. Plain, fast, no sentimentality, no multi-step signup language or shipping promises.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Subscription, three-month coverage and contents all trace to the brief; no invented cadence or offers."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on set-it-once speed and subscription simplicity, no multi-step friction."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Kitten-first-three-months box with booklet is not swappable to another advertiser."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or countdown language."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health or efficacy claims; fine for Ruffco/Pawline."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "One signup, three months of kitten supplies handled",
+     "headline": "Set it once. The kitten stuff shows up.",
+     "body": "One subscription covers your cat's first three months \"\" toys, food samples, and a booklet on what to expect. No pet-store guesswork.",
+     "cta": "Start the box",
+     "claims_used": [
+      {
+       "claim": "One subscription for new cat owners",
+       "source_quote": "A subscription box for new cat owners"
+      },
+      {
+       "claim": "Covers your cat's first three months",
+       "source_quote": "First three months of their cat's life"
+      },
+      {
+       "claim": "Toys, food samples, and a booklet on what to expect",
+       "source_quote": "Toys, food samples, a little booklet about what to expect"
+      }
+     ],
+     "offer_suggestion": "First month 20% off for sign-ups from this placement",
+     "tone_notes": "Leads with set-and-forget convenience and a single decision, matching a heavy subscriber who defaults to whatever is easiest. Plain, fast, no sentimentality, no multi-step signup language or shipping promises."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 56914
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "started",
+   "ms": null
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "A three-month starter subscription box for new cat owners containing toys, food samples and a booklet on what to expect · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-04",
+      "end": "2026-11-02",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 27.0,
+     "max_cpa_usd": 35.1,
+     "allowable_cpa_ratio": 0.6,
+     "first_order_value_usd": 45.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$45 first order (assumed) × 0.60 = $27.00 target CPA: subscription revenue repeats, so a first order can be bought at a larger share of its value. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_009",
+      "publisher_name": "Ruffco",
+      "category": "pet",
+      "role": "test",
+      "fit_score": 65,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 185.2,
+      "capacity_note": null
+     },
+     {
+      "publisher_id": "pub_007",
+      "publisher_name": "Pawline",
+      "category": "pet",
+      "role": "test",
+      "fit_score": 51,
+      "allocation_pct": 50.0,
+      "budget_usd": 5000.0,
+      "est_conversions": 185.2,
+      "capacity_note": null
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_004",
+      "persona_002",
+      "persona_007",
+      "persona_008"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "25-45",
+      "source": "assumed"
+     },
+     "geo": [
+      "US (nationwide)"
+     ],
+     "contextual_interests": [
+      "pets",
+      "kids_family",
+      "pet_health"
+     ],
+     "exclusions": [
+      "pet_subscription_box",
+      "pet_supplies",
+      "pet_toys"
+     ]
+    },
+    "creatives": [
+     {
+      "creative_id": "b7461e22eb-persona_004",
+      "persona_id": "persona_004",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "b7461e22eb-persona_002",
+      "persona_id": "persona_002",
+      "weight": 0.25,
+      "status": "passed"
+     },
+     {
+      "creative_id": "b7461e22eb-persona_007",
+      "persona_id": "persona_007",
+      "weight": 0.25,
+      "status": "revised"
+     },
+     {
+      "creative_id": "b7461e22eb-persona_008",
+      "persona_id": "persona_008",
+      "weight": 0.25,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 100.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": true,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed a first order of about $45, since no price was given.",
+      "Assumed a broad adult audience of roughly 25-45, since the brief names no gender or age.",
+      "Assumed the box is sold only as a subscription, based on the wording.",
+      "Allowable CPA is 60% of first order value (subscription); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ]
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "campaign",
+   "status": "done",
+   "ms": 0
+  },
+  {
+   "type": "done",
+   "run_id": "b7461e22eb",
+   "total_ms": 73055,
+   "cost_usd": 0.47,
+   "trace": [
+    {
+     "stage": "understand",
+     "name": "understand_brief",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "understand_brief",
+     "prompt_version": "v3-754902a",
+     "ms": 16134,
+     "input_tokens": 7348,
+     "output_tokens": 1419,
+     "cost_usd": 0.072215,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "publishers",
+     "name": "score_publishers",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "personas",
+     "name": "select_personas",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "select_personas",
+     "prompt_version": "v2-ab12f6b",
+     "ms": 13291,
+     "input_tokens": 4544,
+     "output_tokens": 918,
+     "cost_usd": 0.04567,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_004",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 4918,
+     "input_tokens": 2658,
+     "output_tokens": 311,
+     "cost_usd": 0.021065,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_002",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 6838,
+     "input_tokens": 2626,
+     "output_tokens": 508,
+     "cost_usd": 0.02583,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_008",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7064,
+     "input_tokens": 2615,
+     "output_tokens": 512,
+     "cost_usd": 0.025875,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 7993,
+     "input_tokens": 2622,
+     "output_tokens": 575,
+     "cost_usd": 0.027485,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v2-e92e147",
+     "ms": 26518,
+     "input_tokens": 13801,
+     "output_tokens": 2426,
+     "cost_usd": 0.129655,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 16218,
+     "input_tokens": 3145,
+     "output_tokens": 1329,
+     "cost_usd": 0.04895,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v3-6d75779",
+     "ms": 3731,
+     "input_tokens": 3283,
+     "output_tokens": 334,
+     "cost_usd": 0.024765,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v2-1c6bf10",
+     "ms": 15671,
+     "input_tokens": 3146,
+     "output_tokens": 1311,
+     "cost_usd": 0.048505,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "build_config",
+     "model": null,
+     "prompt": null,
+     "prompt_version": null,
+     "ms": 0,
+     "input_tokens": 0,
+     "output_tokens": 0,
+     "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+# Controlled vocabulary shared by advertisers, publishers and personas
+#
+# Matching only works if both sides speak the same language. The LLM maps free text
+# (a brief, a publisher's notes, a persona's affinities) onto these tags; code does the
+# matching. Adding a tag here makes it available to every prompt and schema at once
+
+# What an audience shops for or cares about.
+interests:
+  pets: Owns pets and buys for them
+  pet_health: Cares about pet nutrition, joints, longevity, vet guidance
+  apparel_women: Women's clothing
+  apparel_men: Men's clothing
+  activewear: Workout and athleisure clothing
+  footwear: Shoes and sneakers
+  basics: Socks, underwear, everyday essentials
+  outdoor_technical: Technical outdoor gear (ski, climbing, backcountry)
+  luxury_fashion: High-end handbags, leather goods, designer accessories
+  fitness: Works out, trains, follows fitness content
+  wellness: General wellbeing, stress, sleep, self-optimization
+  supplements: Vitamins, supplements, sports nutrition
+  beauty: Skincare and makeup
+  haircare: Hair products and treatments
+  home_textiles: Bedding, bath, linens
+  kitchen: Cookware and kitchen tools
+  home_decor: Decor, candles, home fragrance
+  groceries: Everyday groceries and pantry
+  natural_food: Organic, natural, clean-label food
+  snacks: Snack foods and bars
+  functional_beverages: Better-for-you drinks, NA alternatives, gut health
+  alcohol: Beer, wine, spirits
+  meal_kits: Meal kits and prepared-food subscriptions
+  household: Cleaning and household supplies
+  convenience: Fast delivery, on-demand everything
+  kids_family: Parenting, kids' products, family logistics
+  self_care_services: Spa, classes, appointments
+
+# What messaging resonates with an audience, or what a brand stands for.
+values:
+  sustainability: Environmental impact, recycled or refillable, low waste
+  clean_ingredients: Non-toxic, natural, transparent ingredient lists
+  science_backed: Evidence, clinical or vet formulation, outcomes
+  social_good: Giving back, mission-driven
+  premium_quality: Craftsmanship, durability, quality over price
+  inclusivity: Representation, fit for every body
+  playful: Fun, irreverent, personality-forward voice
+  aesthetic: Design-led, minimalist, visually distinctive
+  value_price: Deals, bundles, clear price-to-value
+  convenience_speed: Saves time, easy, fast
+  heritage: Tradition, provenance, made-in, handmade
+  performance: Technical performance, athlete-grade
+
+# Why or when someone buys.
+occasions:
+  replenishment: Recurring purchase, subscription, running out
+  gift: Buying for someone else, holidays
+  life_event: New home, new baby, new pet, new job
+  impulse: Low-consideration, add-on purchase
+  self_treat: Buying something nice for oneself
+
+# What a business sells. Drives the competitor-conflict gate: offers only run
+# on non-competing brands, so a publisher that sells what the advertiser sells is excluded.
+products:
+  pet_food: Dog and cat food
+  pet_treats: Treats and chews
+  pet_supplies: Beds, leashes, bowls, litter, general supplies
+  pet_toys: Toys
+  pet_pharmacy: Medications and pet health products
+  pet_subscription_box: Curated recurring boxes for pets
+  activewear: Workout and athleisure clothing
+  womens_apparel: Women's clothing
+  mens_apparel: Men's clothing
+  plus_size_apparel: Extended-size clothing
+  intimates: Underwear, bras, sleepwear
+  socks_basics: Socks and everyday basics
+  footwear: Shoes and sneakers
+  outerwear: Jackets, shells, technical outerwear
+  handbags_leather_goods: Bags and leather accessories
+  vitamins_supplements: Vitamins and wellness supplements
+  sports_nutrition: Protein powders, pre-workout, creatine
+  protein_snacks: Protein bars and performance snacks
+  snack_foods: Other packaged snacks
+  baby_food: Food for babies and toddlers
+  packaged_food: A food brand's packaged products (sauces, pantry items)
+  coffee_tea: Coffee, tea and concentrates
+  skincare: Skincare
+  makeup: Makeup
+  haircare: Hair products
+  bedding_bath: Sheets, towels, bath linens
+  cookware: Pots, pans, kitchen tools
+  candles_home_fragrance: Candles and home scent
+  cleaning_products: Household cleaning products
+  groceries: A general grocery retailer or delivery service (many brands, many categories). Not for a single food brand.
+  meal_kits: Meal kit subscriptions
+  functional_beverages: Better-for-you and non-alcoholic drinks
+  soft_drinks: Sodas and mainstream soft drinks
+  alcohol: Beer, wine, spirits
+  fitness_classes: Classes and training bookings
+  spa_services: Spa and wellness appointments
+  b2b_software: Software sold to businesses
+  other: Anything not listed
+
+# Positioning traits of an advertiser that some personas react badly to.
+# Personas list the ones they dislike (their `disinterested_in`, mapped to these).
+positioning:
+  luxury_positioning: Priced and marketed as luxury or exclusive
+  budget_positioning: Competes mainly on low price
+  subscription_only: Only available as a subscription
+  slow_fulfillment: Made to order or long shipping times
+  complex_onboarding: Quiz, fitting, setup, or multi-step purchase
+  fast_fashion: Trend-driven, disposable apparel
+  vague_eco_claims: Sustainability claims without specifics
+  processed_food: Ultra-processed or artificial food
+  corporate_voice: Formal, enterprise, or clinical tone
+  novelty_driven: New, trendy, unproven
+  generic_brand: Undifferentiated commodity
+  sedentary_product: Encourages staying in or not moving
+  self_care_framing: Framed as treat-yourself self care
+  performance_only: Performance claims with no personality
+
+# Partial credit between related interest tags (symmetric, 0..1).
+# Exact matches always score 1.0.
+adjacency:
+  pets: {pet_health: 0.9}
+  fitness: {activewear: 0.8, supplements: 0.6, wellness: 0.6, functional_beverages: 0.4, footwear: 0.4, self_care_services: 0.4, outdoor_technical: 0.3}
+  activewear: {footwear: 0.5, apparel_women: 0.4, apparel_men: 0.4, outdoor_technical: 0.3}
+  wellness: {supplements: 0.7, natural_food: 0.5, functional_beverages: 0.5, self_care_services: 0.6, beauty: 0.3}
+  supplements: {snacks: 0.3}
+  natural_food: {groceries: 0.7, snacks: 0.5, functional_beverages: 0.4, household: 0.2}
+  groceries: {meal_kits: 0.6, snacks: 0.5, household: 0.5, convenience: 0.4}
+  snacks: {convenience: 0.4, functional_beverages: 0.3}
+  functional_beverages: {alcohol: 0.4}
+  alcohol: {convenience: 0.3}
+  meal_kits: {kitchen: 0.4, convenience: 0.5, kids_family: 0.3}
+  household: {convenience: 0.4, kids_family: 0.3}
+  kitchen: {home_decor: 0.4, home_textiles: 0.4}
+  home_textiles: {home_decor: 0.5}
+  beauty: {haircare: 0.6}
+  apparel_women: {basics: 0.4, footwear: 0.4, luxury_fashion: 0.3}
+  apparel_men: {basics: 0.4}
+  luxury_fashion: {footwear: 0.2}
+  kids_family: {convenience: 0.3}
+
+# Values adjacency (same idea, smaller).
+values_adjacency:
+  sustainability: {clean_ingredients: 0.5}
+  clean_ingredients: {science_backed: 0.3}
+  premium_quality: {heritage: 0.6, aesthetic: 0.3}
+  performance: {science_backed: 0.4}

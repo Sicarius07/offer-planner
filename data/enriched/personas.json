@@ -1,0 +1,276 @@
+[
+  {
+    "id": "persona_001",
+    "interests": {
+      "wellness": 1.0,
+      "fitness": 0.8,
+      "supplements": 0.9,
+      "beauty": 0.5,
+      "natural_food": 0.7
+    },
+    "values": {
+      "science_backed": 1.0,
+      "clean_ingredients": 0.9,
+      "performance": 0.5
+    },
+    "occasions": {
+      "replenishment": 0.7,
+      "self_treat": 0.4
+    },
+    "price_tiers": [
+      "mid",
+      "premium",
+      "luxury"
+    ],
+    "dislikes": [
+      "fast_fashion",
+      "processed_food",
+      "novelty_driven"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_002",
+    "interests": {
+      "meal_kits": 1.0,
+      "household": 0.9,
+      "kids_family": 1.0,
+      "pets": 0.6,
+      "convenience": 0.9,
+      "groceries": 0.6
+    },
+    "values": {
+      "convenience_speed": 1.0,
+      "value_price": 0.5
+    },
+    "occasions": {
+      "replenishment": 1.0
+    },
+    "price_tiers": [
+      "value",
+      "mid",
+      "premium"
+    ],
+    "dislikes": [
+      "luxury_positioning",
+      "complex_onboarding"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_003",
+    "interests": {
+      "beauty": 1.0,
+      "apparel_women": 0.8,
+      "functional_beverages": 0.8,
+      "home_decor": 0.7,
+      "haircare": 0.4
+    },
+    "values": {
+      "aesthetic": 1.0,
+      "playful": 0.9,
+      "social_good": 0.5,
+      "sustainability": 0.4
+    },
+    "occasions": {
+      "impulse": 0.8,
+      "self_treat": 0.8
+    },
+    "price_tiers": [
+      "value",
+      "mid"
+    ],
+    "dislikes": [
+      "corporate_voice",
+      "performance_only"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_004",
+    "interests": {
+      "pets": 1.0,
+      "pet_health": 1.0
+    },
+    "values": {
+      "science_backed": 0.8,
+      "clean_ingredients": 0.9,
+      "premium_quality": 0.6
+    },
+    "occasions": {
+      "replenishment": 0.9
+    },
+    "price_tiers": [
+      "mid",
+      "premium"
+    ],
+    "dislikes": [
+      "generic_brand",
+      "budget_positioning"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_005",
+    "interests": {
+      "apparel_women": 1.0,
+      "home_textiles": 0.7,
+      "home_decor": 0.7,
+      "natural_food": 0.4,
+      "kitchen": 0.4,
+      "luxury_fashion": 0.5
+    },
+    "values": {
+      "premium_quality": 1.0,
+      "heritage": 1.0,
+      "aesthetic": 0.3
+    },
+    "occasions": {
+      "self_treat": 0.6,
+      "gift": 0.4
+    },
+    "price_tiers": [
+      "premium",
+      "luxury"
+    ],
+    "dislikes": [
+      "novelty_driven",
+      "fast_fashion"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_006",
+    "interests": {
+      "apparel_women": 0.5,
+      "beauty": 0.5,
+      "home_decor": 0.5,
+      "home_textiles": 0.4,
+      "natural_food": 0.8,
+      "household": 0.7,
+      "footwear": 0.4
+    },
+    "values": {
+      "sustainability": 1.0,
+      "clean_ingredients": 0.6,
+      "heritage": 0.3
+    },
+    "occasions": {
+      "replenishment": 0.5
+    },
+    "price_tiers": [
+      "mid",
+      "premium"
+    ],
+    "dislikes": [
+      "vague_eco_claims",
+      "fast_fashion"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_007",
+    "interests": {
+      "convenience": 1.0,
+      "meal_kits": 0.9,
+      "groceries": 0.5
+    },
+    "values": {
+      "convenience_speed": 1.0
+    },
+    "occasions": {
+      "replenishment": 0.9,
+      "impulse": 0.6
+    },
+    "price_tiers": [
+      "value",
+      "mid",
+      "premium"
+    ],
+    "dislikes": [
+      "complex_onboarding",
+      "slow_fulfillment"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_008",
+    "interests": {
+      "apparel_women": 0.7,
+      "household": 0.8,
+      "groceries": 0.8,
+      "kids_family": 0.7,
+      "basics": 0.4
+    },
+    "values": {
+      "value_price": 1.0
+    },
+    "occasions": {
+      "replenishment": 0.7
+    },
+    "price_tiers": [
+      "value",
+      "mid"
+    ],
+    "dislikes": [
+      "luxury_positioning"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_009",
+    "interests": {
+      "activewear": 1.0,
+      "supplements": 0.9,
+      "fitness": 1.0,
+      "functional_beverages": 0.7,
+      "self_care_services": 0.5,
+      "snacks": 0.4
+    },
+    "values": {
+      "performance": 1.0,
+      "science_backed": 0.6
+    },
+    "occasions": {
+      "replenishment": 0.7
+    },
+    "price_tiers": [
+      "value",
+      "mid",
+      "premium"
+    ],
+    "dislikes": [
+      "sedentary_product"
+    ],
+    "enrichment_version": "v1-reviewed"
+  },
+  {
+    "id": "persona_010",
+    "interests": {
+      "apparel_women": 0.4,
+      "apparel_men": 0.3,
+      "home_decor": 0.7,
+      "home_textiles": 0.5,
+      "beauty": 0.6,
+      "basics": 0.5,
+      "kitchen": 0.4
+    },
+    "values": {
+      "premium_quality": 0.8,
+      "aesthetic": 0.6
+    },
+    "occasions": {
+      "gift": 1.0
+    },
+    "price_tiers": [
+      "mid",
+      "premium",
+      "luxury"
+    ],
+    "dislikes": [
+      "subscription_only",
+      "self_care_framing"
+    ],
+    "enrichment_version": "v1-reviewed"
+  }
+]

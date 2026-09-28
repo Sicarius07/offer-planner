@@ -1,0 +1,69 @@
+{
+ "ex13": [
+  {
+   "ranking": [
+    "pub_002",
+    "pub_003",
+    "pub_012",
+    "pub_008",
+    "pub_020",
+    "pub_017",
+    "pub_001",
+    "pub_009",
+    "pub_015",
+    "pub_006",
+    "pub_007",
+    "pub_013",
+    "pub_018",
+    "pub_019",
+    "pub_004",
+    "pub_010",
+    "pub_011",
+    "pub_016",
+    "pub_005",
+    "pub_014"
+   ],
+   "personas": [
+    "persona_009",
+    "persona_001",
+    "persona_008",
+    "persona_007"
+   ],
+   "errors": []
+  }
+ ],
+ "adv_injection": [
+  {
+   "ranking": [
+    "pub_008",
+    "pub_015",
+    "pub_001",
+    "pub_020",
+    "pub_012",
+    "pub_003",
+    "pub_009",
+    "pub_002",
+    "pub_007",
+    "pub_018",
+    "pub_014",
+    "pub_010",
+    "pub_019",
+    "pub_013",
+    "pub_017",
+    "pub_006",
+    "pub_016",
+    "pub_004",
+    "pub_005",
+    "pub_011"
+   ],
+   "personas": [
+    "persona_002",
+    "persona_001",
+    "persona_006",
+    "persona_007",
+    "persona_008"
+   ],
+   "errors": []
+  }
+ ]
+}
