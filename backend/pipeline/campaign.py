@@ -75,15 +75,15 @@ def allocate(core: list[PublisherResult], test: list[PublisherResult],
 
 def _capped_proportional(weights: list[float], total: float, cap: float, floor: float) -> list[float]:
     """Proportional split of `total` with a per-item cap and floor. Items below the floor
-    are dropped and the split recomputed. If the cap can't be honored (too few items), the
-    cap is relaxed to an even split."""
+    are dropped and the split recomputed. If the cap can't be honored (too few items), it is
+    dropped: an even split would throw away the difference in fit."""
     n = len(weights)
     active = [w > 0 for w in weights]
     while True:
         idx = [i for i in range(n) if active[i]]
         if not idx:
             return [0.0] * n
-        eff_cap = max(cap, total / len(idx))
+        eff_cap = cap if cap * len(idx) >= total else total
         shares = [0.0] * n
         fixed: set[int] = set()
         remaining = total
@@ -144,9 +144,10 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
         ceiling = imps * config.CAPACITY_CONVERSION_CEILING
         note = None
         if est > ceiling:
-            note = (f"{est:.0f} conversions would exceed ~{ceiling:.0f} this publisher can likely "
-                    "deliver; expect under-delivery or raise the CPA")
+            note = (f"the budget buys {est:.0f} customers, but this publisher can likely deliver "
+                    f"only ~{ceiling:.0f}; expect under-delivery or move budget elsewhere")
             warnings.append(f"{pub.name}: {note}.")
+            est = round(ceiling, 1)
         ads = ads_for(catalog_pubs[pub.publisher_id], active)
         if active and not ads:
             unmatched.append(pub.name)

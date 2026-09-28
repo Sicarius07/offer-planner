@@ -12,11 +12,11 @@
    "type": "profile",
    "profile": {
     "brief": "Technical outerwear for serious backcountry skiers. Our shells are what patrollers wear. Starts at $650, goes up from there.",
-    "business_summary": "A technical outerwear brand making high-end ski shells for backcountry skiers, starting at $650.",
+    "business_summary": "A technical outerwear brand making high-end ski shells for serious backcountry skiers, starting at $650.",
     "brand_name": null,
     "offering_type": "consumer_product",
     "product": {
-     "value": "Technical outerwear (hard shells) for backcountry skiing",
+     "value": "Technical ski shells and outerwear for backcountry skiing",
      "source": "stated",
      "evidence": {
       "text": "Technical outerwear for serious backcountry skiers",
@@ -29,8 +29,7 @@
      "outerwear"
     ],
     "competes_with": [
-     "outerwear",
-     "activewear"
+     "outerwear"
     ],
     "interests": {
      "outdoor_technical": 1.0,
@@ -66,22 +65,22 @@
       "start": 89,
       "end": 123
      },
-     "note": "Entry price is $650 and range goes higher"
+     "note": "Entry price is $650 and products go up, so a typical order is a bit above that"
     },
     "gender": {
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "No gender stated; ski shells sell to both"
+     "note": "Brief names no gender; ski shells sell to all adults"
     },
     "age_range": {
-     "value": "28-50",
+     "value": "25-50",
      "source": "assumed",
      "evidence": null,
-     "note": "Typical age for high-spend backcountry ski gear"
+     "note": "Typical age band for serious backcountry skiers"
     },
     "audience": {
-     "value": "Experienced backcountry skiers and ski professionals who spend heavily on technical gear",
+     "value": "Serious backcountry skiers and ski patrollers who buy technical gear",
      "source": "stated",
      "evidence": {
       "text": "serious backcountry skiers",
@@ -94,11 +93,19 @@
      "value": "one_time",
      "source": "assumed",
      "evidence": null,
-     "note": "Apparel is normally a one-off purchase"
+     "note": "Outerwear is a one-off purchase; no subscription mentioned"
     },
     "claims": [
      {
-      "claim": "Shells worn by ski patrollers",
+      "claim": "Technical outerwear built for backcountry skiing",
+      "evidence": {
+       "text": "Technical outerwear for serious backcountry skiers",
+       "start": 0,
+       "end": 50
+      }
+     },
+     {
+      "claim": "Worn by ski patrollers",
       "evidence": {
        "text": "Our shells are what patrollers wear",
        "start": 52,
@@ -106,7 +113,7 @@
       }
      },
      {
-      "claim": "Starting price of $650",
+      "claim": "Prices start at $650",
       "evidence": {
        "text": "Starts at $650, goes up from there",
        "start": 89,
@@ -115,38 +122,38 @@
      }
     ],
     "clarity": "clear",
-    "clarity_reason": "The product, price point and audience are all stated.",
+    "clarity_reason": "The brief states the product, audience and price clearly.",
     "assumptions": [
-     "Assumed a first order around $750 based on the $650 starting price.",
-     "Assumed the gear is sold to both men and women.",
-     "Assumed a one-time purchase rather than a subscription."
+     "Assumed a typical first order around $750, since prices start at $650 and go up.",
+     "Assumed the gear is sold to all adults, as no gender was mentioned.",
+     "Assumed one-time purchases rather than a subscription."
     ],
     "clarifying_questions": [
      {
-      "question": "Do you sell men's, women's, or both?",
-      "why": "Shapes persona and publisher targeting.",
-      "suggested_answers": [
-       "Both",
-       "Men's only",
-       "Women's only"
-      ]
-     },
-     {
-      "question": "Besides shells, what else do you sell?",
-      "why": "Adds product categories for matching and ad copy.",
+      "question": "Do you sell anything beyond shells (insulation, pants, packs, accessories)?",
+      "why": "A broader catalog opens up more publisher and ad angles.",
       "suggested_answers": [
        "Shells only",
-       "Shells plus insulation and pants",
-       "Full apparel and accessories"
+       "Shells plus pants and insulation",
+       "Full outerwear and accessories line"
       ]
      },
      {
-      "question": "What's your typical order value?",
-      "why": "Sets payout and offer expectations.",
+      "question": "What is your actual average order value?",
+      "why": "Order value affects which publishers' shoppers are a good match.",
       "suggested_answers": [
-       "$650-800",
-       "$800-1,200",
-       "Over $1,200"
+       "$650-750",
+       "$750-1,000",
+       "Over $1,000"
+      ]
+     },
+     {
+      "question": "Is there a gender skew in your customers?",
+      "why": "Changes persona selection and ad copy.",
+      "suggested_answers": [
+       "Mostly men",
+       "Mostly women",
+       "Even split"
       ]
      }
     ],
@@ -158,7 +165,7 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 11885
+   "ms": 13595
   },
   {
    "type": "stage",
@@ -181,17 +188,18 @@
       "name": "The Fitness Enthusiast",
       "score": 53,
       "rank": 1,
-      "why_plausible": "Identity-adjacent performance apparel buyer with low-medium price sensitivity who explicitly responds to technical fabrics and athlete endorsements — the patroller claim lands directly. AOV of $88 is far below $650, but this is the persona most likely to stretch for gear that signals serious athletic capability.",
+      "why_plausible": "Brief sells performance shells \"what patrollers wear,\" and this persona buys performance apparel, is brand-loyal to things that perform, and lists messaging_preferences of performance claims, athlete endorsements, and technical fabrics. price_sensitivity low-medium and identity-adjacent purchasing make a $650+ technical piece a justifiable upgrade despite an $88 typical AOV.",
       "lean_into": [
-       "performance claims",
-       "technical fabrics",
-       "pro/patroller endorsement as the athlete proof point"
+       "performance claims — built for backcountry conditions",
+       "the patroller endorsement as a pro-athlete proof point",
+       "technical fabric and construction detail"
       ],
       "avoid": [
-       "fashion-only or streetwear styling angles",
-       "sedentary/lifestyle framing"
+       "fashion-only or lifestyle styling framing",
+       "sedentary/casual-wear positioning",
+       "fluffy luxury language with no spec behind it"
       ],
-      "ad_angle": "The shell ski patrollers actually wear — built to perform, not to pose.",
+      "ad_angle": "Pro-proven performance: the shell ski patrollers actually work in — spec-forward, built to perform under load.",
       "confidence": "high",
       "reached_via": [
        "pub_017",
@@ -202,47 +210,22 @@
       "conflicts": []
      },
      {
-      "persona_id": "persona_001",
-      "name": "The Wellness Optimizer",
-      "score": 52,
-      "rank": 2,
-      "why_plausible": "price_sensitivity: low and a system-optimizer mindset that pays premiums for gear that measurably works; her fitness affinity extends naturally to backcountry touring, an endurance sport. The score undercounted her because outerwear isn't in her tag list, but she's the one persona who'll happily read the spec sheet.",
-      "lean_into": [
-       "outcome-focused claims (stays dry, breathes on the skin track)",
-       "technical transparency about materials and construction",
-       "willingness to pay once for something that performs"
-      ],
-      "avoid": [
-       "novelty or trend framing",
-       "vague 'premium' language with nothing behind it"
-      ],
-      "ad_angle": "Gear as equipment: the measurable difference a real hardshell makes on a long day of touring.",
-      "confidence": "medium",
-      "reached_via": [
-       "pub_003",
-       "pub_002",
-       "pub_011",
-       "pub_017"
-      ],
-      "conflicts": []
-     },
-     {
       "persona_id": "persona_010",
       "name": "The Gifter",
       "score": 44,
       "rank": 3,
-      "why_plausible": "The brief lists gift as an occasion at 0.5, and this persona has price_sensitivity: low with an apparel affinity and a stated appetite for 'impressive-looking' high-AOV purchases. A $650+ shell is the rare gift that reads as serious and unmistakably expensive.",
+      "why_plausible": "A $650+ technical shell is exactly the \"impressive-looking\" high-AOV purchase this gifting mode responds to, and apparel and premium_basics are named category_affinities with price_sensitivity: low. The gift occasion is explicit in the profile (occasions.gift).",
       "lean_into": [
-       "giftable, premium presentation",
-       "the patroller-grade story as something impressive to tell the recipient",
-       "shipping timing for a season-dated gift"
+       "giftable for the skier in your life",
+       "premium presentation and obvious quality",
+       "one big gift instead of several small ones"
       ],
       "avoid": [
-       "subscription framing",
-       "self-treat-only framing",
-       "dense technical jargon that a non-skier gifter can't evaluate"
+       "subscription-only framing (business model is one-time, so say so)",
+       "self-treat-only language",
+       "deep technical jargon that a non-skier gifter can't evaluate"
       ],
-      "ad_angle": "The gift for the skier who already owns everything — patrol-grade, and they'd never buy it for themselves.",
+      "ad_angle": "The gift a serious skier won't buy for themselves — the shell they'd pick if they weren't being careful with money.",
       "confidence": "medium",
       "reached_via": [
        "pub_003",
@@ -257,21 +240,47 @@
       "name": "The Affluent Classic",
       "score": 37,
       "rank": 5,
-      "why_plausible": "price_sensitivity: low, typical_aov_usd: 145 (highest in the set), and she values quality and longevity over trends — a buy-once shell is exactly that argument. Her travel and classic_apparel affinities fit a mountain-trip buyer; the score docked her mainly on publisher reach, not on fit.",
+      "why_plausible": "price_sensitivity: low with a $145 typical AOV and a stated preference for quality and longevity over trends fits a $650 shell bought once and kept for a decade; classic_apparel and travel affinities cover ski-trip outerwear. The score ranked her low mainly on publisher reach, not on buying logic — and she also buys gifts for skiing children or partners.",
       "lean_into": [
        "craftsmanship and construction quality",
-       "understated, quality-focused tone",
-       "buy it once, keep it for a decade"
+       "buy-once longevity rather than replacing cheap shells",
+       "understated, quality-focused tone"
       ],
       "avoid": [
-       "influencer or hype positioning",
-       "loud aesthetics",
-       "trendy slang"
+       "trendy or hype language",
+       "influencer or social-proof positioning",
+       "loud graphics and extreme-sport bravado"
       ],
-      "ad_angle": "Built to outlast the trend cycle — one shell, made properly, for every winter to come.",
+      "ad_angle": "Built to outlast the trend cycle: one shell, made properly, worn for seasons rather than replaced.",
       "confidence": "medium",
       "reached_via": [
        "pub_004"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 52,
+      "rank": 2,
+      "why_plausible": "price_sensitivity: low with named fitness affinity and outcome-focused messaging preferences fits someone who treats uphill touring as training and wants gear that performs to spec. Weaker than the others because her core categories are supplements and wellness, so the ad must speak to winter training rather than to ski-industry credibility.",
+      "lean_into": [
+       "outcome-focused: stays breathable on the climb, sealed on the descent",
+       "specific technical performance rather than vague quality",
+       "worth the premium because it performs"
+      ],
+      "avoid": [
+       "science-backed/clinical proof claims the brief can't support",
+       "novelty framing",
+       "anything implying casual or sedentary use"
+      ],
+      "ad_angle": "Winter training gear: a shell that handles the sweat-then-freeze cycle of skinning up and skiing down.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_003",
+       "pub_002",
+       "pub_011",
+       "pub_017"
       ],
       "conflicts": []
      }
@@ -443,7 +452,7 @@
    "type": "stage",
    "stage": "personas",
    "status": "done",
-   "ms": 17659
+   "ms": 24192
   },
   {
    "type": "stage",
@@ -454,16 +463,20 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_005",
+    "creative_id": "92b562d6fe-persona_005",
     "persona_id": "persona_005",
     "persona_name": "The Affluent Classic",
-    "angle": "One shell, made properly, for every winter after this one",
-    "headline": "One shell, many winters",
-    "body": "Hard shells built for backcountry skiing — the same ones ski patrollers wear. From $650, and not the sort of thing you replace.",
+    "angle": "One shell, made properly, kept for seasons",
+    "headline": "A ski shell you buy once",
+    "body": "Technical outerwear built for backcountry skiing, made to the standard patrollers wear all season. From $650.",
     "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "the same ones ski patrollers wear",
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the standard patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
@@ -472,7 +485,7 @@
      }
     ],
     "offer_suggestion": null,
-    "tone_notes": "Understated and quality-led: no urgency, no trend language. Longevity framing ('many winters', 'not the sort of thing you replace') speaks to buy-once value, while the patroller detail supplies credibility without hype. Price stated plainly, since low price sensitivity reads it as a quality signal.",
+    "tone_notes": "Understated and quality-led: leads with longevity and construction rather than performance bravado. Price is stated plainly, which suits a low-price-sensitivity buyer who reads cost as a quality signal. No hype, no social proof beyond the permitted patroller fact.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -481,25 +494,29 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_009",
+    "creative_id": "92b562d6fe-persona_009",
     "persona_id": "persona_009",
     "persona_name": "The Fitness Enthusiast",
-    "angle": "Patroller-issue hard shell: gear judged on performance, not looks",
-    "headline": "The Shell Ski Patrollers Wear",
-    "body": "Hard shells built for backcountry days, not for posing. The people working the mountain in all weather wear them. From $650.",
+    "angle": "Pro-proven: the shell patrollers work in",
+    "headline": "The shell ski patrollers work in",
+    "body": "Technical outerwear built for backcountry skiing — made for people who are out in it all day. From $650.",
     "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "The shell ski patrollers wear",
+      "claim": "The shell ski patrollers work in",
       "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
      },
      {
       "claim": "From $650",
       "source_quote": "Starts at $650, goes up from there"
      }
     ],
-    "offer_suggestion": "Free expedited shipping on first order, advertiser's discretion",
-    "tone_notes": "Leads with the patroller endorsement as the athlete proof point this persona responds to, plain and unhyped. Frames the product as performance gear (hard shell, backcountry) rather than style, avoiding fashion or lifestyle framing. Price stated openly since price sensitivity is low-medium and hiding it would feel evasive on a receipt page.",
+    "offer_suggestion": "Free shipping and returns on first order, so a $650 shell can be tried on risk-free",
+    "tone_notes": "Leads with the patroller proof point as a pro endorsement, states price openly for a low-medium sensitivity buyer, and keeps to performance framing with no fashion, luxury or lifestyle language. No invented fabric specs since the brief lists none.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -508,25 +525,29 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_010",
+    "creative_id": "92b562d6fe-persona_010",
     "persona_id": "persona_010",
     "persona_name": "The Gifter",
-    "angle": "The gift a serious skier won't buy themselves",
-    "headline": "The Ski Shell They'd Never Buy",
-    "body": "Hard shells built for the backcountry — the same ones ski patrollers wear. From $650, for the skier who has the rest.",
-    "cta": "See the shells",
+    "angle": "The shell a serious skier wants but won't splurge on for themselves",
+    "headline": "The shell they won't buy themselves",
+    "body": "Technical ski shells built for the backcountry — the kind patrollers wear. One gift, bought once, from $650.",
+    "cta": "Shop the shells",
     "claims_used": [
      {
-      "claim": "the same ones ski patrollers wear",
+      "claim": "Technical ski shells built for the backcountry",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the kind patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
-      "claim": "From $650",
+      "claim": "from $650",
       "source_quote": "Starts at $650, goes up from there"
      }
     ],
-    "offer_suggestion": "Free gift packaging and a dated delivery option before the season starts",
-    "tone_notes": "Frames a high-ticket apparel piece as an impressive gift with a story anyone can repeat (patrollers wear these), no technical jargon, no self-treat or subscription framing, price stated plainly since this shopper isn't price-sensitive and wants the purchase to read as serious.",
+    "offer_suggestion": "Free gift box and hold-until-holiday shipping on shell orders",
+    "tone_notes": "Gift framing up front, one big purchase instead of several small ones, price stated plainly since low price sensitivity. No jargon a non-skier couldn't judge; patroller proof does the quality work. 'Bought once' signals no subscription. No self-treat language.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -535,25 +556,29 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_001",
+    "creative_id": "92b562d6fe-persona_001",
     "persona_id": "persona_001",
     "persona_name": "The Wellness Optimizer",
-    "angle": "Gear as equipment: a real hardshell judged on specs, not styling",
-    "headline": "A hard shell, judged as equipment",
-    "body": "Hard shells for backcountry skiing — the ones ski patrollers wear. Starts at $650. Read the spec sheet, not the marketing.",
-    "cta": "See the specs",
+    "angle": "Winter training gear for the sweat-then-freeze cycle of touring",
+    "headline": "For the climb up and the ride down",
+    "body": "Skinning up works up heat. The descent takes it back. Technical outerwear built for backcountry skiing, the kind patrollers wear. From $650.",
+    "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "the ones ski patrollers wear",
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the kind patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
-      "claim": "Starts at $650",
-      "source_quote": "Starts at $650, goes up from there"
+      "claim": "From $650",
+      "source_quote": "Starts at $650"
      }
     ],
-    "offer_suggestion": null,
-    "tone_notes": "Treats outerwear as instrumentation rather than apparel, matching a spec-reading, system-optimizer mindset. No trend or novelty framing, no vague 'premium' adjectives \\u2014 the price is stated plainly because she's not price-sensitive, and the patroller proof point is the only social signal used. CTA invites her to go deeper into technical detail.",
+    "offer_suggestion": "Free shipping and returns on first order, so a high-ticket shell can be tried on at home",
+    "tone_notes": "Frames the shell as training gear for uphill effort, not casual wear. Outcome language stays tied to the activity (heat on the climb, cold on the descent) rather than making breathability or waterproofing claims the brief can't support. Price is stated plainly since she is not price-sensitive and reads cost as performance. No clinical or science-backed language, no novelty framing.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -562,7 +587,7 @@
   {
    "type": "publishers",
    "plan": {
-    "summary": "No placement here earns budget: the catalog has no outdoor, ski, or technical-gear publisher, and every checkout is a $28-$198 lifestyle basket that gives no reason to buy a $650+ backcountry shell next, so the correct plan is empty.",
+    "summary": "No placements recommended or tested: the catalog contains no outdoor, ski or technical-gear publishers, and every audience here checks out at $28-$198 with no purchase moment that leads to a $650+ backcountry shell.",
     "explained": true,
     "recommended": [],
     "test": [],
@@ -610,8 +635,8 @@
       "tier_reason": null,
       "exclusion_reason": "weak_fit",
       "conflict": null,
-      "adjacent_conflict": "sells activewear, a close substitute",
-      "rationale": "Female-skewed fitness apparel buyer at a $78 basket; a $650+ hard shell is ~10x the typical order and the activewear overlap is a substitute, not a complement.",
+      "adjacent_conflict": null,
+      "rationale": "Studio-fitness shoppers at a $78 basket, 82% female; no backcountry-ski purchase moment and a 9.6x price jump.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -660,7 +685,7 @@
       "exclusion_reason": "weak_fit",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Studio and spa bookings at $42 signal indoor self-care spending, not backcountry ski gear; 18x price gap.",
+      "rationale": "Booking a $42 yoga or spa class says nothing about buying a $650 ski shell.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -708,8 +733,8 @@
       "tier_reason": null,
       "exclusion_reason": "weak_fit",
       "conflict": null,
-      "adjacent_conflict": "sells activewear, a close substitute",
-      "rationale": "\"Tech-adjacent urban professionals\" buying comfort sneakers is a lifestyle, not backcountry, buyer, and $118 baskets don't precede a $650 shell.",
+      "adjacent_conflict": null,
+      "rationale": "Closest category on paper, but the notes describe \"Tech-adjacent urban professionals\" buying on \"Comfort + sustainability messaging\" — not performance-only backcountry gear, and $750 is 6.4x their basket.",
       "evidence": [
        {
         "field": "notes",
@@ -763,7 +788,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Bedding buyers have no stated connection to ski touring; affluence alone isn't a purchase reason.",
+      "rationale": "Bedding buyers have no link to technical ski outerwear.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -812,7 +837,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Older affluent women buying workwear; no backcountry signal and low impulse at 6.7x the basket.",
+      "rationale": "Affluent 45-65 women buying workwear; no backcountry-ski signal and low impulse at $750.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -861,7 +886,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Cookware and new-home gifting has no link to technical ski outerwear.",
+      "rationale": "Cookware and new-home gifting is an unrelated purchase moment.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -910,7 +935,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Conservative 50-70 women's classic apparel is the wrong life stage and category for backcountry shells.",
+      "rationale": "Conservative 50-70 women's classic apparel; wrong audience and wrong product entirely.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -959,7 +984,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Professional women's footwear; machine-washable and sustainability claims are not this brand's pitch.",
+      "rationale": "Professional women's washable shoes; sustainability claims, not technical ski performance.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1008,7 +1033,7 @@
       "exclusion_reason": "weak_fit",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "$38 supplement subscribers; no ski connection and a 20x price jump at checkout.",
+      "rationale": "A $38 supplement order gives no read on $650 ski shell intent.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1057,7 +1082,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Premium pet food buyers give no signal of backcountry skiing intent.",
+      "rationale": "Pet food subscribers; no connection to backcountry skiing.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1106,7 +1131,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Organic pantry shoppers respond to clean-ingredient claims this brand can't make; no gear connection.",
+      "rationale": "Organic grocery baskets have no relationship to technical outerwear.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1155,7 +1180,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "$42 functional-soda buyers; no purchase link to $650 ski shells.",
+      "rationale": "Functional soda buyers at $42; no ski or gear signal.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1204,7 +1229,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Huge reach but convenience-motivated meal-kit households have no backcountry gear intent.",
+      "rationale": "Huge reach, but meal-kit convenience buyers give no ski-gear intent signal.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1253,7 +1278,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Sock and basics gifting at $52 is a different gift tier entirely from a $650 shell.",
+      "rationale": "Socks and basics gifting at $52; a $650 shell is a different gift tier.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1302,7 +1327,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Mid-income late-night impulse convenience orders; furthest possible from a $650 considered gear purchase.",
+      "rationale": "Impulse convenience delivery, mid income, $28 basket; 27x price gap.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1351,7 +1376,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Mid-income pet repeat buyers; scale without any reason to want ski outerwear.",
+      "rationale": "Mass pet reach with no outdoor-technical connection and mid-income basket.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1400,7 +1425,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Gen Z mid-income beauty buyers; wrong income tier and no outdoor signal.",
+      "rationale": "Gen Z beauty buyers at mid income; far from a $650 technical purchase.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1449,7 +1474,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Mid-income women's workwear and intimates; no technical-outdoor overlap.",
+      "rationale": "Mid-income women's workwear and intimates; no ski or technical-gear signal.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1498,7 +1523,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Playful $35 dog-treat boxes clash with performance-only positioning and price.",
+      "rationale": "Playful $35 dog-treat boxes; tone and price both clash with premium shells.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1547,7 +1572,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Mid-income personalized haircare; no connection to backcountry ski gear.",
+      "rationale": "Personalized haircare buyers have no relationship to backcountry ski outerwear.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1560,57 +1585,61 @@
    "type": "stage",
    "stage": "publishers",
    "status": "done",
-   "ms": 29684
+   "ms": 37068
   },
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_009",
+    "creative_id": "92b562d6fe-persona_009",
     "persona_id": "persona_009",
     "persona_name": "The Fitness Enthusiast",
-    "angle": "Patroller-issue hard shell: gear judged on performance, not looks",
-    "headline": "The Shell Ski Patrollers Wear",
-    "body": "Hard shells built for backcountry days, not for posing. The people working the mountain in all weather wear them. From $650.",
+    "angle": "Pro-proven: the shell patrollers work in",
+    "headline": "The shell ski patrollers work in",
+    "body": "Technical outerwear built for backcountry skiing — made for people who are out in it all day. From $650.",
     "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "The shell ski patrollers wear",
+      "claim": "The shell ski patrollers work in",
       "source_quote": "Our shells are what patrollers wear"
+     },
+     {
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
      },
      {
       "claim": "From $650",
       "source_quote": "Starts at $650, goes up from there"
      }
     ],
-    "offer_suggestion": "Free expedited shipping on first order, advertiser's discretion",
-    "tone_notes": "Leads with the patroller endorsement as the athlete proof point this persona responds to, plain and unhyped. Frames the product as performance gear (hard shell, backcountry) rather than style, avoiding fashion or lifestyle framing. Price stated openly since price sensitivity is low-medium and hiding it would feel evasive on a receipt page.",
+    "offer_suggestion": "Free shipping and returns on first order, so a $650 shell can be tried on risk-free",
+    "tone_notes": "Leads with the patroller proof point as a pro endorsement, states price openly for a low-medium sensitivity buyer, and keeps to performance framing with no fashion, luxury or lifestyle language. No invented fabric specs since the brief lists none.",
     "status": "passed",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Patroller claim and $650 start both trace to the brief."
+       "reason": "Patroller use, backcountry technical positioning and $650 start all trace to allowed claims."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Leans on performance/working-pro use, avoids fashion-only framing the persona dislikes."
+       "reason": "Leans on technical fabrics and pro-use performance framing, no fashion-only angle."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Patroller-worn backcountry hard shells at $650 is not generic."
+       "reason": "Patroller-worn backcountry shells at $650 is particular to this advertiser."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Calm, no urgency or pressure."
+       "reason": "Calm, no urgency or pressure language."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No health or unsubstantiated wellness claims."
+       "reason": "No health or unsubstantiated wellness claims for fitness/apparel audiences."
       }
      ],
      "code_issues": [],
@@ -1623,52 +1652,56 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_001",
+    "creative_id": "92b562d6fe-persona_001",
     "persona_id": "persona_001",
     "persona_name": "The Wellness Optimizer",
-    "angle": "Gear as equipment: a real hardshell judged on specs, not styling",
-    "headline": "A hard shell, judged as equipment",
-    "body": "Hard shells for backcountry skiing — the ones ski patrollers wear. Starts at $650. Read the spec sheet, not the marketing.",
-    "cta": "See the specs",
+    "angle": "Winter training gear for the sweat-then-freeze cycle of touring",
+    "headline": "For the climb up and the ride down",
+    "body": "Skinning up works up heat. The descent takes it back. Technical outerwear built for backcountry skiing, the kind patrollers wear. From $650.",
+    "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "the ones ski patrollers wear",
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the kind patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
-      "claim": "Starts at $650",
-      "source_quote": "Starts at $650, goes up from there"
+      "claim": "From $650",
+      "source_quote": "Starts at $650"
      }
     ],
-    "offer_suggestion": null,
-    "tone_notes": "Treats outerwear as instrumentation rather than apparel, matching a spec-reading, system-optimizer mindset. No trend or novelty framing, no vague 'premium' adjectives \\u2014 the price is stated plainly because she's not price-sensitive, and the patroller proof point is the only social signal used. CTA invites her to go deeper into technical detail.",
+    "offer_suggestion": "Free shipping and returns on first order, so a high-ticket shell can be tried on at home",
+    "tone_notes": "Frames the shell as training gear for uphill effort, not casual wear. Outcome language stays tied to the activity (heat on the climb, cold on the descent) rather than making breathability or waterproofing claims the brief can't support. Price is stated plainly since she is not price-sensitive and reads cost as performance. No clinical or science-backed language, no novelty framing.",
     "status": "passed",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Only patroller usage and $650 starting price are asserted."
+       "reason": "Only patroller use, backcountry technical build and $650 start are claimed; the climb/descent line is context, not a product claim."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Equipment/spec framing fits outcome-focused skepticism without inventing evidence."
+       "reason": "Outcome-focused framing; does not invent science-backed evidence the brief can't support."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Backcountry hard shell, patroller-worn, $650 entry ties it to this advertiser."
+       "reason": "Skinning-up detail plus patroller-worn shells from $650 ties it to this advertiser."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Understated tone, no pressure."
+       "reason": "Reads as calm context, no urgency."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No health claims for science-skeptical or wellness audiences."
+       "reason": "No unsubstantiated health claims for wellness publishers."
       }
      ],
      "code_issues": [],
@@ -1681,74 +1714,103 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_010",
+    "creative_id": "92b562d6fe-persona_010",
     "persona_id": "persona_010",
     "persona_name": "The Gifter",
-    "angle": "The gift a serious skier won't buy themselves",
-    "headline": "The Ski Shell They'd Never Buy",
-    "body": "Hard shells built for the backcountry — the same ones ski patrollers wear. From $650, for the skier who has the rest.",
-    "cta": "See the shells",
+    "angle": "The shell a serious skier wants but won't splurge on for themselves",
+    "headline": "The shell they won't buy themselves",
+    "body": "Technical ski shells built for the backcountry — the kind patrollers wear. One gift, from $650.",
+    "cta": "Shop the shells",
     "claims_used": [
      {
-      "claim": "the same ones ski patrollers wear",
+      "claim": "Technical ski shells built for the backcountry",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the kind patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
-      "claim": "From $650",
+      "claim": "from $650",
       "source_quote": "Starts at $650, goes up from there"
      }
     ],
-    "offer_suggestion": "Free gift packaging and a dated delivery option before the season starts",
-    "tone_notes": "Frames a high-ticket apparel piece as an impressive gift with a story anyone can repeat (patrollers wear these), no technical jargon, no self-treat or subscription framing, price stated plainly since this shopper isn't price-sensitive and wants the purchase to read as serious.",
-    "status": "passed",
+    "offer_suggestion": "Free gift box and hold-until-holiday shipping on shell orders",
+    "tone_notes": "Gift framing leads, one big gift instead of several small ones, price stated plainly given low price sensitivity. Patroller proof carries quality without jargon a non-skier can't judge. No self-treat or subscription language.",
+    "status": "revised",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Claims limited to patroller usage and $650 starting price."
+       "reason": "All three claims map to allowed claims; no invented offers."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Gift framing for the hard-to-buy-for skier; doesn't invent gift sets or shipping the brief can't back."
+       "reason": "Gift framing and premium positioning used; no subscription or self-care-only tone."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Patroller-worn backcountry shell at $650 is advertiser-specific."
+       "reason": "Patroller-worn backcountry shells at $650 is particular to this advertiser."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Reads calmly on a confirmation page, no fake deadlines."
+       "reason": "Calm, no urgency or pressure language."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No claims conflicting with publisher notes."
+       "reason": "No health claims; quality/gift angle fits apparel and Marlowe audiences."
       }
      ],
      "code_issues": [],
      "passed": true,
      "fix": null
     },
-    "revision_of": null
+    "revision_of": {
+     "angle": "The shell a serious skier wants but won't splurge on for themselves",
+     "headline": "The shell they won't buy themselves",
+     "body": "Technical ski shells built for the backcountry — the kind patrollers wear. One gift, bought once, from $650.",
+     "cta": "Shop the shells",
+     "claims_used": [
+      {
+       "claim": "Technical ski shells built for the backcountry",
+       "source_quote": "Technical outerwear for serious backcountry skiers"
+      },
+      {
+       "claim": "the kind patrollers wear",
+       "source_quote": "Our shells are what patrollers wear"
+      },
+      {
+       "claim": "from $650",
+       "source_quote": "Starts at $650, goes up from there"
+      }
+     ],
+     "offer_suggestion": "Free gift box and hold-until-holiday shipping on shell orders",
+     "tone_notes": "Gift framing up front, one big purchase instead of several small ones, price stated plainly since low price sensitivity. No jargon a non-skier couldn't judge; patroller proof does the quality work. 'Bought once' signals no subscription. No self-treat language."
+    }
    }
   },
   {
    "type": "creative",
    "creative": {
-    "creative_id": "9bd74ea59a-persona_005",
+    "creative_id": "92b562d6fe-persona_005",
     "persona_id": "persona_005",
     "persona_name": "The Affluent Classic",
-    "angle": "One shell, made properly, for every winter after this one",
-    "headline": "The shell patrollers choose",
-    "body": "Hard shells for backcountry skiing, built for the people who work the mountain in all weather. Made for winters to come. From $650.",
+    "angle": "One shell, made properly, kept for seasons rather than replaced",
+    "headline": "A ski shell built for the backcountry",
+    "body": "Technical outerwear built for backcountry skiing — the shells patrollers wear. From $650.",
     "cta": "See the shells",
     "claims_used": [
      {
-      "claim": "The shell patrollers choose",
+      "claim": "Technical outerwear built for backcountry skiing",
+      "source_quote": "Technical outerwear for serious backcountry skiers"
+     },
+     {
+      "claim": "the shells patrollers wear",
       "source_quote": "Our shells are what patrollers wear"
      },
      {
@@ -1757,48 +1819,52 @@
      }
     ],
     "offer_suggestion": null,
-    "tone_notes": "Understated and quality-led, no urgency or trend language. Longevity framing ('winters to come') speaks to buying once and keeping it; the patroller detail carries credibility without hype. Price stated plainly, since low price sensitivity reads it as a quality signal.",
-    "status": "flagged",
+    "tone_notes": "Understated and quality-led, per the reviewer's required wording. States what the garment is and who wears it, then the price plainly — a quality signal for a low-price-sensitivity buyer. No hype, no trend language, no social proof beyond the permitted patroller fact, and none of the extreme-sport bravado this reader dislikes.",
+    "status": "revised",
     "critique": {
      "checks": [
       {
        "name": "grounded",
-       "passed": false,
-       "reason": "\"patrollers choose\" upgrades the allowed \"patrollers wear,\" and \"Made for winters to come\" is a durability claim the brief doesn't support."
+       "passed": true,
+       "reason": "Claims match brief wording exactly."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Understated, quality-led tone with no trendy or influencer framing."
+       "reason": "Understated, quality-focused, no trendy or influencer language."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Patroller-worn backcountry hard shells from $650 is particular to this advertiser."
+       "reason": "Patroller reference and price anchor tie it to this brand."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Calm, no urgency or pressure on a confirmation page."
+       "reason": "Quiet, informational tone suits a confirmation page."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No health claims; quality framing suits Marlowe & Co. audience."
+       "reason": "Quality messaging fits Marlowe & Co.; no unsupported claims."
       }
      ],
      "code_issues": [],
-     "passed": false,
-     "fix": "Change headline to \"The shell patrollers wear\" and delete the sentence \"Made for winters to come.\""
+     "passed": true,
+     "fix": null
     },
     "revision_of": {
-     "angle": "One shell, made properly, for every winter after this one",
-     "headline": "One shell, many winters",
-     "body": "Hard shells built for backcountry skiing — the same ones ski patrollers wear. From $650, and not the sort of thing you replace.",
+     "angle": "One shell, made properly, kept for seasons",
+     "headline": "A ski shell you buy once",
+     "body": "Technical outerwear built for backcountry skiing, made to the standard patrollers wear all season. From $650.",
      "cta": "See the shells",
      "claims_used": [
       {
-       "claim": "the same ones ski patrollers wear",
+       "claim": "Technical outerwear built for backcountry skiing",
+       "source_quote": "Technical outerwear for serious backcountry skiers"
+      },
+      {
+       "claim": "the standard patrollers wear",
        "source_quote": "Our shells are what patrollers wear"
       },
       {
@@ -1807,7 +1873,7 @@
       }
      ],
      "offer_suggestion": "",
-     "tone_notes": "Understated and quality-led: no urgency, no trend language. Longevity framing ('many winters', 'not the sort of thing you replace') speaks to buy-once value, while the patroller detail supplies credibility without hype. Price stated plainly, since low price sensitivity reads it as a quality signal."
+     "tone_notes": "Understated and quality-led: leads with longevity and construction rather than performance bravado. Price is stated plainly, which suits a low-price-sensitivity buyer who reads cost as a quality signal. No hype, no social proof beyond the permitted patroller fact."
     }
    }
   },
@@ -1815,7 +1881,7 @@
    "type": "stage",
    "stage": "creative",
    "status": "done",
-   "ms": 83083
+   "ms": 68568
   },
   {
    "type": "personas",
@@ -1826,38 +1892,19 @@
       "name": "The Fitness Enthusiast",
       "score": 53,
       "rank": 1,
-      "why_plausible": "Identity-adjacent performance apparel buyer with low-medium price sensitivity who explicitly responds to technical fabrics and athlete endorsements — the patroller claim lands directly. AOV of $88 is far below $650, but this is the persona most likely to stretch for gear that signals serious athletic capability.",
+      "why_plausible": "Brief sells performance shells \"what patrollers wear,\" and this persona buys performance apparel, is brand-loyal to things that perform, and lists messaging_preferences of performance claims, athlete endorsements, and technical fabrics. price_sensitivity low-medium and identity-adjacent purchasing make a $650+ technical piece a justifiable upgrade despite an $88 typical AOV.",
       "lean_into": [
-       "performance claims",
-       "technical fabrics",
-       "pro/patroller endorsement as the athlete proof point"
+       "performance claims — built for backcountry conditions",
+       "the patroller endorsement as a pro-athlete proof point",
+       "technical fabric and construction detail"
       ],
       "avoid": [
-       "fashion-only or streetwear styling angles",
-       "sedentary/lifestyle framing"
+       "fashion-only or lifestyle styling framing",
+       "sedentary/casual-wear positioning",
+       "fluffy luxury language with no spec behind it"
       ],
-      "ad_angle": "The shell ski patrollers actually wear — built to perform, not to pose.",
+      "ad_angle": "Pro-proven performance: the shell ski patrollers actually work in — spec-forward, built to perform under load.",
       "confidence": "high",
-      "reached_via": [],
-      "conflicts": []
-     },
-     {
-      "persona_id": "persona_001",
-      "name": "The Wellness Optimizer",
-      "score": 52,
-      "rank": 2,
-      "why_plausible": "price_sensitivity: low and a system-optimizer mindset that pays premiums for gear that measurably works; her fitness affinity extends naturally to backcountry touring, an endurance sport. The score undercounted her because outerwear isn't in her tag list, but she's the one persona who'll happily read the spec sheet.",
-      "lean_into": [
-       "outcome-focused claims (stays dry, breathes on the skin track)",
-       "technical transparency about materials and construction",
-       "willingness to pay once for something that performs"
-      ],
-      "avoid": [
-       "novelty or trend framing",
-       "vague 'premium' language with nothing behind it"
-      ],
-      "ad_angle": "Gear as equipment: the measurable difference a real hardshell makes on a long day of touring.",
-      "confidence": "medium",
       "reached_via": [],
       "conflicts": []
      },
@@ -1866,18 +1913,18 @@
       "name": "The Gifter",
       "score": 44,
       "rank": 3,
-      "why_plausible": "The brief lists gift as an occasion at 0.5, and this persona has price_sensitivity: low with an apparel affinity and a stated appetite for 'impressive-looking' high-AOV purchases. A $650+ shell is the rare gift that reads as serious and unmistakably expensive.",
+      "why_plausible": "A $650+ technical shell is exactly the \"impressive-looking\" high-AOV purchase this gifting mode responds to, and apparel and premium_basics are named category_affinities with price_sensitivity: low. The gift occasion is explicit in the profile (occasions.gift).",
       "lean_into": [
-       "giftable, premium presentation",
-       "the patroller-grade story as something impressive to tell the recipient",
-       "shipping timing for a season-dated gift"
+       "giftable for the skier in your life",
+       "premium presentation and obvious quality",
+       "one big gift instead of several small ones"
       ],
       "avoid": [
-       "subscription framing",
-       "self-treat-only framing",
-       "dense technical jargon that a non-skier gifter can't evaluate"
+       "subscription-only framing (business model is one-time, so say so)",
+       "self-treat-only language",
+       "deep technical jargon that a non-skier gifter can't evaluate"
       ],
-      "ad_angle": "The gift for the skier who already owns everything — patrol-grade, and they'd never buy it for themselves.",
+      "ad_angle": "The gift a serious skier won't buy for themselves — the shell they'd pick if they weren't being careful with money.",
       "confidence": "medium",
       "reached_via": [],
       "conflicts": []
@@ -1887,19 +1934,40 @@
       "name": "The Affluent Classic",
       "score": 37,
       "rank": 5,
-      "why_plausible": "price_sensitivity: low, typical_aov_usd: 145 (highest in the set), and she values quality and longevity over trends — a buy-once shell is exactly that argument. Her travel and classic_apparel affinities fit a mountain-trip buyer; the score docked her mainly on publisher reach, not on fit.",
+      "why_plausible": "price_sensitivity: low with a $145 typical AOV and a stated preference for quality and longevity over trends fits a $650 shell bought once and kept for a decade; classic_apparel and travel affinities cover ski-trip outerwear. The score ranked her low mainly on publisher reach, not on buying logic — and she also buys gifts for skiing children or partners.",
       "lean_into": [
        "craftsmanship and construction quality",
-       "understated, quality-focused tone",
-       "buy it once, keep it for a decade"
+       "buy-once longevity rather than replacing cheap shells",
+       "understated, quality-focused tone"
       ],
       "avoid": [
-       "influencer or hype positioning",
-       "loud aesthetics",
-       "trendy slang"
+       "trendy or hype language",
+       "influencer or social-proof positioning",
+       "loud graphics and extreme-sport bravado"
       ],
-      "ad_angle": "Built to outlast the trend cycle — one shell, made properly, for every winter to come.",
+      "ad_angle": "Built to outlast the trend cycle: one shell, made properly, worn for seasons rather than replaced.",
       "confidence": "medium",
+      "reached_via": [],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 52,
+      "rank": 2,
+      "why_plausible": "price_sensitivity: low with named fitness affinity and outcome-focused messaging preferences fits someone who treats uphill touring as training and wants gear that performs to spec. Weaker than the others because her core categories are supplements and wellness, so the ad must speak to winter training rather than to ski-industry credibility.",
+      "lean_into": [
+       "outcome-focused: stays breathable on the climb, sealed on the descent",
+       "specific technical performance rather than vague quality",
+       "worth the premium because it performs"
+      ],
+      "avoid": [
+       "science-backed/clinical proof claims the brief can't support",
+       "novelty framing",
+       "anything implying casual or sedentary use"
+      ],
+      "ad_angle": "Winter training gear: a shell that handles the sweat-then-freeze cycle of skinning up and skiing down.",
+      "confidence": "low",
       "reached_via": [],
       "conflicts": []
      }
@@ -2078,7 +2146,7 @@
    "config": {
     "schema_version": "1.0",
     "campaign": {
-     "name": "Technical outerwear (hard shells) for backcountry skiing · post-purchase launch",
+     "name": "Technical ski shells and outerwear for backcountry skiing · post-purchase launch",
      "status": "draft",
      "objective": "conversions",
      "flight": {
@@ -2108,13 +2176,13 @@
     "targeting": {
      "personas": [
       "persona_009",
-      "persona_001",
       "persona_010",
-      "persona_005"
+      "persona_005",
+      "persona_001"
      ],
      "gender": null,
      "age_range": {
-      "value": "28-50",
+      "value": "25-50",
       "source": "assumed"
      },
      "geo": [
@@ -2125,34 +2193,33 @@
       "fitness"
      ],
      "exclusions": [
-      "activewear",
       "outerwear"
      ]
     },
     "creatives": [
      {
-      "creative_id": "9bd74ea59a-persona_009",
+      "creative_id": "92b562d6fe-persona_009",
       "persona_id": "persona_009",
-      "weight": 0.333,
+      "weight": 0.25,
       "status": "passed"
      },
      {
-      "creative_id": "9bd74ea59a-persona_001",
-      "persona_id": "persona_001",
-      "weight": 0.333,
-      "status": "passed"
-     },
-     {
-      "creative_id": "9bd74ea59a-persona_010",
+      "creative_id": "92b562d6fe-persona_010",
       "persona_id": "persona_010",
-      "weight": 0.333,
-      "status": "passed"
+      "weight": 0.25,
+      "status": "revised"
      },
      {
-      "creative_id": "9bd74ea59a-persona_005",
+      "creative_id": "92b562d6fe-persona_005",
       "persona_id": "persona_005",
-      "weight": 0.0,
-      "status": "flagged"
+      "weight": 0.25,
+      "status": "revised"
+     },
+     {
+      "creative_id": "92b562d6fe-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.25,
+      "status": "passed"
      }
     ],
     "frequency_cap": {
@@ -2181,13 +2248,12 @@
      "needs_human_review": true,
      "confidence": "low",
      "assumptions": [
-      "Assumed a first order around $750 based on the $650 starting price.",
-      "Assumed the gear is sold to both men and women.",
-      "Assumed a one-time purchase rather than a subscription.",
+      "Assumed a typical first order around $750, since prices start at $650 and go up.",
+      "Assumed the gear is sold to all adults, as no gender was mentioned.",
+      "Assumed one-time purchases rather than a subscription.",
       "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
      ],
      "warnings": [
-      "1 creative(s) failed review twice and are paused: The Affluent Classic.",
       "No publisher in this catalog is a good fit; nothing would run."
      ],
      "launch_summary": null
@@ -2198,24 +2264,24 @@
    "type": "stage",
    "stage": "campaign",
    "status": "done",
-   "ms": 1
+   "ms": 0
   },
   {
    "type": "done",
-   "run_id": "9bd74ea59a",
-   "total_ms": 94974,
-   "cost_usd": 0.5025,
+   "run_id": "92b562d6fe",
+   "total_ms": 82167,
+   "cost_usd": 0.5597,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v5-e8eda0f",
-     "ms": 11884,
-     "input_tokens": 7585,
-     "output_tokens": 981,
-     "cost_usd": 0.06245,
+     "prompt_version": "v6-5c0c401",
+     "ms": 13594,
+     "input_tokens": 8095,
+     "output_tokens": 1127,
+     "cost_usd": 0.06865,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2239,11 +2305,11 @@
      "name": "select_personas",
      "model": "anthropic:claude-opus-5",
      "prompt": "select_personas",
-     "prompt_version": "v5-f2b41c4",
-     "ms": 17657,
-     "input_tokens": 6749,
-     "output_tokens": 1024,
-     "cost_usd": 0.059345,
+     "prompt_version": "v6-e5aaa73",
+     "ms": 24189,
+     "input_tokens": 6963,
+     "output_tokens": 1490,
+     "cost_usd": 0.072065,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2253,11 +2319,11 @@
      "name": "write_creative:persona_005",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 5585,
-     "input_tokens": 2716,
-     "output_tokens": 290,
-     "cost_usd": 0.02083,
+     "prompt_version": "v5-5699065",
+     "ms": 5193,
+     "input_tokens": 2899,
+     "output_tokens": 310,
+     "cost_usd": 0.022245,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2267,11 +2333,11 @@
      "name": "write_creative:persona_009",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 6016,
-     "input_tokens": 2717,
-     "output_tokens": 329,
-     "cost_usd": 0.02181,
+     "prompt_version": "v5-5699065",
+     "ms": 5606,
+     "input_tokens": 2944,
+     "output_tokens": 342,
+     "cost_usd": 0.02327,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2281,11 +2347,11 @@
      "name": "write_creative:persona_010",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 6489,
-     "input_tokens": 2763,
-     "output_tokens": 309,
-     "cost_usd": 0.02154,
+     "prompt_version": "v5-5699065",
+     "ms": 5927,
+     "input_tokens": 2913,
+     "output_tokens": 347,
+     "cost_usd": 0.02324,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2295,11 +2361,11 @@
      "name": "write_creative:persona_001",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 11363,
-     "input_tokens": 2722,
-     "output_tokens": 780,
-     "cost_usd": 0.03311,
+     "prompt_version": "v5-5699065",
+     "ms": 11188,
+     "input_tokens": 2891,
+     "output_tokens": 850,
+     "cost_usd": 0.035705,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2309,11 +2375,11 @@
      "name": "rerank_publishers",
      "model": "anthropic:claude-opus-5",
      "prompt": "rerank_publishers",
-     "prompt_version": "v5-fcbc95b",
-     "ms": 29677,
-     "input_tokens": 16078,
-     "output_tokens": 2586,
-     "cost_usd": 0.14504,
+     "prompt_version": "v7-f3a64f0",
+     "ms": 37059,
+     "input_tokens": 16747,
+     "output_tokens": 3382,
+     "cost_usd": 0.168285,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2323,11 +2389,25 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v3-d8d972b",
-     "ms": 15715,
-     "input_tokens": 3001,
-     "output_tokens": 1281,
-     "cost_usd": 0.04703,
+     "prompt_version": "v4-2965303",
+     "ms": 15952,
+     "input_tokens": 3392,
+     "output_tokens": 1327,
+     "cost_usd": 0.050135,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v5-5699065",
+     "ms": 3788,
+     "input_tokens": 3545,
+     "output_tokens": 324,
+     "cost_usd": 0.025825,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2337,12 +2417,12 @@
      "name": "rewrite_creative:persona_005",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 22297,
-     "input_tokens": 3481,
-     "output_tokens": 936,
-     "cost_usd": 0.040805,
-     "retries": 1,
+     "prompt_version": "v5-5699065",
+     "ms": 5694,
+     "input_tokens": 3537,
+     "output_tokens": 477,
+     "cost_usd": 0.02961,
+     "retries": 0,
      "ok": true,
      "error": null
     },
@@ -2351,11 +2431,11 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v3-d8d972b",
-     "ms": 16035,
-     "input_tokens": 2993,
-     "output_tokens": 1422,
-     "cost_usd": 0.050515,
+     "prompt_version": "v4-2965303",
+     "ms": 11525,
+     "input_tokens": 3391,
+     "output_tokens": 950,
+     "cost_usd": 0.040705,
      "retries": 0,
      "ok": true,
      "error": null

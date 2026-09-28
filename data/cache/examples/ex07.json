@@ -12,7 +12,7 @@
    "type": "profile",
    "profile": {
     "brief": "B2B SaaS for dental practices. We automate their patient recall workflow.",
-    "business_summary": "Software sold to dental practices that automates their patient recall workflow.",
+    "business_summary": "Software sold to dental practices that automates patient recall outreach.",
     "brand_name": null,
     "offering_type": "b2b",
     "product": {
@@ -35,9 +35,7 @@
     "values": {
      "convenience_speed": 1.0
     },
-    "occasions": {
-     "replenishment": 0.5
-    },
+    "occasions": {},
     "positioning": [
      "corporate_voice"
     ],
@@ -48,22 +46,22 @@
      "note": "No pricing given; typical practice-management SaaS subscription"
     },
     "first_order_value_usd": {
-     "value": 300.0,
+     "value": 200.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Assumed a typical monthly SaaS subscription price for a small practice"
+     "note": "Placeholder monthly SaaS seat/practice price; not stated"
     },
     "gender": {
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "Buyer is a business, not a gendered consumer"
+     "note": "Buyers are practices, not a gender-skewed consumer group"
     },
     "age_range": {
      "value": "30-60",
      "source": "assumed",
      "evidence": null,
-     "note": "Assumed typical age of dental practice owners and office managers"
+     "note": "Typical age of dental practice owners and office managers"
     },
     "audience": {
      "value": "Dental practice owners and office managers",
@@ -73,7 +71,7 @@
       "start": 0,
       "end": 29
      },
-     "note": "Buyers are the practices themselves"
+     "note": "Buyer is the practice, so decision-makers are owners/managers"
     },
     "business_model": {
      "value": "subscription",
@@ -96,39 +94,29 @@
      }
     ],
     "clarity": "clear",
-    "clarity_reason": "We know exactly what is sold and who buys it, though it is a B2B product sold to dental practices rather than consumers.",
+    "clarity_reason": "We know exactly what is sold and who buys it; it is B2B software, which is a poor fit for a consumer post-purchase network.",
     "assumptions": [
-     "Assumed pricing is a mid-tier monthly SaaS subscription of roughly $300.",
-     "Assumed buyers are practice owners and office managers aged 30-60."
+     "Pricing is a monthly subscription; we used a placeholder value since none was given.",
+     "Buyers are dental practice owners and office managers."
     ],
     "clarifying_questions": [
      {
-      "question": "What does a typical new customer pay to start?",
-      "why": "Disco charges per conversion, so the value of a signup drives what we can pay for placements.",
+      "question": "Do you have any consumer-facing offer, or is this strictly sold to practices?",
+      "why": "Disco reaches consumers at checkout; a consumer offer would change whether this network can work at all.",
       "suggested_answers": [
-       "Under $100/month",
-       "$100-500/month",
-       "$500+/month",
-       "Annual contract"
+       "Strictly B2B",
+       "We also have a patient-facing product",
+       "Unsure"
       ]
      },
      {
-      "question": "What counts as a conversion for you?",
-      "why": "Determines what the ad asks shoppers to do and how success is measured.",
+      "question": "What does a practice typically pay per month?",
+      "why": "Sets the value of a conversion and how aggressively we can pay for placements.",
       "suggested_answers": [
-       "Demo request",
-       "Free trial signup",
-       "Paid subscription",
-       "Newsletter/lead capture"
-      ]
-     },
-     {
-      "question": "Are you open to reaching dental professionals as individual consumers on checkout pages?",
-      "why": "A consumer post-purchase network reaches individuals, not practices, so we need to know if that targeting is acceptable.",
-      "suggested_answers": [
-       "Yes, worth testing",
-       "Only if targeting is precise",
-       "No, we need B2B channels"
+       "Under $100",
+       "$100-$300",
+       "$300-$1,000",
+       "Over $1,000"
       ]
      }
     ],
@@ -140,7 +128,7 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 12240
+   "ms": 11626
   },
   {
    "type": "stage",
@@ -163,7 +151,7 @@
   {
    "type": "publishers",
    "plan": {
-    "summary": "No placements: this is B2B software sold to dental practices, and every publisher here is consumer checkout traffic, so the whole catalog stays excluded.",
+    "summary": "This is a B2B SaaS sold to dental practices, so every publisher in a consumer post-purchase network is excluded and no budget should be placed here.",
     "explained": true,
     "recommended": [],
     "test": [],
@@ -175,9 +163,9 @@
       "signals": [
        {
         "name": "category",
-        "score": 50,
+        "score": 0,
         "neutral": false,
-        "detail": "matches replenishment"
+        "detail": "no shared interests"
        },
        {
         "name": "audience",
@@ -187,9 +175,9 @@
        },
        {
         "name": "price",
-        "score": 54,
+        "score": 80,
         "neutral": false,
-        "detail": "$300 vs $74 typical order (4.1×) (price assumed)"
+        "detail": "$200 vs $74 typical order (2.7×) (price assumed)"
        },
        {
         "name": "values",
@@ -204,15 +192,15 @@
         "detail": "36.0M monthly impressions"
        }
       ],
-      "base_fit": 63,
-      "fit": 63,
+      "base_fit": 47,
+      "fit": 47,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "B2B dental practice software has no place at a consumer meal-kit checkout.",
+      "rationale": "B2B dental software has no place on a consumer meal-kit confirmation page.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -224,9 +212,9 @@
       "signals": [
        {
         "name": "category",
-        "score": 35,
+        "score": 0,
         "neutral": false,
-        "detail": "matches replenishment"
+        "detail": "no shared interests"
        },
        {
         "name": "audience",
@@ -236,9 +224,9 @@
        },
        {
         "name": "price",
-        "score": 0,
+        "score": 17,
         "neutral": false,
-        "detail": "$300 vs $28 typical order (10.7×) (price assumed)"
+        "detail": "$200 vs $28 typical order (7.1×) (price assumed)"
        },
        {
         "name": "values",
@@ -253,8 +241,8 @@
         "detail": "84.0M monthly impressions"
        }
       ],
-      "base_fit": 51,
-      "fit": 51,
+      "base_fit": 40,
+      "fit": 40,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
@@ -262,300 +250,6 @@
       "conflict": null,
       "adjacent_conflict": null,
       "rationale": "Late-night impulse grocery shoppers are not buying practice-management SaaS.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_009",
-      "name": "Ruffco",
-      "category": "pet",
-      "signals": [
-       {
-        "name": "category",
-        "score": 50,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 53,
-        "neutral": false,
-        "detail": "$300 vs $73 typical order (4.1×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 93,
-        "neutral": false,
-        "detail": "62.0M monthly impressions"
-       }
-      ],
-      "base_fit": 49,
-      "fit": 49,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Pet supply buyers have no connection to dental practice recall software.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_008",
-      "name": "Pantrygood",
-      "category": "groceries",
-      "signals": [
-       {
-        "name": "category",
-        "score": 45,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 64,
-        "neutral": false,
-        "detail": "$300 vs $86 typical order (3.5×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 51,
-        "neutral": false,
-        "detail": "10.4M monthly impressions"
-       }
-      ],
-      "base_fit": 45,
-      "fit": 45,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Consumer grocery checkout; no path to dental practice decision-makers.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_007",
-      "name": "Pawline",
-      "category": "pet",
-      "signals": [
-       {
-        "name": "category",
-        "score": 50,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 45,
-        "neutral": false,
-        "detail": "$300 vs $64 typical order (4.7×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 33,
-        "neutral": false,
-        "detail": "4.8M monthly impressions"
-       }
-      ],
-      "base_fit": 42,
-      "fit": 42,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Pet subscription shoppers are consumers, not dental practice buyers.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_012",
-      "name": "Daily Form",
-      "category": "wellness_dtc",
-      "signals": [
-       {
-        "name": "category",
-        "score": 50,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 11,
-        "neutral": false,
-        "detail": "$300 vs $38 typical order (7.9×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 30,
-        "neutral": false,
-        "detail": "4.2M monthly impressions"
-       }
-      ],
-      "base_fit": 37,
-      "fit": 37,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Supplement buyers have no relationship to B2B dental software.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_002",
-      "name": "Movewell",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 20,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 58,
-        "neutral": false,
-        "detail": "$300 vs $78 typical order (3.8×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 68,
-        "neutral": false,
-        "detail": "22.0M monthly impressions"
-       }
-      ],
-      "base_fit": 36,
-      "fit": 36,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Activewear checkout gives no signal of dental practice ownership.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_018",
-      "name": "Tailcrate",
-      "category": "pet",
-      "signals": [
-       {
-        "name": "category",
-        "score": 40,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 6,
-        "neutral": false,
-        "detail": "$300 vs $35 typical order (8.6×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 34,
-      "fit": 34,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Dog treat subscription buyers are irrelevant to a dental SaaS offer.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -579,9 +273,9 @@
        },
        {
         "name": "price",
-        "score": 96,
+        "score": 100,
         "neutral": false,
-        "detail": "$300 vs $142 typical order (2.1×) (price assumed)"
+        "detail": "$200 vs $142 typical order (1.4×) (price assumed)"
        },
        {
         "name": "values",
@@ -596,29 +290,29 @@
         "detail": "3.2M monthly impressions"
        }
       ],
-      "base_fit": 33,
-      "fit": 33,
+      "base_fit": 34,
+      "fit": 34,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Professional women's footwear checkout still reaches consumers, not practice owners.",
+      "rationale": "Consumer footwear checkout; no route to dental practice decision-makers.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_019",
-      "name": "Strandlab",
-      "category": "beauty",
+      "publisher_id": "pub_009",
+      "name": "Ruffco",
+      "category": "pet",
       "signals": [
        {
         "name": "category",
-        "score": 30,
+        "score": 0,
         "neutral": false,
-        "detail": "matches replenishment"
+        "detail": "no shared interests"
        },
        {
         "name": "audience",
@@ -628,9 +322,9 @@
        },
        {
         "name": "price",
-        "score": 26,
+        "score": 80,
         "neutral": false,
-        "detail": "$300 vs $48 typical order (6.2×) (price assumed)"
+        "detail": "$200 vs $73 typical order (2.7×) (price assumed)"
        },
        {
         "name": "values",
@@ -640,9 +334,107 @@
        },
        {
         "name": "reach",
-        "score": 27,
+        "score": 93,
         "neutral": false,
-        "detail": "3.8M monthly impressions"
+        "detail": "62.0M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "fit": 33,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pet supplies buyers are consumers, not dental practice owners.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$200 vs $112 typical order (1.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 32,
+      "fit": 32,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Consumer apparel checkout; B2B software cannot convert here.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 84,
+        "neutral": false,
+        "detail": "$200 vs $78 typical order (2.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
        }
       ],
       "base_fit": 31,
@@ -653,7 +445,203 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Haircare shoppers have no connection to dental practice workflow software.",
+      "rationale": "Activewear shoppers offer no signal of dental practice ownership.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$200 vs $128 typical order (1.6×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "fit": 31,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Consumer apparel audience; irrelevant to a dental SaaS subscription.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 90,
+        "neutral": false,
+        "detail": "$200 vs $86 typical order (2.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "fit": 31,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Organic grocery checkout has no connection to practice recall software.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$200 vs $118 typical order (1.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "fit": 31,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Consumer footwear purchase; no business-buying moment.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 92,
+        "neutral": false,
+        "detail": "$200 vs $89 typical order (2.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 30,
+      "fit": 30,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Apparel shoppers are consumers, not dental office buyers.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -679,7 +667,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$300 vs $164 typical order (1.8×) (price assumed)"
+        "detail": "$200 vs $164 typical order (1.2×) (price assumed)"
        },
        {
         "name": "values",
@@ -702,105 +690,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Bedding buyers are consumers; B2B SaaS cannot convert here.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_004",
-      "name": "Marlowe & Co.",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared interests"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 81,
-        "neutral": false,
-        "detail": "$300 vs $112 typical order (2.7×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 29,
-      "fit": 29,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Women's apparel checkout offers no business-buyer signal.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_005",
-      "name": "Linden Park",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared interests"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 90,
-        "neutral": false,
-        "detail": "$300 vs $128 typical order (2.3×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 39,
-        "neutral": false,
-        "detail": "6.2M monthly impressions"
-       }
-      ],
-      "base_fit": 29,
-      "fit": 29,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Classic womenswear shoppers are not dental practice decision-makers.",
+      "rationale": "Bedding checkout gives no reason to buy dental practice software.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -826,7 +716,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$300 vs $198 typical order (1.5×) (price assumed)"
+        "detail": "$200 vs $198 typical order (1.0×) (price assumed)"
        },
        {
         "name": "values",
@@ -849,64 +739,15 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Cookware gifting moment has nothing to do with patient recall software.",
+      "rationale": "Cookware gifting moment is unrelated to B2B dental SaaS.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_003",
-      "name": "Studiogrid",
-      "category": "wellness_services",
-      "signals": [
-       {
-        "name": "category",
-        "score": 20,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 17,
-        "neutral": false,
-        "detail": "$300 vs $42 typical order (7.1×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 57,
-        "neutral": false,
-        "detail": "13.6M monthly impressions"
-       }
-      ],
-      "base_fit": 28,
-      "fit": 28,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Appointment booking for fitness is a consumer act, not a B2B software need.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_017",
-      "name": "Cloudfoot",
-      "category": "apparel",
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
       "signals": [
        {
         "name": "category",
@@ -922,9 +763,9 @@
        },
        {
         "name": "price",
-        "score": 84,
+        "score": 71,
         "neutral": false,
-        "detail": "$300 vs $118 typical order (2.5×) (price assumed)"
+        "detail": "$200 vs $64 typical order (3.1×) (price assumed)"
        },
        {
         "name": "values",
@@ -934,107 +775,9 @@
        },
        {
         "name": "reach",
-        "score": 37,
+        "score": 33,
         "neutral": false,
-        "detail": "5.8M monthly impressions"
-       }
-      ],
-      "base_fit": 28,
-      "fit": 28,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Footwear checkout reaches consumers, not dental office managers.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_020",
-      "name": "Pop & Sip",
-      "category": "beverages",
-      "signals": [
-       {
-        "name": "category",
-        "score": 25,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 17,
-        "neutral": false,
-        "detail": "$300 vs $42 typical order (7.1×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 35,
-        "neutral": false,
-        "detail": "5.2M monthly impressions"
-       }
-      ],
-      "base_fit": 28,
-      "fit": 28,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Functional beverage buyers have no reason to want dental practice SaaS.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_006",
-      "name": "Everbody",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared interests"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 66,
-        "neutral": false,
-        "detail": "$300 vs $89 typical order (3.4×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 43,
-        "neutral": false,
-        "detail": "7.6M monthly impressions"
+        "detail": "4.8M monthly impressions"
        }
       ],
       "base_fit": 26,
@@ -1045,56 +788,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Inclusive-sizing apparel audience is purely consumer.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_010",
-      "name": "Heartfoot",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 15,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 31,
-        "neutral": false,
-        "detail": "$300 vs $52 typical order (5.8×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 37,
-        "neutral": false,
-        "detail": "5.8M monthly impressions"
-       }
-      ],
-      "base_fit": 26,
-      "fit": 26,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Sock gifting checkout is unrelated to a dental practice software purchase.",
+      "rationale": "Pet subscription buyers are consumers; no practice-purchase intent.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1118,9 +812,9 @@
        },
        {
         "name": "price",
-        "score": 42,
+        "score": 68,
         "neutral": false,
-        "detail": "$300 vs $61 typical order (4.9×) (price assumed)"
+        "detail": "$200 vs $61 typical order (3.3×) (price assumed)"
        },
        {
         "name": "values",
@@ -1135,6 +829,153 @@
         "detail": "6.8M monthly impressions"
        }
       ],
+      "base_fit": 26,
+      "fit": 26,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Gen Z beauty shoppers are far from dental practice decision-makers.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 44,
+        "neutral": false,
+        "detail": "$200 vs $42 typical order (4.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 57,
+        "neutral": false,
+        "detail": "13.6M monthly impressions"
+       }
+      ],
+      "base_fit": 24,
+      "fit": 24,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Appointment booking is consumer-side; these users don't run dental offices.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 58,
+        "neutral": false,
+        "detail": "$200 vs $52 typical order (3.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 24,
+      "fit": 24,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Socks and gifting audience; no B2B software relevance.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 52,
+        "neutral": false,
+        "detail": "$200 vs $48 typical order (4.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
       "base_fit": 22,
       "fit": 22,
       "computed_tier": "excluded",
@@ -1143,7 +984,154 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Gen Z beauty shoppers are the wrong buyer entirely for B2B dental SaaS.",
+      "rationale": "Haircare consumers have no reason to buy dental practice SaaS.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 44,
+        "neutral": false,
+        "detail": "$200 vs $42 typical order (4.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 22,
+      "fit": 22,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Beverage checkout is a consumer impulse moment, not a software purchase.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 37,
+        "neutral": false,
+        "detail": "$200 vs $38 typical order (5.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 21,
+      "fit": 21,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Supplement buyers are consumers; dental practice software is irrelevant.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 32,
+        "neutral": false,
+        "detail": "$200 vs $35 typical order (5.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 21,
+      "fit": 21,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Playful pet-box audience is a consumer segment with no B2B intent.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1156,7 +1144,7 @@
    "type": "stage",
    "stage": "publishers",
    "status": "done",
-   "ms": 18444
+   "ms": 19629
   },
   {
    "type": "stage",
@@ -1187,13 +1175,13 @@
     },
     "bid_strategy": {
      "type": "target_cpa",
-     "target_cpa_usd": 180.0,
-     "max_cpa_usd": 234.0,
+     "target_cpa_usd": 120.0,
+     "max_cpa_usd": 156.0,
      "allowable_cpa_ratio": 0.6,
-     "first_order_value_usd": 300.0,
+     "first_order_value_usd": 200.0,
      "first_order_value_source": "assumed",
      "learning_period_days": 14,
-     "rationale": "$300 first order (assumed) × 0.60 = $180.00 target CPA: subscription revenue repeats, so a first order can be bought at a larger share of its value. The max CPA allows headroom while the campaign learns over 14 days."
+     "rationale": "$200 first order (assumed) × 0.60 = $120.00 target CPA: subscription revenue repeats, so a first order can be bought at a larger share of its value. The max CPA allows headroom while the campaign learns over 14 days."
     },
     "placements": [],
     "targeting": {
@@ -1238,8 +1226,8 @@
      "needs_human_review": true,
      "confidence": "low",
      "assumptions": [
-      "Assumed pricing is a mid-tier monthly SaaS subscription of roughly $300.",
-      "Assumed buyers are practice owners and office managers aged 30-60.",
+      "Pricing is a monthly subscription; we used a placeholder value since none was given.",
+      "Buyers are dental practice owners and office managers.",
       "Allowable CPA is 60% of first order value (subscription); replace with real margin and LTV."
      ],
      "warnings": [
@@ -1258,20 +1246,20 @@
   },
   {
    "type": "done",
-   "run_id": "84c09449dd",
-   "total_ms": 30687,
-   "cost_usd": 0.189,
+   "run_id": "6fc9672f26",
+   "total_ms": 31258,
+   "cost_usd": 0.1944,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v5-e8eda0f",
-     "ms": 12240,
-     "input_tokens": 7566,
-     "output_tokens": 982,
-     "cost_usd": 0.06238,
+     "prompt_version": "v6-5c0c401",
+     "ms": 11624,
+     "input_tokens": 8076,
+     "output_tokens": 864,
+     "cost_usd": 0.06198,
      "retries": 0,
      "ok": true,
      "error": null
@@ -1282,7 +1270,7 @@
      "model": null,
      "prompt": null,
      "prompt_version": null,
-     "ms": 0,
+     "ms": 1,
      "input_tokens": 0,
      "output_tokens": 0,
      "cost_usd": 0.0,
@@ -1295,11 +1283,11 @@
      "name": "rerank_publishers",
      "model": "anthropic:claude-opus-5",
      "prompt": "rerank_publishers",
-     "prompt_version": "v5-fcbc95b",
-     "ms": 18442,
-     "input_tokens": 15851,
-     "output_tokens": 1893,
-     "cost_usd": 0.12658,
+     "prompt_version": "v7-f3a64f0",
+     "ms": 19625,
+     "input_tokens": 16507,
+     "output_tokens": 1997,
+     "cost_usd": 0.13246,
      "retries": 0,
      "ok": true,
      "error": null

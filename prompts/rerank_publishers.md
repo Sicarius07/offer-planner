@@ -1,6 +1,6 @@
 ---
 name: rerank_publishers
-version: 6
+version: 7
 stage: rerank
 description: Judge every publisher for this advertiser field by field, decide its final tier (the computed score is one input), check for competitors, and explain with cited evidence.
 ---
@@ -57,7 +57,7 @@ Check each move against these. They are the common ways a move goes wrong:
 - **Are you arguing from the catalog?** "The only", "the most", "the closest option here" describe the other publishers, not this fit. Ask whether you'd make the move if several better publishers existed; if not, don't make it.
 - **Did you check the counter-evidence?** Before settling, re-read the price comparison and the notes for anything that argues against the move.
 
-When your tier differs from the computed tier, set `tier` to yours and say in `tier_reason` what the computed score got wrong, pointing at the fields that show it. If your judgment matches the computed tier, keep it and leave `tier_reason` empty. Moving in either direction is fine, and so is moving further than one tier. What matters is that each move rests on your reading of the record, not on reordering publishers that are close.
+When your tier differs from the computed tier, set `tier` to yours and say in `tier_reason` what the computed score got wrong, pointing at the fields that show it. Also set `fit` to your own 0–100 score for how well the placement should work, inside the new tier's band: recommended 70–100, test 50–69, excluded 0–49. Budget is split by fit, so this is how your view of a placement's strength reaches the plan. Score moved publishers against each other and against the computed fits of the ones you kept: a placement you'd clearly back over another should score clearly higher, and two you can't tell apart should score about the same. If your judgment matches the computed tier, keep it and leave `tier_reason` empty and `fit` null. Moving in either direction is fine, and so is moving further than one tier. What matters is that each move rests on your reading of the record, not on reordering publishers that are close.
 
 ## Competitor calls
 
@@ -67,7 +67,7 @@ If the profile's `offering_type` looks wrong (a tool sold to businesses marked a
 
 ## What code does with your answer
 
-- A tier move counts only with a `tier_reason` and at least one evidence quote that checks out. Quotes are checked against the real field text and dropped if they aren't there, so quote short phrases exactly.
+- A tier move counts only with a `tier_reason` and at least one evidence quote that checks out. Its `fit` is then used for the budget split, pulled into the tier's band if it falls outside. Quotes are checked against the real field text and dropped if they aren't there, so quote short phrases exactly.
 - A `missed_competitor` call excludes the publisher only when your evidence quotes the publisher's own fields (notes, category or subcategories).
 - A publisher excluded as a competitor stays excluded whatever you say; a `not_a_competitor` call is shown to a person, who decides.
 - For a B2B advertiser every publisher stays excluded, because this network is consumer checkout traffic.

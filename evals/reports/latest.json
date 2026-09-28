@@ -10,18 +10,18 @@
     "pub_003",
     "pub_002",
     "pub_004",
-    "pub_014",
     "pub_015",
-    "pub_020",
-    "pub_011",
     "pub_005",
-    "pub_017",
+    "pub_011",
+    "pub_020",
+    "pub_014",
     "pub_010",
+    "pub_017",
     "pub_016",
+    "pub_006",
     "pub_001",
-    "pub_013",
     "pub_019",
-    "pub_006"
+    "pub_013"
    ],
    "tiers": {
     "recommended": [],
@@ -36,32 +36,26 @@
      "pub_003",
      "pub_002",
      "pub_004",
-     "pub_014",
      "pub_015",
-     "pub_020",
-     "pub_011",
      "pub_005",
-     "pub_017",
+     "pub_011",
+     "pub_020",
+     "pub_014",
      "pub_010",
+     "pub_017",
      "pub_016",
+     "pub_006",
      "pub_001",
-     "pub_013",
      "pub_019",
-     "pub_006"
+     "pub_013"
     ]
    },
    "moves": [
     {
-     "publisher_id": "pub_012",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Computed test rests entirely on audience income and price headroom; nothing in the record indicates these shoppers own a dog, let alone a senior one. Buying women's vitamins is a fact about the person, not a purchase this product follows from."
-    },
-    {
-     "publisher_id": "pub_003",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Computed test comes from a generic wellness tag plus income; booking a yoga class or spa appointment says nothing about owning an aging dog, so there is no purchase-moment connection to test."
+     "publisher_id": "pub_008",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Code scored only generic 'wellness, replenishment' tag overlap and missed the behavioural read in the notes: this is a subscription grocery audience that already pays a premium for clean-ingredient claims at an $86 basket, which is the same buying habit a $75 grain-free food subscription needs. Worth one test of whether premium-food-subscription behaviour transfers to pet food."
     }
    ],
    "personas": [
@@ -84,24 +78,24 @@
    "ranking": [
     "pub_003",
     "pub_016",
-    "pub_008",
+    "pub_004",
     "pub_012",
+    "pub_008",
+    "pub_006",
+    "pub_013",
     "pub_002",
     "pub_017",
-    "pub_004",
-    "pub_005",
-    "pub_020",
     "pub_014",
-    "pub_006",
+    "pub_020",
     "pub_011",
+    "pub_015",
     "pub_007",
     "pub_010",
-    "pub_015",
-    "pub_013",
     "pub_009",
+    "pub_005",
     "pub_019",
-    "pub_001",
-    "pub_018"
+    "pub_018",
+    "pub_001"
    ],
    "tiers": {
     "recommended": [
@@ -109,26 +103,26 @@
     ],
     "test": [
      "pub_016",
+     "pub_004",
+     "pub_012",
      "pub_008",
-     "pub_012"
+     "pub_006",
+     "pub_013"
     ],
     "excluded": [
      "pub_002",
      "pub_017",
-     "pub_004",
-     "pub_005",
-     "pub_020",
      "pub_014",
-     "pub_006",
+     "pub_020",
      "pub_011",
+     "pub_015",
      "pub_007",
      "pub_010",
-     "pub_015",
-     "pub_013",
      "pub_009",
+     "pub_005",
      "pub_019",
-     "pub_001",
-     "pub_018"
+     "pub_018",
+     "pub_001"
     ]
    },
    "moves": [
@@ -136,34 +130,40 @@
      "publisher_id": "pub_003",
      "from": "test",
      "to": "recommended",
-     "reason": "The score treated this as a generic wellness-audience match and capped it at test, but the purchase itself is the connection: a shopper who just booked a yoga class or personal training session needs something to wear to it, and the notes confirm they are mid-transaction on fitness spend at high income."
+     "reason": "The computed score treated this as a loose category match, but the purchase moment is the strongest in the catalog: someone who just booked a yoga class or personal training session needs workout clothes, and the notes confirm they are mid-purchase on fitness, not just fitness-curious. The $42 booking is a service fee, not a goods basket, so the 2.1x gap overstates the price objection for a high-income audience."
     },
     {
-     "publisher_id": "pub_004",
-     "from": "test",
-     "to": "excluded",
-     "reason": "The score is carried almost entirely by audience (96% female, high income) and price, but the record shows a 45-65 workwear shopper with 'Lower impulse' buying habits and no fitness signal anywhere; there is no reason a mid-life workwear purchase leads to premium recycled leggings."
+     "publisher_id": "pub_012",
+     "from": "excluded",
+     "to": "test",
+     "reason": "The weak-fit call rests on a values score, but the record shows a women's fitness-and-wellness routine buyer: 89% female, 22-42, mid-high income, subscribing to supplements. That is the same person who buys workout clothes, and the notes' skepticism is about health claims, which this brand does not make."
+    },
+    {
+     "publisher_id": "pub_013",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Off-category is too blunt here: this is a 91% female, 18-34 DTC audience whose notes describe 'identity-driven purchasing', which is exactly how a recycled-ocean-plastic brand story sells. Beauty-to-activewear crossover is a standard post-purchase pairing and is worth one measured test."
     },
     {
      "publisher_id": "pub_005",
      "from": "test",
      "to": "excluded",
-     "reason": "Audience and price scores mask a 50-70 age skew and a 'Conservative brand sensibility' that is the opposite of a recycled-plastic performance-legging pitch."
+     "reason": "The audience score of 100 comes only from female share and income; it can't see that this is a 50-70 'mid-life'/'classic' shopper with a 'Conservative brand sensibility', which is a poor match for a recycled-ocean-plastic activewear brand pitched at younger, fitness-engaged women. Marlowe already covers the older affluent-women hypothesis with a younger skew."
     }
    ],
    "personas": [
     "persona_006",
     "persona_009",
     "persona_001",
-    "persona_010",
-    "persona_005"
+    "persona_005",
+    "persona_010"
    ],
    "persona_ranks": [
     3,
     2,
     1,
-    6,
-    4
+    4,
+    6
    ],
    "errors": []
   }
@@ -171,94 +171,82 @@
  "ex03": [
   {
    "ranking": [
-    "pub_003",
     "pub_008",
-    "pub_002",
+    "pub_003",
     "pub_012",
+    "pub_002",
     "pub_015",
     "pub_020",
-    "pub_011",
     "pub_001",
-    "pub_007",
-    "pub_014",
-    "pub_004",
     "pub_017",
-    "pub_005",
-    "pub_013",
+    "pub_011",
+    "pub_014",
+    "pub_007",
     "pub_016",
+    "pub_018",
+    "pub_004",
+    "pub_013",
+    "pub_005",
     "pub_010",
     "pub_009",
     "pub_019",
-    "pub_006",
-    "pub_018"
+    "pub_006"
    ],
    "tiers": {
     "recommended": [
-     "pub_003",
      "pub_008"
     ],
     "test": [
-     "pub_002",
+     "pub_003",
      "pub_012",
+     "pub_002",
      "pub_015"
     ],
     "excluded": [
      "pub_020",
-     "pub_011",
      "pub_001",
-     "pub_007",
-     "pub_014",
-     "pub_004",
      "pub_017",
-     "pub_005",
-     "pub_013",
+     "pub_011",
+     "pub_014",
+     "pub_007",
      "pub_016",
+     "pub_018",
+     "pub_004",
+     "pub_013",
+     "pub_005",
      "pub_010",
      "pub_009",
      "pub_019",
-     "pub_006",
-     "pub_018"
+     "pub_006"
     ]
    },
    "moves": [
     {
-     "publisher_id": "pub_003",
-     "from": "test",
-     "to": "recommended",
-     "reason": "The score only credited generic wellness tag overlap; the notes show the purchase moment itself is a paid self-care booking (yoga/spa/class), which is exactly where an adaptogen NA drink is consumed and gifted, and the $42 basket sits right at the $40 offer."
-    },
-    {
      "publisher_id": "pub_008",
      "from": "test",
      "to": "recommended",
-     "reason": "The tag map read this as generic grocery adjacency, but the notes describe the exact claim-responsiveness this brand sells on, and a case of sparkling functional drinks is a literal pantry line item on the order these shoppers just placed."
+     "reason": "The score treated this as a generic category match, but the notes describe exactly the buying behaviour this brand needs: a pantry-stocking shopper who is 'Responsive to clean-ingredient, sustainability, and wellness claims' is the sober-curious grocery buyer who adds a premium adaptogen drink to a restock, and $40 sits comfortably inside an $86 basket."
     },
     {
      "publisher_id": "pub_015",
      "from": "excluded",
      "to": "test",
-     "reason": "Scored as off-category, but the tag map missed the meal occasion: someone who just bought dinner ingredients is choosing what to drink with that meal, and the notes describe a food-interested household at nationwide scale."
-    },
-    {
-     "publisher_id": "pub_011",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Computed fit rode on income and shared 'aesthetic' values, but nothing about buying sheets or towels leads to a functional drink, and the $164 basket dwarfs the $40 offer."
+     "reason": "The tag map scored this as off-category because meal kits share no tags with beverages, but the purchase moment is a drink occasion: 'Family and couples households' who are 'food-interested' are assembling a dinner at home, and a non-alcoholic cocktail alternative is the drink for that table. Nationwide 36M reach makes it cheap to read."
     }
    ],
    "personas": [
     "persona_001",
-    "persona_003",
     "persona_009",
+    "persona_003",
     "persona_010",
-    "persona_007"
+    "persona_002"
    ],
    "persona_ranks": [
     1,
-    7,
     3,
+    7,
     8,
-    5
+    6
    ],
    "errors": []
   }
@@ -268,9 +256,9 @@
    "ranking": [
     "pub_011",
     "pub_014",
-    "pub_003",
-    "pub_010",
     "pub_008",
+    "pub_010",
+    "pub_003",
     "pub_002",
     "pub_015",
     "pub_020",
@@ -293,11 +281,11 @@
      "pub_014"
     ],
     "test": [
-     "pub_003",
-     "pub_010"
+     "pub_008",
+     "pub_010",
+     "pub_003"
     ],
     "excluded": [
-     "pub_008",
      "pub_002",
      "pub_015",
      "pub_020",
@@ -320,32 +308,40 @@
      "publisher_id": "pub_011",
      "from": "test",
      "to": "recommended",
-     "reason": "The score treated this as generic category adjacency, but the record shows a direct purchase-moment link: someone who just spent on bedding/bath is furnishing a room, and a candle is the classic finishing object for that room. Notes explicitly flag 'High cross-sell with home and wellness', and a $38 candle is a fifth of the $164 basket."
+     "reason": "The scorer read this as a generic home-textiles overlap, but the purchase moment is exact: someone who just bought bedding or bath goods is furnishing a bedroom/bath, and a hand-poured candle is the standard finishing touch. Notes confirm the cross-sell behaviour, and $42 is a quarter of the typical $164 basket."
     },
     {
      "publisher_id": "pub_014",
      "from": "test",
      "to": "recommended",
-     "reason": "Tag overlap only saw kitchen\u2248home_decor, but the notes name the exact occasion this brand sells into: 'Gifting and new-home life events drive purchase.' Candles are the default gift/housewarming add-on, and the 'non_toxic' sensibility matches 'No synthetic fragrances'."
+     "reason": "Category tags only matched kitchen loosely, but the notes name the two exact occasions this brand sells into \u2014 gifting and new-home events \u2014 and non-toxic kitchen buyers are the same people who pay for 'no synthetic fragrances'."
+    },
+    {
+     "publisher_id": "pub_008",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Code excluded this as off-category, but the notes describe an audience defined by responsiveness to exactly the claims this brand makes \u2014 clean ingredients and natural sourcing \u2014 which is the whole pitch for 'natural soy wax, no synthetic fragrances'."
     },
     {
      "publisher_id": "pub_010",
      "from": "excluded",
      "to": "test",
-     "reason": "The score only counted a weak 'gift' tag match, but this publisher's own subcategories include 'gifting' and the notes report 'Strong gifting season uplift (Nov-Dec)' \u2014 the shopper is often already in gift-buying mode, which is the advertiser's primary occasion (gift 1.0)."
+     "reason": "Scored off-category on apparel, but the record carries an explicit 'gifting' subcategory and seasonal gift uplift; this brand's own brief says its candles are 'Mostly bought as gifts', so the hypothesis is gift-mode shoppers buying a second gift, not sock buyers."
     }
    ],
    "personas": [
     "persona_010",
-    "persona_006",
     "persona_005",
-    "persona_001"
+    "persona_006",
+    "persona_001",
+    "persona_003"
    ],
    "persona_ranks": [
     1,
-    3,
     5,
-    2
+    3,
+    2,
+    9
    ],
    "errors": []
   }
@@ -366,46 +362,47 @@
     "pub_002",
     "pub_003",
     "pub_017",
-    "pub_011",
     "pub_004",
-    "pub_014",
     "pub_005",
+    "pub_011",
+    "pub_014",
     "pub_016",
     "pub_012",
     "pub_007",
     "pub_008",
-    "pub_020",
     "pub_015",
+    "pub_020",
     "pub_010",
     "pub_001",
+    "pub_006",
     "pub_009",
     "pub_013",
-    "pub_006",
     "pub_018",
     "pub_019"
    ],
    "tiers": {
     "recommended": [],
-    "test": [],
+    "test": [
+     "pub_002"
+    ],
     "excluded": [
-     "pub_002",
      "pub_003",
      "pub_017",
-     "pub_011",
      "pub_004",
-     "pub_014",
      "pub_005",
+     "pub_011",
+     "pub_014",
      "pub_016",
      "pub_012",
      "pub_007",
      "pub_008",
-     "pub_020",
      "pub_015",
+     "pub_020",
      "pub_010",
      "pub_001",
+     "pub_006",
      "pub_009",
      "pub_013",
-     "pub_006",
      "pub_018",
      "pub_019"
     ]
@@ -421,7 +418,7 @@
     1,
     2,
     3,
-    5
+    7
    ],
    "errors": []
   }
@@ -429,51 +426,51 @@
  "ex07": [
   {
    "ranking": [
-    "pub_015",
-    "pub_001",
     "pub_009",
-    "pub_008",
-    "pub_007",
-    "pub_012",
-    "pub_002",
-    "pub_018",
-    "pub_016",
-    "pub_019",
-    "pub_011",
     "pub_004",
+    "pub_015",
+    "pub_002",
     "pub_005",
-    "pub_014",
-    "pub_003",
+    "pub_008",
     "pub_017",
-    "pub_020",
     "pub_006",
+    "pub_011",
+    "pub_014",
+    "pub_016",
+    "pub_007",
+    "pub_013",
+    "pub_001",
+    "pub_003",
     "pub_010",
-    "pub_013"
+    "pub_019",
+    "pub_020",
+    "pub_012",
+    "pub_018"
    ],
    "tiers": {
     "recommended": [],
     "test": [],
     "excluded": [
-     "pub_015",
-     "pub_001",
      "pub_009",
-     "pub_008",
-     "pub_007",
-     "pub_012",
-     "pub_002",
-     "pub_018",
-     "pub_016",
-     "pub_019",
-     "pub_011",
      "pub_004",
+     "pub_015",
+     "pub_002",
      "pub_005",
-     "pub_014",
-     "pub_003",
+     "pub_008",
      "pub_017",
-     "pub_020",
      "pub_006",
+     "pub_011",
+     "pub_014",
+     "pub_016",
+     "pub_007",
+     "pub_013",
+     "pub_001",
+     "pub_003",
      "pub_010",
-     "pub_013"
+     "pub_019",
+     "pub_020",
+     "pub_012",
+     "pub_018"
     ]
    },
    "moves": [],
@@ -497,15 +494,15 @@
    "ranking": [
     "pub_008",
     "pub_014",
+    "pub_009",
     "pub_015",
     "pub_017",
     "pub_011",
     "pub_001",
-    "pub_009",
     "pub_012",
+    "pub_002",
     "pub_007",
     "pub_020",
-    "pub_002",
     "pub_016",
     "pub_018",
     "pub_003",
@@ -522,17 +519,17 @@
      "pub_014"
     ],
     "test": [
+     "pub_009",
      "pub_015",
      "pub_017",
      "pub_011"
     ],
     "excluded": [
      "pub_001",
-     "pub_009",
      "pub_012",
+     "pub_002",
      "pub_007",
      "pub_020",
-     "pub_002",
      "pub_016",
      "pub_018",
      "pub_003",
@@ -549,44 +546,52 @@
      "publisher_id": "pub_008",
      "from": "test",
      "to": "recommended",
-     "reason": "The score treated this as a mid category match, but the notes describe exactly the buyer this brand needs: a values-driven household replenishment shopper who already responds to sustainability and clean-ingredient claims, buying a pantry/subscription basket that refill cleaners slot straight into."
+     "reason": "The score treated this as a loose grocery adjacency, but the notes name exactly this brand's buyer: shoppers already responding to sustainability and clean-ingredient claims, checking out of a replenishment basket ($86) where a $40 refill kit is an easy add-on."
     },
     {
      "publisher_id": "pub_014",
      "from": "excluded",
      "to": "recommended",
-     "reason": "Computed fit penalised low reach and a loose category link, but this is the sharpest purchase connection in the set: shoppers buying non-toxic cookware for a new home need cleaners for that same kitchen, and the notes confirm sustainability motivation."
+     "reason": "Category scoring only found a fuzzy kitchen link, but the notes describe the exact buyer and moment: sustainability-motivated, non-toxic kitchen purchases at new-home life events, where cleaning supplies are the next thing on the list."
+    },
+    {
+     "publisher_id": "pub_009",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Scored off-category because pet tags don't link to household, but pet owners are heavy buyers of floor and surface cleaners and care about what their animals walk on; 62M impressions with broad demographics and repeat-purchase behaviour makes this the cheapest way to read a pet-safe angle."
     },
     {
      "publisher_id": "pub_015",
      "from": "excluded",
      "to": "test",
-     "reason": "The score zeroed values because meal kits carry no sustainability tags, but the purchase moment is real: family and couples households buying a recurring food box are the heaviest kitchen-cleaning replenishers, and $35 is half a typical basket."
+     "reason": "Values scored zero only because the record lists no sustainability tag, but the purchase moment is strong: family and couples households restocking food weekly at $74, and kitchen cleanup follows every meal kit. At 36M impressions this reads fast."
     },
     {
      "publisher_id": "pub_017",
      "from": "excluded",
      "to": "test",
-     "reason": "The brief explicitly asks to reach shoppers who already care about sustainability, and this audience self-selected into sustainable footwear; that is a value-level hypothesis worth measuring even though the category score is zero."
+     "reason": "Off-category is right about the purchase, but the brief explicitly asks to reach \"people who already care about sustainability\", and the notes say this audience is sold on sustainability messaging with a gender-balanced 5.8M-impression base."
     },
     {
      "publisher_id": "pub_011",
      "from": "excluded",
      "to": "test",
-     "reason": "Values scored zero, but the record shows a genuine home-project moment: bedding/bath buyers setting up or refreshing a home cross-sell into home categories, and the advertiser's own interests include home_textiles."
+     "reason": "Values scored zero, but this is a bath and home-textiles checkout with \"High cross-sell with home and wellness\" \u2014 the one non-kitchen home basket where surface and bath cleaners are a natural follow-on, and $40 is small against a $164 order."
     }
    ],
    "personas": [
     "persona_006",
     "persona_002",
     "persona_008",
-    "persona_007"
+    "persona_007",
+    "persona_001"
    ],
    "persona_ranks": [
     1,
     2,
     6,
-    5
+    5,
+    3
    ],
    "errors": []
   }
@@ -594,63 +599,72 @@
  "ex10": [
   {
    "ranking": [
+    "pub_016",
     "pub_004",
     "pub_005",
-    "pub_002",
     "pub_011",
-    "pub_016",
     "pub_003",
     "pub_014",
+    "pub_002",
     "pub_006",
     "pub_007",
-    "pub_010",
-    "pub_013",
     "pub_017",
     "pub_008",
+    "pub_010",
     "pub_015",
     "pub_020",
-    "pub_009",
+    "pub_013",
     "pub_001",
     "pub_012",
+    "pub_009",
     "pub_018",
     "pub_019"
    ],
    "tiers": {
     "recommended": [],
     "test": [
+     "pub_016",
      "pub_004",
      "pub_005"
     ],
     "excluded": [
-     "pub_002",
      "pub_011",
-     "pub_016",
      "pub_003",
      "pub_014",
+     "pub_002",
      "pub_006",
      "pub_007",
-     "pub_010",
-     "pub_013",
      "pub_017",
      "pub_008",
+     "pub_010",
      "pub_015",
      "pub_020",
-     "pub_009",
+     "pub_013",
      "pub_001",
      "pub_012",
+     "pub_009",
      "pub_018",
      "pub_019"
     ]
    },
-   "moves": [],
+   "moves": [
+    {
+     "publisher_id": "pub_016",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Scored 35 mainly on \"no shared values\" and price, but the score ignores the accessory adjacency: this publisher sells women's \"shoes\" to \"Professional women\" at high income, and a handbag is the standard matched purchase after shoes. That is a purchase-moment link, not just a demographic one."
+    }
+   ],
    "personas": [
     "persona_005",
     "persona_010",
+    "persona_003",
     "persona_006"
    ],
    "persona_ranks": [
     1,
     2,
+    3,
     6
    ],
    "errors": []
@@ -659,112 +673,106 @@
  "ex11": [
   {
    "ranking": [
-    "pub_012",
     "pub_002",
     "pub_003",
     "pub_020",
-    "pub_008",
     "pub_001",
+    "pub_008",
     "pub_015",
+    "pub_012",
     "pub_018",
     "pub_009",
-    "pub_017",
     "pub_013",
-    "pub_011",
     "pub_007",
+    "pub_017",
+    "pub_011",
+    "pub_004",
+    "pub_005",
     "pub_019",
     "pub_010",
+    "pub_014",
     "pub_016",
-    "pub_004",
-    "pub_006",
-    "pub_005",
-    "pub_014"
+    "pub_006"
    ],
    "tiers": {
     "recommended": [
-     "pub_012",
      "pub_002",
      "pub_003",
      "pub_020"
     ],
     "test": [
-     "pub_008",
      "pub_001",
-     "pub_015"
+     "pub_008",
+     "pub_015",
+     "pub_012"
     ],
     "excluded": [
      "pub_018",
      "pub_009",
-     "pub_017",
      "pub_013",
-     "pub_011",
      "pub_007",
+     "pub_017",
+     "pub_011",
+     "pub_004",
+     "pub_005",
      "pub_019",
      "pub_010",
+     "pub_014",
      "pub_016",
-     "pub_004",
-     "pub_006",
-     "pub_005",
-     "pub_014"
+     "pub_006"
     ]
    },
    "moves": [
     {
-     "publisher_id": "pub_012",
-     "from": "test",
-     "to": "recommended",
-     "reason": "The score treated this as a loose supplement adjacency, but the purchase moment is exact: someone who just bought a vitamin/supplement subscription is a habitual buyer of consumable health products, and a protein bar is the obvious next replenishment at a near-identical basket size ($35 vs $38). The notes' skepticism warning targets health claims, and this brand's pitch is taste, not efficacy."
-    },
-    {
      "publisher_id": "pub_002",
      "from": "test",
      "to": "recommended",
-     "reason": "Computed as test on category overlap alone, but the notes name the exact buyer: 'Fitness-engaged shoppers' just buying activewear are the people who already keep protein bars in the bag, and at 22M impressions this can carry core budget."
+     "reason": "The score treated activewear as only loosely related to fitness, but the purchase moment is direct: someone who just bought workout clothes from a publisher whose notes call them 'Fitness-engaged shoppers' is a prime protein-bar buyer, and at 22M impressions with a $78 basket a $35 bar box is an easy add-on."
     },
     {
      "publisher_id": "pub_003",
      "from": "test",
      "to": "recommended",
-     "reason": "The score gave zero on values and read this as generic wellness, but the notes make the intent explicit \u2014 these users are booking and paying for workouts right now, which is the sharpest possible moment to offer post-workout fuel at a matched basket size."
+     "reason": "Computed fit undercounted the purchase moment: the notes say these shoppers are 'actively spending on self-care and fitness' at the exact moment they book a class or training session, which is when a good-tasting protein bar is a natural next buy, and the $42 basket sits right at the offer price."
     },
     {
      "publisher_id": "pub_020",
      "from": "test",
      "to": "recommended",
-     "reason": "Tags only saw a weak wellness/functional-beverage link, but the notes describe this brand's exact positioning: 'Health-curious but indulgence-seeking' is precisely the shopper who wants protein that doesn't taste like cardboard."
-    },
-    {
-     "publisher_id": "pub_008",
-     "from": "excluded",
-     "to": "test",
-     "reason": "Excluded on a low values score, but the record shows a real snack-replenishment basket: 'pantry' and 'subscription' grocery shoppers restock consumables, and a bar box is a natural line item. The open question is whether a taste-first pitch lands on an audience the notes call clean-ingredient driven."
+     "reason": "The tag map only saw loose wellness adjacency, but the notes describe exactly this brand's pitch: 'Health-curious but indulgence-seeking' shoppers are the people who buy a protein bar because it tastes good, and a functional drink plus a bar is the same snack basket at a matching $42 order value."
     },
     {
      "publisher_id": "pub_001",
      "from": "excluded",
      "to": "test",
-     "reason": "Excluded as weak fit despite matching the advertiser's own snacks, impulse and replenishment signals at 84M impressions and a $28 basket \u2014 the largest impulse-snack moment in the catalog. Test rather than recommend because late-night convenience orders skew indulgent and the retailer may already carry bars."
+     "reason": "Excluded as weak fit despite the category signal matching snacks, impulse and replenishment \u2014 the exact occasion set here. An 'Impulse-friendly' convenience checkout at a $28 basket with 84M impressions is the cheapest place to read whether a taste-led snack offer converts on impulse."
+    },
+    {
+     "publisher_id": "pub_008",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Scored as weak fit only because values didn't overlap, but the category signal already matches snacks and replenishment: a pantry restock from a natural-grocery subscriber is a direct shelf-adjacent moment for a bar box."
     },
     {
      "publisher_id": "pub_015",
      "from": "excluded",
      "to": "test",
-     "reason": "Excluded on weak tag overlap, but meal-kit subscribers are the clearest 'food-interested' cohort in the catalog and buy recurring food subscriptions already; the taste claim is aimed exactly at people who care how food tastes. Test because the household/family basket may want snacks for kids rather than protein."
+     "reason": "Scored down on values with no read of the notes: 'Convenience-motivated but food-interested' households are the busy-day snack buyers this brand names, and 36M impressions make it a cheap volume test."
     }
    ],
    "personas": [
     "persona_009",
     "persona_001",
     "persona_007",
-    "persona_003",
-    "persona_002"
+    "persona_002",
+    "persona_003"
    ],
    "persona_ranks": [
-    1,
     2,
+    1,
     3,
-    6,
-    4
+    5,
+    6
    ],
    "errors": []
   }
@@ -775,52 +783,60 @@
     "pub_009",
     "pub_007",
     "pub_018",
-    "pub_001",
     "pub_015",
+    "pub_001",
     "pub_002",
     "pub_003",
     "pub_008",
+    "pub_010",
     "pub_013",
     "pub_020",
-    "pub_010",
     "pub_012",
-    "pub_014",
     "pub_004",
     "pub_006",
-    "pub_019",
+    "pub_014",
+    "pub_016",
     "pub_005",
     "pub_011",
-    "pub_016",
-    "pub_017"
+    "pub_017",
+    "pub_019"
    ],
    "tiers": {
-    "recommended": [],
+    "recommended": [
+     "pub_009"
+    ],
     "test": [
-     "pub_009",
      "pub_007"
     ],
     "excluded": [
      "pub_018",
-     "pub_001",
      "pub_015",
+     "pub_001",
      "pub_002",
      "pub_003",
      "pub_008",
+     "pub_010",
      "pub_013",
      "pub_020",
-     "pub_010",
      "pub_012",
-     "pub_014",
      "pub_004",
      "pub_006",
-     "pub_019",
+     "pub_014",
+     "pub_016",
      "pub_005",
      "pub_011",
-     "pub_016",
-     "pub_017"
+     "pub_017",
+     "pub_019"
     ]
    },
-   "moves": [],
+   "moves": [
+    {
+     "publisher_id": "pub_009",
+     "from": "test",
+     "to": "recommended",
+     "reason": "The score capped Ruffco at test on an 'adjacent conflict' for pet_supplies, but Ruffco sells food, supplies and pharmacy items, not curated subscription boxes, so it isn't selling a substitute on the page. It is the one checkout in the catalog where a shopper has literally just bought for a cat, and its notes ('Broad demographics, repeat-purchase behavior') plus the largest reach here make the narrow new-kitten slice addressable at volume; a $40 box against a $73 basket is an easy add-on."
+    }
+   ],
    "personas": [
     "persona_004",
     "persona_002",
@@ -839,97 +855,91 @@
  "ex13": [
   {
    "ranking": [
-    "pub_002",
     "pub_003",
+    "pub_002",
     "pub_001",
     "pub_017",
-    "pub_009",
-    "pub_012",
-    "pub_008",
     "pub_020",
-    "pub_011",
+    "pub_009",
     "pub_015",
-    "pub_007",
-    "pub_013",
+    "pub_011",
     "pub_016",
-    "pub_018",
-    "pub_019",
     "pub_004",
     "pub_006",
-    "pub_010",
+    "pub_007",
+    "pub_013",
+    "pub_018",
+    "pub_019",
     "pub_005",
-    "pub_014"
+    "pub_008",
+    "pub_010",
+    "pub_014",
+    "pub_012"
    ],
    "tiers": {
     "recommended": [
+     "pub_003",
      "pub_002"
     ],
     "test": [
-     "pub_003",
      "pub_001",
-     "pub_017"
+     "pub_017",
+     "pub_020"
     ],
     "excluded": [
      "pub_009",
-     "pub_012",
-     "pub_008",
-     "pub_020",
-     "pub_011",
      "pub_015",
-     "pub_007",
-     "pub_013",
+     "pub_011",
      "pub_016",
-     "pub_018",
-     "pub_019",
      "pub_004",
      "pub_006",
-     "pub_010",
+     "pub_007",
+     "pub_013",
+     "pub_018",
+     "pub_019",
      "pub_005",
-     "pub_014"
+     "pub_008",
+     "pub_010",
+     "pub_014",
+     "pub_012"
     ]
    },
    "moves": [
     {
-     "publisher_id": "pub_002",
+     "publisher_id": "pub_003",
      "from": "test",
      "to": "recommended",
-     "reason": "The score treated this as a generic apparel/audience match, but the notes name the exact intent this brand needs: these shoppers train, and someone who just bought activewear is a natural buyer of protein and creatine. A $40 supplement order against a $78 activewear basket is an easy add-on, and 22M impressions is the largest genuinely fitness-intent inventory here."
+     "reason": "Scoring treated this as a loose wellness match, but the notes and subcategories describe the exact purchase moment for sports nutrition: someone who just booked personal training or a fitness class is training this week and buys protein and pre-workout to support it, at a $42 basket that sits right on the $40 offer."
     },
     {
      "publisher_id": "pub_001",
      "from": "excluded",
      "to": "test",
-     "reason": "Excluded as off-category, but this is the one place where the shopper profile matches the product's core buyer and the offer mechanics: 18-34, male-leaning, mid income, impulse-friendly, at 84M impressions, with a $40 offer against a $28 basket."
-    },
-    {
-     "publisher_id": "pub_012",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Review found a competitor the tags missed: Daily Form is a supplements DTC brand ('vitamins', 'supplements' subcategories), and the advertiser lists vitamins_supplements among what it competes with, so a shopper would buy one instead of the other."
+     "reason": "Excluded as off-category, but this is the only sizeable pool of young, mid-income, half-male, impulse-driven shoppers in the catalog, which is the advertiser's stated buyer profile, and an impulse-friendly checkout at a $28 basket suits a $40 value-priced staple; the connection is demographic rather than purchase-based, so it belongs in test, not core budget."
     },
     {
      "publisher_id": "pub_008",
      "from": "test",
      "to": "excluded",
-     "reason": "The score leaned on income and price headroom, but the notes describe shoppers who buy on clean-ingredient and sustainability claims, which is the opposite of a performance-only, budget-positioned supplement, and a pantry grocery order carries no training signal."
+     "reason": "The score is carried by income and price ratio, not by any purchase link: buying organic pantry groceries gives no reason to buy pre-workout next, and the notes describe shoppers who respond to clean-ingredient and sustainability claims rather than to a half-the-price argument, on an $86 premium basket."
     },
     {
-     "publisher_id": "pub_020",
+     "publisher_id": "pub_012",
      "from": "test",
      "to": "excluded",
-     "reason": "Tag overlap came only from a loose wellness/functional-beverage link; the notes describe an indulgence-driven soda-alternative shopper, not someone training, so there is no purchase-moment connection to pre-workout or creatine."
+     "reason": "Review found a competitor the tags missed: Subcategories are \"vitamins\", \"supplements\" and the publisher sells vitamins_supplements on a subscription basis; a shopper who just restocked supplements there would buy this brand instead of, not alongside, that order."
     }
    ],
    "personas": [
     "persona_009",
-    "persona_001",
     "persona_008",
+    "persona_001",
     "persona_002"
    ],
    "persona_ranks": [
     1,
+    5,
     2,
-    4,
     3
    ],
    "errors": []
@@ -939,50 +949,51 @@
   {
    "ranking": [
     "pub_014",
-    "pub_011",
     "pub_004",
-    "pub_002",
-    "pub_003",
+    "pub_011",
     "pub_005",
     "pub_007",
     "pub_015",
-    "pub_008",
+    "pub_002",
     "pub_016",
-    "pub_017",
+    "pub_003",
     "pub_009",
+    "pub_017",
+    "pub_008",
     "pub_006",
-    "pub_013",
     "pub_010",
+    "pub_013",
     "pub_020",
     "pub_012",
-    "pub_019",
     "pub_018",
+    "pub_019",
     "pub_001"
    ],
    "tiers": {
     "recommended": [
      "pub_014"
     ],
-    "test": [],
+    "test": [
+     "pub_004"
+    ],
     "excluded": [
      "pub_011",
-     "pub_004",
-     "pub_002",
-     "pub_003",
      "pub_005",
      "pub_007",
      "pub_015",
-     "pub_008",
+     "pub_002",
      "pub_016",
-     "pub_017",
+     "pub_003",
      "pub_009",
+     "pub_017",
+     "pub_008",
      "pub_006",
-     "pub_013",
      "pub_010",
+     "pub_013",
      "pub_020",
      "pub_012",
-     "pub_019",
      "pub_018",
+     "pub_019",
      "pub_001"
     ]
    },
@@ -991,22 +1002,26 @@
      "publisher_id": "pub_014",
      "from": "test",
      "to": "recommended",
-     "reason": "The score only found weak tag links (\"home_textiles\u2248kitchen\"), missing the explicit purchase-moment signal in the notes: buyers here are outfitting or gifting for a new home, which is exactly when premium bedding gets bought, at a basket size that makes a $280 set a plausible next step."
+     "reason": "The score treated this as a loose kitchen/home tag overlap, but the notes name the actual purchase moment: new-home life events and gifting, which is exactly when someone buys new linen bedding. Price and audience also line up ($198 basket, high income, 28-48)."
+    },
+    {
+     "publisher_id": "pub_004",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Off-category is right about the product, but the notes describe the exact buyer the brief targets: older affluent women with low impulse who 'Responds to quality messaging' \u2014 the grown-up, quality-led pitch this brand makes. Worth a read at 8.4M impressions."
     }
    ],
    "personas": [
     "persona_005",
     "persona_010",
-    "persona_001",
     "persona_006",
-    "persona_003"
+    "persona_001"
    ],
    "persona_ranks": [
-    3,
-    1,
     2,
-    4,
-    9
+    1,
+    3,
+    5
    ],
    "errors": []
   }
@@ -1025,20 +1040,20 @@
   {
    "ranking": [
     "pub_008",
-    "pub_001",
     "pub_015",
+    "pub_001",
     "pub_020",
     "pub_012",
     "pub_003",
-    "pub_014",
     "pub_009",
+    "pub_014",
     "pub_002",
     "pub_007",
     "pub_016",
     "pub_017",
     "pub_018",
-    "pub_019",
     "pub_010",
+    "pub_019",
     "pub_004",
     "pub_006",
     "pub_011",
@@ -1046,25 +1061,26 @@
     "pub_005"
    ],
    "tiers": {
-    "recommended": [],
-    "test": [
+    "recommended": [
      "pub_008",
-     "pub_001",
      "pub_015"
+    ],
+    "test": [
+     "pub_001"
     ],
     "excluded": [
      "pub_020",
      "pub_012",
      "pub_003",
-     "pub_014",
      "pub_009",
+     "pub_014",
      "pub_002",
      "pub_007",
      "pub_016",
      "pub_017",
      "pub_018",
-     "pub_019",
      "pub_010",
+     "pub_019",
      "pub_004",
      "pub_006",
      "pub_011",
@@ -1072,12 +1088,120 @@
      "pub_005"
     ]
    },
-   "moves": [],
+   "moves": [
+    {
+     "publisher_id": "pub_008",
+     "from": "test",
+     "to": "recommended",
+     "reason": "The score treated this as a generic grocery match, but the notes describe exactly the buyer for organic baby food: values-driven shoppers 'Responsive to clean-ingredient' claims, at an $86 basket where a $35 pouch order is a small add-on. That is a specific purchase-moment link (organic pantry replenishment to organic baby food), not just tag overlap."
+    },
+    {
+     "publisher_id": "pub_015",
+     "from": "test",
+     "to": "recommended",
+     "reason": "Category scoring only saw 'groceries\u2248meal_kits'; the notes state the household type outright \u2014 'Family and couples households. Convenience-motivated but food-interested' \u2014 which is the exact profile for organic pouches, and 36M impressions plus a $74 basket make a $35 offer an easy add-on at real volume."
+    }
+   ],
    "personas": [
     "persona_002",
     "persona_001",
+    "persona_006",
     "persona_008",
-    "persona_006"
+    "persona_007"
+   ],
+   "persona_ranks": [
+    1,
+    3,
+    4,
+    6,
+    2
+   ],
+   "errors": []
+  }
+ ],
+ "adv_invented_claims": [
+  {
+   "ranking": [
+    "pub_001",
+    "pub_008",
+    "pub_015",
+    "pub_020",
+    "pub_009",
+    "pub_002",
+    "pub_018",
+    "pub_007",
+    "pub_019",
+    "pub_010",
+    "pub_012",
+    "pub_013",
+    "pub_016",
+    "pub_017",
+    "pub_004",
+    "pub_006",
+    "pub_011",
+    "pub_014",
+    "pub_005",
+    "pub_003"
+   ],
+   "tiers": {
+    "recommended": [
+     "pub_001",
+     "pub_008",
+     "pub_015",
+     "pub_020"
+    ],
+    "test": [
+     "pub_009"
+    ],
+    "excluded": [
+     "pub_002",
+     "pub_018",
+     "pub_007",
+     "pub_019",
+     "pub_010",
+     "pub_012",
+     "pub_013",
+     "pub_016",
+     "pub_017",
+     "pub_004",
+     "pub_006",
+     "pub_011",
+     "pub_014",
+     "pub_005",
+     "pub_003"
+    ]
+   },
+   "moves": [
+    {
+     "publisher_id": "pub_008",
+     "from": "test",
+     "to": "recommended",
+     "reason": "Scored only 61 largely because 'values' returned zero, but the purchase moment is the most literal in the catalog: a subscription pantry grocery order is precisely where a 32oz fridge concentrate belongs, and the $86 basket makes $24 trivial."
+    },
+    {
+     "publisher_id": "pub_020",
+     "from": "test",
+     "to": "recommended",
+     "reason": "Computed fit was held down by reach (5.2M) and a zero values score, but this is a fridge-beverage buyer at checkout: someone who just bought functional sodas is restocking drinks, the closest thing to a same-occasion purchase for cold brew concentrate."
+    },
+    {
+     "publisher_id": "pub_012",
+     "from": "test",
+     "to": "excluded",
+     "reason": "The 51 comes from an income/price match plus a loose functional_beverages\\u2248wellness tag link; nothing about a vitamin subscription checkout makes cold brew the next purchase, and the notes describe an audience that is \"skeptical of unsubstantiated health claims\" while this brand makes no health claim at all."
+    },
+    {
+     "publisher_id": "pub_003",
+     "from": "test",
+     "to": "excluded",
+     "reason": "Fit 50 is built almost entirely on income and price bands plus a weak wellness tag link; booking a yoga class or spa appointment is a service purchase with no consumable-restock moment, so there is no reason this shopper wants a grocery item next."
+    }
+   ],
+   "personas": [
+    "persona_007",
+    "persona_002",
+    "persona_008",
+    "persona_009"
    ],
    "persona_ranks": [
     1,
@@ -1088,112 +1212,12 @@
    "errors": []
   }
  ],
- "adv_invented_claims": [
-  {
-   "ranking": [
-    "pub_001",
-    "pub_015",
-    "pub_008",
-    "pub_007",
-    "pub_020",
-    "pub_003",
-    "pub_002",
-    "pub_009",
-    "pub_012",
-    "pub_004",
-    "pub_005",
-    "pub_011",
-    "pub_018",
-    "pub_013",
-    "pub_014",
-    "pub_019",
-    "pub_010",
-    "pub_017",
-    "pub_006",
-    "pub_016"
-   ],
-   "tiers": {
-    "recommended": [
-     "pub_001",
-     "pub_015",
-     "pub_008"
-    ],
-    "test": [],
-    "excluded": [
-     "pub_007",
-     "pub_020",
-     "pub_003",
-     "pub_002",
-     "pub_009",
-     "pub_012",
-     "pub_004",
-     "pub_005",
-     "pub_011",
-     "pub_018",
-     "pub_013",
-     "pub_014",
-     "pub_019",
-     "pub_010",
-     "pub_017",
-     "pub_006",
-     "pub_016"
-    ]
-   },
-   "moves": [
-    {
-     "publisher_id": "pub_001",
-     "from": "test",
-     "to": "recommended",
-     "reason": "The score treated this as a mid-strength tag overlap, but the notes describe exactly the behaviour a $24 pantry beverage needs: repeat convenience/grocery buying with impulse-friendly checkout, at an AOV nearly identical to the offer price."
-    },
-    {
-     "publisher_id": "pub_015",
-     "from": "test",
-     "to": "recommended",
-     "reason": "Category scoring only gave partial credit for groceries\u2248meal_kits, but the notes describe the precise buyer for at-home cold brew concentrate: people who pay for food convenience yet care about what they consume."
-    },
-    {
-     "publisher_id": "pub_008",
-     "from": "test",
-     "to": "recommended",
-     "reason": "The values signal scored 0 only because the brief lists no positioning tags, but a pantry-restock checkout is the single most natural moment to sell a shelf-stable coffee concentrate."
-    },
-    {
-     "publisher_id": "pub_020",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Review found a competitor the tags missed: Publisher's subcategories and sells are 'functional_beverages' and 'soft_drinks' \u2014 the exact substitute set the advertiser lists in competes_with, so a shopper choosing between them would buy one instead of the other."
-    },
-    {
-     "publisher_id": "pub_003",
-     "from": "test",
-     "to": "excluded",
-     "reason": "Category credit came from functional_beverages\u2248wellness, but booking a yoga class or spa appointment gives no reason to buy coffee concentrate next; the only link is the shopper's demographic."
-    }
-   ],
-   "personas": [
-    "persona_007",
-    "persona_002",
-    "persona_008",
-    "persona_009",
-    "persona_003"
-   ],
-   "persona_ranks": [
-    1,
-    2,
-    7,
-    5,
-    8
-   ],
-   "errors": []
-  }
- ],
  "adv_tag_gap": [
   {
    "ranking": [
+    "pub_014",
     "pub_011",
     "pub_015",
-    "pub_014",
     "pub_004",
     "pub_005",
     "pub_007",
@@ -1214,13 +1238,13 @@
    ],
    "tiers": {
     "recommended": [
-     "pub_011"
+     "pub_014"
     ],
     "test": [
+     "pub_011",
      "pub_015"
     ],
     "excluded": [
-     "pub_014",
      "pub_004",
      "pub_005",
      "pub_007",
@@ -1242,29 +1266,23 @@
    },
    "moves": [
     {
-     "publisher_id": "pub_011",
+     "publisher_id": "pub_014",
      "from": "test",
      "to": "recommended",
-     "reason": "The score only credited a weak kitchen\\u2248home_textiles link and couldn't read the notes: \"Design-conscious urban/suburban buyers. High cross-sell with home and wellness\" describes exactly the person furnishing or gifting for a home, which is the advertiser's stated wedding/housewarming buyer. Price and income both clear as well."
-    },
-    {
-     "publisher_id": "pub_014",
-     "from": "excluded",
-     "to": "excluded",
-     "reason": "Hearthstone's subcategories are \"cookware\", \"kitchen\", \"non_toxic\" \ffff- pots, pans and non-toxic cooking gear - while this advertiser sells handmade stoneware mugs and dinner plates, which are tableware a cookware shopper would buy in addition to, not instead of, a pan. The shared 'cookware' tag is doing the work here; unless Hearthstone stocks dinnerware on the same page, this is the single most on-point checkout in the catalog: \"Gifting and new-home life events drive purchase\" at a $198 AOV."
+     "reason": "The score capped this at test because the publisher 'sells cookware, a close substitute', but cookware (pots and pans) is not a substitute for handmade mugs and dinner plates \u2014 it's a complement on the same table. The notes the score can't read name the exact buying moment this advertiser lives on: 'Gifting and new-home life events drive purchase', which matches 'popular wedding and housewarming gifts'."
     }
    ],
    "personas": [
     "persona_010",
     "persona_005",
-    "persona_006",
-    "persona_003"
+    "persona_003",
+    "persona_006"
    ],
    "persona_ranks": [
     1,
     2,
-    4,
-    10
+    10,
+    4
    ],
    "errors": []
   }
@@ -1275,23 +1293,23 @@
     "pub_008",
     "pub_001",
     "pub_015",
+    "pub_016",
     "pub_014",
+    "pub_009",
     "pub_020",
-    "pub_003",
-    "pub_007",
     "pub_012",
     "pub_017",
-    "pub_009",
-    "pub_011",
-    "pub_016",
+    "pub_003",
     "pub_002",
+    "pub_007",
+    "pub_011",
     "pub_018",
-    "pub_004",
-    "pub_005",
     "pub_010",
     "pub_013",
     "pub_019",
-    "pub_006"
+    "pub_004",
+    "pub_006",
+    "pub_005"
    ],
    "tiers": {
     "recommended": [
@@ -1299,26 +1317,26 @@
     ],
     "test": [
      "pub_001",
-     "pub_015"
+     "pub_015",
+     "pub_016"
     ],
     "excluded": [
      "pub_014",
+     "pub_009",
      "pub_020",
-     "pub_003",
-     "pub_007",
      "pub_012",
      "pub_017",
-     "pub_009",
-     "pub_011",
-     "pub_016",
+     "pub_003",
      "pub_002",
+     "pub_007",
+     "pub_011",
      "pub_018",
-     "pub_004",
-     "pub_005",
      "pub_010",
      "pub_013",
      "pub_019",
-     "pub_006"
+     "pub_004",
+     "pub_006",
+     "pub_005"
     ]
    },
    "moves": [
@@ -1326,27 +1344,27 @@
      "publisher_id": "pub_008",
      "from": "test",
      "to": "recommended",
-     "reason": "The category score of 27 undercounts the purchase link: someone who just stocked a pantry with organic groceries needs to store and wrap that food, and the notes say this audience is explicitly 'Responsive to clean-ingredient, sustainability, and wellness claims' \u2014 the exact pitch of a cling-film replacement."
+     "reason": "The score treated grocery as a loose category match, but the purchase moment is exact: someone who just bought organic produce and pantry goods needs to store it, and the notes say these shoppers are 'Responsive to clean-ingredient, sustainability, and wellness claims' \u2014 the precise claim a plastic-free wrap makes. At $18 against an $86 basket it's an easy add-on."
     },
     {
-     "publisher_id": "pub_014",
+     "publisher_id": "pub_016",
      "from": "excluded",
-     "to": "excluded",
-     "reason": "Hearthstone sells cookware (pans/tools); the advertiser sells beeswax food wraps, a food-storage item a cookware shopper would buy alongside, not instead of. Only a true competitor if this catalog actually lists wraps/food storage on the same page, which the record doesn't say."
+     "to": "test",
+     "reason": "Category scored zero because footwear shares no tags with kitchen, but the notes name exactly the two claims this product sells on: 'Sustainability and machine-washable claims resonate' with this audience, i.e. reusable-over-disposable buyers at high income."
     }
    ],
    "personas": [
     "persona_006",
-    "persona_002",
     "persona_008",
+    "persona_002",
     "persona_010",
     "persona_003"
    ],
    "persona_ranks": [
+    3,
+    4,
     1,
-    5,
-    7,
-    8,
+    9,
     6
    ],
    "errors": []
@@ -1356,65 +1374,73 @@
   {
    "ranking": [
     "pub_015",
-    "pub_018",
-    "pub_008",
-    "pub_009",
-    "pub_012",
     "pub_001",
+    "pub_008",
+    "pub_012",
+    "pub_009",
     "pub_002",
     "pub_007",
-    "pub_020",
+    "pub_018",
+    "pub_019",
     "pub_003",
     "pub_010",
-    "pub_019",
-    "pub_006",
-    "pub_014",
-    "pub_017",
-    "pub_016",
-    "pub_011",
+    "pub_020",
     "pub_013",
     "pub_004",
-    "pub_005"
+    "pub_006",
+    "pub_014",
+    "pub_016",
+    "pub_017",
+    "pub_005",
+    "pub_011"
    ],
    "tiers": {
-    "recommended": [],
-    "test": [
+    "recommended": [
      "pub_015"
     ],
-    "excluded": [
-     "pub_018",
-     "pub_008",
-     "pub_009",
-     "pub_012",
+    "test": [
      "pub_001",
+     "pub_008"
+    ],
+    "excluded": [
+     "pub_012",
+     "pub_009",
      "pub_002",
      "pub_007",
-     "pub_020",
+     "pub_018",
+     "pub_019",
      "pub_003",
      "pub_010",
-     "pub_019",
-     "pub_006",
-     "pub_014",
-     "pub_017",
-     "pub_016",
-     "pub_011",
+     "pub_020",
      "pub_013",
      "pub_004",
-     "pub_005"
+     "pub_006",
+     "pub_014",
+     "pub_016",
+     "pub_017",
+     "pub_005",
+     "pub_011"
     ]
    },
-   "moves": [],
+   "moves": [
+    {
+     "publisher_id": "pub_008",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Scored as weak fit only because grocery tags barely overlap, but the record describes high-income 28-48 household shoppers already on a pantry subscription \u2014 the household that buys enrichment for school-age kids, and $30 is a third of their usual basket."
+    }
+   ],
    "personas": [
     "persona_002",
     "persona_008",
     "persona_007",
-    "persona_010"
+    "persona_001"
    ],
    "persona_ranks": [
     1,
     5,
-    4,
-    8
+    2,
+    4
    ],
    "errors": []
   }
@@ -1422,50 +1448,51 @@
  "held_beard_oil": [
   {
    "ranking": [
-    "pub_003",
     "pub_001",
     "pub_010",
-    "pub_013",
+    "pub_017",
+    "pub_003",
     "pub_007",
-    "pub_002",
     "pub_019",
-    "pub_011",
+    "pub_002",
     "pub_004",
-    "pub_008",
     "pub_005",
     "pub_009",
-    "pub_012",
-    "pub_020",
+    "pub_011",
     "pub_015",
+    "pub_008",
     "pub_014",
-    "pub_017",
     "pub_018",
+    "pub_020",
+    "pub_012",
+    "pub_013",
     "pub_006",
     "pub_016"
    ],
    "tiers": {
-    "recommended": [],
+    "recommended": [
+     "pub_001"
+    ],
     "test": [
-     "pub_003",
-     "pub_001",
-     "pub_010"
+     "pub_010",
+     "pub_017",
+     "pub_003"
     ],
     "excluded": [
-     "pub_013",
      "pub_007",
-     "pub_002",
      "pub_019",
-     "pub_011",
+     "pub_002",
      "pub_004",
-     "pub_008",
      "pub_005",
      "pub_009",
-     "pub_012",
-     "pub_020",
+     "pub_011",
      "pub_015",
+     "pub_008",
      "pub_014",
-     "pub_017",
      "pub_018",
+     "pub_020",
+     "pub_012",
+     "pub_013",
      "pub_006",
      "pub_016"
     ]
@@ -1474,27 +1501,45 @@
     {
      "publisher_id": "pub_001",
      "from": "excluded",
-     "to": "test",
-     "reason": "Code called this off-category on tags alone, but the record shows the one male-majority, impulse-priced checkout in the set: notes say \"Impulse-friendly\" with a \"Late-night traffic spike\", household staples are in the basket, and the $28 typical order is exactly the offer price, so a grooming replenishment is a plausible add-on worth measuring."
+     "to": "recommended",
+     "reason": "The score zeroed the category because groceries aren't haircare, but it ignored the two things that matter most here: this is the only majority-male, impulse-priced checkout at scale. Notes call the audience 'High-frequency purchasers' who are 'Impulse-friendly', the basket ($28) is the same size as the $25 bottle, and 'convenience'/'household' delivery is exactly where personal-care replenishment already sits."
     },
     {
      "publisher_id": "pub_010",
      "from": "excluded",
      "to": "test",
-     "reason": "Scored off-category on tags, but this publisher sells men's basics and is explicitly a gifting destination (\"gifting\", \"Strong gifting season uplift (Nov-Dec)\") with 41% male traffic; a $28 beard kit is the classic companion gift to socks and underwear, which the tag map can't see."
+     "reason": "Scored off-category because socks aren't haircare, but the tags missed the purchase moment: 'gifting' men's 'basics' is where a $25 beard kit is bought as a gift, and the advertiser carries a gift occasion and apparel_men interest. 41% male and a $52 basket both support a $30 add-on."
+    },
+    {
+     "publisher_id": "pub_017",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Scored 36 purely on category distance, but this is the sharpest demographic match in the catalog to a stated-male, 25-45 product: 47% male, 'Tech-adjacent urban professionals', mid-high income, and a $118 basket that makes $30 trivial."
+    },
+    {
+     "publisher_id": "pub_003",
+     "from": "excluded",
+     "to": "test",
+     "reason": "Off-category was applied to the tag, not the behaviour: notes say users are 'actively spending on self-care and fitness', which is the same self-treat occasion a beard oil serves, and $30 against a $42 spa/class booking is comfortable."
+    },
+    {
+     "publisher_id": "pub_013",
+     "from": "test",
+     "to": "excluded",
+     "reason": "The price and category scores hide a disqualifying audience: 7% male on a product whose gender is stated male, and notes describe a 'Gen Z and younger millennial' minimalist makeup/skincare buyer with no reason to buy beard oil."
     }
    ],
    "personas": [
     "persona_010",
+    "persona_009",
     "persona_007",
-    "persona_003",
-    "persona_008"
+    "persona_003"
    ],
    "persona_ranks": [
-    3,
+    2,
+    7,
     6,
-    9,
-    8
+    1
    ],
    "errors": []
   }
@@ -1553,11 +1598,13 @@
    "personas": [
     "persona_005",
     "persona_010",
+    "persona_001",
     "persona_006"
    ],
    "persona_ranks": [
     1,
     2,
+    3,
     6
    ],
    "errors": []

@@ -12,14 +12,14 @@
    "type": "profile",
    "profile": {
     "brief": "We help people feel better.",
-    "business_summary": "The brief says the business helps people feel better, but it doesn't say what is actually sold.",
+    "business_summary": "The brief says only that the business helps people feel better; we can't tell what it sells.",
     "brand_name": null,
     "offering_type": "unclear",
     "product": {
-     "value": "Unknown — no product or service described",
+     "value": "Unknown — placeholder pending advertiser input",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief only states a benefit, not a product"
+     "note": "Brief gives no product or category"
     },
     "sells": [
      "other"
@@ -27,9 +27,7 @@
     "competes_with": [
      "other"
     ],
-    "interests": {
-     "wellness": 0.5
-    },
+    "interests": {},
     "values": {},
     "occasions": {},
     "positioning": [],
@@ -37,67 +35,67 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "Default while product is unknown"
+     "note": "Middle-of-market default with no pricing given"
     },
     "first_order_value_usd": {
      "value": 45.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Generic default first order value"
+     "note": "Typical everyday consumer order value"
     },
     "gender": {
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "No audience described"
+     "note": "No audience stated"
     },
     "age_range": {
-     "value": "25-54",
+     "value": "25-55",
      "source": "assumed",
      "evidence": null,
-     "note": "Broad default while product is unknown"
+     "note": "Broad adult default"
     },
     "audience": {
-     "value": "Unknown general consumers",
+     "value": "Broad adult consumers",
      "source": "assumed",
      "evidence": null,
-     "note": "No audience information in the brief"
+     "note": "No audience details in brief"
     },
     "business_model": {
      "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief gives no pricing or purchase model"
+     "note": "Brief does not say how it sells"
     },
     "claims": [],
     "clarity": "unusable",
-    "clarity_reason": "The brief describes a benefit ('help people feel better') but never says what product or service is sold, so any plan would be invented.",
+    "clarity_reason": "The brief states a benefit but never says what is sold, so any plan would be invented.",
     "assumptions": [
-     "We assumed nothing about the product because the brief doesn't say what you sell."
+     "We assumed mid-market pricing, a ~$45 first order, and a broad adult audience because the brief gives no product, price or customer details."
     ],
     "clarifying_questions": [
      {
       "question": "What do you actually sell?",
-      "why": "Determines the product category, which drives publisher and persona selection.",
+      "why": "Determines the product category, competitors and which publishers are non-competing.",
       "suggested_answers": [
        "Supplements or vitamins",
        "Skincare or personal care",
-       "Therapy or coaching service",
-       "Functional drinks"
+       "A service like massage or therapy",
+       "Food or drinks"
       ]
      },
      {
-      "question": "Is it a physical product or a service?",
-      "why": "Post-purchase offers work differently for shippable goods vs. bookings or digital services.",
+      "question": "Is it a physical product or a service/app?",
+      "why": "Physical products convert well post-checkout; services and apps need different ad framing.",
       "suggested_answers": [
        "Physical product shipped to customers",
-       "Online service or app",
-       "In-person service or appointments"
+       "In-person service",
+       "App or digital subscription"
       ]
      },
      {
-      "question": "What does a typical first order cost?",
-      "why": "Sets expected order value and price tier for targeting and payout modeling.",
+      "question": "What does a typical first purchase cost?",
+      "why": "Price shapes offer design and publisher matching.",
       "suggested_answers": [
        "Under $25",
        "$25-$60",
@@ -106,13 +104,13 @@
       ]
      },
      {
-      "question": "Who is your main customer?",
-      "why": "Shapes persona and publisher matching.",
+      "question": "Who buys from you most often?",
+      "why": "Sets the persona and audience targeting.",
       "suggested_answers": [
-       "Women 25-45",
-       "Men 25-45",
+       "Mostly women 25-45",
+       "Mostly men",
        "Older adults 50+",
-       "Anyone, broad appeal"
+       "Broad, all adults"
       ]
      }
     ],
@@ -124,34 +122,34 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 11604
+   "ms": 11269
   },
   {
    "type": "needs_input",
-   "reason": "The brief describes a benefit ('help people feel better') but never says what product or service is sold, so any plan would be invented.",
+   "reason": "The brief states a benefit but never says what is sold, so any plan would be invented.",
    "questions": [
     {
      "question": "What do you actually sell?",
-     "why": "Determines the product category, which drives publisher and persona selection.",
+     "why": "Determines the product category, competitors and which publishers are non-competing.",
      "suggested_answers": [
       "Supplements or vitamins",
       "Skincare or personal care",
-      "Therapy or coaching service",
-      "Functional drinks"
+      "A service like massage or therapy",
+      "Food or drinks"
      ]
     },
     {
-     "question": "Is it a physical product or a service?",
-     "why": "Post-purchase offers work differently for shippable goods vs. bookings or digital services.",
+     "question": "Is it a physical product or a service/app?",
+     "why": "Physical products convert well post-checkout; services and apps need different ad framing.",
      "suggested_answers": [
       "Physical product shipped to customers",
-      "Online service or app",
-      "In-person service or appointments"
+      "In-person service",
+      "App or digital subscription"
      ]
     },
     {
-     "question": "What does a typical first order cost?",
-     "why": "Sets expected order value and price tier for targeting and payout modeling.",
+     "question": "What does a typical first purchase cost?",
+     "why": "Price shapes offer design and publisher matching.",
      "suggested_answers": [
       "Under $25",
       "$25-$60",
@@ -160,13 +158,13 @@
      ]
     },
     {
-     "question": "Who is your main customer?",
-     "why": "Shapes persona and publisher matching.",
+     "question": "Who buys from you most often?",
+     "why": "Sets the persona and audience targeting.",
      "suggested_answers": [
-      "Women 25-45",
-      "Men 25-45",
+      "Mostly women 25-45",
+      "Mostly men",
       "Older adults 50+",
-      "Anyone, broad appeal"
+      "Broad, all adults"
      ]
     }
    ]
@@ -197,20 +195,20 @@
   },
   {
    "type": "done",
-   "run_id": "908045af59",
-   "total_ms": 11604,
-   "cost_usd": 0.0584,
+   "run_id": "cc975c2407",
+   "total_ms": 11269,
+   "cost_usd": 0.0606,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v5-e8eda0f",
-     "ms": 11602,
-     "input_tokens": 7548,
-     "output_tokens": 827,
-     "cost_usd": 0.058415,
+     "prompt_version": "v6-5c0c401",
+     "ms": 11268,
+     "input_tokens": 8058,
+     "output_tokens": 811,
+     "cost_usd": 0.060565,
      "retries": 0,
      "ok": true,
      "error": null

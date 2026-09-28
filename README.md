@@ -45,5 +45,5 @@ Advertisers pay per conversion, so the bid is a **target CPA**: first-order valu
 4. **A self-improvement loop for the prompts:** a model reads eval failures, user feedback and Langfuse traces and proposes prompt changes; a change is kept only if it improves the held-out briefs without regressing the rest.
 5. **Close the persona/publisher loop:** pick personas against the final plan so every ad has somewhere to run.
 6. **Richer ads:** product image, brand name and logo, approved offer terms (first-order discount, free shipping) and a landing URL, in real slot sizes, with the critique checking all of them.
-7. **Learn from results:** feed test-placement outcomes back into the scoring weights and use real margin/LTV for the CPA ratio.
+7. **Learn from results:** feed test-placement outcomes back into the scoring weights, turn fit into a calibrated conversion rate to forecast delivery per publisher (as a range, not one number), and use real margin/LTV for the CPA ratio.
 8. **Cost and latency:** a run is about $0.55 and 85 s on Opus 5; the publisher review is half of that. Try cheaper models for critique and summary, and cache prompts.

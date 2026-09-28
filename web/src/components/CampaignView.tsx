@@ -89,7 +89,7 @@ function Summary({ cfg, personaName, summaryPending }: {
                 <th className="py-2 pl-6 text-left font-medium">Role</th>
                 <th className="py-2 pl-6 text-right font-medium">Share</th>
                 <th className="py-2 pl-6 text-right font-medium">Budget</th>
-                <th className="py-2 pl-6 text-right font-medium whitespace-nowrap">Est. customers</th>
+                <th className="py-2 pl-6 text-right font-medium whitespace-nowrap">Customers at target cost</th>
               </tr>
             </thead>
             <tbody>
@@ -125,6 +125,10 @@ function Summary({ cfg, personaName, summaryPending }: {
               ))}
             </tbody>
           </table>
+          <p className="mt-2 text-xs text-soft">
+            Customers at target cost: budget ÷ target cost per customer, capped at what the publisher can likely deliver.
+            Test budgets are equal on purpose, so the tests compare fairly.
+          </p>
         </div>
       )}
 

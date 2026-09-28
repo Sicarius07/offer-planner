@@ -98,6 +98,13 @@ def _fit_in_tier(fit: int, tier: str) -> int:
     return min(fit, config.TEST_AT - 1)
 
 
+def _moved_fit(base_fit: int, tier: str, j: PublisherJudgmentDraft | None) -> int:
+    """The review's own fit for a publisher it moved (budget is split by fit, so this is how
+    its judgment of strength reaches the budget), kept inside the new tier's band. Without
+    one, the computed fit is moved to the band's edge."""
+    return _fit_in_tier(j.fit if j and j.fit is not None else base_fit, tier)
+
+
 def merge(p: AdvertiserProfile, scored: list[ScoredPublisher], draft: RerankDraft | None) -> PublisherPlan:
     """Combine code scores with the review's judgments.
 
@@ -134,7 +141,7 @@ def merge(p: AdvertiserProfile, scored: list[ScoredPublisher], draft: RerankDraf
 
         results.append(PublisherResult(
             publisher_id=pub.id, name=pub.name, category=pub.category, signals=s.signals,
-            base_fit=s.base_fit, fit=_fit_in_tier(s.base_fit, tier) if tier != s.tier else s.base_fit,
+            base_fit=s.base_fit, fit=_moved_fit(s.base_fit, tier, j) if tier != s.tier else s.base_fit,
             computed_tier=s.tier, tier=tier, tier_reason=tier_reason,
             exclusion_reason=reason, conflict=conflict, adjacent_conflict=s.adjacent_conflict,
             rationale=(j.rationale if j else s.reason), evidence=evidence,

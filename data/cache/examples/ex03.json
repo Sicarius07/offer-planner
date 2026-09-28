@@ -12,11 +12,11 @@
    "type": "profile",
    "profile": {
     "brief": "We make a non-alcoholic sparkling drink with adaptogens. It's for people who want to feel good without a hangover, kind of like a functional cocktail alternative.",
-    "business_summary": "A non-alcoholic sparkling beverage brand making adaptogen-infused drinks as an alternative to cocktails.",
+    "business_summary": "A non-alcoholic sparkling drink made with adaptogens, positioned as an alternative to cocktails.",
     "brand_name": null,
     "offering_type": "consumer_product",
     "product": {
-     "value": "Non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative",
+     "value": "Non-alcoholic sparkling adaptogen beverage",
      "source": "stated",
      "evidence": {
       "text": "non-alcoholic sparkling drink with adaptogens",
@@ -41,24 +41,18 @@
     },
     "values": {
      "clean_ingredients": 0.5,
-     "premium_quality": 0.5,
-     "aesthetic": 0.5
+     "playful": 0.5
     },
     "occasions": {
      "self_treat": 1.0,
-     "replenishment": 0.5,
-     "impulse": 0.5
+     "replenishment": 0.5
     },
     "positioning": [],
     "price_tier": {
      "value": "premium",
-     "source": "inferred",
-     "evidence": {
-      "text": "functional cocktail alternative",
-      "start": 130,
-      "end": 161
-     },
-     "note": "Adaptogen functional drinks typically sell above mainstream soda pricing"
+     "source": "assumed",
+     "evidence": null,
+     "note": "Adaptogen NA drinks typically sell above mainstream soft drinks"
     },
     "first_order_value_usd": {
      "value": 40.0,
@@ -70,16 +64,16 @@
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief gives no gender skew"
+     "note": "Brief names no gender"
     },
     "age_range": {
-     "value": "25-45",
+     "value": "25-44",
      "source": "assumed",
      "evidence": null,
-     "note": "Typical age band for NA/sober-curious drinkers"
+     "note": "Typical sober-curious functional drink buyer"
     },
     "audience": {
-     "value": "Sober-curious adults who want a drink that feels special without alcohol",
+     "value": "Sober-curious adults looking for a cocktail alternative that still feels like a treat",
      "source": "inferred",
      "evidence": {
       "text": "people who want to feel good without a hangover",
@@ -92,7 +86,7 @@
      "value": "one_time",
      "source": "assumed",
      "evidence": null,
-     "note": "No subscription mentioned; beverages often also offer subscribe-and-save"
+     "note": "No subscription mentioned"
     },
     "claims": [
      {
@@ -121,40 +115,40 @@
      }
     ],
     "clarity": "clear",
-    "clarity_reason": "The product and its buyer are clear; only price, format and brand details are missing.",
+    "clarity_reason": "The product and its buyer are clear; only price and model are unstated.",
     "assumptions": [
-     "Assumed a premium price with a first order around $40, typical for adaptogen beverages.",
-     "Assumed a broad adult audience roughly 25-45 since no demographic was given.",
-     "Assumed mainly one-time purchases rather than a subscription."
+     "Assumed a premium price tier and about a $40 first order, typical of functional beverage multi-packs.",
+     "Assumed one-time purchases rather than a subscription.",
+     "Assumed a broad adult audience, skewing 25-44."
     ],
     "clarifying_questions": [
      {
       "question": "What does a typical first order cost?",
-      "why": "Sets price tier and which publishers' shoppers convert",
+      "why": "Sets price tier and which publishers' shoppers match the spend.",
       "suggested_answers": [
        "Under $25",
-       "$25-50",
-       "$50-80",
+       "$25-$50",
+       "$50-$80",
        "Over $80"
       ]
      },
      {
-      "question": "Do you sell subscriptions or one-time packs?",
-      "why": "Changes the offer framing and occasion tags",
+      "question": "Do you sell mainly one-off packs or a subscription?",
+      "why": "Changes whether ads lead with replenishment or trial.",
       "suggested_answers": [
-       "One-time only",
-       "Subscription only",
+       "One-time packs",
+       "Subscription",
        "Both"
       ]
      },
      {
-      "question": "Which functional benefit do you lead with?",
-      "why": "Drives ad copy and persona choice",
+      "question": "What are the adaptogens meant to do?",
+      "why": "Determines which benefit claims ads can make.",
       "suggested_answers": [
-       "Calm/stress relief",
-       "Energy/focus",
+       "Relaxation / stress",
+       "Energy / focus",
        "Mood lift",
-       "Gut health"
+       "Mix depending on flavor"
       ]
      }
     ],
@@ -166,7 +160,7 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 15649
+   "ms": 12905
   },
   {
    "type": "stage",
@@ -187,20 +181,20 @@
      {
       "persona_id": "persona_001",
       "name": "The Wellness Optimizer",
-      "score": 67,
+      "score": 72,
       "rank": 1,
-      "why_plausible": "Adaptogens are squarely a wellness-optimization purchase, and her affinities (wellness, supplements, organic_grocery) plus price_sensitivity: low fit a $40 premium functional beverage. She wants ingredient transparency and outcome focus, which the brand's adaptogen and no-hangover claims can honestly support.",
+      "why_plausible": "Brief sells an adaptogen functional beverage and she has wellness/supplements affinities with price_sensitivity: low and $95 AOV, so a $40 premium pack is easy. Her ask for ingredient transparency and outcome focus maps to the adaptogen and no-hangover claims.",
       "lean_into": [
        "ingredient transparency on the adaptogen blend",
-       "outcome-focused: calm/focus without the next-day cost",
-       "premium quality worth paying for"
+       "outcome-focused: clear-headed evenings, no hangover",
+       "fits into an existing wellness routine"
       ],
       "avoid": [
-       "novelty or gimmick framing",
-       "implying clinical trial proof the brief doesn't claim",
-       "anything resembling ultra-processed soda positioning"
+       "novelty-for-novelty's-sake framing",
+       "ultra-processed or sugary soda comparisons",
+       "overclaiming clinical proof the brief doesn't support"
       ],
-      "ad_angle": "Swap the nightcap for a functional drink that supports how you feel tomorrow morning — adaptogens, no alcohol, no hangover debt.",
+      "ad_angle": "The evening drink that doesn't undo your morning — adaptogens instead of alcohol, in your routine.",
       "confidence": "high",
       "reached_via": [
        "pub_012",
@@ -215,18 +209,18 @@
       "name": "The Gen Z Aesthete",
       "score": 41,
       "rank": 7,
-      "why_plausible": "functional_beverages is a named affinity and self_treat/impulse occasions match; she is exactly the sober-curious, aesthetic-driven Gen Z drinker who wants something photogenic in hand. Score docked her on price and reach, but a single can or trial pack lands well under her $48 typical AOV.",
+      "why_plausible": "Her category_affinities include functional_beverages and she responds to playful, aesthetic, values-aligned voice — exactly the brand's playful positioning; score docked her only on price and publisher reach.",
       "lean_into": [
-       "aesthetic-forward, playful voice",
-       "values-aligned: a drink that lets you opt out of drinking without opting out of the night",
-       "novelty of a functional cocktail alternative"
+       "playful brand voice",
+       "aesthetic-forward, something to hold at a party",
+       "values-aligned sober-curious identity"
       ],
       "avoid": [
        "corporate or clinical tone",
-       "dry performance-claim copy with no vibe",
-       "luxury gatekeeping or high-ticket framing"
+       "dry performance claims with no vibe",
+       "luxury gatekeeping"
       ],
-      "ad_angle": "The prettiest thing you'll hold all night — a sparkling functional cocktail alternative that keeps you in the party, not in bed tomorrow.",
+      "ad_angle": "The can that looks as good as a cocktail in your hand — sober-curious nights that still photograph well.",
       "confidence": "medium",
       "reached_via": [
        "pub_012"
@@ -236,77 +230,73 @@
      {
       "persona_id": "persona_009",
       "name": "The Fitness Enthusiast",
-      "score": 51,
+      "score": 54,
       "rank": 3,
-      "why_plausible": "functional_beverages and recovery are explicit affinities, and alcohol is the obvious enemy of a 4x/week training schedule — this is the sober-curious athlete case. price_sensitivity: low-medium and $88 AOV clear a $40 order.",
+      "why_plausible": "functional_beverages and recovery are named affinities, and price_sensitivity low-medium with $88 AOV clears a $40 order. A non-alcoholic drink is the obvious social option for someone training 4+ times a week and protecting recovery.",
       "lean_into": [
-       "performance and recovery framing: alcohol-free so training days aren't wasted",
-       "identity: what you drink when everyone else is drinking",
-       "functional ingredients, clean label"
+       "recovery and training-day framing",
+       "functional ingredients that don't cost you tomorrow's session"
       ],
       "avoid": [
-       "sedentary lounge/indulgence-only framing",
-       "fashion or aesthetics-only positioning",
-       "inventing athlete endorsements"
+       "sedentary indulgence framing",
+       "athlete endorsement claims the brief can't back",
+       "fashion-only or purely aesthetic positioning"
       ],
-      "ad_angle": "Social drink, zero recovery cost — the alcohol-free pour that doesn't undo your training week.",
+      "ad_angle": "Go out with your friends without sacrificing tomorrow's training — the social drink that keeps recovery intact.",
       "confidence": "medium",
       "reached_via": [
        "pub_012",
        "pub_002",
-       "pub_011",
-       "pub_008"
-      ],
-      "conflicts": []
-     },
-     {
-      "persona_id": "persona_010",
-      "name": "The Gifter",
-      "score": 40,
-      "rank": 8,
-      "why_plausible": "Premium presentation and price_sensitivity: low make a sparkling NA drink a natural host gift or holiday bar addition, especially for the growing number of guests who don't drink. Score ranked this low on affinity, but gifting is the classic use case for a bottle-format beverage in gourmet_food/premium_basics territory.",
-      "lean_into": [
-       "giftable, impressive-looking bottle or gift set",
-       "premium presentation for hosts and dinner parties",
-       "a bring-along that works for guests who aren't drinking"
-      ],
-      "avoid": [
-       "subscription-only framing",
-       "pure self-care/me-time framing",
-       "budget or bulk messaging"
-      ],
-      "ad_angle": "The bottle you bring to the party when not everyone is drinking — a gift-worthy, alcohol-free pour that still looks like an occasion.",
-      "confidence": "medium",
-      "reached_via": [
-       "pub_003",
-       "pub_011",
        "pub_008",
-       "pub_002"
+       "pub_003"
       ],
       "conflicts": []
      },
      {
       "persona_id": "persona_007",
       "name": "The Convenience-First Millennial",
-      "score": 48,
+      "score": 46,
       "rank": 5,
-      "why_plausible": "Urban, mid-to-high income, impulse and replenishment occasions — this is the shopper who'd keep a fridge stocked for weeknights instead of opening a bottle of wine. $55 typical AOV comfortably covers a $40 first order.",
+      "why_plausible": "Urban mid-to-high-income millennial in the brief's 25-44 sober-curious window; alcohol-adjacent convenience shopping shows up in his computed detail, and a bulk can pack is a low-friction swap for the wine run.",
       "lean_into": [
-       "easy one-click reorder / keep-it-stocked",
-       "no planning needed: pour and done",
-       "frictionless weeknight wind-down"
+       "easy one-click swap for your usual drink order",
+       "keep a pack in the fridge, ready when friends arrive"
       ],
       "avoid": [
-       "multi-step or complicated purchase framing",
-       "delayed shipping promises",
-       "dense ingredient-science lectures"
+       "multi-step or complicated purchase flows",
+       "long shipping timelines",
+       "preachy sobriety lecturing"
       ],
-      "ad_angle": "The easiest weeknight upgrade: crack one open instead of pouring a drink, and wake up sharp.",
-      "confidence": "low",
+      "ad_angle": "Stock the fridge once: the grab-and-open alternative to the after-work drink, no bartending required.",
+      "confidence": "medium",
       "reached_via": [
-       "pub_011",
        "pub_008",
        "pub_003",
+       "pub_002",
+       "pub_012"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 30,
+      "rank": 8,
+      "why_plausible": "Gifting mode shoppers want impressive-looking premium consumables, and a sparkling adaptogen pack is a natural host gift or dry-January present at a $40 first order against a $95 typical AOV. Score ranked this low on tags, but the specific reason is the bring-a-bottle occasion where alcohol is off the table.",
+      "lean_into": [
+       "giftable, premium presentation",
+       "gift sets and multi-packs for hosts"
+      ],
+      "avoid": [
+       "subscription-only offers",
+       "self-care-only framing",
+       "medicalized wellness language"
+      ],
+      "ad_angle": "The bottle to bring when the host isn't drinking — a gift-worthy alternative to wine.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_003",
+       "pub_008",
        "pub_002"
       ],
       "conflicts": []
@@ -315,9 +305,9 @@
     "candidates": [
      {
       "persona_id": "persona_001",
-      "score": 67,
-      "affinity": 52,
-      "values": 30,
+      "score": 72,
+      "affinity": 58,
+      "values": 45,
       "price": 100,
       "reach": 100,
       "conflicts": [],
@@ -325,40 +315,37 @@
        "pub_012",
        "pub_008",
        "pub_003",
-       "pub_002",
-       "pub_011"
+       "pub_002"
       ],
       "detail": "shops wellness, natural_food, replenishment; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_006",
-      "score": 52,
-      "affinity": 27,
-      "values": 26,
+      "score": 55,
+      "affinity": 30,
+      "values": 30,
       "price": 100,
       "reach": 85,
       "conflicts": [],
       "reach_publishers": [
        "pub_002",
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_012"
       ],
-      "detail": "shops natural_food, replenishment, wellness≈natural_food; responds to clean_ingredients, premium_quality≈heritage"
+      "detail": "shops natural_food, replenishment, wellness≈natural_food; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_009",
-      "score": 51,
-      "affinity": 39,
-      "values": 6,
+      "score": 54,
+      "affinity": 44,
+      "values": 9,
       "price": 100,
-      "reach": 77,
+      "reach": 78,
       "conflicts": [],
       "reach_publishers": [
        "pub_012",
        "pub_002",
-       "pub_011",
        "pub_008",
        "pub_003"
       ],
@@ -366,48 +353,45 @@
      },
      {
       "persona_id": "persona_004",
-      "score": 50,
-      "affinity": 9,
-      "values": 56,
+      "score": 48,
+      "affinity": 10,
+      "values": 45,
       "price": 100,
-      "reach": 82,
+      "reach": 80,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002",
        "pub_012"
       ],
-      "detail": "shops replenishment; responds to clean_ingredients, premium_quality"
+      "detail": "shops replenishment; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_007",
-      "score": 48,
-      "affinity": 22,
+      "score": 46,
+      "affinity": 17,
       "values": 0,
       "price": 100,
-      "reach": 98,
+      "reach": 97,
       "conflicts": [],
       "reach_publishers": [
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_002",
        "pub_012"
       ],
-      "detail": "shops replenishment, impulse, natural_food≈groceries"
+      "detail": "shops replenishment, natural_food≈groceries, alcohol≈convenience"
      },
      {
       "persona_id": "persona_002",
       "score": 45,
-      "affinity": 17,
+      "affinity": 19,
       "values": 0,
       "price": 100,
-      "reach": 92,
+      "reach": 90,
       "conflicts": [],
       "reach_publishers": [
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_002",
@@ -418,58 +402,56 @@
      {
       "persona_id": "persona_003",
       "score": 41,
-      "affinity": 54,
-      "values": 50,
+      "affinity": 52,
+      "values": 55,
       "price": 30,
-      "reach": 17,
+      "reach": 21,
       "conflicts": [],
       "reach_publishers": [
        "pub_012"
       ],
-      "detail": "shops functional_beverages, self_treat, impulse; responds to aesthetic, premium_quality≈aesthetic; price-mismatched for premium"
+      "detail": "shops functional_beverages, self_treat, wellness≈functional_beverages; responds to playful, clean_ingredients≈sustainability; price-mismatched for premium"
      },
      {
       "persona_id": "persona_010",
-      "score": 40,
+      "score": 30,
       "affinity": 4,
-      "values": 47,
+      "values": 0,
       "price": 100,
       "reach": 55,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002"
       ],
-      "detail": "shops wellness≈beauty; responds to premium_quality, aesthetic"
-     },
-     {
-      "persona_id": "persona_005",
-      "score": 33,
-      "affinity": 23,
-      "values": 43,
-      "price": 100,
-      "reach": 0,
-      "conflicts": [],
-      "reach_publishers": [],
-      "detail": "shops self_treat, natural_food, wellness≈natural_food; responds to premium_quality, aesthetic≈premium_quality"
+      "detail": "shops wellness≈beauty"
      },
      {
       "persona_id": "persona_008",
       "score": 26,
-      "affinity": 13,
+      "affinity": 14,
       "values": 0,
       "price": 30,
-      "reach": 66,
+      "reach": 64,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002"
       ],
       "detail": "shops replenishment, natural_food≈groceries; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 25,
+      "affinity": 26,
+      "values": 0,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, natural_food, wellness≈natural_food"
      }
     ],
     "skipped_note": null
@@ -479,7 +461,7 @@
    "type": "stage",
    "stage": "personas",
    "status": "done",
-   "ms": 21798
+   "ms": 19277
   },
   {
    "type": "stage",
@@ -490,47 +472,16 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "36fb177257-persona_003",
-    "persona_id": "persona_003",
-    "persona_name": "The Gen Z Aesthete",
-    "angle": "The prettiest glass in the room, and no hangover attached",
-    "headline": "Best-looking drink in your hand",
-    "body": "A sparkling, adaptogen-infused pour made for the cocktail hour. Non-alcoholic, so the night stays fun and tomorrow stays clear.",
-    "cta": "See the drink",
+    "creative_id": "1354389c63-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "The host gift for a table where nobody's drinking",
+    "headline": "Bring something when wine won't do",
+    "body": "A sparkling non-alcoholic drink made with adaptogens. Hands the host something worth opening, with no hangover to follow.",
+    "cta": "Shop bottles",
     "claims_used": [
      {
-      "claim": "sparkling, adaptogen-infused",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "Non-alcoholic",
-      "source_quote": "non-alcoholic sparkling drink"
-     },
-     {
-      "claim": "tomorrow stays clear (no hangover)",
-      "source_quote": "feel good without a hangover"
-     }
-    ],
-    "offer_suggestion": "Trial pack or single-can intro price for first-time buyers",
-    "tone_notes": "Playful and visual-first, leading with how it looks in hand rather than clinical benefits; frames staying out over opting out, and avoids luxury or corporate framing.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "36fb177257-persona_009",
-    "persona_id": "persona_009",
-    "persona_name": "The Fitness Enthusiast",
-    "angle": "A drink for the toast that doesn't cost you tomorrow's session",
-    "headline": "Hold a glass, keep your training week",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Something to drink when everyone else is drinking — and no hangover after.",
-    "cta": "See the drinks",
-    "claims_used": [
-     {
-      "claim": "non-alcoholic",
+      "claim": "non-alcoholic sparkling drink",
       "source_quote": "non-alcoholic sparkling drink"
      },
      {
@@ -538,12 +489,12 @@
       "source_quote": "sparkling drink with adaptogens"
      },
      {
-      "claim": "no hangover after",
+      "claim": "no hangover to follow",
       "source_quote": "feel good without a hangover"
      }
     ],
-    "offer_suggestion": "Free shipping on a first multi-can order",
-    "tone_notes": "Frames the drink around social situations and protecting training days rather than indulgence or aesthetics. Plain, functional ingredient language suits an audience skeptical of health hype; no invented endorsements, results or ingredient claims.",
+    "offer_suggestion": "Test a two- or three-bottle gift pack with gift note at checkout",
+    "tone_notes": "Frames the bottle as a present for someone else, not self-care. Plain, premium language, no medicalized wellness terms, no subscription mention. Occasion-led (arriving at a dinner) so it reads as a gifting idea rather than a wellness pitch.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -552,16 +503,47 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "36fb177257-persona_007",
+    "creative_id": "1354389c63-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "A drink that holds its own in your hand and in the photo \\u2014 sober-curious nights without the hangover",
+    "headline": "Something prettier to hold at 11pm",
+    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it over ice, clink it, post it. No hangover in the morning.",
+    "cta": "See the drink",
+    "claims_used": [
+     {
+      "claim": "Sparkling, non-alcoholic",
+      "source_quote": "non-alcoholic sparkling drink"
+     },
+     {
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "No hangover in the morning",
+      "source_quote": "feel good without a hangover"
+     }
+    ],
+    "offer_suggestion": "First-order bundle: mixed 4-pack at an intro price, advertiser to approve",
+    "tone_notes": "Playful and visual \\u2014 leads with the hand-held, photographable moment rather than function. No clinical or corporate phrasing, no luxury gatekeeping; the hangover line lands as a wink, not a performance claim.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1354389c63-persona_007",
     "persona_id": "persona_007",
     "persona_name": "The Convenience-First Millennial",
-    "angle": "Weeknight ease: open one instead of pouring a drink",
-    "headline": "Crack one open. Wake up sharp.",
-    "body": "A non-alcoholic sparkling drink with adaptogens. Nothing to mix, no hangover — just keep a few cold for weeknights.",
+    "angle": "Fridge-stocked, grab-and-open: no bartending, no hangover",
+    "headline": "Open the fridge, not the bar cart",
+    "body": "A sparkling non-alcoholic drink with adaptogens. Keep a pack cold and pour one the second you're home. No hangover after.",
     "cta": "Stock the fridge",
     "claims_used": [
      {
-      "claim": "non-alcoholic sparkling drink",
+      "claim": "sparkling non-alcoholic drink",
       "source_quote": "non-alcoholic sparkling drink"
      },
      {
@@ -569,12 +551,12 @@
       "source_quote": "sparkling drink with adaptogens"
      },
      {
-      "claim": "no hangover",
+      "claim": "No hangover after",
       "source_quote": "feel good without a hangover"
      }
     ],
-    "offer_suggestion": "Free shipping on a first multi-can case, with an optional auto-reorder every 4 weeks",
-    "tone_notes": "Short, plain sentences built around zero effort: open, pour, done. Leads with the weeknight swap rather than ingredient science, and the CTA frames it as keeping stock rather than a considered purchase.",
+    "offer_suggestion": "Free shipping on a multi-can pack, single-click reorder",
+    "tone_notes": "Frictionless framing: one motion (open the fridge) instead of mixing or a liquor run. No sobriety lecture, no multi-step ask; the CTA implies a pack rather than a single unit, matching a ~$55 basket.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -583,180 +565,118 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "36fb177257-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "Trade the nightcap for something that doesn't borrow from tomorrow",
-    "headline": "A nightcap that skips the hangover",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it where the evening drink usually goes and wake up without the debt.",
-    "cta": "See the blend",
-    "claims_used": [
-     {
-      "claim": "non-alcoholic",
-      "source_quote": "non-alcoholic sparkling drink"
-     },
-     {
-      "claim": "made with adaptogens",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "skips the hangover / no next-day debt",
-      "source_quote": "feel good without a hangover"
-     }
-    ],
-    "offer_suggestion": "First-order bundle: mixed multipack at a modest intro price, advertiser to approve",
-    "tone_notes": "Outcome-focused on how tomorrow morning feels, plain ingredient language (adaptogens, non-alcoholic) with no invented clinical or health claims. No novelty or soda framing; the tone is measured and premium, treating the drink as a considered swap rather than a fun gimmick.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "36fb177257-persona_010",
-    "persona_id": "persona_010",
-    "persona_name": "The Gifter",
-    "angle": "The gift-worthy bottle you bring when not everyone is drinking",
-    "headline": "A host gift that pours like an occasion",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Bring a bottle so everyone at the table has something to pour — and no hangover after.",
-    "cta": "See the bottle",
-    "claims_used": [
-     {
-      "claim": "non-alcoholic",
-      "source_quote": "non-alcoholic sparkling drink"
-     },
-     {
-      "claim": "made with adaptogens",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "no hangover after",
-      "source_quote": "feel good without a hangover"
-     }
-    ],
-    "offer_suggestion": "Two-bottle gift pairing at a set price, with gift note option at checkout",
-    "tone_notes": "Frames the drink as a bring-along present for hosts and mixed tables rather than personal wellness; premium, plain language, no subscription or self-care framing, no budget cues.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "36fb177257-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "Trade the nightcap for something that doesn't borrow from tomorrow",
-    "headline": "A nightcap that skips the hangover",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it where the evening drink usually goes and wake up without the debt.",
-    "cta": "See the blend",
-    "claims_used": [
-     {
-      "claim": "non-alcoholic",
-      "source_quote": "non-alcoholic sparkling drink"
-     },
-     {
-      "claim": "made with adaptogens",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "skips the hangover / no next-day debt",
-      "source_quote": "feel good without a hangover"
-     }
-    ],
-    "offer_suggestion": "First-order bundle: mixed multipack at a modest intro price, advertiser to approve",
-    "tone_notes": "Outcome-focused on how tomorrow morning feels, plain ingredient language (adaptogens, non-alcoholic) with no invented clinical or health claims. No novelty or soda framing; the tone is measured and premium, treating the drink as a considered swap rather than a fun gimmick.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Non-alcoholic, adaptogens, and no-hangover all map directly to allowed claims; no invented science."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Outcome-focused and 'See the blend' nods to ingredient transparency without faking science backing."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "The nightcap-replacement framing and 'wake up without the debt' tie to this product's exact role."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Calm, no urgency or discount pressure; reads fine after an unrelated order."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No unsubstantiated health claims for Daily Form's skeptical audience."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "36fb177257-persona_003",
-    "persona_id": "persona_003",
-    "persona_name": "The Gen Z Aesthete",
-    "angle": "The prettiest glass in the room, and no hangover attached",
-    "headline": "Best-looking drink in your hand",
-    "body": "A sparkling, adaptogen-infused pour made for the cocktail hour. Non-alcoholic, so the night stays fun and tomorrow stays clear.",
+    "creative_id": "1354389c63-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "A social drink that leaves tomorrow's session intact",
+    "headline": "Out tonight. Training tomorrow.",
+    "body": "A sparkling non-alcoholic drink made with adaptogens — something to hold at the bar that doesn't hand you a hangover.",
     "cta": "See the drink",
     "claims_used": [
      {
-      "claim": "sparkling, adaptogen-infused",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "Non-alcoholic",
+      "claim": "sparkling non-alcoholic drink",
       "source_quote": "non-alcoholic sparkling drink"
      },
      {
-      "claim": "tomorrow stays clear (no hangover)",
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "doesn't hand you a hangover",
       "source_quote": "feel good without a hangover"
      }
     ],
-    "offer_suggestion": "Trial pack or single-can intro price for first-time buyers",
-    "tone_notes": "Playful and visual-first, leading with how it looks in hand rather than clinical benefits; frames staying out over opting out, and avoids luxury or corporate framing.",
+    "offer_suggestion": "Free shipping on a first multi-can pack, if the advertiser wants a trial nudge",
+    "tone_notes": "Frames the drink around protecting the next session rather than indulgence. Plain and functional, no endorsement or performance claims the brief can't support, and no aesthetic or lifestyle posturing. 'Something to hold at the bar' keeps it social without implying alcohol substitution benefits beyond the allowed no-hangover claim.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1354389c63-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "An evening drink that leaves tomorrow morning intact",
+    "headline": "A nightcap your morning survives",
+    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it at 7pm, keep the clear head you worked for at 7am.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "non-alcoholic",
+      "source_quote": "non-alcoholic sparkling drink"
+     },
+     {
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "no hangover the next morning",
+      "source_quote": "feel good without a hangover"
+     }
+    ],
+    "offer_suggestion": "First multi-pack ships free, or a small bundle discount on a two-pack",
+    "tone_notes": "Outcome-focused (clear-headed morning) and routine-fitting rather than novelty. Names adaptogens plainly and the CTA points to ingredient detail, matching her transparency preference. No soda or sugar comparisons, no clinical or efficacy claims beyond the brief.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1354389c63-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "An evening drink that leaves tomorrow morning intact",
+    "headline": "A nightcap your morning survives",
+    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it at 7pm, keep the clear head you worked for at 7am.",
+    "cta": "See what's in it",
+    "claims_used": [
+     {
+      "claim": "non-alcoholic",
+      "source_quote": "non-alcoholic sparkling drink"
+     },
+     {
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "no hangover the next morning",
+      "source_quote": "feel good without a hangover"
+     }
+    ],
+    "offer_suggestion": "First multi-pack ships free, or a small bundle discount on a two-pack",
+    "tone_notes": "Outcome-focused (clear-headed morning) and routine-fitting rather than novelty. Names adaptogens plainly and the CTA points to ingredient detail, matching her transparency preference. No soda or sugar comparisons, no clinical or efficacy claims beyond the brief.",
     "status": "passed",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "All three claims trace to the brief; 'tomorrow stays clear' is a fair restatement of no hangover."
+       "reason": "Non-alcoholic, adaptogens, no hangover all map to allowed claims; no invented science."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Playful and aesthetic-forward, avoids corporate voice and bare performance claims."
+       "reason": "Outcome-focused (clear head at 7am) and CTA invites ingredient transparency without faking clinical proof."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Cocktail-hour-replacement pour is specific to a non-alcoholic adaptogen drink."
+       "reason": "The 7pm/7am nightcap framing ties to this adaptogenic NA drink, not generic seltzer."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "No urgency or pressure; light tone suits a confirmation page."
+       "reason": "Calm, no urgency or pressure on a confirmation page."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No health claims beyond the brief for any listed publisher."
+       "reason": "No unsubstantiated health claim for Daily Form's skeptical audience."
       }
      ],
      "code_issues": [],
@@ -769,16 +689,78 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "36fb177257-persona_009",
+    "creative_id": "1354389c63-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "A drink that holds its own in your hand and in the photo \\u2014 sober-curious nights without the hangover",
+    "headline": "Something prettier to hold at 11pm",
+    "body": "Sparkling, non-alcoholic, made with adaptogens. Pour it over ice, clink it, post it. No hangover in the morning.",
+    "cta": "See the drink",
+    "claims_used": [
+     {
+      "claim": "Sparkling, non-alcoholic",
+      "source_quote": "non-alcoholic sparkling drink"
+     },
+     {
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "No hangover in the morning",
+      "source_quote": "feel good without a hangover"
+     }
+    ],
+    "offer_suggestion": "First-order bundle: mixed 4-pack at an intro price, advertiser to approve",
+    "tone_notes": "Playful and visual \\u2014 leads with the hand-held, photographable moment rather than function. No clinical or corporate phrasing, no luxury gatekeeping; the hangover line lands as a wink, not a performance claim.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only the three allowed claims appear; no ratings or awards invented."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Playful, aesthetic-forward, no corporate voice."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "The 11pm glass-in-hand moment plus adaptogens fits this product specifically."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Light tone, no fake urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims beyond the brief."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1354389c63-persona_009",
     "persona_id": "persona_009",
     "persona_name": "The Fitness Enthusiast",
-    "angle": "A drink for the toast that doesn't cost you tomorrow's session",
-    "headline": "Hold a glass, keep your training week",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Something to drink when everyone else is drinking — and no hangover after.",
-    "cta": "See the drinks",
+    "angle": "A social drink that leaves tomorrow's session intact",
+    "headline": "Out tonight. Training tomorrow.",
+    "body": "A sparkling non-alcoholic drink made with adaptogens — something to hold at the bar that doesn't hand you a hangover.",
+    "cta": "See the drink",
     "claims_used": [
      {
-      "claim": "non-alcoholic",
+      "claim": "sparkling non-alcoholic drink",
       "source_quote": "non-alcoholic sparkling drink"
      },
      {
@@ -786,39 +768,39 @@
       "source_quote": "sparkling drink with adaptogens"
      },
      {
-      "claim": "no hangover after",
+      "claim": "doesn't hand you a hangover",
       "source_quote": "feel good without a hangover"
      }
     ],
-    "offer_suggestion": "Free shipping on a first multi-can order",
-    "tone_notes": "Frames the drink around social situations and protecting training days rather than indulgence or aesthetics. Plain, functional ingredient language suits an audience skeptical of health hype; no invented endorsements, results or ingredient claims.",
+    "offer_suggestion": "Free shipping on a first multi-can pack, if the advertiser wants a trial nudge",
+    "tone_notes": "Frames the drink around protecting the next session rather than indulgence. Plain and functional, no endorsement or performance claims the brief can't support, and no aesthetic or lifestyle posturing. 'Something to hold at the bar' keeps it social without implying alcohol substitution benefits beyond the allowed no-hangover claim.",
     "status": "passed",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Sticks to non-alcoholic, adaptogens, no hangover; no invented performance or recovery benefit."
+       "reason": "Claims limited to non-alcoholic, adaptogens, no hangover."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Frames around protecting the training week rather than fashion-only positioning; doesn't fabricate athlete endorsements."
+       "reason": "Frames around training tomorrow; doesn't invent athlete endorsements the brief can't back."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "'Something to drink when everyone else is drinking' is tied to this drink's purpose."
+       "reason": "Bar-night-before-training angle is tied to this adaptogenic NA drink."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Even, low-pressure tone with no fake scarcity."
+       "reason": "Reads calmly, no pressure."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No unsubstantiated fitness or health claims for Movewell or Daily Form."
+       "reason": "Movewell-appropriate, no unsupported performance claim."
       }
      ],
      "code_issues": [],
@@ -831,56 +813,56 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "36fb177257-persona_010",
-    "persona_id": "persona_010",
-    "persona_name": "The Gifter",
-    "angle": "The gift-worthy bottle you bring when not everyone is drinking",
-    "headline": "A host gift that pours like an occasion",
-    "body": "Sparkling, non-alcoholic, made with adaptogens. Bring a bottle so everyone at the table has something to pour — and no hangover after.",
-    "cta": "See the bottle",
+    "creative_id": "1354389c63-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "Fridge-stocked, grab-and-open: no bartending, no hangover",
+    "headline": "Open the fridge, not the bar cart",
+    "body": "A sparkling non-alcoholic drink with adaptogens. Keep a pack cold and pour one the second you're home. No hangover after.",
+    "cta": "Stock the fridge",
     "claims_used": [
      {
-      "claim": "non-alcoholic",
+      "claim": "sparkling non-alcoholic drink",
       "source_quote": "non-alcoholic sparkling drink"
      },
      {
-      "claim": "made with adaptogens",
+      "claim": "with adaptogens",
       "source_quote": "sparkling drink with adaptogens"
      },
      {
-      "claim": "no hangover after",
+      "claim": "No hangover after",
       "source_quote": "feel good without a hangover"
      }
     ],
-    "offer_suggestion": "Two-bottle gift pairing at a set price, with gift note option at checkout",
-    "tone_notes": "Frames the drink as a bring-along present for hosts and mixed tables rather than personal wellness; premium, plain language, no subscription or self-care framing, no budget cues.",
+    "offer_suggestion": "Free shipping on a multi-can pack, single-click reorder",
+    "tone_notes": "Frictionless framing: one motion (open the fridge) instead of mixing or a liquor run. No sobriety lecture, no multi-step ask; the CTA implies a pack rather than a single unit, matching a ~$55 basket.",
     "status": "passed",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Only brief-supported attributes; no invented gift sets, ratings or shipping promises."
+       "reason": "All three claims sourced; no invented subscription discount."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Host-gift framing is giftable and avoids self-care-only positioning; premium presentation isn't claimed since brief can't back it."
+       "reason": "Speed and low-effort framing ('open the fridge', pour the second you're home') fits without inventing perks."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "'Something to pour' for everyone at the table is particular to a non-alcoholic bottle."
+       "reason": "Fridge-vs-bar-cart contrast is specific to an NA adaptogen drink."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Calm, occasion-based, no deadline or urgency language."
+       "reason": "No urgency tactics."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "Nothing beyond the brief that would trouble Northbed or Pantrygood readers."
+       "reason": "No health claims beyond the brief."
       }
      ],
      "code_issues": [],
@@ -889,75 +871,81 @@
     },
     "revision_of": null
    }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "1354389c63-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "The host gift for a table where nobody's drinking",
+    "headline": "Bring something when wine won't do",
+    "body": "A sparkling non-alcoholic drink made with adaptogens. Hands the host something worth opening, with no hangover to follow.",
+    "cta": "Shop bottles",
+    "claims_used": [
+     {
+      "claim": "non-alcoholic sparkling drink",
+      "source_quote": "non-alcoholic sparkling drink"
+     },
+     {
+      "claim": "made with adaptogens",
+      "source_quote": "sparkling drink with adaptogens"
+     },
+     {
+      "claim": "no hangover to follow",
+      "source_quote": "feel good without a hangover"
+     }
+    ],
+    "offer_suggestion": "Test a two- or three-bottle gift pack with gift note at checkout",
+    "tone_notes": "Frames the bottle as a present for someone else, not self-care. Plain, premium language, no medicalized wellness terms, no subscription mention. Occasion-led (arriving at a dinner) so it reads as a gifting idea rather than a wellness pitch.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only allowed claims; no gift-set or shipping promise invented."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Host-gift framing avoids self-care-only positioning as the persona prefers."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "'When wine won't do' pins it to this NA adaptogen alternative."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm and relevant post-purchase."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated wellness claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 49875
   },
   {
    "type": "publishers",
    "plan": {
-    "summary": "Budget leans to the two checkouts where the purchase itself implies the product \nStudiogrid's self-care bookings and Pantrygood's clean-ingredient pantry restocks \nwith Movewell, Daily Form and Kitchenly as tests; Pop & Sip and Swiftcart are out as beverage competitors.",
+    "summary": "Budget leans to Pantrygood, where a pantry restock by clean-ingredient shoppers is a genuine purchase-moment fit, with wellness-adjacent tests (Studiogrid, Daily Form, Movewell) to learn whether identity-level fit converts; Pop & Sip is a direct competitor and Swiftcart sells alcohol and soft drinks on the same page.",
     "explained": true,
     "recommended": [
-     {
-      "publisher_id": "pub_003",
-      "name": "Studiogrid",
-      "category": "wellness_services",
-      "signals": [
-       {
-        "name": "category",
-        "score": 47,
-        "neutral": false,
-        "detail": "matches wellness, self_treat, functional_beverages≈wellness"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$40 vs $42 typical order (1.0×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 17,
-        "neutral": false,
-        "detail": "shares premium_quality, aesthetic≈premium_quality"
-       },
-       {
-        "name": "reach",
-        "score": 57,
-        "neutral": false,
-        "detail": "13.6M monthly impressions"
-       }
-      ],
-      "base_fit": 62,
-      "fit": 70,
-      "computed_tier": "test",
-      "tier": "recommended",
-      "tier_reason": "The score only credited generic wellness tag overlap; the notes show the purchase moment itself is a paid self-care booking (yoga/spa/class), which is exactly where an adaptogen NA drink is consumed and gifted, and the $42 basket sits right at the $40 offer.",
-      "exclusion_reason": null,
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Someone who just booked a yoga class or spa session is mid-wellness-routine and 'actively spending on self-care and fitness' \nan adaptogen sparkling drink is the obvious next indulgence, at a matching $42 basket size with 13.6M impressions of high-income West/Northeast traffic.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "actively spending on self-care and fitness"
-       },
-       {
-        "field": "subcategories",
-        "quote": "yoga"
-       },
-       {
-        "field": "audience",
-        "quote": "high"
-       }
-      ],
-      "risk": "Service bookings aren't product purchases, so shoppers may be in a scheduling mindset rather than a shop-more mindset at confirmation.",
-      "competitor_dispute": null
-     },
      {
       "publisher_id": "pub_008",
       "name": "Pantrygood",
@@ -965,7 +953,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 40,
+        "score": 43,
         "neutral": false,
         "detail": "matches natural_food, wellness, replenishment"
        },
@@ -983,7 +971,7 @@
        },
        {
         "name": "values",
-        "score": 33,
+        "score": 50,
         "neutral": false,
         "detail": "shares clean_ingredients"
        },
@@ -994,19 +982,19 @@
         "detail": "10.4M monthly impressions"
        }
       ],
-      "base_fit": 61,
-      "fit": 70,
+      "base_fit": 65,
+      "fit": 78,
       "computed_tier": "test",
       "tier": "recommended",
-      "tier_reason": "The tag map read this as generic grocery adjacency, but the notes describe the exact claim-responsiveness this brand sells on, and a case of sparkling functional drinks is a literal pantry line item on the order these shoppers just placed.",
+      "tier_reason": "The score treated this as a generic grocery adjacency, but a sparkling drink is literally a pantry restock item for these shoppers, and the notes name the exact claims this brand makes ('clean-ingredient', 'wellness'). Basket is more than double the $40 offer, so it reads as an easy add-on rather than a stretch.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Organic pantry restockers who are 'Responsive to clean-ingredient, sustainability, and wellness claims' are the natural buyer for an adaptogen sparkling drink, and a $40 add-on is half their $86 basket.",
+      "rationale": "Someone who just restocked organic pantry staples at an $86 basket is a natural buyer of a clean-ingredient sparkling adaptogen case, and the notes say this audience is 'Responsive to clean-ingredient, sustainability, and wellness claims'.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "Responsive to clean-ingredient, sustainability, and wellness claims"
+        "quote": "Values-driven shoppers. Responsive to clean-ingredient, sustainability, and wellness claims"
        },
        {
         "field": "subcategories",
@@ -1017,67 +1005,67 @@
         "quote": "86.0"
        }
       ],
-      "risk": "Grocery subscribers may prefer to add beverages to their existing basket rather than open a new DTC relationship.",
+      "risk": "A natural-grocery retailer may already stock non-alcoholic functional drinks, so the offer competes with something the shopper could have added to the same cart.",
       "competitor_dispute": null
      }
     ],
     "test": [
      {
-      "publisher_id": "pub_002",
-      "name": "Movewell",
-      "category": "apparel",
+      "publisher_id": "pub_003",
+      "name": "Studiogrid",
+      "category": "wellness_services",
       "signals": [
        {
         "name": "category",
-        "score": 32,
+        "score": 50,
         "neutral": false,
-        "detail": "matches wellness, functional_beverages≈fitness, natural_food≈wellness"
+        "detail": "matches wellness, self_treat, functional_beverages≈wellness"
        },
        {
         "name": "audience",
         "score": 100,
         "neutral": false,
-        "detail": "mid-high income for premium price"
+        "detail": "high income for premium price"
        },
        {
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$40 vs $78 typical order (0.5×) (price assumed)"
+        "detail": "$40 vs $42 typical order (1.0×) (price assumed)"
        },
        {
         "name": "values",
-        "score": 13,
+        "score": 0,
         "neutral": false,
-        "detail": "shares aesthetic, premium_quality≈aesthetic"
+        "detail": "no shared values"
        },
        {
         "name": "reach",
-        "score": 68,
+        "score": 57,
         "neutral": false,
-        "detail": "22.0M monthly impressions"
+        "detail": "13.6M monthly impressions"
        }
       ],
-      "base_fit": 57,
-      "fit": 57,
+      "base_fit": 61,
+      "fit": 61,
       "computed_tier": "test",
       "tier": "test",
       "tier_reason": null,
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Fitness-engaged activewear buyers with 'Strong crossover with wellness and beauty' are a plausible sober-curious audience at 22M impressions, but the link is to who they are, not to what they just bought.",
+      "rationale": "Shoppers here are mid-spend on self-care ('actively spending on self-care and fitness') at a $42 basket that matches the $40 offer, so the hypothesis is that an adaptogen drink reads as an extension of the wellness ritual; worth measuring because a class booking leaves no physical basket to ride along with.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "Strong crossover with wellness and beauty"
+        "quote": "Users are actively spending on self-care and fitness"
        },
        {
-        "field": "monthly_impressions",
-        "quote": "22000000"
+        "field": "avg_order_value_usd",
+        "quote": "42.0"
        }
       ],
-      "risk": "An apparel checkout gives no beverage cue; conversion may rely entirely on demographic overlap.",
+      "risk": "A service booking is a different mental mode from buying a consumable; the connection is to the shopper's identity, not to what they just bought.",
       "competitor_dispute": null
      },
      {
@@ -1087,7 +1075,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 43,
+        "score": 45,
         "neutral": false,
         "detail": "matches wellness, replenishment, functional_beverages≈wellness"
        },
@@ -1105,7 +1093,7 @@
        },
        {
         "name": "values",
-        "score": 13,
+        "score": 20,
         "neutral": false,
         "detail": "shares clean_ingredients"
        },
@@ -1116,38 +1104,38 @@
         "detail": "4.2M monthly impressions"
        }
       ],
-      "base_fit": 57,
-      "fit": 57,
+      "base_fit": 59,
+      "fit": 59,
       "computed_tier": "test",
       "tier": "test",
       "tier_reason": null,
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Supplement buyers already pay for adaptogens and the $38 basket matches the $40 offer, but the notes warn the 'Audience skeptical of unsubstantiated health claims' \nthe no-hangover/adaptogen pitch is exactly what gets scrutinised here.",
+      "rationale": "Supplement buyers at a $38 basket are the closest behavioural match to functional-beverage buyers, but the notes warn the audience is 'skeptical of unsubstantiated health claims' — exactly the exposure for an adaptogen/'no hangover' pitch, which is what the test should measure.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "Audience skeptical of unsubstantiated health claims"
+        "quote": "Science-forward wellness. Audience skeptical of unsubstantiated health claims"
        },
        {
         "field": "avg_order_value_usd",
         "quote": "38.0"
        }
       ],
-      "risk": "Creative leaning on vague functional benefits could underperform badly with this science-forward audience; test a claims-substantiated version.",
+      "risk": "Adaptogen claims may read as unsubstantiated to this science-forward audience and depress response; reach is also modest at 4.2M.",
       "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_015",
-      "name": "Kitchenly",
-      "category": "meal_kits",
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
       "signals": [
        {
         "name": "category",
-        "score": 8,
+        "score": 34,
         "neutral": false,
-        "detail": "matches replenishment, natural_food≈groceries"
+        "detail": "matches wellness, functional_beverages≈fitness, natural_food≈wellness"
        },
        {
         "name": "audience",
@@ -1159,7 +1147,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$40 vs $74 typical order (0.5×) (price assumed)"
+        "detail": "$40 vs $78 typical order (0.5×) (price assumed)"
        },
        {
         "name": "values",
@@ -1169,35 +1157,31 @@
        },
        {
         "name": "reach",
-        "score": 80,
+        "score": 68,
         "neutral": false,
-        "detail": "36.0M monthly impressions"
+        "detail": "22.0M monthly impressions"
        }
       ],
-      "base_fit": 46,
-      "fit": 50,
-      "computed_tier": "excluded",
+      "base_fit": 55,
+      "fit": 55,
+      "computed_tier": "test",
       "tier": "test",
-      "tier_reason": "Scored as off-category, but the tag map missed the meal occasion: someone who just bought dinner ingredients is choosing what to drink with that meal, and the notes describe a food-interested household at nationwide scale.",
+      "tier_reason": null,
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Meal-kit buyers are 'Convenience-motivated but food-interested' and are planning dinners \nan NA sparkling drink is a natural pairing pitch, with 36M impressions to learn on.",
+      "rationale": "Biggest wellness-adjacent reach in the plan (22M) with 'Strong crossover with wellness', so it's a cheap way to test whether fitness-engaged shoppers convert on a cocktail alternative at half their $78 basket.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "Convenience-motivated but food-interested"
-       },
-       {
-        "field": "category",
-        "quote": "meal_kits"
+        "quote": "Fitness-engaged shoppers. Strong crossover with wellness and beauty"
        },
        {
         "field": "monthly_impressions",
-        "quote": "36000000"
+        "quote": "22000000"
        }
       ],
-      "risk": "Family households skew less sober-curious than the target, and subscription checkouts often convert poorly on unrelated one-time offers.",
+      "risk": "The link is the shopper's identity rather than the purchase — nothing about buying leggings creates demand for a drink today.",
       "competitor_dispute": null
      }
     ],
@@ -1209,7 +1193,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 58,
+        "score": 60,
         "neutral": false,
         "detail": "matches functional_beverages, wellness, natural_food"
        },
@@ -1227,9 +1211,9 @@
        },
        {
         "name": "values",
-        "score": 17,
+        "score": 45,
         "neutral": false,
-        "detail": "shares clean_ingredients"
+        "detail": "shares clean_ingredients, playful"
        },
        {
         "name": "reach",
@@ -1238,74 +1222,16 @@
         "detail": "5.2M monthly impressions"
        }
       ],
-      "base_fit": 64,
-      "fit": 64,
+      "base_fit": 69,
+      "fit": 69,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "competitor",
       "conflict": "sells functional_beverages, like you",
       "adjacent_conflict": null,
-      "rationale": "Sells functional beverages and soda alternatives itself \ncore substitute for this drink.",
+      "rationale": "Sells functional beverages and soda alternatives — the same shelf the advertiser competes on.",
       "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_011",
-      "name": "Northbed",
-      "category": "home",
-      "signals": [
-       {
-        "name": "category",
-        "score": 21,
-        "neutral": false,
-        "detail": "matches wellness, self_treat, functional_beverages≈wellness"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 90,
-        "neutral": false,
-        "detail": "$40 vs $164 typical order (0.2×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 57,
-        "neutral": false,
-        "detail": "shares aesthetic, premium_quality"
-       },
-       {
-        "name": "reach",
-        "score": 26,
-        "neutral": false,
-        "detail": "3.6M monthly impressions"
-       }
-      ],
-      "base_fit": 53,
-      "fit": 49,
-      "computed_tier": "test",
-      "tier": "excluded",
-      "tier_reason": "Computed fit rode on income and shared 'aesthetic' values, but nothing about buying sheets or towels leads to a functional drink, and the $164 basket dwarfs the $40 offer.",
-      "exclusion_reason": "review",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Bedding buyers are 'Design-conscious urban/suburban buyers' with no purchase-level link to a sparkling adaptogen drink; the fit is style, not occasion.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Design-conscious urban/suburban buyers"
-       },
-       {
-        "field": "avg_order_value_usd",
-        "quote": "164.0"
-       }
-      ],
       "risk": null,
       "competitor_dispute": null
      },
@@ -1316,9 +1242,9 @@
       "signals": [
        {
         "name": "category",
-        "score": 28,
+        "score": 27,
         "neutral": false,
-        "detail": "matches alcohol, natural_food≈groceries, impulse"
+        "detail": "matches alcohol, natural_food≈groceries, replenishment"
        },
        {
         "name": "audience",
@@ -1349,30 +1275,34 @@
       "fit": 49,
       "computed_tier": "excluded",
       "tier": "excluded",
-      "tier_reason": "Review found a competitor the tags missed: Swiftcart stocks alcohol and soft drinks and would sell a direct substitute on the same order \nthe shopper can buy a seltzer or a cocktail from them instead.",
+      "tier_reason": "Review found a competitor the tags missed: Swiftcart's own subcategories and sells list include alcohol and soft_drinks, the two categories the advertiser names as competition; a shopper here can add a direct substitute to the same cart.",
       "exclusion_reason": "competitor",
-      "conflict": "Swiftcart stocks alcohol and soft drinks and would sell a direct substitute on the same order \nthe shopper can buy a seltzer or a cocktail from them instead.",
+      "conflict": "Swiftcart's own subcategories and sells list include alcohol and soft_drinks, the two categories the advertiser names as competition; a shopper here can add a direct substitute to the same cart.",
       "adjacent_conflict": "sells alcohol, soft_drinks, a close substitute",
-      "rationale": "Impulse late-night delivery would suit this offer, but the retailer sells the substitutes directly.",
+      "rationale": "Convenience delivery that stocks alcohol and soft drinks — a shopper can buy a substitute on the same page.",
       "evidence": [
        {
         "field": "subcategories",
         "quote": "alcohol"
+       },
+       {
+        "field": "category",
+        "quote": "instant_delivery"
        }
       ],
       "risk": null,
       "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_007",
-      "name": "Pawline",
-      "category": "pet",
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
       "signals": [
        {
         "name": "category",
-        "score": 3,
+        "score": 9,
         "neutral": false,
-        "detail": "matches replenishment"
+        "detail": "matches replenishment, natural_food≈groceries"
        },
        {
         "name": "audience",
@@ -1384,30 +1314,128 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$40 vs $64 typical order (0.6×) (price assumed)"
+        "detail": "$40 vs $74 typical order (0.5×) (price assumed)"
        },
        {
         "name": "values",
-        "score": 56,
+        "score": 0,
         "neutral": false,
-        "detail": "shares premium_quality, clean_ingredients, aesthetic≈premium_quality"
+        "detail": "no shared values"
        },
        {
         "name": "reach",
-        "score": 33,
+        "score": 80,
         "neutral": false,
-        "detail": "4.8M monthly impressions"
+        "detail": "36.0M monthly impressions"
        }
       ],
-      "base_fit": 48,
-      "fit": 48,
+      "base_fit": 47,
+      "fit": 47,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pet food buyers have no purchase-level reason to add a functional drink.",
+      "rationale": "Meal-kit households buy dinner logistics, not a premium cocktail alternative.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 13,
+        "neutral": false,
+        "detail": "matches wellness≈fitness, self_treat, functional_beverages≈fitness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 94,
+        "neutral": false,
+        "detail": "$40 vs $118 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 22,
+        "neutral": false,
+        "detail": "shares clean_ingredients≈sustainability"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 46,
+      "fit": 46,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Footwear purchase gives no reason to want a beverage next.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
+      "signals": [
+       {
+        "name": "category",
+        "score": 22,
+        "neutral": false,
+        "detail": "matches wellness, self_treat, functional_beverages≈wellness"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 90,
+        "neutral": false,
+        "detail": "$40 vs $164 typical order (0.2×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 26,
+        "neutral": false,
+        "detail": "3.6M monthly impressions"
+       }
+      ],
+      "base_fit": 45,
+      "fit": 45,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Bedding buyers at a $164 basket have no purchase-level link to a drink.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1437,113 +1465,15 @@
        },
        {
         "name": "values",
-        "score": 49,
+        "score": 35,
         "neutral": false,
-        "detail": "shares clean_ingredients, premium_quality, aesthetic≈premium_quality"
+        "detail": "shares clean_ingredients"
        },
        {
         "name": "reach",
         "score": 20,
         "neutral": false,
         "detail": "2.8M monthly impressions"
-       }
-      ],
-      "base_fit": 47,
-      "fit": 47,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Cookware gifting at a $198 basket gives no specific cue for a $40 drink.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_004",
-      "name": "Marlowe & Co.",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 3,
-        "neutral": false,
-        "detail": "matches self_treat"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 95,
-        "neutral": false,
-        "detail": "$40 vs $112 typical order (0.4×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 43,
-        "neutral": false,
-        "detail": "shares premium_quality, aesthetic≈premium_quality"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 46,
-      "fit": 46,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Older workwear shoppers, off-category and outside the sober-curious target age.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_017",
-      "name": "Cloudfoot",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 12,
-        "neutral": false,
-        "detail": "matches wellness≈fitness, self_treat, functional_beverages≈fitness"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "mid-high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 94,
-        "neutral": false,
-        "detail": "$40 vs $118 typical order (0.3×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 15,
-        "neutral": false,
-        "detail": "shares clean_ingredients≈sustainability"
-       },
-       {
-        "name": "reach",
-        "score": 37,
-        "neutral": false,
-        "detail": "5.8M monthly impressions"
        }
       ],
       "base_fit": 45,
@@ -1554,105 +1484,56 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Footwear purchase gives no beverage cue; connection is demographic only.",
+      "rationale": "Cookware and gifting moment; no reason to add a beverage case now.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_005",
-      "name": "Linden Park",
-      "category": "apparel",
+      "publisher_id": "pub_007",
+      "name": "Pawline",
+      "category": "pet",
       "signals": [
        {
         "name": "category",
-        "score": 2,
+        "score": 3,
         "neutral": false,
-        "detail": "matches self_treat"
+        "detail": "matches replenishment"
        },
        {
         "name": "audience",
         "score": 100,
         "neutral": false,
-        "detail": "high income for premium price"
+        "detail": "mid-high income for premium price"
        },
        {
         "name": "price",
-        "score": 93,
+        "score": 100,
         "neutral": false,
-        "detail": "$40 vs $128 typical order (0.3×) (price assumed)"
+        "detail": "$40 vs $64 typical order (0.6×) (price assumed)"
        },
        {
         "name": "values",
-        "score": 39,
+        "score": 25,
         "neutral": false,
-        "detail": "shares premium_quality, aesthetic≈premium_quality"
+        "detail": "shares clean_ingredients"
        },
        {
         "name": "reach",
-        "score": 39,
+        "score": 33,
         "neutral": false,
-        "detail": "6.2M monthly impressions"
+        "detail": "4.8M monthly impressions"
        }
       ],
-      "base_fit": 44,
-      "fit": 44,
+      "base_fit": 43,
+      "fit": 43,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "50-70 conservative apparel audience, far from sober-curious 25-45 buyers.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_013",
-      "name": "Velvetline",
-      "category": "beauty",
-      "signals": [
-       {
-        "name": "category",
-        "score": 14,
-        "neutral": false,
-        "detail": "matches self_treat, wellness≈beauty, impulse"
-       },
-       {
-        "name": "audience",
-        "score": 65,
-        "neutral": false,
-        "detail": "mid income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$40 vs $61 typical order (0.7×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 43,
-        "neutral": false,
-        "detail": "shares aesthetic, premium_quality≈aesthetic"
-       },
-       {
-        "name": "reach",
-        "score": 41,
-        "neutral": false,
-        "detail": "6.8M monthly impressions"
-       }
-      ],
-      "base_fit": 44,
-      "fit": 44,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Mid-income Gen Z beauty checkout offers no purchase link to a premium drink.",
+      "rationale": "Pet food checkout has no connection to a functional drink.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1682,7 +1563,7 @@
        },
        {
         "name": "values",
-        "score": 17,
+        "score": 25,
         "neutral": false,
         "detail": "shares clean_ingredients≈sustainability"
        },
@@ -1693,6 +1574,104 @@
         "detail": "3.2M monthly impressions"
        }
       ],
+      "base_fit": 41,
+      "fit": 41,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Professional women's footwear; no purchase-level link to beverages.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $35 typical order (1.1×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 50,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "fit": 41,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Dog treats and toys; shared playful tone is not a reason to buy a drink.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 95,
+        "neutral": false,
+        "detail": "$40 vs $112 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
       "base_fit": 40,
       "fit": 40,
       "computed_tier": "excluded",
@@ -1701,7 +1680,105 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Footwear at a $142 basket; no occasion connects to the drink.",
+      "rationale": "Older, conservative apparel buyers well outside the sober-curious target.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_013",
+      "name": "Velvetline",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 13,
+        "neutral": false,
+        "detail": "matches self_treat, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 65,
+        "neutral": false,
+        "detail": "mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$40 vs $61 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 41,
+        "neutral": false,
+        "detail": "6.8M monthly impressions"
+       }
+      ],
+      "base_fit": 40,
+      "fit": 40,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Young identity-driven beauty audience, but buying skincare creates no demand for a $40 drink case.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 3,
+        "neutral": false,
+        "detail": "matches self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$40 vs $128 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "fit": 39,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "50-70 classic apparel audience, wrong life stage and tone for this brand.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1750,7 +1827,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Socks and basics gifting has no relationship to functional beverages.",
+      "rationale": "Socks and basics gifting; no link to a functional beverage.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1811,7 +1888,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 6,
+        "score": 7,
         "neutral": false,
         "detail": "matches replenishment, wellness≈beauty"
        },
@@ -1829,9 +1906,9 @@
        },
        {
         "name": "values",
-        "score": 20,
+        "score": 4,
         "neutral": false,
-        "detail": "shares aesthetic, premium_quality≈aesthetic, clean_ingredients≈science_backed"
+        "detail": "shares clean_ingredients≈science_backed"
        },
        {
         "name": "reach",
@@ -1840,15 +1917,15 @@
         "detail": "3.8M monthly impressions"
        }
       ],
-      "base_fit": 36,
-      "fit": 36,
+      "base_fit": 34,
+      "fit": 34,
       "computed_tier": "excluded",
       "tier": "excluded",
       "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Haircare shoppers, mid income, no occasion link to a premium NA drink.",
+      "rationale": "Haircare replenishment at mid income; no purchase-moment connection.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1860,7 +1937,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 2,
+        "score": 3,
         "neutral": false,
         "detail": "matches self_treat"
        },
@@ -1897,56 +1974,7 @@
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Apparel checkout with mid income and no wellness or beverage cue.",
-      "evidence": [],
-      "risk": null,
-      "competitor_dispute": null
-     },
-     {
-      "publisher_id": "pub_018",
-      "name": "Tailcrate",
-      "category": "pet",
-      "signals": [
-       {
-        "name": "category",
-        "score": 2,
-        "neutral": false,
-        "detail": "matches replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 65,
-        "neutral": false,
-        "detail": "mid income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$40 vs $35 typical order (1.1×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 33,
-      "fit": 33,
-      "computed_tier": "excluded",
-      "tier": "excluded",
-      "tier_reason": null,
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Dog treat subscribers; the only tie is millennial demographics.",
+      "rationale": "Apparel checkout with mid income and no beverage adjacency.",
       "evidence": [],
       "risk": null,
       "competitor_dispute": null
@@ -1959,96 +1987,7 @@
    "type": "stage",
    "stage": "publishers",
    "status": "done",
-   "ms": 59481
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "36fb177257-persona_007",
-    "persona_id": "persona_007",
-    "persona_name": "The Convenience-First Millennial",
-    "angle": "Weeknight ease: open one instead of pouring a drink",
-    "headline": "Crack one open. Skip the hangover.",
-    "body": "A non-alcoholic sparkling drink with adaptogens. Nothing to mix, nothing to plan — just keep a few cold for weeknights.",
-    "cta": "Stock the fridge",
-    "claims_used": [
-     {
-      "claim": "non-alcoholic sparkling drink",
-      "source_quote": "non-alcoholic sparkling drink"
-     },
-     {
-      "claim": "with adaptogens",
-      "source_quote": "sparkling drink with adaptogens"
-     },
-     {
-      "claim": "skip the hangover",
-      "source_quote": "feel good without a hangover"
-     }
-    ],
-    "offer_suggestion": "Free shipping on a first multipack, with an optional auto-reorder every 4 weeks",
-    "tone_notes": "Short, plain sentences built on zero effort: open, pour, done. Leads with the weeknight swap instead of ingredient science, and the CTA frames it as keeping stock rather than a considered purchase.",
-    "status": "revised",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Non-alcoholic, adaptogens, no hangover all trace to allowed claims; no invented offers."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Leans on speed/zero-effort ('nothing to mix, nothing to plan'), avoids multi-step framing."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Adaptogen sparkling can-format alternative to a drink is tied to this product, not generic."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Calm tone, no urgency or pressure language."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No unsubstantiated health claims; safe for skeptical audiences."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": {
-     "angle": "Weeknight ease: open one instead of pouring a drink",
-     "headline": "Crack one open. Wake up sharp.",
-     "body": "A non-alcoholic sparkling drink with adaptogens. Nothing to mix, no hangover — just keep a few cold for weeknights.",
-     "cta": "Stock the fridge",
-     "claims_used": [
-      {
-       "claim": "non-alcoholic sparkling drink",
-       "source_quote": "non-alcoholic sparkling drink"
-      },
-      {
-       "claim": "with adaptogens",
-       "source_quote": "sparkling drink with adaptogens"
-      },
-      {
-       "claim": "no hangover",
-       "source_quote": "feel good without a hangover"
-      }
-     ],
-     "offer_suggestion": "Free shipping on a first multi-can case, with an optional auto-reorder every 4 weeks",
-     "tone_notes": "Short, plain sentences built around zero effort: open, pour, done. Leads with the weeknight swap rather than ingredient science, and the CTA frames it as keeping stock rather than a considered purchase."
-    }
-   }
-  },
-  {
-   "type": "stage",
-   "stage": "creative",
-   "status": "done",
-   "ms": 79105
+   "ms": 56172
   },
   {
    "type": "personas",
@@ -2057,20 +1996,20 @@
      {
       "persona_id": "persona_001",
       "name": "The Wellness Optimizer",
-      "score": 67,
+      "score": 72,
       "rank": 1,
-      "why_plausible": "Adaptogens are squarely a wellness-optimization purchase, and her affinities (wellness, supplements, organic_grocery) plus price_sensitivity: low fit a $40 premium functional beverage. She wants ingredient transparency and outcome focus, which the brand's adaptogen and no-hangover claims can honestly support.",
+      "why_plausible": "Brief sells an adaptogen functional beverage and she has wellness/supplements affinities with price_sensitivity: low and $95 AOV, so a $40 premium pack is easy. Her ask for ingredient transparency and outcome focus maps to the adaptogen and no-hangover claims.",
       "lean_into": [
        "ingredient transparency on the adaptogen blend",
-       "outcome-focused: calm/focus without the next-day cost",
-       "premium quality worth paying for"
+       "outcome-focused: clear-headed evenings, no hangover",
+       "fits into an existing wellness routine"
       ],
       "avoid": [
-       "novelty or gimmick framing",
-       "implying clinical trial proof the brief doesn't claim",
-       "anything resembling ultra-processed soda positioning"
+       "novelty-for-novelty's-sake framing",
+       "ultra-processed or sugary soda comparisons",
+       "overclaiming clinical proof the brief doesn't support"
       ],
-      "ad_angle": "Swap the nightcap for a functional drink that supports how you feel tomorrow morning — adaptogens, no alcohol, no hangover debt.",
+      "ad_angle": "The evening drink that doesn't undo your morning — adaptogens instead of alcohol, in your routine.",
       "confidence": "high",
       "reached_via": [
        "pub_012",
@@ -2085,18 +2024,18 @@
       "name": "The Gen Z Aesthete",
       "score": 41,
       "rank": 7,
-      "why_plausible": "functional_beverages is a named affinity and self_treat/impulse occasions match; she is exactly the sober-curious, aesthetic-driven Gen Z drinker who wants something photogenic in hand. Score docked her on price and reach, but a single can or trial pack lands well under her $48 typical AOV.",
+      "why_plausible": "Her category_affinities include functional_beverages and she responds to playful, aesthetic, values-aligned voice — exactly the brand's playful positioning; score docked her only on price and publisher reach.",
       "lean_into": [
-       "aesthetic-forward, playful voice",
-       "values-aligned: a drink that lets you opt out of drinking without opting out of the night",
-       "novelty of a functional cocktail alternative"
+       "playful brand voice",
+       "aesthetic-forward, something to hold at a party",
+       "values-aligned sober-curious identity"
       ],
       "avoid": [
        "corporate or clinical tone",
-       "dry performance-claim copy with no vibe",
-       "luxury gatekeeping or high-ticket framing"
+       "dry performance claims with no vibe",
+       "luxury gatekeeping"
       ],
-      "ad_angle": "The prettiest thing you'll hold all night — a sparkling functional cocktail alternative that keeps you in the party, not in bed tomorrow.",
+      "ad_angle": "The can that looks as good as a cocktail in your hand — sober-curious nights that still photograph well.",
       "confidence": "medium",
       "reached_via": [
        "pub_012"
@@ -2106,77 +2045,73 @@
      {
       "persona_id": "persona_009",
       "name": "The Fitness Enthusiast",
-      "score": 51,
+      "score": 54,
       "rank": 3,
-      "why_plausible": "functional_beverages and recovery are explicit affinities, and alcohol is the obvious enemy of a 4x/week training schedule — this is the sober-curious athlete case. price_sensitivity: low-medium and $88 AOV clear a $40 order.",
+      "why_plausible": "functional_beverages and recovery are named affinities, and price_sensitivity low-medium with $88 AOV clears a $40 order. A non-alcoholic drink is the obvious social option for someone training 4+ times a week and protecting recovery.",
       "lean_into": [
-       "performance and recovery framing: alcohol-free so training days aren't wasted",
-       "identity: what you drink when everyone else is drinking",
-       "functional ingredients, clean label"
+       "recovery and training-day framing",
+       "functional ingredients that don't cost you tomorrow's session"
       ],
       "avoid": [
-       "sedentary lounge/indulgence-only framing",
-       "fashion or aesthetics-only positioning",
-       "inventing athlete endorsements"
+       "sedentary indulgence framing",
+       "athlete endorsement claims the brief can't back",
+       "fashion-only or purely aesthetic positioning"
       ],
-      "ad_angle": "Social drink, zero recovery cost — the alcohol-free pour that doesn't undo your training week.",
+      "ad_angle": "Go out with your friends without sacrificing tomorrow's training — the social drink that keeps recovery intact.",
       "confidence": "medium",
       "reached_via": [
        "pub_012",
        "pub_002",
-       "pub_015",
-       "pub_008"
-      ],
-      "conflicts": []
-     },
-     {
-      "persona_id": "persona_010",
-      "name": "The Gifter",
-      "score": 40,
-      "rank": 8,
-      "why_plausible": "Premium presentation and price_sensitivity: low make a sparkling NA drink a natural host gift or holiday bar addition, especially for the growing number of guests who don't drink. Score ranked this low on affinity, but gifting is the classic use case for a bottle-format beverage in gourmet_food/premium_basics territory.",
-      "lean_into": [
-       "giftable, impressive-looking bottle or gift set",
-       "premium presentation for hosts and dinner parties",
-       "a bring-along that works for guests who aren't drinking"
-      ],
-      "avoid": [
-       "subscription-only framing",
-       "pure self-care/me-time framing",
-       "budget or bulk messaging"
-      ],
-      "ad_angle": "The bottle you bring to the party when not everyone is drinking — a gift-worthy, alcohol-free pour that still looks like an occasion.",
-      "confidence": "medium",
-      "reached_via": [
-       "pub_015",
-       "pub_003",
        "pub_008",
-       "pub_002"
+       "pub_003"
       ],
       "conflicts": []
      },
      {
       "persona_id": "persona_007",
       "name": "The Convenience-First Millennial",
-      "score": 48,
+      "score": 46,
       "rank": 5,
-      "why_plausible": "Urban, mid-to-high income, impulse and replenishment occasions — this is the shopper who'd keep a fridge stocked for weeknights instead of opening a bottle of wine. $55 typical AOV comfortably covers a $40 first order.",
+      "why_plausible": "Urban mid-to-high-income millennial in the brief's 25-44 sober-curious window; alcohol-adjacent convenience shopping shows up in his computed detail, and a bulk can pack is a low-friction swap for the wine run.",
       "lean_into": [
-       "easy one-click reorder / keep-it-stocked",
-       "no planning needed: pour and done",
-       "frictionless weeknight wind-down"
+       "easy one-click swap for your usual drink order",
+       "keep a pack in the fridge, ready when friends arrive"
       ],
       "avoid": [
-       "multi-step or complicated purchase framing",
-       "delayed shipping promises",
-       "dense ingredient-science lectures"
+       "multi-step or complicated purchase flows",
+       "long shipping timelines",
+       "preachy sobriety lecturing"
       ],
-      "ad_angle": "The easiest weeknight upgrade: crack one open instead of pouring a drink, and wake up sharp.",
-      "confidence": "low",
+      "ad_angle": "Stock the fridge once: the grab-and-open alternative to the after-work drink, no bartending required.",
+      "confidence": "medium",
       "reached_via": [
-       "pub_015",
        "pub_008",
        "pub_003",
+       "pub_002",
+       "pub_012"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 30,
+      "rank": 8,
+      "why_plausible": "Gifting mode shoppers want impressive-looking premium consumables, and a sparkling adaptogen pack is a natural host gift or dry-January present at a $40 first order against a $95 typical AOV. Score ranked this low on tags, but the specific reason is the bring-a-bottle occasion where alcohol is off the table.",
+      "lean_into": [
+       "giftable, premium presentation",
+       "gift sets and multi-packs for hosts"
+      ],
+      "avoid": [
+       "subscription-only offers",
+       "self-care-only framing",
+       "medicalized wellness language"
+      ],
+      "ad_angle": "The bottle to bring when the host isn't drinking — a gift-worthy alternative to wine.",
+      "confidence": "low",
+      "reached_via": [
+       "pub_003",
+       "pub_008",
        "pub_002"
       ],
       "conflicts": []
@@ -2185,9 +2120,9 @@
     "candidates": [
      {
       "persona_id": "persona_001",
-      "score": 67,
-      "affinity": 52,
-      "values": 30,
+      "score": 72,
+      "affinity": 58,
+      "values": 45,
       "price": 100,
       "reach": 100,
       "conflicts": [],
@@ -2195,40 +2130,37 @@
        "pub_012",
        "pub_008",
        "pub_003",
-       "pub_002",
-       "pub_011"
+       "pub_002"
       ],
       "detail": "shops wellness, natural_food, replenishment; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_006",
-      "score": 52,
-      "affinity": 27,
-      "values": 26,
+      "score": 55,
+      "affinity": 30,
+      "values": 30,
       "price": 100,
       "reach": 85,
       "conflicts": [],
       "reach_publishers": [
        "pub_002",
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_012"
       ],
-      "detail": "shops natural_food, replenishment, wellness≈natural_food; responds to clean_ingredients, premium_quality≈heritage"
+      "detail": "shops natural_food, replenishment, wellness≈natural_food; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_009",
-      "score": 51,
-      "affinity": 39,
-      "values": 6,
+      "score": 54,
+      "affinity": 44,
+      "values": 9,
       "price": 100,
-      "reach": 77,
+      "reach": 78,
       "conflicts": [],
       "reach_publishers": [
        "pub_012",
        "pub_002",
-       "pub_011",
        "pub_008",
        "pub_003"
       ],
@@ -2236,48 +2168,45 @@
      },
      {
       "persona_id": "persona_004",
-      "score": 50,
-      "affinity": 9,
-      "values": 56,
+      "score": 48,
+      "affinity": 10,
+      "values": 45,
       "price": 100,
-      "reach": 82,
+      "reach": 80,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002",
        "pub_012"
       ],
-      "detail": "shops replenishment; responds to clean_ingredients, premium_quality"
+      "detail": "shops replenishment; responds to clean_ingredients"
      },
      {
       "persona_id": "persona_007",
-      "score": 48,
-      "affinity": 22,
+      "score": 46,
+      "affinity": 17,
       "values": 0,
       "price": 100,
-      "reach": 98,
+      "reach": 97,
       "conflicts": [],
       "reach_publishers": [
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_002",
        "pub_012"
       ],
-      "detail": "shops replenishment, impulse, natural_food≈groceries"
+      "detail": "shops replenishment, natural_food≈groceries, alcohol≈convenience"
      },
      {
       "persona_id": "persona_002",
       "score": 45,
-      "affinity": 17,
+      "affinity": 19,
       "values": 0,
       "price": 100,
-      "reach": 92,
+      "reach": 90,
       "conflicts": [],
       "reach_publishers": [
-       "pub_011",
        "pub_008",
        "pub_003",
        "pub_002",
@@ -2288,58 +2217,56 @@
      {
       "persona_id": "persona_003",
       "score": 41,
-      "affinity": 54,
-      "values": 50,
+      "affinity": 52,
+      "values": 55,
       "price": 30,
-      "reach": 17,
+      "reach": 21,
       "conflicts": [],
       "reach_publishers": [
        "pub_012"
       ],
-      "detail": "shops functional_beverages, self_treat, impulse; responds to aesthetic, premium_quality≈aesthetic; price-mismatched for premium"
+      "detail": "shops functional_beverages, self_treat, wellness≈functional_beverages; responds to playful, clean_ingredients≈sustainability; price-mismatched for premium"
      },
      {
       "persona_id": "persona_010",
-      "score": 40,
+      "score": 30,
       "affinity": 4,
-      "values": 47,
+      "values": 0,
       "price": 100,
       "reach": 55,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002"
       ],
-      "detail": "shops wellness≈beauty; responds to premium_quality, aesthetic"
-     },
-     {
-      "persona_id": "persona_005",
-      "score": 33,
-      "affinity": 23,
-      "values": 43,
-      "price": 100,
-      "reach": 0,
-      "conflicts": [],
-      "reach_publishers": [],
-      "detail": "shops self_treat, natural_food, wellness≈natural_food; responds to premium_quality, aesthetic≈premium_quality"
+      "detail": "shops wellness≈beauty"
      },
      {
       "persona_id": "persona_008",
       "score": 26,
-      "affinity": 13,
+      "affinity": 14,
       "values": 0,
       "price": 30,
-      "reach": 66,
+      "reach": 64,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_011",
        "pub_008",
        "pub_002"
       ],
       "detail": "shops replenishment, natural_food≈groceries; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 25,
+      "affinity": 26,
+      "values": 0,
+      "price": 100,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops self_treat, natural_food, wellness≈natural_food"
      }
     ],
     "skipped_note": null
@@ -2356,7 +2283,7 @@
    "config": {
     "schema_version": "1.0",
     "campaign": {
-     "name": "Non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative · post-purchase launch",
+     "name": "Non-alcoholic sparkling adaptogen beverage · post-purchase launch",
      "status": "draft",
      "objective": "conversions",
      "flight": {
@@ -2384,63 +2311,44 @@
     },
     "placements": [
      {
-      "publisher_id": "pub_003",
-      "publisher_name": "Studiogrid",
-      "category": "wellness_services",
-      "role": "core",
-      "fit_score": 70,
-      "allocation_pct": 42.5,
-      "budget_usd": 4250.0,
-      "est_conversions": 354.2,
-      "capacity_note": null,
-      "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
-      ],
-      "personas_matched": true,
-      "test_plan": null
-     },
-     {
       "publisher_id": "pub_008",
       "publisher_name": "Pantrygood",
       "category": "groceries",
       "role": "core",
-      "fit_score": 70,
-      "allocation_pct": 42.5,
-      "budget_usd": 4250.0,
-      "est_conversions": 354.2,
+      "fit_score": 78,
+      "allocation_pct": 85.0,
+      "budget_usd": 8500.0,
+      "est_conversions": 708.3,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": null
      },
      {
-      "publisher_id": "pub_002",
-      "publisher_name": "Movewell",
-      "category": "apparel",
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
       "role": "test",
-      "fit_score": 57,
+      "fit_score": 61,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Fitness-engaged activewear buyers with 'Strong crossover with wellness and beauty' are a plausible sober-curious audience at 22M impressions, but the link is to who they are, not to what they just bought.",
-       "risk": "An apparel checkout gives no beverage cue; conversion may rely entirely on demographic overlap.",
+       "hypothesis": "Shoppers here are mid-spend on self-care ('actively spending on self-care and fitness') at a $42 basket that matches the $40 offer, so the hypothesis is that an adaptogen drink reads as an extension of the wellness ritual; worth measuring because a class booking leaves no physical basket to ride along with.",
+       "risk": "A service booking is a different mental mode from buying a consumable; the connection is to the shopper's identity, not to what they just bought.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
@@ -2450,45 +2358,45 @@
       "publisher_name": "Daily Form",
       "category": "wellness_dtc",
       "role": "test",
-      "fit_score": 57,
+      "fit_score": 59,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_003",
-       "36fb177257-persona_009",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_003",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Supplement buyers already pay for adaptogens and the $38 basket matches the $40 offer, but the notes warn the 'Audience skeptical of unsubstantiated health claims' \nthe no-hangover/adaptogen pitch is exactly what gets scrutinised here.",
-       "risk": "Creative leaning on vague functional benefits could underperform badly with this science-forward audience; test a claims-substantiated version.",
+       "hypothesis": "Supplement buyers at a $38 basket are the closest behavioural match to functional-beverage buyers, but the notes warn the audience is 'skeptical of unsubstantiated health claims' — exactly the exposure for an adaptogen/'no hangover' pitch, which is what the test should measure.",
+       "risk": "Adaptogen claims may read as unsubstantiated to this science-forward audience and depress response; reach is also modest at 4.2M.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
      },
      {
-      "publisher_id": "pub_015",
-      "publisher_name": "Kitchenly",
-      "category": "meal_kits",
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
       "role": "test",
-      "fit_score": 50,
+      "fit_score": 55,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Meal-kit buyers are 'Convenience-motivated but food-interested' and are planning dinners \nan NA sparkling drink is a natural pairing pitch, with 36M impressions to learn on.",
-       "risk": "Family households skew less sober-curious than the target, and subscription checkouts often convert poorly on unrelated one-time offers.",
+       "hypothesis": "Biggest wellness-adjacent reach in the plan (22M) with 'Strong crossover with wellness', so it's a cheap way to test whether fitness-engaged shoppers convert on a cocktail alternative at half their $78 basket.",
+       "risk": "The link is the shopper's identity rather than the purchase — nothing about buying leggings creates demand for a drink today.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
@@ -2499,16 +2407,18 @@
       "persona_001",
       "persona_003",
       "persona_009",
-      "persona_010",
-      "persona_007"
+      "persona_007",
+      "persona_010"
      ],
      "gender": null,
      "age_range": {
-      "value": "25-45",
+      "value": "25-44",
       "source": "assumed"
      },
      "geo": [
-      "US (nationwide)"
+      "US-Northeast",
+      "US-South",
+      "US-West"
      ],
      "contextual_interests": [
       "functional_beverages",
@@ -2524,34 +2434,34 @@
     },
     "creatives": [
      {
-      "creative_id": "36fb177257-persona_001",
+      "creative_id": "1354389c63-persona_001",
       "persona_id": "persona_001",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_003",
+      "creative_id": "1354389c63-persona_003",
       "persona_id": "persona_003",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_009",
+      "creative_id": "1354389c63-persona_009",
       "persona_id": "persona_009",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_010",
-      "persona_id": "persona_010",
+      "creative_id": "1354389c63-persona_007",
+      "persona_id": "persona_007",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_007",
-      "persona_id": "persona_007",
+      "creative_id": "1354389c63-persona_010",
+      "persona_id": "persona_010",
       "weight": 0.2,
-      "status": "revised"
+      "status": "passed"
      }
     ],
     "frequency_cap": {
@@ -2580,9 +2490,9 @@
      "needs_human_review": false,
      "confidence": "medium",
      "assumptions": [
-      "Assumed a premium price with a first order around $40, typical for adaptogen beverages.",
-      "Assumed a broad adult audience roughly 25-45 since no demographic was given.",
-      "Assumed mainly one-time purchases rather than a subscription.",
+      "Assumed a premium price tier and about a $40 first order, typical of functional beverage multi-packs.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Assumed a broad adult audience, skewing 25-44.",
       "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
      ],
      "warnings": [
@@ -2597,7 +2507,7 @@
    "config": {
     "schema_version": "1.0",
     "campaign": {
-     "name": "Non-alcoholic sparkling drink with adaptogens, positioned as a functional cocktail alternative · post-purchase launch",
+     "name": "Non-alcoholic sparkling adaptogen beverage · post-purchase launch",
      "status": "draft",
      "objective": "conversions",
      "flight": {
@@ -2625,63 +2535,44 @@
     },
     "placements": [
      {
-      "publisher_id": "pub_003",
-      "publisher_name": "Studiogrid",
-      "category": "wellness_services",
-      "role": "core",
-      "fit_score": 70,
-      "allocation_pct": 42.5,
-      "budget_usd": 4250.0,
-      "est_conversions": 354.2,
-      "capacity_note": null,
-      "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
-      ],
-      "personas_matched": true,
-      "test_plan": null
-     },
-     {
       "publisher_id": "pub_008",
       "publisher_name": "Pantrygood",
       "category": "groceries",
       "role": "core",
-      "fit_score": 70,
-      "allocation_pct": 42.5,
-      "budget_usd": 4250.0,
-      "est_conversions": 354.2,
+      "fit_score": 78,
+      "allocation_pct": 85.0,
+      "budget_usd": 8500.0,
+      "est_conversions": 708.3,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": null
      },
      {
-      "publisher_id": "pub_002",
-      "publisher_name": "Movewell",
-      "category": "apparel",
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
       "role": "test",
-      "fit_score": 57,
+      "fit_score": 61,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Fitness-engaged activewear buyers with 'Strong crossover with wellness and beauty' are a plausible sober-curious audience at 22M impressions, but the link is to who they are, not to what they just bought.",
-       "risk": "An apparel checkout gives no beverage cue; conversion may rely entirely on demographic overlap.",
+       "hypothesis": "Shoppers here are mid-spend on self-care ('actively spending on self-care and fitness') at a $42 basket that matches the $40 offer, so the hypothesis is that an adaptogen drink reads as an extension of the wellness ritual; worth measuring because a class booking leaves no physical basket to ride along with.",
+       "risk": "A service booking is a different mental mode from buying a consumable; the connection is to the shopper's identity, not to what they just bought.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
@@ -2691,45 +2582,45 @@
       "publisher_name": "Daily Form",
       "category": "wellness_dtc",
       "role": "test",
-      "fit_score": 57,
+      "fit_score": 59,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_003",
-       "36fb177257-persona_009",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_003",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Supplement buyers already pay for adaptogens and the $38 basket matches the $40 offer, but the notes warn the 'Audience skeptical of unsubstantiated health claims' \nthe no-hangover/adaptogen pitch is exactly what gets scrutinised here.",
-       "risk": "Creative leaning on vague functional benefits could underperform badly with this science-forward audience; test a claims-substantiated version.",
+       "hypothesis": "Supplement buyers at a $38 basket are the closest behavioural match to functional-beverage buyers, but the notes warn the audience is 'skeptical of unsubstantiated health claims' — exactly the exposure for an adaptogen/'no hangover' pitch, which is what the test should measure.",
+       "risk": "Adaptogen claims may read as unsubstantiated to this science-forward audience and depress response; reach is also modest at 4.2M.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
      },
      {
-      "publisher_id": "pub_015",
-      "publisher_name": "Kitchenly",
-      "category": "meal_kits",
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
       "role": "test",
-      "fit_score": 50,
+      "fit_score": 55,
       "allocation_pct": 5.0,
       "budget_usd": 500.0,
       "est_conversions": 41.7,
       "capacity_note": null,
       "creative_ids": [
-       "36fb177257-persona_001",
-       "36fb177257-persona_009",
-       "36fb177257-persona_010",
-       "36fb177257-persona_007"
+       "1354389c63-persona_001",
+       "1354389c63-persona_009",
+       "1354389c63-persona_007",
+       "1354389c63-persona_010"
       ],
       "personas_matched": true,
       "test_plan": {
-       "hypothesis": "Meal-kit buyers are 'Convenience-motivated but food-interested' and are planning dinners \nan NA sparkling drink is a natural pairing pitch, with 36M impressions to learn on.",
-       "risk": "Family households skew less sober-curious than the target, and subscription checkouts often convert poorly on unrelated one-time offers.",
+       "hypothesis": "Biggest wellness-adjacent reach in the plan (22M) with 'Strong crossover with wellness', so it's a cheap way to test whether fitness-engaged shoppers convert on a cocktail alternative at half their $78 basket.",
+       "risk": "The link is the shopper's identity rather than the purchase — nothing about buying leggings creates demand for a drink today.",
        "promote_if": "CPA at or below the $12.00 target after 14 days: move it to core.",
        "cut_if": "CPA above the $15.60 maximum, or no conversions after 14 days: stop it."
       }
@@ -2740,16 +2631,18 @@
       "persona_001",
       "persona_003",
       "persona_009",
-      "persona_010",
-      "persona_007"
+      "persona_007",
+      "persona_010"
      ],
      "gender": null,
      "age_range": {
-      "value": "25-45",
+      "value": "25-44",
       "source": "assumed"
      },
      "geo": [
-      "US (nationwide)"
+      "US-Northeast",
+      "US-South",
+      "US-West"
      ],
      "contextual_interests": [
       "functional_beverages",
@@ -2765,34 +2658,34 @@
     },
     "creatives": [
      {
-      "creative_id": "36fb177257-persona_001",
+      "creative_id": "1354389c63-persona_001",
       "persona_id": "persona_001",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_003",
+      "creative_id": "1354389c63-persona_003",
       "persona_id": "persona_003",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_009",
+      "creative_id": "1354389c63-persona_009",
       "persona_id": "persona_009",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_010",
-      "persona_id": "persona_010",
+      "creative_id": "1354389c63-persona_007",
+      "persona_id": "persona_007",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "36fb177257-persona_007",
-      "persona_id": "persona_007",
+      "creative_id": "1354389c63-persona_010",
+      "persona_id": "persona_010",
       "weight": 0.2,
-      "status": "revised"
+      "status": "passed"
      }
     ],
     "frequency_cap": {
@@ -2821,25 +2714,25 @@
      "needs_human_review": false,
      "confidence": "medium",
      "assumptions": [
-      "Assumed a premium price with a first order around $40, typical for adaptogen beverages.",
-      "Assumed a broad adult audience roughly 25-45 since no demographic was given.",
-      "Assumed mainly one-time purchases rather than a subscription.",
+      "Assumed a premium price tier and about a $40 first order, typical of functional beverage multi-packs.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Assumed a broad adult audience, skewing 25-44.",
       "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
      ],
      "warnings": [
       "Target CPA is based on an assumed order value. Confirm price before launch."
      ],
      "launch_summary": {
-      "summary": "Of the $10,000 budget, $8,500 goes to two checkouts where the purchase itself sets up the offer: Studiogrid's self-care bookings and Pantrygood's clean-ingredient pantry restocks. The remaining $1,500 tests three adjacent audiences \\u2014 Movewell activewear buyers, Daily Form supplement buyers and Kitchenly meal-kit buyers \\u2014 to learn whether demographic or mealtime overlap can convert without a beverage cue. Beverage competitors Pop & Sip and Swiftcart are excluded.",
+      "summary": "$8,500 of the $10,000 budget goes to Pantrygood, where a pantry restock by clean-ingredient shoppers is a real purchase-moment fit. The remaining $1,500 splits evenly across Studiogrid, Daily Form and Movewell to learn whether wellness identity alone converts without a related basket to ride along with. Competitors Pop & Sip and alcohol-selling Swiftcart are excluded. Target cost per new customer is $12.00, with $15.60 as the ceiling during the 14-day learning period.",
       "uncertainties": [
-       "The $40 first order value is assumed, and the $12.00 target cost per new customer is built on it, so a lower real price would make the whole plan overpay.",
-       "Daily Form's audience is noted as skeptical of unsubstantiated health claims, and the adaptogen and no-hangover pitch is exactly what gets scrutinised there.",
-       "The audience (sober-curious adults, roughly 25-45) and the one-time purchase model are both inferred or assumed, which affects both targeting and the payback math."
+       "The $40 first order is assumed, and the $12.00 target cost per new customer is built directly on it.",
+       "One-time purchase is assumed rather than a subscription, so the plan requires the first order to pay back acquisition on its own.",
+       "Daily Form's audience is noted as skeptical of unsubstantiated health claims, which puts the adaptogen and no-hangover pitch at risk there."
       ],
       "questions": [
-       "What is your actual average first order value and margin?",
-       "Do you sell mainly one-time bottles or a subscription, and what is a customer worth over time?",
-       "Can you substantiate the adaptogen and no-hangover claims for a science-forward audience?"
+       "What is your actual average first order value and price per pack?",
+       "Do you sell by subscription, and if so what is a customer worth over time?",
+       "Can you substantiate the adaptogen and no-hangover claims for a science-minded audience?"
       ]
      }
     }
@@ -2849,24 +2742,24 @@
    "type": "stage",
    "stage": "campaign",
    "status": "done",
-   "ms": 7625
+   "ms": 7023
   },
   {
    "type": "done",
-   "run_id": "36fb177257",
-   "total_ms": 102381,
-   "cost_usd": 0.6784,
+   "run_id": "1354389c63",
+   "total_ms": 76102,
+   "cost_usd": 0.5545,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v5-e8eda0f",
-     "ms": 15648,
-     "input_tokens": 7595,
-     "output_tokens": 1185,
-     "cost_usd": 0.0676,
+     "prompt_version": "v6-5c0c401",
+     "ms": 12904,
+     "input_tokens": 8105,
+     "output_tokens": 1107,
+     "cost_usd": 0.0682,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2890,67 +2783,11 @@
      "name": "select_personas",
      "model": "anthropic:claude-opus-5",
      "prompt": "select_personas",
-     "prompt_version": "v5-f2b41c4",
-     "ms": 21796,
-     "input_tokens": 6910,
-     "output_tokens": 1418,
-     "cost_usd": 0.07,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_003",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 5658,
-     "input_tokens": 2849,
-     "output_tokens": 321,
-     "cost_usd": 0.02227,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_009",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 6000,
-     "input_tokens": 2818,
-     "output_tokens": 319,
-     "cost_usd": 0.022065,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_007",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 6572,
-     "input_tokens": 2781,
-     "output_tokens": 443,
-     "cost_usd": 0.02498,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_001",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 7157,
-     "input_tokens": 2843,
-     "output_tokens": 477,
-     "cost_usd": 0.02614,
+     "prompt_version": "v6-e5aaa73",
+     "ms": 19275,
+     "input_tokens": 7031,
+     "output_tokens": 1233,
+     "cost_usd": 0.06598,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2960,12 +2797,68 @@
      "name": "write_creative:persona_010",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 8889,
-     "input_tokens": 2854,
-     "output_tokens": 550,
-     "cost_usd": 0.02802,
+     "prompt_version": "v5-5699065",
+     "ms": 5563,
+     "input_tokens": 2857,
+     "output_tokens": 334,
+     "cost_usd": 0.022635,
      "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_003",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v5-5699065",
+     "ms": 6204,
+     "input_tokens": 2820,
+     "output_tokens": 355,
+     "cost_usd": 0.022975,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v5-5699065",
+     "ms": 6223,
+     "input_tokens": 2812,
+     "output_tokens": 337,
+     "cost_usd": 0.022485,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v5-5699065",
+     "ms": 6839,
+     "input_tokens": 2838,
+     "output_tokens": 475,
+     "cost_usd": 0.026065,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_001",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v5-5699065",
+     "ms": 13673,
+     "input_tokens": 3007,
+     "output_tokens": 346,
+     "cost_usd": 0.023685,
+     "retries": 1,
      "ok": true,
      "error": null
     },
@@ -2974,25 +2867,11 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v3-d8d972b",
-     "ms": 20329,
-     "input_tokens": 3581,
-     "output_tokens": 1834,
-     "cost_usd": 0.063755,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "rewrite_creative:persona_007",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v4-6284a7a",
-     "ms": 7120,
-     "input_tokens": 3518,
-     "output_tokens": 589,
-     "cost_usd": 0.032315,
+     "prompt_version": "v4-2965303",
+     "ms": 16918,
+     "input_tokens": 3697,
+     "output_tokens": 1494,
+     "cost_usd": 0.055835,
      "retries": 0,
      "ok": true,
      "error": null
@@ -3002,25 +2881,11 @@
      "name": "rerank_publishers",
      "model": "anthropic:claude-opus-5",
      "prompt": "rerank_publishers",
-     "prompt_version": "v5-fcbc95b",
-     "ms": 59471,
-     "input_tokens": 16445,
-     "output_tokens": 5399,
-     "cost_usd": 0.2172,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "critique",
-     "name": "critique_creative",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "critique_creative",
-     "prompt_version": "v3-d8d972b",
-     "ms": 20947,
-     "input_tokens": 3585,
-     "output_tokens": 1820,
-     "cost_usd": 0.063425,
+     "prompt_version": "v7-f3a64f0",
+     "ms": 56166,
+     "input_tokens": 16929,
+     "output_tokens": 4956,
+     "cost_usd": 0.208545,
      "retries": 0,
      "ok": true,
      "error": null
@@ -3045,10 +2910,10 @@
      "model": "anthropic:claude-opus-5",
      "prompt": "summarize_launch",
      "prompt_version": "v1-18c2ce5",
-     "ms": 7622,
-     "input_tokens": 5858,
-     "output_tokens": 455,
-     "cost_usd": 0.040665,
+     "ms": 7017,
+     "input_tokens": 5638,
+     "output_tokens": 397,
+     "cost_usd": 0.038115,
      "retries": 0,
      "ok": true,
      "error": null

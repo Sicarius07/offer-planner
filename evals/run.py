@@ -142,7 +142,7 @@ def moves(r: dict) -> list[dict]:
     if not p:
         return []
     return [{"publisher_id": x.publisher_id, "from": x.computed_tier, "to": x.tier,
-             "reason": x.tier_reason or x.competitor_dispute}
+             "base_fit": x.base_fit, "fit": x.fit, "reason": x.tier_reason or x.competitor_dispute}
             for x in p.recommended + p.test + p.excluded
             if (x.tier_reason and x.tier != x.computed_tier) or x.competitor_dispute]
 

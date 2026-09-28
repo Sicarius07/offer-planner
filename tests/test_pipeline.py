@@ -62,14 +62,14 @@ class FakeProvider:
         elif schema is RerankDraft:
             out = RerankDraft.model_validate({"summary": "Pet competitors excluded.", "offering_type_doubt": "", "judgments": [
                 # Tries to rescue a competitor, and to move a tier on an invented quote: code refuses both.
-                {"publisher_id": "pub_007", "tier": "recommended", "tier_reason": "great fit",
+                {"publisher_id": "pub_007", "tier": "recommended", "fit": None, "tier_reason": "great fit",
                  "competitor_call": "agree", "competitor_reason": "",
                  "rationale": "Pawline is ideal.", "evidence": [{"field": "notes", "quote": "responsive to premium positioning"}], "risk": ""},
-                {"publisher_id": "pub_018", "tier": "recommended", "tier_reason": "dogs as family",
+                {"publisher_id": "pub_018", "tier": "recommended", "fit": None, "tier_reason": "dogs as family",
                  "competitor_call": "agree", "competitor_reason": "",
                  "rationale": "Tailcrate reaches dog lovers.", "evidence": [{"field": "notes", "quote": "an invented note"}], "risk": ""},
                 # Off-category by tags, but its notes back a move to test.
-                {"publisher_id": "pub_008", "tier": "test", "tier_reason": "clean-ingredient shoppers buy premium pet food too",
+                {"publisher_id": "pub_008", "tier": "test", "fit": None, "tier_reason": "clean-ingredient shoppers buy premium pet food too",
                  "competitor_call": "agree", "competitor_reason": "",
                  "rationale": "Pantrygood shoppers respond to clean ingredients.",
                  "evidence": [{"field": "notes", "quote": "Responsive to clean-ingredient"}], "risk": ""},

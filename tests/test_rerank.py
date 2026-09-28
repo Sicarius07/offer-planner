@@ -15,8 +15,8 @@ from backend.schemas.publisher import RerankDraft
 from tests.conftest import dog_food_profile, make_profile
 
 
-def j(pid, tier, reason="", evidence=(), call="agree", call_reason=""):
-    return {"publisher_id": pid, "tier": tier, "tier_reason": reason, "competitor_call": call,
+def j(pid, tier, reason="", evidence=(), call="agree", call_reason="", fit=None):
+    return {"publisher_id": pid, "tier": tier, "tier_reason": reason, "fit": fit, "competitor_call": call,
             "competitor_reason": call_reason, "rationale": "r", "risk": "",
             "evidence": [{"field": f, "quote": q} for f, q in evidence]}
 
@@ -44,6 +44,19 @@ def test_promotion_with_a_checked_quote_counts():
     assert r.fit == 70 and r.base_fit < 70  # placed at the bottom of its new tier, for budget
     assert r.tier_reason
     assert any(x.publisher_id == "pub_008" for x in config_for(p, plan).placements)
+
+
+def test_reviews_fit_for_a_moved_publisher_sets_its_budget_weight():
+    p = dog_food_profile()
+    quote = [("notes", "Responsive to clean-ingredient")]
+    plan = publishers.merge(p, score_publishers(p), review(
+        j("pub_008", "recommended", "strong fit", quote, fit=88),
+        j("pub_012", "recommended", "weaker fit", [("notes", "Science-forward wellness")], fit=40),
+    ))
+    assert by_id(plan)["pub_008"].fit == 88
+    assert by_id(plan)["pub_012"].fit == 70  # out of its band: pulled into it
+    shares = {x.publisher_id: x.allocation_pct for x in config_for(p, plan).placements}
+    assert shares["pub_008"] > shares["pub_012"]
 
 
 def test_move_without_a_quote_or_reason_is_ignored():

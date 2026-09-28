@@ -56,6 +56,10 @@ class PublisherJudgmentDraft(BaseModel):
         description="Required when tier differs from the computed tier: what the scores missed, "
         "backed by the evidence quotes. Else empty"
     )
+    fit: int | None = Field(
+        description="Only when tier differs from the computed tier: your 0-100 fit, inside the "
+        "new tier's band (recommended 70-100, test 50-69, excluded 0-49). Else null"
+    )
     competitor_call: CompetitorCall = Field(
         description="missed_competitor: not excluded as a competitor, but it sells what the "
         "advertiser sells. not_a_competitor: excluded as a competitor, but it isn't one. "

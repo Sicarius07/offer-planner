@@ -12,18 +12,14 @@
    "type": "profile",
    "profile": {
     "brief": "A new kind of thing for moms.",
-    "business_summary": "A product or service aimed at moms, but the brief doesn't say what it is.",
+    "business_summary": "An unspecified new product aimed at moms; the brief doesn't say what it is.",
     "brand_name": null,
     "offering_type": "unclear",
     "product": {
-     "value": "Unspecified product for mothers",
-     "source": "stated",
-     "evidence": {
-      "text": "A new kind of thing for moms",
-      "start": 0,
-      "end": 28
-     },
-     "note": "The brief names an audience but not a product."
+     "value": "Unknown product for moms",
+     "source": "assumed",
+     "evidence": null,
+     "note": "Placeholder: the brief names an audience but never says what is sold"
     },
     "sells": [
      "other"
@@ -32,7 +28,7 @@
      "other"
     ],
     "interests": {
-     "kids_family": 1.0
+     "kids_family": 0.5
     },
     "values": {},
     "occasions": {},
@@ -41,32 +37,36 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "No price given; mid is a neutral default."
+     "note": "Middle-of-market default with no price given"
     },
     "first_order_value_usd": {
      "value": 45.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Generic default until the product is known."
+     "note": "Typical everyday consumer order value"
     },
     "gender": {
      "value": "female",
+     "source": "stated",
+     "evidence": {
+      "text": "for moms",
+      "start": 20,
+      "end": 28
+     },
+     "note": null
+    },
+    "age_range": {
+     "value": "28-45",
      "source": "inferred",
      "evidence": {
       "text": "for moms",
       "start": 20,
       "end": 28
      },
-     "note": "Moms are the stated audience."
-    },
-    "age_range": {
-     "value": "28-45",
-     "source": "assumed",
-     "evidence": null,
-     "note": "Typical age range for parents of young children."
+     "note": "Common age range for mothers of young children"
     },
     "audience": {
-     "value": "Mothers",
+     "value": "Mothers, likely with children at home",
      "source": "stated",
      "evidence": {
       "text": "for moms",
@@ -76,41 +76,43 @@
      "note": null
     },
     "business_model": {
-     "value": "unknown",
+     "value": "one_time",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief says nothing about how it's sold."
+     "note": "No subscription mentioned"
     },
     "claims": [],
     "clarity": "unusable",
-    "clarity_reason": "The brief names an audience but never says what the product is, so any plan would be invented.",
+    "clarity_reason": "The brief names an audience (moms) but never says what the product is, so any plan would be invented.",
     "assumptions": [
-     "We assumed the buyer is a mother aged roughly 28-45 and a mid-priced first order around $45, because no product or price was given."
+     "We assumed a mid-market price and a roughly $45 first order because no pricing was given.",
+     "We assumed a one-time purchase rather than a subscription.",
+     "We could not tell what the product is, so product category is a placeholder."
     ],
     "clarifying_questions": [
      {
       "question": "What do you actually sell?",
-      "why": "Determines product category, publishers, and ad copy.",
+      "why": "The product category determines which publishers and shopper personas we match you with.",
       "suggested_answers": [
        "A physical product",
        "A subscription box",
-       "An app or service",
+       "A service or app",
        "Something else"
       ]
      },
      {
-      "question": "Which category does it fall into?",
-      "why": "Sets the competitor set and which checkout pages we avoid.",
+      "question": "If it's a physical product, which category is it closest to?",
+      "why": "Category drives which non-competing checkout pages your ad can appear on.",
       "suggested_answers": [
        "Baby and kids gear",
-       "Wellness or supplements",
-       "Apparel",
-       "Home or kitchen"
+       "Food or snacks",
+       "Beauty or wellness",
+       "Home goods"
       ]
      },
      {
-      "question": "What does a typical first order cost?",
-      "why": "Drives price tier and payout expectations.",
+      "question": "What does a first order typically cost?",
+      "why": "Price shapes which publishers' shoppers are a good fit and how we frame the offer.",
       "suggested_answers": [
        "Under $25",
        "$25-$60",
@@ -120,7 +122,7 @@
      },
      {
       "question": "Is it a one-time purchase or a subscription?",
-      "why": "Changes the offer framing and repeat-purchase messaging.",
+      "why": "Subscriptions need different ad framing and convert differently post-purchase.",
       "suggested_answers": [
        "One-time",
        "Subscription",
@@ -136,35 +138,35 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 10212
+   "ms": 12339
   },
   {
    "type": "needs_input",
-   "reason": "The brief names an audience but never says what the product is, so any plan would be invented.",
+   "reason": "The brief names an audience (moms) but never says what the product is, so any plan would be invented.",
    "questions": [
     {
      "question": "What do you actually sell?",
-     "why": "Determines product category, publishers, and ad copy.",
+     "why": "The product category determines which publishers and shopper personas we match you with.",
      "suggested_answers": [
       "A physical product",
       "A subscription box",
-      "An app or service",
+      "A service or app",
       "Something else"
      ]
     },
     {
-     "question": "Which category does it fall into?",
-     "why": "Sets the competitor set and which checkout pages we avoid.",
+     "question": "If it's a physical product, which category is it closest to?",
+     "why": "Category drives which non-competing checkout pages your ad can appear on.",
      "suggested_answers": [
       "Baby and kids gear",
-      "Wellness or supplements",
-      "Apparel",
-      "Home or kitchen"
+      "Food or snacks",
+      "Beauty or wellness",
+      "Home goods"
      ]
     },
     {
-     "question": "What does a typical first order cost?",
-     "why": "Drives price tier and payout expectations.",
+     "question": "What does a first order typically cost?",
+     "why": "Price shapes which publishers' shoppers are a good fit and how we frame the offer.",
      "suggested_answers": [
       "Under $25",
       "$25-$60",
@@ -174,7 +176,7 @@
     },
     {
      "question": "Is it a one-time purchase or a subscription?",
-     "why": "Changes the offer framing and repeat-purchase messaging.",
+     "why": "Subscriptions need different ad framing and convert differently post-purchase.",
      "suggested_answers": [
       "One-time",
       "Subscription",
@@ -209,20 +211,20 @@
   },
   {
    "type": "done",
-   "run_id": "21fdbd7019",
-   "total_ms": 10213,
-   "cost_usd": 0.0581,
+   "run_id": "41b9b4d0db",
+   "total_ms": 12340,
+   "cost_usd": 0.064,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v5-e8eda0f",
-     "ms": 10209,
-     "input_tokens": 7552,
-     "output_tokens": 815,
-     "cost_usd": 0.058135,
+     "prompt_version": "v6-5c0c401",
+     "ms": 12339,
+     "input_tokens": 8062,
+     "output_tokens": 946,
+     "cost_usd": 0.06396,
      "retries": 0,
      "ok": true,
      "error": null

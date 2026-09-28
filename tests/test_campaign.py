@@ -87,3 +87,19 @@ def test_an_ad_no_placement_can_use_is_called_out(dog_food):
                        10_000, 30, start=date(2026, 1, 1))
     assert cfg.placements[0].creative_ids == ["c_persona_002"]
     assert any("The Gen Z Aesthete won't run" in w for w in cfg.review.warnings)
+
+
+def test_too_few_publishers_for_the_cap_still_split_by_fit():
+    shares = _capped_proportional([82 ** 2, 76 ** 2], 0.85, 0.4, 0.05)
+    assert sum(shares) == pytest.approx(0.85)
+    assert shares[0] > shares[1]   # not an even 42.5% / 42.5%
+
+
+def test_estimate_never_exceeds_what_the_publisher_can_deliver(dog_food):
+    from backend import catalog
+    pubs = PublisherPlan(summary="", recommended=[pr("pub_018", 80)], test=[], excluded=[])
+    cfg = build_config(dog_food, pubs, PersonaPlan(picks=[], candidates=[], skipped_note=None),
+                       [], 5_000_000, 30, start=date(2026, 10, 1))
+    ceiling = catalog.publishers()["pub_018"].monthly_impressions * config.CAPACITY_CONVERSION_CEILING
+    p = cfg.placements[0]
+    assert p.est_conversions == pytest.approx(ceiling, abs=0.1) and p.capacity_note
