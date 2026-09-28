@@ -10,10 +10,10 @@ from collections import defaultdict, deque
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import JSONResponse, Response, StreamingResponse
 from pydantic import BaseModel
 
-from backend import catalog, config, credits
+from backend import catalog, config, credits, runs
 from backend.pipeline.run import run_plan
 from backend.schemas.catalog import CatalogPersona, CatalogPublisher
 from backend.schemas.events import DoneEvent, PlanEvent, PlanRequest
@@ -40,6 +40,7 @@ class Meta(BaseModel):
     default_monthly_budget_usd: float
     default_flight_days: int
     max_brief_chars: int
+    saved_runs: bool
 
 
 class Example(BaseModel):
@@ -108,6 +109,7 @@ def meta() -> Meta:
         default_monthly_budget_usd=config.DEFAULT_MONTHLY_BUDGET_USD,
         default_flight_days=config.DEFAULT_FLIGHT_DAYS,
         max_brief_chars=config.MAX_BRIEF_CHARS,
+        saved_runs=runs.enabled(),
     )
 
 
@@ -127,6 +129,15 @@ def example_run(example_id: str) -> CachedRun:
     if not path.exists() or "/" in example_id:
         raise HTTPException(404, "No cached run for this example.")
     return CachedRun.model_validate_json(path.read_text())
+
+
+@app.get("/api/runs/{run_id}", response_model=CachedRun)
+async def saved_run(run_id: str) -> Response:
+    """A finished live run, in the same shape as a cached example so the UI replays it."""
+    body = await runs.load(run_id) if run_id.isalnum() else None
+    if body is None:
+        raise HTTPException(404, "That draft has expired or was never saved. Drafts are kept for 30 days.")
+    return Response(body, media_type="application/json")
 
 
 @app.get("/api/catalog", response_model=Catalog)
@@ -168,6 +179,7 @@ async def plan(req: PlanRequest, request: Request) -> StreamingResponse:
 
     async def stream():
         agen = run_plan(req).__aiter__()
+        seen: list[PlanEvent] = []
         pending: asyncio.Task | None = None
         try:
             while True:
@@ -181,7 +193,9 @@ async def plan(req: PlanRequest, request: Request) -> StreamingResponse:
                 except StopAsyncIteration:
                     break
                 pending = None
+                seen.append(ev)
                 if isinstance(ev, DoneEvent):
+                    await runs.save(ev.run_id, req.brief, seen)
                     # Charge the real cost. If the user leaves before this, the hold stays.
                     try:
                         await credits.settle(held, ev.cost_usd)

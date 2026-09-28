@@ -72,6 +72,26 @@ export interface paths {
         patch?: never;
         trace?: never;
     };
+    "/api/runs/{run_id}": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /**
+         * Saved Run
+         * @description A finished live run, in the same shape as a cached example so the UI replays it.
+         */
+        get: operations["saved_run_api_runs__run_id__get"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/api/catalog": {
         parameters: {
             query?: never;
@@ -639,6 +659,8 @@ export interface components {
             default_flight_days: number;
             /** Max Brief Chars */
             max_brief_chars: number;
+            /** Saved Runs */
+            saved_runs: boolean;
         };
         /** ModelOption */
         ModelOption: {
@@ -1234,6 +1256,37 @@ export interface operations {
             header?: never;
             path: {
                 example_id: string;
+            };
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description Successful Response */
+            200: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["CachedRun"];
+                };
+            };
+            /** @description Validation Error */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["HTTPValidationError"];
+                };
+            };
+        };
+    };
+    saved_run_api_runs__run_id__get: {
+        parameters: {
+            query?: never;
+            header?: never;
+            path: {
+                run_id: string;
             };
             cookie?: never;
         };

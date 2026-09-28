@@ -1,4 +1,4 @@
-import type { Catalog, Credits, Example, Meta, PlanEvent, PlanRequest } from "./types"
+import type { Catalog, Credits, Example, Meta, PlanEvent, PlanRequest, SavedRun } from "./types"
 
 async function getJSON<T>(url: string): Promise<T> {
   const res = await fetch(url)
@@ -12,6 +12,8 @@ export const getExamples = () => getJSON<Example[]>("/api/examples")
 export const getCatalog = () => getJSON<Catalog>("/api/catalog")
 export const getExampleRun = (id: string) =>
   getJSON<{ id: string; brief: string; events: PlanEvent[] }>(`/api/examples/${id}`)
+/** A live draft someone saved (or shared). 404s once it expires. */
+export const getSavedRun = (id: string) => getJSON<SavedRun>(`/api/runs/${id}`)
 
 /**
  * POST /api/plan and read the server-sent events off the response body.

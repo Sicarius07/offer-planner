@@ -1,6 +1,6 @@
 # Offer Planner
 
-Type a one-line business description and get a launchable campaign: publishers ranked with reasons (and why the others were excluded), 3–5 personas with their reasoning, one reviewed ad per persona, and a campaign config you can download as JSON. Results stream in stage by stage. The 15 sample briefs are pre-recorded, so they replay instantly without spending tokens.
+Type a one-line business description and get a launchable campaign: publishers ranked with reasons (and why the others were excluded), 3–5 personas with their reasoning, one reviewed ad per persona, and a campaign config you can download as JSON. Results stream in stage by stage, and a finished draft keeps a link you can reload or share. The 15 sample briefs are pre-recorded, so they replay instantly without spending tokens.
 
 **Run it:** `cp .env.example .env` and add `ANTHROPIC_API_KEY`, then `make start` and open http://localhost:8000. Other targets: `make dev` (hot reload, UI on :5173), `make test` (tests) and `make eval` (golden set, `N=3` for stability). All prompts are in `prompts/`.
 
@@ -34,7 +34,7 @@ Advertisers pay per conversion, so the bid is a **target CPA**: first-order valu
 
 ## Cut, on purpose
 
-- No accounts, saved plans or plan editing.
+- No accounts or plan editing. A finished draft keeps a link that reopens it for 30 days, and each browser lists the drafts it made; anyone with a link can open it.
 - No real performance data, so the scoring weights and CPA ratios are reasoned defaults, not fitted values.
 - **Latency.** I focused on making the campaign good, not fast. A run is about 45 s, and there are several places it could be optimised (see Next week).
 - I wanted to try Jev for the classification steps, which would have helped with latency and run-to-run variation, but didn't get time to wire it in. (Anthropic only for now)

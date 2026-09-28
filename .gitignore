@@ -13,3 +13,5 @@ web/dist/
 evals/reports/raw/
 .cursorindexingignore
 .ruff_cache/
+.gstack/
+.vscode/

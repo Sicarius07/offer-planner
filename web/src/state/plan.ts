@@ -15,7 +15,7 @@ export type StageState = { status: StageStatus | "idle"; ms?: number | null }
 
 export type PlanState = {
   status: "idle" | "running" | "done"
-  source: "live" | "cached" | null
+  source: "live" | "cached" | "saved" | null
   brief: string
   stages: Record<StageName, StageState>
   profile: AdvertiserProfile | null
@@ -47,7 +47,7 @@ export const initialPlan: PlanState = {
 }
 
 export type Action =
-  | { type: "start"; brief: string; source: "live" | "cached" }
+  | { type: "start"; brief: string; source: "live" | "cached" | "saved" }
   | { type: "event"; event: PlanEvent }
   | { type: "fail"; message: string }
   | { type: "reset" }

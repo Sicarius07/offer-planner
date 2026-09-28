@@ -5,14 +5,14 @@ from __future__ import annotations
 import httpx
 import pytest
 
-from backend import config, credits
+from backend import config, credits, kv
 from backend.main import app
 
 
 @pytest.fixture
 def limit(monkeypatch):
     monkeypatch.setattr(config, "SPEND_LIMIT_USD", 2.5)
-    monkeypatch.setattr(credits, "_store", credits._Memory())
+    monkeypatch.setattr(kv, "store", kv._Memory())
 
 
 async def test_a_run_holds_the_reserve_then_pays_its_real_cost(limit):
@@ -36,7 +36,7 @@ async def test_no_limit_means_no_accounting(monkeypatch):
 
 
 async def test_api_reports_what_is_left_and_refuses_when_used_up(limit):
-    await credits._store.add(2.0)
+    await kv.store.add_float(credits.KEY, 2.0)
     async with httpx.AsyncClient(transport=httpx.ASGITransport(app=app), base_url="http://t") as c:
         left = (await c.get("/api/credits")).json()
         assert (left["limit_usd"], left["remaining_usd"]) == (2.5, 0.5)
