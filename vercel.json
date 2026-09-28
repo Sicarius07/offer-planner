@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd web && pnpm install --frozen-lockfile && pnpm build",
+  "buildCommand": "cd web && npx -y pnpm@9.15.4 install --frozen-lockfile && npx -y pnpm@9.15.4 build",
   "functions": {
     "backend/main.py": { "maxDuration": 300 }
   }
