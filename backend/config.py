@@ -27,15 +27,18 @@ STAGE_MODELS: dict[str, str] = {
     "personas": os.getenv("MODEL_PERSONAS", DEFAULT_MODEL),
     "creative": os.getenv("MODEL_CREATIVE", DEFAULT_MODEL),
     "critique": os.getenv("MODEL_CRITIQUE", DEFAULT_MODEL),
+    "campaign": os.getenv("MODEL_CAMPAIGN", DEFAULT_MODEL),
     "enrich": os.getenv("MODEL_ENRICH", DEFAULT_MODEL),
 }
-# How hard the model thinks per stage. Reading the brief matters most; critique is a checklist.
+# How hard the model thinks per stage. The publisher review makes the final tier call across
+# every publisher, so it gets the most; critique is a checklist.
 STAGE_EFFORT: dict[str, str] = {
     "understand": "medium",
-    "rerank": "medium",
-    "personas": "low",
+    "rerank": "high",
+    "personas": "medium",
     "creative": "medium",
     "critique": "low",
+    "campaign": "low",
     "enrich": "medium",
 }
 SELECTABLE_MODELS = [
@@ -64,14 +67,13 @@ NEUTRAL_SCORE = 60          # a dimension the brief didn't specify: neither help
 OFF_CATEGORY_BELOW = 15     # category fit under this → excluded as irrelevant
 RECOMMEND_AT = 70           # fit ≥ this → recommended
 TEST_AT = 50                # fit in [TEST_AT, RECOMMEND_AT) → small test budget
-MAX_LLM_ADJUSTMENT = 15     # the LLM may nudge a score by at most ± this, with a cited reason
 PRICE_BAND = (0.5, 2.0)     # advertiser price / publisher AOV inside this band = full price fit
-PRICE_FALLOFF_PER_DOUBLING = 45
+PRICE_FALLOFF_PER_DOUBLING = 45          # per doubling above the band: a hard sell after checkout
+PRICE_FALLOFF_CHEAPER_PER_DOUBLING = 10  # per halving below it: a cheap add-on is still easy
 
 # ── Persona scoring ──────────────────────────────────────────────────────────
 PERSONA_WEIGHTS = {"affinity": 0.40, "values": 0.20, "price": 0.15, "reach": 0.25}
 PERSONA_CONFLICT_PENALTY = 25   # per positioning trait the persona dislikes
-PERSONA_CANDIDATES = 6          # how many top-scored personas the LLM chooses from
 PERSONAS_MIN, PERSONAS_MAX = 3, 5
 
 # ── Campaign config ──────────────────────────────────────────────────────────

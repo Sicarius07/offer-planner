@@ -44,8 +44,8 @@ async def main() -> None:
             print(at, "PUBLISHERS", pl.summary)
             for g in ("recommended", "test", "excluded"):
                 for r in getattr(pl, g):
-                    adj = f"{r.adjustment:+d}" if r.adjustment else ""
-                    print(f"      {g[:4]} {r.name:18} {r.base_fit:>3}{adj:>4} → {r.fit:>3} {r.exclusion_reason or ''} | {r.rationale[:110]}")
+                    moved = f" (was {r.computed_tier}: {r.tier_reason[:60]})" if r.tier_reason else ""
+                    print(f"      {g[:4]} {r.name:18} {r.base_fit:>3} → {r.fit:>3} {r.exclusion_reason or ''}{moved} | {r.rationale[:110]}")
         elif e.type == "personas":
             print(at, "PERSONAS", e.plan.skipped_note or "")
             for p in e.plan.picks:

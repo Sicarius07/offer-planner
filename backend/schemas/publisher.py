@@ -10,7 +10,7 @@ from backend.catalog import PublisherId
 
 SignalName = Literal["category", "audience", "price", "values", "reach"]
 Tier = Literal["recommended", "test", "excluded"]
-ExclusionReason = Literal["competitor", "off_category", "weak_fit"]
+ExclusionReason = Literal["competitor", "off_category", "weak_fit", "review"]
 
 
 class Signal(BaseModel):
@@ -44,13 +44,24 @@ class EvidenceRef(BaseModel):
     quote: str = Field(description="Exact text of that field (or of the brief) being cited")
 
 
+CompetitorCall = Literal["agree", "missed_competitor", "not_a_competitor"]
+
+
 class PublisherJudgmentDraft(BaseModel):
     publisher_id: PublisherId
-    adjustment: int = Field(
-        description="Nudge to the computed fit, between -15 and 15. 0 unless the tags "
-        "clearly missed something."
+    tier: Tier = Field(
+        description="Final tier. Keep the computed tier unless the tags clearly got it wrong"
     )
-    adjustment_reason: str = Field(description="Required when adjustment is not 0, else empty")
+    tier_reason: str = Field(
+        description="Required when tier differs from the computed tier: what the scores missed, "
+        "backed by the evidence quotes. Else empty"
+    )
+    competitor_call: CompetitorCall = Field(
+        description="missed_competitor: not excluded as a competitor, but it sells what the "
+        "advertiser sells. not_a_competitor: excluded as a competitor, but it isn't one. "
+        "Else agree"
+    )
+    competitor_reason: str = Field(description="Required unless competitor_call is agree, else empty")
     rationale: str = Field(description="One or two sentences citing specific evidence")
     evidence: list[EvidenceRef]
     risk: str = Field(description="What could make this placement underperform; empty if nothing specific")
@@ -59,6 +70,9 @@ class PublisherJudgmentDraft(BaseModel):
 class RerankDraft(BaseModel):
     judgments: list[PublisherJudgmentDraft]
     summary: str = Field(description="One sentence on the overall shape of the recommendation")
+    offering_type_doubt: str = Field(
+        description="If the profile's offering_type (b2b vs consumer) looks wrong, say why. Else empty"
+    )
 
 
 class PublisherResult(BaseModel):
@@ -68,17 +82,18 @@ class PublisherResult(BaseModel):
     name: str
     category: str
     signals: list[Signal]
-    base_fit: int
-    adjustment: int
-    adjustment_reason: str | None
-    fit: int
+    base_fit: int                         # computed by code, never changed
+    fit: int                              # base_fit, moved into the final tier's band if the review moved it
+    computed_tier: Tier
     tier: Tier
+    tier_reason: str | None               # why the review moved it; None when it kept the computed tier
     exclusion_reason: ExclusionReason | None
     conflict: str | None
     adjacent_conflict: str | None
     rationale: str
     evidence: list[EvidenceRef]
     risk: str | None
+    competitor_dispute: str | None = None  # the review thinks a code-excluded competitor isn't one
 
 
 class PublisherPlan(BaseModel):
@@ -87,3 +102,4 @@ class PublisherPlan(BaseModel):
     recommended: list[PublisherResult]
     test: list[PublisherResult]
     excluded: list[PublisherResult]
+    offering_type_doubt: str | None = None

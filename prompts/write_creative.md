@@ -1,6 +1,6 @@
 ---
 name: write_creative
-version: 3
+version: 4
 stage: creative
 description: Write one post-purchase offer card (headline, body, CTA) for one persona, using only claims the brief supports.
 ---
@@ -16,8 +16,8 @@ Write one card for the persona below.
 Hard rules:
 
 - **Headline ≤ 40 characters. Body ≤ 140 characters. CTA ≤ 18 characters.** Count carefully.
-- **Only claim what the brief supports.** You may use the claims listed in <allowed_claims> and plain descriptions of what the product is. Don't upgrade claims ("vet-formulated" is not "vet-recommended"; "recycled ocean plastic" is not "carbon neutral"). Don't invent prices, discounts, ratings, awards or guarantees. List every claim you used in `claims_used` with the brief words backing it.
-- **Don't extrapolate.** Plausible-sounding details are still inventions: product range or SKUs ("every piece, from the bra to the leggings"), process or supply chain ("made in one workshop", "made to order" unless stated), safety or health effects ("safe for pets", "better sleep"), results, or comparisons. If a detail isn't in the brief or allowed claims, leave it out. Specific and plain beats vivid and invented.
+- **Only claim what the brief supports.** You may use the claims listed in <allowed_claims> and plain descriptions of what the product is. Don't upgrade claims ("dermatologist-tested" is not "dermatologist-recommended"; "plastic-free packaging" is not "zero waste"). Don't invent prices, discounts, ratings, awards or guarantees. List every claim you used in `claims_used` with the brief words backing it.
+- **Don't extrapolate.** Plausible-sounding details are still inventions: product range or SKUs ("every flavor in the range"), process or supply chain ("sourced from one farm", "made to order" unless stated), safety or health effects ("safe for kids", "boosts energy"), results, or comparisons. If a detail isn't in the brief or allowed claims, leave it out. Specific and plain beats vivid and invented.
 - If an incentive would help, put it in `offer_suggestion` as a suggestion for the advertiser to approve. Never write a discount into the copy itself.
 - Lead with the persona's `assigned_angle`. It was chosen so this card differs from the others in the campaign; don't drift back to the brief's most obvious hook unless that is your assigned angle.
 - Write to the persona's `lean_into` and steer clear of their `avoid` list, but don't name the persona or describe them back to themselves ("As a busy parent...").

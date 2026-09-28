@@ -1,18 +1,24 @@
 """The orchestrator: a fixed DAG!
 
     understand ─┬─ score_publishers ─ rerank (LLM) ──────────────────────────────────────┐
-                │                                                                          ├─ config
+                │                                                                          ├─ config ─ launch summary (LLM)
                 └─ score_personas ─ select (LLM) ─ write × N (LLM) ─ critique ─ rewrite ──┘
 
 Publishers and personas run in parallel. Each ad starts the moment personas are picked, and
 review starts as soon as the ads exist: it needs the candidate publishers, not the reranked
 explanations, so it doesn't wait on the publisher branch. Config waits for both.
+The publisher review decides final tiers, but a move needs a reason and a quote that checks
+out, and code keeps the hard rules (competitors it found stay excluded, B2B excludes all).
+Personas are picked against the computed tiers, so "reached through" is recomputed from the
+final publisher plan once both branches finish.
+
 Every LLM call is already retried (network errors by the SDK, invalid output once with the
 error fed back). If a stage still fails:
 - reading the brief, choosing personas, writing every ad, or reviewing the ads stops the run.
   Without them there's nothing safe to launch, and a code-only stand-in would look finished.
-- publisher explanations fall back to the computed scores. Code owns the ranking and tiers
-  anyway (the LLM only nudges ±15 and explains), and the config is marked for review.
+- the publisher review falls back to the computed scores and tiers, and the config is marked
+  for review.
+- the launch summary is skipped. It only explains the config, which is complete without it.
 """
 
 from __future__ import annotations
@@ -27,7 +33,7 @@ from pydantic import BaseModel
 
 from backend import config, observability, trace
 from backend.llm.base import LLMError
-from backend.pipeline import campaign, creative, personas, publishers
+from backend.pipeline import campaign, creative, launch, personas, publishers
 from backend.pipeline.scoring import score_publishers
 from backend.pipeline.understand import BriefRejected, guard, understand
 from backend.schemas.creative import Creative
@@ -117,6 +123,10 @@ async def _pipeline(req: PlanRequest, run_id: str, emit) -> None:
     with trace.timed_stage("publishers", "score_publishers"):
         scored = score_publishers(profile, req.allow_competitors)
     candidate_ids = [s.publisher_id for s in scored if s.tier != "excluded"]
+    if not candidate_ids and profile.offering_type != "b2b":
+        # Code found no fit, but the review may still promote some, so the audience work
+        # can't be skipped. Use the closest non-competitors as the stand-in plan.
+        candidate_ids = [s.publisher_id for s in scored if s.exclusion_reason != "competitor"][:5]
 
     emit(StageEvent(stage="publishers", status="started"))
     t_pub = time.perf_counter()
@@ -198,6 +208,11 @@ async def _pipeline(req: PlanRequest, run_id: str, emit) -> None:
         if not pub_task.done():  # client disconnected mid-run
             pub_task.cancel()
 
+    if persona_plan:
+        # "Reached through" came from the computed tiers; the review may have moved some.
+        persona_plan = personas.reach_final(persona_plan, pub_plan)
+        emit(PersonasEvent(plan=persona_plan))
+
     # ── 5. Campaign config ──────────────────────────────────────────────────
     emit(StageEvent(stage="campaign", status="started"))
     t = time.perf_counter()
@@ -207,6 +222,17 @@ async def _pipeline(req: PlanRequest, run_id: str, emit) -> None:
             cards, budget, flight,
         )
     emit(ConfigEvent(config=cfg))
+
+    # 5b. The launch summary explains the finished config; the config doesn't depend on it,
+    # so a failure here leaves the campaign intact without one.
+    if persona_plan and cfg.placements:
+        try:
+            with observability.observe("launch_summary"):
+                summary = await launch.summarize(profile, cfg, pub_plan, persona_plan, model)
+            cfg = cfg.model_copy(update={"review": cfg.review.model_copy(update={"launch_summary": summary})})
+            emit(ConfigEvent(config=cfg))
+        except LLMError as e:
+            emit(ErrorEvent(stage="campaign", message=f"Couldn't write the launch summary: {e}"))
     emit(StageEvent(stage="campaign", status="done", ms=_ms(t)))
 
 

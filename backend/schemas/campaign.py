@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from typing import Literal
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Flight(BaseModel):
@@ -43,6 +43,15 @@ class BidStrategy(BaseModel):
     rationale: str
 
 
+class TestPlan(BaseModel):
+    """What a test placement is for, and the rule that ends the test."""
+
+    hypothesis: str                 # the publisher review's rationale for this placement
+    risk: str | None
+    promote_if: str
+    cut_if: str
+
+
 class Placement(BaseModel):
     publisher_id: str
     publisher_name: str
@@ -53,6 +62,9 @@ class Placement(BaseModel):
     budget_usd: float
     est_conversions: float
     capacity_note: str | None = None
+    creative_ids: list[str]         # the ads that rotate here: those whose persona this audience fits
+    personas_matched: bool          # False: no picked persona fits this audience, so every ad rotates
+    test_plan: TestPlan | None = None
 
 
 class Demographic(BaseModel):
@@ -96,11 +108,27 @@ class Experiment(BaseModel):
     notes: str
 
 
+class LaunchSummaryDraft(BaseModel):
+    summary: str = Field(description="Three or four sentences: the plan, where the budget leans and why")
+    uncertainties: list[str] = Field(description="The two or three things most likely to make this plan wrong")
+    questions: list[str] = Field(description="Two or three questions for the advertiser to answer before launch")
+
+
+class LaunchSummary(BaseModel):
+    """Written by the LLM from the finished config. Read-only: it never changes a field above,
+    and any number it states must appear in the config or the brief."""
+
+    summary: str
+    uncertainties: list[str]
+    questions: list[str]
+
+
 class Review(BaseModel):
     needs_human_review: bool
     confidence: Literal["high", "medium", "low"]
     assumptions: list[str]
     warnings: list[str]
+    launch_summary: LaunchSummary | None = None
 
 
 class CampaignConfig(BaseModel):

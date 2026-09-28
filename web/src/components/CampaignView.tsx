@@ -22,7 +22,40 @@ function AllocationBar({ cfg }: { cfg: CampaignConfig }) {
   )
 }
 
-function Summary({ cfg }: { cfg: CampaignConfig }) {
+function LaunchNotes({ cfg, pending }: { cfg: CampaignConfig; pending: boolean }) {
+  const ls = cfg.review.launch_summary
+  if (!ls) return pending ? <p className="animate-pulse text-sm text-soft">Writing a launch summary…</p> : null
+  return (
+    <div className="space-y-5 border-b border-line pb-7">
+      {ls.summary && <p className="max-w-[68ch] font-serif text-lg leading-relaxed text-ink">{ls.summary}</p>}
+      <div className="grid gap-x-10 gap-y-5 text-sm sm:grid-cols-2">
+        {ls.uncertainties.length > 0 && (
+          <div>
+            <p className="mb-1.5 text-xs text-soft">What could make this plan wrong</p>
+            <ul className="list-disc space-y-1 pl-4 text-ink marker:text-soft">
+              {ls.uncertainties.map((u, i) => <li key={i}>{u}</li>)}
+            </ul>
+          </div>
+        )}
+        {ls.questions.length > 0 && (
+          <div>
+            <p className="mb-1.5 text-xs text-soft">Ask the advertiser before launch</p>
+            <ul className="list-disc space-y-1 pl-4 text-ink marker:text-soft">
+              {ls.questions.map((q, i) => <li key={i}>{q}</li>)}
+            </ul>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+function Summary({ cfg, personaName, summaryPending }: {
+  cfg: CampaignConfig
+  personaName: (id: string) => string
+  summaryPending: boolean
+}) {
+  const adPersona = new Map(cfg.creatives.map((c) => [c.creative_id, c.persona_id]))
   const b = cfg.bid_strategy
   const est = cfg.placements.reduce((n, p) => n + p.est_conversions, 0)
   if (!cfg.placements.length)
@@ -37,6 +70,7 @@ function Summary({ cfg }: { cfg: CampaignConfig }) {
     )
   return (
     <div className="space-y-7">
+      <LaunchNotes cfg={cfg} pending={summaryPending} />
       <p className="max-w-[68ch] text-base leading-relaxed text-ink">
         Spend <strong className="font-medium">{money(cfg.budget.total_usd)}</strong> from {shortDate(cfg.campaign.flight.start)} to{" "}
         {shortDate(cfg.campaign.flight.end)}, about {money(cfg.budget.daily_cap_usd)} a day, bidding for purchases at a target cost of{" "}
@@ -61,17 +95,32 @@ function Summary({ cfg }: { cfg: CampaignConfig }) {
             <tbody>
               {cfg.placements.map((p) => (
                 <tr key={p.publisher_id} className="border-t border-line align-top">
-                  <td className="py-2">
+                  <td className="py-2.5">
                     <span className="flex items-center gap-2">
                       <span className="size-2 rounded-full" style={{ background: categoryColor(p.category) }} />
                       {p.publisher_name}
                     </span>
+                    {p.creative_ids.length > 0 && (
+                      <span className={cn("mt-0.5 block pl-4 text-xs", p.personas_matched ? "text-soft" : "text-amber")}>
+                        {p.personas_matched
+                          ? `Ads for ${[...new Set(p.creative_ids.map((id) => personaName(adPersona.get(id) ?? id)))].join(", ")}`
+                          : "No chosen persona shops here, so every ad rotates"}
+                      </span>
+                    )}
                     {p.capacity_note && <span className="mt-0.5 block pl-4 text-xs text-amber">{p.capacity_note}</span>}
+                    {p.test_plan && (
+                      <span className="mt-1.5 block max-w-[60ch] pl-4 text-xs leading-relaxed text-ink/80">
+                        <span className="text-ink">Why test it: </span>
+                        {p.test_plan.hypothesis}
+                        {p.test_plan.risk && <span className="text-soft"> Risk: {p.test_plan.risk}</span>}
+                        <span className="mt-0.5 block text-soft">{p.test_plan.promote_if} {p.test_plan.cut_if}</span>
+                      </span>
+                    )}
                   </td>
-                  <td className="py-2 text-soft">{p.role === "core" ? "Core" : "Test"}</td>
-                  <td className="py-2 text-right">{p.allocation_pct}%</td>
-                  <td className="py-2 text-right">{money(p.budget_usd)}</td>
-                  <td className="py-2 text-right">{Math.round(p.est_conversions)}</td>
+                  <td className="py-2.5 text-soft">{p.role === "core" ? "Core" : "Test"}</td>
+                  <td className="py-2.5 text-right">{p.allocation_pct}%</td>
+                  <td className="py-2.5 text-right">{money(p.budget_usd)}</td>
+                  <td className="py-2.5 text-right">{Math.round(p.est_conversions)}</td>
                 </tr>
               ))}
             </tbody>
@@ -99,7 +148,7 @@ function Summary({ cfg }: { cfg: CampaignConfig }) {
           {cfg.experiment.graduate_rule} {cfg.experiment.notes}
         </Item>
         <Item label="Ads">
-          {cfg.creatives.filter((c) => c.weight > 0).length} in even rotation
+          {cfg.creatives.filter((c) => c.weight > 0).length} in even rotation, each only on publishers whose shoppers fit its persona
           {cfg.creatives.some((c) => c.weight === 0) && `, ${cfg.creatives.filter((c) => c.weight === 0).length} paused`}
         </Item>
       </dl>
@@ -161,7 +210,12 @@ function highlight(json: string) {
   })
 }
 
-export function CampaignView({ cfg }: { cfg: CampaignConfig }) {
+export function CampaignView({ cfg, personaName, summaryPending }: {
+  cfg: CampaignConfig
+  personaName: (id: string) => string
+  /** The launch summary is still being written. */
+  summaryPending: boolean
+}) {
   const [tab, setTab] = useState<"summary" | "json">("summary")
   const [copied, setCopied] = useState(false)
   const json = JSON.stringify(cfg, null, 2)
@@ -209,7 +263,7 @@ export function CampaignView({ cfg }: { cfg: CampaignConfig }) {
       </div>
       <div className="px-5 py-6 sm:px-6">
         {tab === "summary" ? (
-          <Summary cfg={cfg} />
+          <Summary cfg={cfg} personaName={personaName} summaryPending={summaryPending} />
         ) : (
           <pre className="max-h-[36rem] overflow-auto rounded-md bg-bg/70 p-4 font-mono text-xs leading-relaxed text-ink">
             {highlight(json)}

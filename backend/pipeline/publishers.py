@@ -1,4 +1,4 @@
-"""Stage 2: code scores every publisher; the LLM explains and nudges; code enforces limits"""
+"""Stage 2: code scores every publisher; the LLM reviews and can move tiers with evidence; code keeps the hard rules"""
 
 from __future__ import annotations
 
@@ -6,7 +6,6 @@ import json
 
 from backend import catalog, config
 from backend.llm.client import generate
-from backend.pipeline.scoring import tier_for
 from backend.pipeline.spans import locate
 from backend.schemas.profile import AdvertiserProfile
 from backend.schemas.publisher import (
@@ -25,6 +24,7 @@ def profile_for_prompt(p: AdvertiserProfile) -> str:
         "offering_type": p.offering_type,
         "product": a(p.product),
         "sells": p.sells,
+        "competes_with": p.competes_with,
         "interests": p.interests,
         "values": p.values,
         "occasions": p.occasions,
@@ -52,7 +52,8 @@ def publishers_for_prompt(scored: list[ScoredPublisher]) -> str:
             "monthly_impressions": pub.monthly_impressions,
             "audience": pub.audience.model_dump(),
             "sells": tags[pub.id].sells,
-            "computed_fit": s.base_fit, "tier": s.tier, "exclusion_reason": s.exclusion_reason,
+            "computed_fit": s.base_fit, "computed_tier": s.tier, "exclusion_reason": s.exclusion_reason,
+            "adjacent_conflict": s.adjacent_conflict,
             "signals": {x.name: {"score": x.score, "detail": x.detail} for x in s.signals},
             "code_reason": s.reason,
         })
@@ -70,26 +71,41 @@ async def rerank(p: AdvertiserProfile, scored: list[ScoredPublisher],
 
 
 def _verify_evidence(refs: list[EvidenceRef], pub_id: str, brief: str) -> list[EvidenceRef]:
+    """Keep only quotes that appear in the cited field. Numbers and the audience record are
+    structured, so the model paraphrases them; those are kept as they're checkable at a glance."""
     pub = catalog.publishers()[pub_id]
+    labels = lambda *xs: " ".join(xs) + " " + " ".join(xs).replace("_", " ")  # noqa: E731
     texts = {
-        "notes": pub.notes, "category": pub.category, "subcategories": " ".join(pub.subcategories),
-        "audience": json.dumps(pub.audience.model_dump()),
-        "avg_order_value_usd": str(pub.avg_order_value_usd),
-        "monthly_impressions": str(pub.monthly_impressions), "brief": brief,
+        "notes": pub.notes, "category": labels(pub.category), "subcategories": labels(*pub.subcategories),
+        "brief": brief,
     }
     out = []
     for r in refs:
-        field_text = texts.get(r.field, "")
-        if r.field in ("avg_order_value_usd", "monthly_impressions", "audience", "category", "subcategories"):
-            out.append(r)  # structured fields: the model paraphrases numbers; keep, they're checkable
-        elif locate(r.quote, field_text):
-            out.append(EvidenceRef(field=r.field, quote=locate(r.quote, field_text).text))
+        if r.field in ("avg_order_value_usd", "monthly_impressions", "audience"):
+            out.append(r)
+        elif span := locate(r.quote, texts.get(r.field, "")):
+            out.append(EvidenceRef(field=r.field, quote=span.text))
     return out
 
 
+def _fit_in_tier(fit: int, tier: str) -> int:
+    """A publisher the review moved gets a fit inside its new tier's band, so budget
+    allocation (which weights by fit) treats it like the tier it's in."""
+    if tier == "recommended":
+        return max(fit, config.RECOMMEND_AT)
+    if tier == "test":
+        return min(max(fit, config.TEST_AT), config.RECOMMEND_AT - 1)
+    return min(fit, config.TEST_AT - 1)
+
+
 def merge(p: AdvertiserProfile, scored: list[ScoredPublisher], draft: RerankDraft | None) -> PublisherPlan:
-    """Combine code scores with LLM judgments. Code has the last word:
-    adjustments are clamped, competitors stay excluded, tiers are recomputed from the final fit."""
+    """Combine code scores with the review's judgments.
+
+    The review decides the final tier, but a move only counts with a reason and at least one
+    quote that checks out. Code keeps the rules that must never break: a competitor it found
+    stays excluded (the review can only dispute it, which sends the plan to a human), and a
+    B2B brief excludes everything. The review can add a competitor code missed, citing the
+    publisher's own fields."""
     pubs = catalog.publishers()
     judgments: dict[str, PublisherJudgmentDraft] = {}
     if draft:
@@ -100,32 +116,29 @@ def merge(p: AdvertiserProfile, scored: list[ScoredPublisher], draft: RerankDraf
     for s in scored:
         pub = pubs[s.publisher_id]
         j = judgments.get(s.publisher_id)
-        adj = 0
-        if j and s.exclusion_reason != "competitor":
-            adj = max(-config.MAX_LLM_ADJUSTMENT, min(config.MAX_LLM_ADJUSTMENT, j.adjustment))
-            if adj and not (j.adjustment_reason or "").strip():
-                adj = 0  # an unexplained nudge doesn't count
-        fit = max(0, min(100, s.base_fit + adj))
+        evidence = _verify_evidence(j.evidence, pub.id, p.brief) if j else []
+        tier, reason, conflict = s.tier, s.exclusion_reason, s.conflict
+        tier_reason = dispute = None
+        locked = p.offering_type == "b2b" or s.exclusion_reason == "competitor"
 
-        tier, reason = s.tier, s.exclusion_reason
-        if s.exclusion_reason == "competitor":
-            pass
-        elif s.exclusion_reason == "off_category":
-            # The model can argue an off-category publisher into a small test, never further.
-            if adj > 0 and fit >= config.TEST_AT:
-                tier, reason = "test", None
-        else:
-            tier, reason = tier_for(fit, s.adjacent_conflict is not None)
+        if j and s.exclusion_reason == "competitor" and j.competitor_call == "not_a_competitor":
+            dispute = j.competitor_reason.strip() or None
+        elif j and not locked:
+            own_fields = [e for e in evidence if e.field != "brief"]
+            if j.competitor_call == "missed_competitor" and j.competitor_reason.strip() and own_fields:
+                tier, reason, conflict = "excluded", "competitor", j.competitor_reason.strip()
+                tier_reason = f"Review found a competitor the tags missed: {conflict}"
+            elif j.tier != s.tier and j.tier_reason.strip() and evidence:
+                tier, tier_reason = j.tier, j.tier_reason.strip()
+                reason = "review" if tier == "excluded" else None
 
         results.append(PublisherResult(
             publisher_id=pub.id, name=pub.name, category=pub.category, signals=s.signals,
-            base_fit=s.base_fit, adjustment=adj,
-            adjustment_reason=(j.adjustment_reason or None) if (j and adj) else None,
-            fit=fit, tier=tier, exclusion_reason=reason, conflict=s.conflict,
-            adjacent_conflict=s.adjacent_conflict,
-            rationale=(j.rationale if j else s.reason),
-            evidence=_verify_evidence(j.evidence, pub.id, p.brief) if j else [],
-            risk=(j.risk or None) if j else None,
+            base_fit=s.base_fit, fit=_fit_in_tier(s.base_fit, tier) if tier != s.tier else s.base_fit,
+            computed_tier=s.tier, tier=tier, tier_reason=tier_reason,
+            exclusion_reason=reason, conflict=conflict, adjacent_conflict=s.adjacent_conflict,
+            rationale=(j.rationale if j else s.reason), evidence=evidence,
+            risk=(j.risk or None) if j else None, competitor_dispute=dispute,
         ))
 
     results.sort(key=lambda r: -r.fit)
@@ -136,6 +149,7 @@ def merge(p: AdvertiserProfile, scored: list[ScoredPublisher], draft: RerankDraf
         recommended=[r for r in results if r.tier == "recommended"],
         test=[r for r in results if r.tier == "test"],
         excluded=[r for r in results if r.tier == "excluded"],
+        offering_type_doubt=((draft.offering_type_doubt or "").strip() or None) if draft else None,
     )
 
 

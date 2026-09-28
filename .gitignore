@@ -12,3 +12,4 @@ web/dist/
 .pytest_cache/
 evals/reports/raw/
 .cursorindexingignore
+.ruff_cache/

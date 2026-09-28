@@ -114,3 +114,42 @@
   expect:
     first_order_min: 20
     creative_must_not_contain: [organic, fair trade, award, "#1", best-selling]
+
+- id: adv_tag_gap
+  # No product tag fits handmade ceramics, so `sells` is `other` and code has nothing to
+  # compare. Home and gifting publishers are the obvious fit.
+  brief: "Handmade stoneware mugs and dinner plates, thrown in our Asheville studio. Sets run about $90 and are popular wedding and housewarming gifts."
+  expect:
+    clarity: [clear]
+    recommend_or_test_any: [pub_014, pub_011]
+    must_not_recommend: [pub_001, pub_018]
+
+# Held out: briefs unlike the samples, with no prompt examples drawn from them. Expectations
+# are the few decisions a careful planner would insist on; the rest is read from the report.
+- id: held_beeswax_wraps
+  brief: "Reusable beeswax food wraps that replace plastic cling film. $18 for a pack of three, lasts about a year."
+  expect:
+    clarity: [clear]
+    recommend_or_test_any: [pub_008, pub_014]      # values-driven grocery, sustainable kitchen
+    must_not_recommend: [pub_013, pub_019]         # beauty, haircare
+
+- id: held_kids_stem
+  brief: "Monthly science kits for kids aged 6 to 10. Each box is one hands-on project. $30 a month, cancel anytime."
+  expect:
+    clarity: [clear]
+    personas_include_any: [persona_002]            # the Busy Parent
+    must_not_recommend: [pub_005]                  # conservative older-women apparel
+
+- id: held_beard_oil
+  brief: "Beard oil and balm for men. Cedar and bergamot scents, $25 a bottle."
+  expect:
+    clarity: [clear]
+    gender: male
+    must_not_recommend: [pub_004, pub_005]         # audiences are almost all women
+
+- id: held_watches
+  brief: "Swiss-made mechanical watches, hand-assembled, starting at $4,000."
+  expect:
+    clarity: [clear]
+    first_order_min: 3000
+    max_recommended: 0                             # no publisher's shoppers spend near this

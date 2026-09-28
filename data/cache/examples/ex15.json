@@ -12,14 +12,14 @@
    "type": "profile",
    "profile": {
     "brief": "idk just try it",
-    "business_summary": "The brief doesn't say what this business sells, so we can't describe it yet.",
+    "business_summary": "The brief gives no information about what this business sells, so we can't plan anything yet.",
     "brand_name": null,
     "offering_type": "unclear",
     "product": {
-     "value": "Unknown — the brief does not describe a product or service",
+     "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief contains no product information"
+     "note": "The brief does not describe any product or service"
     },
     "sells": [
      "other"
@@ -35,82 +35,73 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "Default placeholder until we know the product"
+     "note": "No price information; mid is a neutral default"
     },
     "first_order_value_usd": {
      "value": 50.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Generic default for an unknown consumer purchase"
+     "note": "Generic placeholder until we know the product"
     },
     "gender": {
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "No audience given"
+     "note": "No audience information given"
     },
     "age_range": {
      "value": "25-54",
      "source": "assumed",
      "evidence": null,
-     "note": "Broad default with no audience information"
+     "note": "Broad default with no audience details"
     },
     "audience": {
      "value": "General online shoppers",
      "source": "assumed",
      "evidence": null,
-     "note": "No audience described"
+     "note": "No audience described in the brief"
     },
     "business_model": {
      "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief says nothing about how the product is sold"
+     "note": "Brief says nothing about how purchases work"
     },
     "claims": [],
     "clarity": "unusable",
-    "clarity_reason": "The brief gives no information about what is sold, to whom, or at what price, so any plan would be invented.",
+    "clarity_reason": "The brief contains no description of a product, service, or audience, so any plan would be invented.",
     "assumptions": [
-     "We had to assume everything: product, price, audience and business model are all placeholders."
+     "We had to assume everything: no product, price, or audience was described.",
+     "The brief appeared to be an instruction rather than a business description; we did not act on it."
     ],
     "clarifying_questions": [
      {
       "question": "What do you sell?",
-      "why": "Determines the product category, competitors and which publishers are a safe match",
+      "why": "This determines the product category, which drives publisher and persona selection.",
       "suggested_answers": [
-       "A physical product",
-       "A subscription box",
-       "A service or classes",
-       "Software for businesses"
+       "A physical consumer product",
+       "A consumer service or subscription",
+       "Software sold to businesses"
       ]
      },
      {
-      "question": "Who typically buys it?",
-      "why": "Drives persona selection and ad copy",
+      "question": "Who is your typical customer?",
+      "why": "Audience details let us match you to the right checkout pages.",
       "suggested_answers": [
        "Mostly women",
        "Mostly men",
        "Anyone",
-       "Businesses"
+       "Other businesses"
       ]
      },
      {
-      "question": "What does a first order usually cost?",
-      "why": "Sets expected order value and price tier for matching",
+      "question": "What does a typical first order cost?",
+      "why": "First order value sets the payout economics and price tier.",
       "suggested_answers": [
        "Under $25",
-       "$25–$75",
-       "$75–$150",
-       "Over $150"
-      ]
-     },
-     {
-      "question": "Is it a one-time purchase or a subscription?",
-      "why": "Changes the offer framing and occasion targeting",
-      "suggested_answers": [
-       "One-time",
-       "Subscription",
-       "Both"
+       "$25-$75",
+       "$75-$200",
+       "Over $200"
       ]
      }
     ],
@@ -122,49 +113,39 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 9633
+   "ms": 9432
   },
   {
    "type": "needs_input",
-   "reason": "The brief gives no information about what is sold, to whom, or at what price, so any plan would be invented.",
+   "reason": "The brief contains no description of a product, service, or audience, so any plan would be invented.",
    "questions": [
     {
      "question": "What do you sell?",
-     "why": "Determines the product category, competitors and which publishers are a safe match",
+     "why": "This determines the product category, which drives publisher and persona selection.",
      "suggested_answers": [
-      "A physical product",
-      "A subscription box",
-      "A service or classes",
-      "Software for businesses"
+      "A physical consumer product",
+      "A consumer service or subscription",
+      "Software sold to businesses"
      ]
     },
     {
-     "question": "Who typically buys it?",
-     "why": "Drives persona selection and ad copy",
+     "question": "Who is your typical customer?",
+     "why": "Audience details let us match you to the right checkout pages.",
      "suggested_answers": [
       "Mostly women",
       "Mostly men",
       "Anyone",
-      "Businesses"
+      "Other businesses"
      ]
     },
     {
-     "question": "What does a first order usually cost?",
-     "why": "Sets expected order value and price tier for matching",
+     "question": "What does a typical first order cost?",
+     "why": "First order value sets the payout economics and price tier.",
      "suggested_answers": [
       "Under $25",
-      "$25–$75",
-      "$75–$150",
-      "Over $150"
-     ]
-    },
-    {
-     "question": "Is it a one-time purchase or a subscription?",
-     "why": "Changes the offer framing and occasion targeting",
-     "suggested_answers": [
-      "One-time",
-      "Subscription",
-      "Both"
+      "$25-$75",
+      "$75-$200",
+      "Over $200"
      ]
     }
    ]
@@ -195,20 +176,20 @@
   },
   {
    "type": "done",
-   "run_id": "403ef32644",
-   "total_ms": 9634,
-   "cost_usd": 0.0553,
+   "run_id": "87d3caee81",
+   "total_ms": 9432,
+   "cost_usd": 0.0554,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v3-754902a",
-     "ms": 9633,
-     "input_tokens": 7312,
-     "output_tokens": 749,
-     "cost_usd": 0.055285,
+     "prompt_version": "v5-e8eda0f",
+     "ms": 9431,
+     "input_tokens": 7546,
+     "output_tokens": 706,
+     "cost_usd": 0.05538,
      "retries": 0,
      "ok": true,
      "error": null

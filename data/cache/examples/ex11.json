@@ -12,16 +12,16 @@
    "type": "profile",
    "profile": {
     "brief": "We sell protein bars that don't taste like cardboard. That's basically the whole pitch.",
-    "business_summary": "A protein bar brand whose main pitch is that its bars actually taste good.",
+    "business_summary": "A protein bar brand whose pitch is that their bars actually taste good.",
     "brand_name": null,
     "offering_type": "consumer_product",
     "product": {
-     "value": "Protein bars marketed on taste",
+     "value": "Protein bars",
      "source": "stated",
      "evidence": {
-      "text": "We sell protein bars that don't taste like cardboard",
+      "text": "We sell protein bars",
       "start": 0,
-      "end": 52
+      "end": 20
      },
      "note": null
     },
@@ -40,7 +40,8 @@
      "wellness": 0.5
     },
     "values": {
-     "playful": 1.0
+     "playful": 1.0,
+     "performance": 0.5
     },
     "occasions": {
      "replenishment": 1.0,
@@ -51,45 +52,45 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "No price given; most protein bar multipacks sit in the mid tier"
+     "note": "No pricing given; most protein bar brands sit mid-tier"
     },
     "first_order_value_usd": {
      "value": 35.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Typical box or variety pack order for a DTC protein bar brand"
+     "note": "Typical multi-pack or variety box order for a protein bar brand"
     },
     "gender": {
      "value": "any",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief names no gender target"
+     "note": "Brief gives no gender signal"
     },
     "age_range": {
-     "value": "25-44",
+     "value": "25-45",
      "source": "assumed",
      "evidence": null,
-     "note": "Typical buyers of better-tasting protein snacks"
+     "note": "Typical age band for protein snack buyers"
     },
     "audience": {
-     "value": "Active adults who eat protein bars for convenience and want one that tastes good",
+     "value": "Active adults and snackers who buy protein bars but dislike how most of them taste",
      "source": "inferred",
      "evidence": {
       "text": "protein bars that don't taste like cardboard",
       "start": 8,
       "end": 52
      },
-     "note": "Taste-first pitch suggests people already tired of standard bars"
+     "note": "Taste-first pitch implies buyers dissatisfied with existing bars"
     },
     "business_model": {
-     "value": "one_time",
+     "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "No subscription mentioned; snack brands usually start with one-off boxes"
+     "note": "Brief doesn't say whether subscription is offered"
     },
     "claims": [
      {
-      "claim": "Protein bars that taste good, not like cardboard",
+      "claim": "Protein bars that taste good",
       "evidence": {
        "text": "protein bars that don't taste like cardboard",
        "start": 8,
@@ -98,16 +99,16 @@
      }
     ],
     "clarity": "clear",
-    "clarity_reason": "We know the product (protein bars) and the pitch (taste); only price, audience and model are unstated and defaulted.",
+    "clarity_reason": "We know the product (protein bars) and the pitch (taste); price and audience are sensible defaults.",
     "assumptions": [
-     "Assumed a mid price tier and roughly $35 first order, typical for a protein bar multipack.",
-     "Assumed a broad adult audience of 25-44, any gender.",
-     "Assumed one-time purchases rather than a subscription."
+     "Assumed a mid-tier price and about $35 for a first order.",
+     "Assumed a broad adult audience of 25-45, any gender.",
+     "Assumed one-time purchase and subscription are both possible since the brief doesn't say."
     ],
     "clarifying_questions": [
      {
       "question": "What does a typical first order cost?",
-      "why": "Sets payout expectations and which publisher checkouts we target",
+      "why": "Sets payout expectations and which publishers' shoppers are a match.",
       "suggested_answers": [
        "Under $25",
        "$25-$45",
@@ -116,32 +117,23 @@
       ]
      },
      {
-      "question": "Do you offer a subscription option?",
-      "why": "Changes whether ads lean on replenishment or one-time trial",
+      "question": "Do you sell mainly one-time boxes or a subscription?",
+      "why": "Changes whether ads lead with replenishment or a trial offer.",
       "suggested_answers": [
        "One-time only",
-       "Subscribe and save",
-       "Subscription only"
+       "Subscription only",
+       "Both, subscription preferred",
+       "Both, one-time preferred"
       ]
      },
      {
-      "question": "Are there nutrition credentials we can claim (protein grams, low sugar, clean ingredients)?",
-      "why": "Ads can only state claims you confirm",
+      "question": "Besides taste, what should ads highlight?",
+      "why": "Gives us a second hook beyond flavor for ad copy.",
       "suggested_answers": [
-       "20g protein",
+       "Protein grams",
+       "Clean ingredients",
        "Low sugar",
-       "No artificial ingredients",
-       "Just taste, no other claims"
-      ]
-     },
-     {
-      "question": "Who is your core buyer?",
-      "why": "Drives persona and publisher selection",
-      "suggested_answers": [
-       "Gym-goers and lifters",
-       "Busy professionals",
-       "Parents and families",
-       "Everyone"
+       "Flavor variety"
       ]
      }
     ],
@@ -153,7 +145,7 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 15307
+   "ms": 14218
   },
   {
    "type": "stage",
@@ -174,19 +166,20 @@
      {
       "persona_id": "persona_009",
       "name": "The Fitness Enthusiast",
-      "score": 62,
-      "why_plausible": "Works out 4+ times a week and buys supplements and recovery products, so protein bars are already in the basket; price_sensitivity low-medium fits a mid-tier $35 order.",
+      "score": 69,
+      "rank": 1,
+      "why_plausible": "Works out 4+ times a week and already buys supplements and recovery products, so protein bars are a standing replenishment purchase; price_sensitivity low-medium and AOV $88 make a $35 box trivial.",
       "lean_into": [
-       "performance claims around protein content",
-       "post-workout fuel that fits a training routine",
-       "replenishment/stock-up"
+       "performance claims",
+       "protein that actually fuels training",
+       "brand loyalty to things that perform"
       ],
       "avoid": [
        "sedentary-lifestyle framing",
-       "fake athlete endorsements the brand can't back",
-       "fashion-only or purely aesthetic positioning"
+       "fashion-only or purely aesthetic positioning",
+       "implying the bar is a treat instead of fuel"
       ],
-      "ad_angle": "The post-workout bar you'll actually look forward to — protein that performs without the chalky punishment.",
+      "ad_angle": "The post-workout bar you'll actually look forward to — same protein numbers, none of the chalk.",
       "confidence": "high",
       "reached_via": [
        "pub_020",
@@ -199,19 +192,20 @@
      {
       "persona_id": "persona_001",
       "name": "The Wellness Optimizer",
-      "score": 65,
-      "why_plausible": "Category affinities include supplements, fitness and wellness with low price sensitivity, so she buys protein bars routinely. She's disinterested in ultra-processed food, so the ad must lead with ingredient honesty rather than candy-bar hype.",
+      "score": 68,
+      "rank": 2,
+      "why_plausible": "Tracks supplements and workouts and pays premiums for good products (price_sensitivity: low, wellness/supplements affinities), so a protein bar is already in her rotation. Her disinterest in 'ultra-processed food' means the ad must lean on ingredients rather than candy-bar framing.",
       "lean_into": [
        "ingredient transparency",
-       "outcome-focused protein per bar",
-       "no cardboard, no compromise on what's inside"
+       "outcome-focused: protein per bar that fits her macros",
+       "a bar that tastes good without being a candy bar"
       ],
       "avoid": [
        "novelty gimmicks",
-       "unsubstantiated science claims",
-       "junk-food framing"
+       "dessert/indulgence-only framing",
+       "unbacked science-y claims the brand can't support"
       ],
-      "ad_angle": "You shouldn't have to choose between a clean ingredient list and something that tastes good.",
+      "ad_angle": "Hitting your protein target shouldn't mean choking down chalk — a clean-ingredient bar you'll finish.",
       "confidence": "medium",
       "reached_via": [
        "pub_020",
@@ -225,18 +219,19 @@
       "persona_id": "persona_007",
       "name": "The Convenience-First Millennial",
       "score": 54,
-      "why_plausible": "Defaults to whatever is easy and stocks up on repeat purchases; the brief's audience is explicitly people who eat protein bars for convenience. Medium price sensitivity fits a $35 mid-tier box.",
+      "rank": 3,
+      "why_plausible": "Heavy subscription user with snack-replenishment behavior (affinities: quick_commerce, subscription_services) and AOV $55, so a restockable desk/bag snack is an easy default buy.",
       "lean_into": [
        "speed and one-click reorder",
-       "easy desk-drawer/bag meal replacement",
-       "stock-up convenience"
+       "subscription perks",
+       "grab-and-go: no thinking required"
       ],
       "avoid": [
-       "multi-step purchase flows",
-       "long ingredient lectures",
-       "delayed shipping promises"
+       "multi-step signup",
+       "delayed fulfillment",
+       "dense nutrition-science copy"
       ],
-      "ad_angle": "The fastest lunch you'll ever eat — and the first one you won't regret.",
+      "ad_angle": "The default snack in your drawer — auto-restocked, and the one you don't dread eating.",
       "confidence": "medium",
       "reached_via": [
        "pub_020",
@@ -249,18 +244,20 @@
      {
       "persona_id": "persona_003",
       "name": "The Gen Z Aesthete",
-      "score": 52,
-      "why_plausible": "Responds to playful brand voice, which is the advertiser's only stated value, and buys functional beverages and impulse snacks. Medium-high price tolerance at a $48 typical AOV.",
+      "score": 46,
+      "rank": 6,
+      "why_plausible": "Her messaging_preferences literally include 'playful' and 'novelty', matching the brand's playful value, and functional_beverages affinity shows she buys better-for-you snackables at ~$48 AOV.",
       "lean_into": [
-       "playful, irreverent brand voice",
-       "novelty and flavor-forward",
-       "aesthetic packaging and personality"
+       "playful, funny brand voice",
+       "flavor-forward and aesthetic packaging",
+       "values-aligned personality"
       ],
       "avoid": [
-       "corporate or clinical tone",
-       "dry macro-math performance claims"
+       "corporate voice",
+       "dry performance claims with no vibe",
+       "macro-nerd bodybuilder framing"
       ],
-      "ad_angle": "Lead with the joke: protein bars that don't taste like cardboard — said out loud, with attitude.",
+      "ad_angle": "A protein bar with a sense of humor — led by flavor and brand voice, not gym talk.",
       "confidence": "medium",
       "reached_via": [
        "pub_020",
@@ -272,19 +269,20 @@
       "persona_id": "persona_002",
       "name": "The Busy Parent",
       "score": 48,
-      "why_plausible": "Time-poor, convenience-motivated and buys snacks in bulk for the household; medium price sensitivity fits mid tier. Taste matters because kids and adults both have to actually eat it.",
+      "rank": 4,
+      "why_plausible": "Time-poor dual-income household that buys in bulk and loves subscriptions; protein bars are a lunchbox/car staple, and 'tastes good' is exactly the claim that gets a snack eaten instead of thrown out.",
       "lean_into": [
-       "family-friendly snack everyone will finish",
-       "bulk/stock-the-pantry value",
-       "trusted, no-fuss"
+       "time-saving grab-and-go",
+       "family-friendly, kids will actually eat it",
+       "bulk boxes and trusted-by-parents reviews"
       ],
       "avoid": [
        "luxury positioning",
-       "hardcore gym-bro framing",
-       "complicated subscription onboarding"
+       "complicated onboarding",
+       "hardcore athlete imagery"
       ],
-      "ad_angle": "A grab-and-go snack the whole house will actually eat — no half-finished bars in the backpack.",
-      "confidence": "low",
+      "ad_angle": "The protein bar that comes home empty — a bulk-box staple kids and adults both finish.",
+      "confidence": "medium",
       "reached_via": [
        "pub_003",
        "pub_002",
@@ -296,26 +294,10 @@
     ],
     "candidates": [
      {
-      "persona_id": "persona_001",
-      "score": 65,
-      "affinity": 62,
-      "values": 0,
-      "price": 100,
-      "reach": 100,
-      "conflicts": [],
-      "reach_publishers": [
-       "pub_020",
-       "pub_012",
-       "pub_003",
-       "pub_002"
-      ],
-      "detail": "shops wellness, supplements, fitness"
-     },
-     {
       "persona_id": "persona_009",
-      "score": 62,
+      "score": 69,
       "affinity": 64,
-      "values": 0,
+      "values": 33,
       "price": 100,
       "reach": 86,
       "conflicts": [],
@@ -325,7 +307,23 @@
        "pub_002",
        "pub_003"
       ],
-      "detail": "shops fitness, supplements, replenishment"
+      "detail": "shops fitness, supplements, replenishment; responds to performance"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 68,
+      "affinity": 62,
+      "values": 17,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012",
+       "pub_003",
+       "pub_002"
+      ],
+      "detail": "shops wellness, supplements, fitness; responds to performance"
      },
      {
       "persona_id": "persona_007",
@@ -342,20 +340,6 @@
        "pub_012"
       ],
       "detail": "shops replenishment, impulse, snacks≈convenience"
-     },
-     {
-      "persona_id": "persona_003",
-      "score": 52,
-      "affinity": 26,
-      "values": 90,
-      "price": 100,
-      "reach": 37,
-      "conflicts": [],
-      "reach_publishers": [
-       "pub_020",
-       "pub_012"
-      ],
-      "detail": "shops impulse, wellness≈functional_beverages, fitness≈functional_beverages; responds to playful"
      },
      {
       "persona_id": "persona_002",
@@ -390,10 +374,24 @@
       "detail": "shops replenishment, snacks≈natural_food, wellness≈natural_food"
      },
      {
+      "persona_id": "persona_003",
+      "score": 46,
+      "affinity": 26,
+      "values": 60,
+      "price": 100,
+      "reach": 37,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops impulse, wellness≈functional_beverages, fitness≈functional_beverages; responds to playful"
+     },
+     {
       "persona_id": "persona_004",
-      "score": 41,
+      "score": 44,
       "affinity": 20,
-      "values": 0,
+      "values": 11,
       "price": 100,
       "reach": 74,
       "conflicts": [],
@@ -403,7 +401,7 @@
        "pub_020",
        "pub_012"
       ],
-      "detail": "shops replenishment"
+      "detail": "shops replenishment; responds to performance≈science_backed"
      },
      {
       "persona_id": "persona_008",
@@ -452,7 +450,7 @@
    "type": "stage",
    "stage": "personas",
    "status": "done",
-   "ms": 14937
+   "ms": 16901
   },
   {
    "type": "stage",
@@ -463,21 +461,21 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "607f7c3de1-persona_002",
+    "creative_id": "006219b6f0-persona_002",
     "persona_id": "persona_002",
     "persona_name": "The Busy Parent",
-    "angle": "Grab-and-go bars that actually come home finished, not half-eaten",
-    "headline": "No more half-eaten bars in the bag",
-    "body": "Protein bars that taste good instead of like cardboard — so the one you hand out at 3pm actually gets finished.",
-    "cta": "Stock the pantry",
+    "angle": "The bar that actually gets eaten, not returned in the lunchbox",
+    "headline": "The protein bar that comes home eaten",
+    "body": "A grab-and-go bar that actually tastes good — so it doesn't ride back in the lunchbox. Keep a box by the door.",
+    "cta": "Stock the box",
     "claims_used": [
      {
-      "claim": "Protein bars that taste good instead of like cardboard",
+      "claim": "actually tastes good",
       "source_quote": "protein bars that don't taste like cardboard"
      }
     ],
-    "offer_suggestion": "Multi-box bundle price for first-time buyers, no subscription required",
-    "tone_notes": "Plain, household-scale framing: snack everyone finishes, pantry stocking, no gym-bro or luxury language, no subscription sign-up friction.",
+    "offer_suggestion": "Bulk box bundle with optional repeat delivery, e.g. first box discount for subscribers",
+    "tone_notes": "Plain, practical, family-facing. Leans on grab-and-go convenience and the lunchbox test rather than performance or premium language; no athlete imagery, no luxury framing, no signup hurdles implied.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -486,44 +484,21 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "607f7c3de1-persona_003",
-    "persona_id": "persona_003",
-    "persona_name": "The Gen Z Aesthete",
-    "angle": "Say the cardboard joke out loud, with attitude",
-    "headline": "Cardboard is not a flavor.",
-    "body": "We said it. Protein bars that actually taste good — no chalk, no chewing through a shipping box.",
-    "cta": "Taste the proof",
-    "claims_used": [
-     {
-      "claim": "Protein bars that taste good, not like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
-     }
-    ],
-    "offer_suggestion": "First-order bundle: mixed flavor sampler at a trial price",
-    "tone_notes": "Leads with the joke in a blunt, playful voice — no macros, no clinical tone, no corporate hedging. Short punchy lines that read like a caption, flavor-forward rather than performance-forward.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_007",
+    "creative_id": "006219b6f0-persona_007",
     "persona_id": "persona_007",
     "persona_name": "The Convenience-First Millennial",
-    "angle": "Fastest lunch you won't regret — desk-drawer stock-up",
-    "headline": "The 30-second lunch, minus the regret",
-    "body": "Protein bars that actually taste good, not like cardboard. Keep a box in the desk drawer and skip the 1pm decision entirely.",
-    "cta": "Stock the drawer",
+    "angle": "The auto-restocked drawer snack you actually want to eat",
+    "headline": "The desk-drawer bar you'll finish",
+    "body": "Protein bars that taste good, set to restock on repeat. Keep a stash in the drawer and stop thinking about lunch at 3pm.",
+    "cta": "Set up restock",
     "claims_used": [
      {
-      "claim": "Protein bars that actually taste good, not like cardboard",
+      "claim": "Protein bars that taste good",
       "source_quote": "protein bars that don't taste like cardboard"
      }
     ],
-    "offer_suggestion": "Bundle pricing on a multi-box stock-up order, or a reorder link emailed after first purchase",
-    "tone_notes": "Leads with speed and zero-decision convenience, frames it as a desk-drawer default rather than a considered purchase. No ingredient talk, no shipping promises, no multi-step flow implied. One short idea, plain language.",
+    "offer_suggestion": "Perk for recurring orders, e.g. free shipping on every restock — advertiser to confirm",
+    "tone_notes": "Leads with grab-and-go default plus repeat delivery, the persona's subscription habit. Short lines, no nutrition science, no signup friction described, no urgency.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -532,69 +507,385 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "607f7c3de1-persona_009",
-    "persona_id": "persona_009",
-    "persona_name": "The Fitness Enthusiast",
-    "angle": "The post-workout bar you actually want to eat",
-    "headline": "The post-gym bar you look forward to",
-    "body": "Protein bars that taste good instead of like cardboard. Keep a box in the gym bag and stop dreading the after-session snack.",
-    "cta": "Stock up",
+    "creative_id": "006219b6f0-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "A protein bar that leads with taste and personality, not macros",
+    "headline": "No gym talk. Just a bar that slaps.",
+    "body": "Protein bars that actually taste good \" no chalk, no cardboard, no lecture about your macros. Snack first, flex never.",
+    "cta": "Try a bar",
     "claims_used": [
      {
-      "claim": "Protein bars that taste good, not like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
-     }
-    ],
-    "offer_suggestion": "Multi-box bundle pricing for first-time buyers, e.g. buy 2 boxes get a third at a reduced price",
-    "tone_notes": "Frames the bar inside a training routine and restocking habit rather than a sedentary snack. No invented protein numbers, athlete endorsements or health outcomes — just the taste claim the brief supports, stated plainly for an audience wary of puffed-up claims.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "Read the label yourself, then judge the taste — no tradeoff framing",
-    "headline": "Check the label. Then taste it.",
-    "body": "Protein bars that don't taste like cardboard. That's the whole pitch. Read the ingredients yourself, then judge the flavor.",
-    "cta": "See the bars",
-    "claims_used": [
-     {
-      "claim": "Protein bars that don't taste like cardboard",
+      "claim": "Protein bars that actually taste good",
       "source_quote": "protein bars that don't taste like cardboard"
      },
      {
-      "claim": "That's the whole pitch",
-      "source_quote": "That's basically the whole pitch."
+      "claim": "no cardboard",
+      "source_quote": "protein bars that don't taste like cardboard"
      }
     ],
-    "offer_suggestion": "First-order variety pack or sampler at a trial price, so she can verify taste before committing",
-    "tone_notes": "Plain and unhyped for a claims-skeptical reader: invites her to inspect the label rather than asserting health outcomes or science. No candy-bar or novelty framing, no invented ingredient or protein figures.",
+    "offer_suggestion": "First-time sampler pack with a small intro discount, advertiser to approve",
+    "tone_notes": "Playful, slightly cheeky voice with zero corporate polish. Leads with taste and attitude instead of macros or performance claims, which is exactly what she tunes out. Short, punchy lines that read like a caption rather than an ad.",
     "status": "draft",
     "critique": null,
     "revision_of": null
    }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Hitting protein targets without the chalky-bar penalty",
+    "headline": "A protein bar you'll actually finish",
+    "body": "Hitting your protein target shouldn't mean choking down chalk. These are protein bars that genuinely taste good.",
+    "cta": "See the bars",
+    "claims_used": [
+     {
+      "claim": "protein bars that genuinely taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "Single-flavor sampler pack so she can test taste before committing to a full box",
+    "tone_notes": "Outcome-focused (hitting a protein target) rather than indulgent or novelty framing. Plain and unhyped, with no science-y or ingredient claims the brief can't back, which suits a shopper skeptical of unsubstantiated wellness copy.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Post-training fuel you actually look forward to eating",
+    "headline": "The post-workout bar you don't dread",
+    "body": "Protein bars that actually taste good. Same spot in your routine, minus the chalky bar you choke down after training.",
+    "cta": "See the bars",
+    "claims_used": [
+     {
+      "claim": "Protein bars that actually taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "First box discount or a mixed starter box for new customers, if the advertiser approves",
+    "tone_notes": "Frames the bar as training fuel, not a treat; plain performance-routine language with no health or macro claims, no aesthetic or sedentary framing, and no invented numbers.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Post-training fuel you actually look forward to eating",
+    "headline": "The post-workout bar you don't dread",
+    "body": "Protein bars that actually taste good. Same spot in your routine, minus the chalky bar you choke down after training.",
+    "cta": "See the bars",
+    "claims_used": [
+     {
+      "claim": "Protein bars that actually taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "First box discount or a mixed starter box for new customers, if the advertiser approves",
+    "tone_notes": "Frames the bar as training fuel, not a treat; plain performance-routine language with no health or macro claims, no aesthetic or sedentary framing, and no invented numbers.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only taste claim, traced to brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Post-workout framing fits fitness routine without inventing performance data."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Chalky-bar-after-training angle is tied to this product's taste pitch."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims that would trouble skeptical audiences."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Hitting protein targets without the chalky-bar penalty",
+    "headline": "A protein bar you'll actually finish",
+    "body": "Hitting your protein target shouldn't mean choking down chalk. These are protein bars that genuinely taste good.",
+    "cta": "See the bars",
+    "claims_used": [
+     {
+      "claim": "protein bars that genuinely taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "Single-flavor sampler pack so she can test taste before committing to a full box",
+    "tone_notes": "Outcome-focused (hitting a protein target) rather than indulgent or novelty framing. Plain and unhyped, with no science-y or ingredient claims the brief can't back, which suits a shopper skeptical of unsubstantiated wellness copy.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Taste claim only, matches allowed claim."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Outcome-focused (protein target) without inventing science the brief lacks."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Chalk-vs-taste contrast is this product's core pitch."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Quiet tone, fits a confirmation page."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No unsubstantiated health claims for Daily Form."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_003",
+    "persona_id": "persona_003",
+    "persona_name": "The Gen Z Aesthete",
+    "angle": "A protein bar that leads with taste and personality, not macros",
+    "headline": "No gym talk. Just a bar that slaps.",
+    "body": "Protein bars that actually taste good \" no chalk, no cardboard, no lecture about your macros. Snack first, flex never.",
+    "cta": "Try a bar",
+    "claims_used": [
+     {
+      "claim": "Protein bars that actually taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     },
+     {
+      "claim": "no cardboard",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "First-time sampler pack with a small intro discount, advertiser to approve",
+    "tone_notes": "Playful, slightly cheeky voice with zero corporate polish. Leads with taste and attitude instead of macros or performance claims, which is exactly what she tunes out. Short, punchy lines that read like a caption rather than an ad.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Taste/no-cardboard claims come straight from the brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Playful, anti-corporate voice, avoids performance claims."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "No-chalk/no-cardboard line is this advertiser's pitch."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Light tone, no fake urgency."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims for Pop & Sip or Daily Form."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": "Fix the broken character in the body: replace the stray '\\\"' with an em dash so it reads 'Protein bars that actually taste good — no chalk, no cardboard, no lecture about your macros.'"
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_002",
+    "persona_id": "persona_002",
+    "persona_name": "The Busy Parent",
+    "angle": "The bar that actually gets eaten, not returned in the lunchbox",
+    "headline": "The protein bar that comes home eaten",
+    "body": "A grab-and-go bar that actually tastes good — so it doesn't ride back in the lunchbox. Keep a box by the door.",
+    "cta": "Stock the box",
+    "claims_used": [
+     {
+      "claim": "actually tastes good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "Bulk box bundle with optional repeat delivery, e.g. first box discount for subscribers",
+    "tone_notes": "Plain, practical, family-facing. Leans on grab-and-go convenience and the lunchbox test rather than performance or premium language; no athlete imagery, no luxury framing, no signup hurdles implied.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only the taste claim, which the brief supports."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Grab-and-go, lunchbox framing hits time-saving and family-friendly; no luxury tone."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "'Comes home eaten' depends on the taste pitch, not transferable to a generic bar."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm and unpushy."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "006219b6f0-persona_007",
+    "persona_id": "persona_007",
+    "persona_name": "The Convenience-First Millennial",
+    "angle": "The default drawer snack you actually want to eat",
+    "headline": "The desk-drawer bar you'll finish",
+    "body": "Protein bars that taste good. Keep a stash in the drawer and stop thinking about lunch at 3pm.",
+    "cta": "See the bars",
+    "claims_used": [
+     {
+      "claim": "Protein bars that taste good",
+      "source_quote": "protein bars that don't taste like cardboard"
+     }
+    ],
+    "offer_suggestion": "A perk on repeat orders, e.g. free shipping on recurring deliveries — advertiser to confirm availability",
+    "tone_notes": "Grab-and-go, zero-thought default framing for someone who buys on ease. Short plain lines, no nutrition science, no signup steps, no urgency. No restock or subscription implied in copy.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only claim is good taste, directly from brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on convenience/keep-a-stash; doesn't invent subscription perks the brief can't back."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Desk-drawer, 3pm-lunch framing is a particular use case, not generic bar copy."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm tone, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health or nutrition claims that would trouble skeptical audiences."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "The auto-restocked drawer snack you actually want to eat",
+     "headline": "The desk-drawer bar you'll finish",
+     "body": "Protein bars that taste good, set to restock on repeat. Keep a stash in the drawer and stop thinking about lunch at 3pm.",
+     "cta": "Set up restock",
+     "claims_used": [
+      {
+       "claim": "Protein bars that taste good",
+       "source_quote": "protein bars that don't taste like cardboard"
+      }
+     ],
+     "offer_suggestion": "Perk for recurring orders, e.g. free shipping on every restock — advertiser to confirm",
+     "tone_notes": "Leads with grab-and-go default plus repeat delivery, the persona's subscription habit. Short lines, no nutrition science, no signup friction described, no urgency."
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "stage": "creative",
+   "status": "done",
+   "ms": 66965
   },
   {
    "type": "publishers",
    "plan": {
-    "summary": "No competitors here, so the plan leans on fitness and functional-wellness audiences (Studiogrid, Movewell, Pop & Sip) plus a boosted convenience-grocery test at Swiftcart for impulse snacking, while apparel, pet, beauty and home publishers fall away as off-category.",
-    "recommended": [],
-    "test": [
+    "summary": "Budget leans to fitness-intent and consumable-replenishment checkouts (Studiogrid, Movewell, Daily Form, Pop & Sip) where a $35 bar box is a same-size add-on, with tests on high-reach food and convenience baskets (Swiftcart, Kitchenly, Pantrygood) and all pet, beauty, home and non-fitness apparel excluded for lacking any purchase-level link.",
+    "explained": true,
+    "recommended": [
      {
-      "publisher_id": "pub_020",
-      "name": "Pop & Sip",
-      "category": "beverages",
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
       "signals": [
        {
         "name": "category",
-        "score": 38,
+        "score": 56,
         "neutral": false,
-        "detail": "matches wellness, supplements≈wellness, fitness≈functional_beverages"
+        "detail": "matches supplements, wellness, fitness≈supplements"
        },
        {
         "name": "audience",
@@ -606,48 +897,57 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$35 vs $42 typical order (0.8×) (price assumed)"
+        "detail": "$35 vs $38 typical order (0.9×) (price assumed)"
        },
        {
         "name": "values",
-        "score": 40,
+        "score": 13,
         "neutral": false,
-        "detail": "shares playful"
+        "detail": "shares performance≈science_backed"
        },
        {
         "name": "reach",
-        "score": 35,
+        "score": 30,
         "neutral": false,
-        "detail": "5.2M monthly impressions"
+        "detail": "4.2M monthly impressions"
        }
       ],
-      "base_fit": 52,
-      "adjustment": 8,
-      "adjustment_reason": "Notes describe the audience as \"Health-curious but indulgence-seeking\", which is almost exactly the taste-first protein bar buyer; the category score (38) understates that.",
-      "fit": 60,
-      "tier": "test",
+      "base_fit": 54,
+      "fit": 70,
+      "computed_tier": "test",
+      "tier": "recommended",
+      "tier_reason": "The score treated this as a loose supplement adjacency, but the purchase moment is exact: someone who just bought a vitamin/supplement subscription is a habitual buyer of consumable health products, and a protein bar is the obvious next replenishment at a near-identical basket size ($35 vs $38). The notes' skepticism warning targets health claims, and this brand's pitch is taste, not efficacy.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pop & Sip sells better-for-you drinks to people who still want it to taste good, and shares the playful tone; $42 typical order makes a $35 bar box an easy add.",
+      "rationale": "Shoppers here sell-through on consumable wellness replenishment ('vitamins', 'supplements', 'subscription') at $38 orders, so a $35 bar box is a same-size, same-habit follow-on; the taste-first claim sidesteps the audience being 'skeptical of unsubstantiated health claims'.",
       "evidence": [
        {
+        "field": "subcategories",
+        "quote": "supplements"
+       },
+       {
         "field": "notes",
-        "quote": "Health-curious but indulgence-seeking. Strong overlap with wellness and premium grocery"
+        "quote": "Audience skeptical of unsubstantiated health claims"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "38.0"
        }
       ],
-      "risk": "Only 5.2M impressions, so volume will be modest even at a good conversion rate."
+      "risk": "89% female, science-forward audience may want macros and ingredient substantiation the 'tastes good' pitch doesn't provide; 4.2M impressions caps volume.",
+      "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_001",
-      "name": "Swiftcart",
-      "category": "instant_delivery",
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
       "signals": [
        {
         "name": "category",
-        "score": 26,
+        "score": 42,
         "neutral": false,
-        "detail": "matches snacks, impulse, replenishment"
+        "detail": "matches fitness, wellness, supplements≈fitness"
        },
        {
         "name": "audience",
@@ -657,43 +957,48 @@
        },
        {
         "name": "price",
-        "score": 100,
+        "score": 98,
         "neutral": false,
-        "detail": "$35 vs $28 typical order (1.2×) (price assumed)"
+        "detail": "$35 vs $78 typical order (0.4×) (price assumed)"
        },
        {
         "name": "values",
-        "score": 0,
+        "score": 20,
         "neutral": false,
-        "detail": "no shared values"
+        "detail": "shares performance"
        },
        {
         "name": "reach",
-        "score": 100,
+        "score": 68,
         "neutral": false,
-        "detail": "84.0M monthly impressions"
+        "detail": "22.0M monthly impressions"
        }
       ],
-      "base_fit": 47,
-      "adjustment": 12,
-      "adjustment_reason": "Notes say \"High-frequency purchasers\" and \"Impulse-friendly\", and the publisher sells groceries — this is the single best impulse-snack context in the catalog, which a 26 category score badly undersells.",
-      "fit": 59,
-      "tier": "test",
+      "base_fit": 53,
+      "fit": 70,
+      "computed_tier": "test",
+      "tier": "recommended",
+      "tier_reason": "Computed as test on category overlap alone, but the notes name the exact buyer: 'Fitness-engaged shoppers' just buying activewear are the people who already keep protein bars in the bag, and at 22M impressions this can carry core budget.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Swiftcart's convenience buyers already purchase snacks on impulse at a $28 typical order, and 84M monthly impressions is the largest reach available; the only thing dragging the score down is an abstract \"no shared values\".",
+      "rationale": "Notes describe 'Fitness-engaged shoppers', and a $35 bar box is a light add-on against a $78 activewear basket — a natural fuel purchase for someone kitting out their training.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "High-frequency purchasers. Late-night traffic spike. Impulse-friendly"
+        "quote": "Fitness-engaged shoppers"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "78.0"
        },
        {
         "field": "monthly_impressions",
-        "quote": "84000000"
+        "quote": "22000000"
        }
       ],
-      "risk": "18-34, mid-income convenience shoppers are price-sensitive; a $35 multi-bar box is above their $28 habitual basket."
+      "risk": "Activewear buying is episodic and fashion-led; some of these shoppers are buying leggings for style, not training.",
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_003",
@@ -732,36 +1037,41 @@
        }
       ],
       "base_fit": 52,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 52,
-      "tier": "test",
+      "fit": 70,
+      "computed_tier": "test",
+      "tier": "recommended",
+      "tier_reason": "The score gave zero on values and read this as generic wellness, but the notes make the intent explicit — these users are booking and paying for workouts right now, which is the sharpest possible moment to offer post-workout fuel at a matched basket size.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Studiogrid's notes say users are \"actively spending on self-care and fitness\", so a post-class confirmation page catches people already in a fitness mindset, and the $42 typical order sits right next to a $35 bar box.",
+      "rationale": "Notes say users are 'actively spending on self-care and fitness' via appointment booking, so a protein bar is the natural companion to a just-booked class, and $35 sits just under the $42 typical order.",
       "evidence": [
        {
         "field": "notes",
         "quote": "Users are actively spending on self-care and fitness"
        },
        {
+        "field": "subcategories",
+        "quote": "fitness_classes"
+       },
+       {
         "field": "avg_order_value_usd",
         "quote": "42.0"
        }
       ],
-      "risk": "Bookings are services, not consumables, so buyers may not be in a shopping mindset at confirmation."
+      "risk": "Spa and yoga bookings dilute the training-fuel intent, and a high-income 28-50 audience may skew to premium/whole-food snacking.",
+      "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_002",
-      "name": "Movewell",
-      "category": "apparel",
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
       "signals": [
        {
         "name": "category",
-        "score": 42,
+        "score": 38,
         "neutral": false,
-        "detail": "matches fitness, wellness, supplements≈fitness"
+        "detail": "matches wellness, supplements≈wellness, fitness≈functional_beverages"
        },
        {
         "name": "audience",
@@ -771,9 +1081,135 @@
        },
        {
         "name": "price",
-        "score": 93,
+        "score": 100,
         "neutral": false,
-        "detail": "$35 vs $78 typical order (0.4×) (price assumed)"
+        "detail": "$35 vs $42 typical order (0.8×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 27,
+        "neutral": false,
+        "detail": "shares playful"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 50,
+      "fit": 70,
+      "computed_tier": "test",
+      "tier": "recommended",
+      "tier_reason": "Tags only saw a weak wellness/functional-beverage link, but the notes describe this brand's exact positioning: 'Health-curious but indulgence-seeking' is precisely the shopper who wants protein that doesn't taste like cardboard.",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "The notes' 'Health-curious but indulgence-seeking' buyer is the target for a taste-first protein bar, and a $35 offer fits neatly under the $42 functional-beverage basket as a pantry add-on.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Health-curious but indulgence-seeking"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "42.0"
+       },
+       {
+        "field": "subcategories",
+        "quote": "functional_beverages"
+       }
+      ],
+      "risk": "Only 5.2M impressions, so volume is limited even at a good conversion rate; gut-health framing may pull toward ingredient claims this brand doesn't make.",
+      "competitor_dispute": null
+     }
+    ],
+    "test": [
+     {
+      "publisher_id": "pub_008",
+      "name": "Pantrygood",
+      "category": "groceries",
+      "signals": [
+       {
+        "name": "category",
+        "score": 43,
+        "neutral": false,
+        "detail": "matches wellness, snacks≈natural_food, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 97,
+        "neutral": false,
+        "detail": "$35 vs $86 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 3,
+        "neutral": false,
+        "detail": "shares performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 51,
+        "neutral": false,
+        "detail": "10.4M monthly impressions"
+       }
+      ],
+      "base_fit": 49,
+      "fit": 50,
+      "computed_tier": "excluded",
+      "tier": "test",
+      "tier_reason": "Excluded on a low values score, but the record shows a real snack-replenishment basket: 'pantry' and 'subscription' grocery shoppers restock consumables, and a bar box is a natural line item. The open question is whether a taste-first pitch lands on an audience the notes call clean-ingredient driven.",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Pantry/subscription grocery buyers restock snacks on a cycle, but the notes say they are 'Responsive to clean-ingredient, sustainability, and wellness claims' — claims this brand doesn't make — so this is worth a measured test rather than core budget.",
+      "evidence": [
+       {
+        "field": "subcategories",
+        "quote": "pantry"
+       },
+       {
+        "field": "notes",
+        "quote": "Responsive to clean-ingredient, sustainability, and wellness claims"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "86.0"
+       }
+      ],
+      "risk": "An organic/natural grocer may already stock competing bars, so the offer can read as redundant; $86 baskets also mean the shopper just spent heavily on food.",
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_001",
+      "name": "Swiftcart",
+      "category": "instant_delivery",
+      "signals": [
+       {
+        "name": "category",
+        "score": 26,
+        "neutral": false,
+        "detail": "matches snacks, impulse, replenishment"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $28 typical order (1.2×) (price assumed)"
        },
        {
         "name": "values",
@@ -783,31 +1219,98 @@
        },
        {
         "name": "reach",
-        "score": 68,
+        "score": 100,
         "neutral": false,
-        "detail": "22.0M monthly impressions"
+        "detail": "84.0M monthly impressions"
        }
       ],
-      "base_fit": 50,
-      "adjustment": 0,
-      "adjustment_reason": null,
+      "base_fit": 47,
       "fit": 50,
+      "computed_tier": "excluded",
       "tier": "test",
+      "tier_reason": "Excluded as weak fit despite matching the advertiser's own snacks, impulse and replenishment signals at 84M impressions and a $28 basket — the largest impulse-snack moment in the catalog. Test rather than recommend because late-night convenience orders skew indulgent and the retailer may already carry bars.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Movewell's \"Fitness-engaged shoppers\" at 22M monthly impressions is the largest genuinely on-category audience here, and its 25-44 age skew matches the brand's assumed 25-44 target exactly.",
+      "rationale": "Notes describe 'High-frequency purchasers' who are 'Impulse-friendly' with a $28 typical order, so a $35 bar box is a plausible impulse add-on at huge scale; what needs measuring is whether late-night snack buyers convert on a multi-bar box.",
       "evidence": [
        {
         "field": "notes",
-        "quote": "Fitness-engaged shoppers. Strong crossover with wellness and beauty"
+        "quote": "Impulse-friendly"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "28.0"
        },
        {
         "field": "monthly_impressions",
-        "quote": "22000000"
+        "quote": "84000000"
        }
       ],
-      "risk": "A $78 apparel order makes a $35 snack purchase feel like a small afterthought; 82% female skew narrows reach for a unisex bar."
+      "risk": "Late-night alcohol/convenience traffic is indulgence-led, and a convenience grocery app likely stocks competing bars the shopper can add to the next order instead.",
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_015",
+      "name": "Kitchenly",
+      "category": "meal_kits",
+      "signals": [
+       {
+        "name": "category",
+        "score": 15,
+        "neutral": false,
+        "detail": "matches replenishment, snacks≈groceries"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 99,
+        "neutral": false,
+        "detail": "$35 vs $74 typical order (0.5×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 80,
+        "neutral": false,
+        "detail": "36.0M monthly impressions"
+       }
+      ],
+      "base_fit": 41,
+      "fit": 50,
+      "computed_tier": "excluded",
+      "tier": "test",
+      "tier_reason": "Excluded on weak tag overlap, but meal-kit subscribers are the clearest 'food-interested' cohort in the catalog and buy recurring food subscriptions already; the taste claim is aimed exactly at people who care how food tastes. Test because the household/family basket may want snacks for kids rather than protein.",
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Notes call these shoppers 'Convenience-motivated but food-interested' subscription buyers, so a recurring, good-tasting protein snack is a credible next subscription at 36M impressions.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Convenience-motivated but food-interested"
+       },
+       {
+        "field": "subcategories",
+        "quote": "subscription"
+       },
+       {
+        "field": "monthly_impressions",
+        "quote": "36000000"
+       }
+      ],
+      "risk": "A $74 dinner-solution basket signals cooked meals, not grab-and-go fuel; the 28-52 family audience may not be protein-bar buyers at all.",
+      "competitor_dispute": null
      }
     ],
     "excluded": [
@@ -836,7 +1339,7 @@
        },
        {
         "name": "values",
-        "score": 100,
+        "score": 67,
         "neutral": false,
         "detail": "shares playful"
        },
@@ -847,180 +1350,18 @@
         "detail": "8.4M monthly impressions"
        }
       ],
-      "base_fit": 49,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 49,
+      "base_fit": 44,
+      "fit": 44,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pet treats and toys have no overlap with a human snack, despite the matching playful voice and $35 order size.",
+      "rationale": "Dog treats and toys; shared playful tone is not a reason to buy human snacks.",
       "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_008",
-      "name": "Pantrygood",
-      "category": "groceries",
-      "signals": [
-       {
-        "name": "category",
-        "score": 43,
-        "neutral": false,
-        "detail": "matches wellness, snacks≈natural_food, replenishment"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 87,
-        "neutral": false,
-        "detail": "$35 vs $86 typical order (0.4×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 51,
-        "neutral": false,
-        "detail": "10.4M monthly impressions"
-       }
-      ],
-      "base_fit": 47,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 47,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Pantrygood shoppers buy natural snacks, but they are \"Responsive to clean-ingredient, sustainability, and wellness claims\" — none of which this taste-first brand makes.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Values-driven shoppers. Responsive to clean-ingredient, sustainability, and wellness claims"
-       }
-      ],
-      "risk": "A pitch built only on taste reads as thin to an ingredient-scrutinizing grocery audience."
-     },
-     {
-      "publisher_id": "pub_012",
-      "name": "Daily Form",
-      "category": "wellness_dtc",
-      "signals": [
-       {
-        "name": "category",
-        "score": 56,
-        "neutral": false,
-        "detail": "matches supplements, wellness, fitness≈supplements"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$35 vs $38 typical order (0.9×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 30,
-        "neutral": false,
-        "detail": "4.2M monthly impressions"
-       }
-      ],
-      "base_fit": 52,
-      "adjustment": -8,
-      "adjustment_reason": "Notes say the audience is \"skeptical of unsubstantiated health claims\", which clashes with a taste-only, playful pitch carrying no substantiation.",
-      "fit": 44,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Category overlap with supplements is real, but Daily Form is \"Science-forward wellness\" and this brand's whole pitch is that the bars \"don't taste like cardboard\" — a claim that won't satisfy a proof-seeking audience.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Science-forward wellness. Audience skeptical of unsubstantiated health claims"
-       },
-       {
-        "field": "brief",
-        "quote": "We sell protein bars that don't taste like cardboard"
-       }
-      ],
-      "risk": "Skeptical, label-reading shoppers may want protein/ingredient specifics the creative doesn't provide."
-     },
-     {
-      "publisher_id": "pub_015",
-      "name": "Kitchenly",
-      "category": "meal_kits",
-      "signals": [
-       {
-        "name": "category",
-        "score": 15,
-        "neutral": false,
-        "detail": "matches replenishment, snacks≈groceries"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 96,
-        "neutral": false,
-        "detail": "$35 vs $74 typical order (0.5×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 80,
-        "neutral": false,
-        "detail": "36.0M monthly impressions"
-       }
-      ],
-      "base_fit": 40,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 40,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Meal-kit households are \"Convenience-motivated but food-interested\", a decent taste angle, but they buy planned dinners rather than grab-and-go protein, leaving only thin category overlap.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Family and couples households. Convenience-motivated but food-interested"
-       }
-      ],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_009",
@@ -1041,7 +1382,7 @@
        },
        {
         "name": "price",
-        "score": 97,
+        "score": 99,
         "neutral": false,
         "detail": "$35 vs $73 typical order (0.5×) (price assumed)"
        },
@@ -1059,16 +1400,66 @@
        }
       ],
       "base_fit": 39,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 39,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pet food and pharmacy buyers share nothing with a protein snack beyond broad replenishment behavior.",
+      "rationale": "Pet food and pharmacy purchase; no connection to human protein snacking.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 21,
+        "neutral": false,
+        "detail": "matches fitness≈activewear, supplements≈fitness, wellness≈fitness"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 92,
+        "neutral": false,
+        "detail": "$35 vs $118 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 10,
+        "neutral": false,
+        "detail": "shares performance"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 39,
+      "fit": 39,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Comfort/sustainability shoe buyers at $118; no purchase-level reason to add protein bars.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_013",
@@ -1095,7 +1486,7 @@
        },
        {
         "name": "values",
-        "score": 40,
+        "score": 27,
         "neutral": false,
         "detail": "shares playful"
        },
@@ -1106,28 +1497,29 @@
         "detail": "6.8M monthly impressions"
        }
       ],
-      "base_fit": 39,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 39,
+      "base_fit": 37,
+      "fit": 37,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Velvetline sells skincare and makeup to an 18-34 female audience with no fitness or food signal.",
+      "rationale": "Makeup and skincare checkout; no food or fitness intent at the moment of purchase.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_017",
-      "name": "Cloudfoot",
-      "category": "apparel",
+      "publisher_id": "pub_011",
+      "name": "Northbed",
+      "category": "home",
       "signals": [
        {
         "name": "category",
-        "score": 21,
+        "score": 15,
         "neutral": false,
-        "detail": "matches fitness≈activewear, supplements≈fitness, wellness≈fitness"
+        "detail": "matches wellness, supplements≈wellness, fitness≈wellness"
        },
        {
         "name": "audience",
@@ -1137,9 +1529,9 @@
        },
        {
         "name": "price",
-        "score": 66,
+        "score": 88,
         "neutral": false,
-        "detail": "$35 vs $118 typical order (0.3×) (price assumed)"
+        "detail": "$35 vs $164 typical order (0.2×) (price assumed)"
        },
        {
         "name": "values",
@@ -1149,27 +1541,23 @@
        },
        {
         "name": "reach",
-        "score": 37,
+        "score": 26,
         "neutral": false,
-        "detail": "5.8M monthly impressions"
+        "detail": "3.6M monthly impressions"
        }
       ],
       "base_fit": 34,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 34,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "weak_fit",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Activewear-adjacent, but Cloudfoot's $118 typical order and \"Comfort + sustainability messaging\" sit far from a $35 impulse snack.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Tech-adjacent urban professionals. Comfort + sustainability messaging"
-       }
-      ],
-      "risk": null
+      "rationale": "Bedding purchase at $164; nothing connects this basket to snacking.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_007",
@@ -1208,16 +1596,66 @@
        }
       ],
       "base_fit": 33,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 33,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pawline is pet food and supplies; the health-conscious angle applies to dogs, not the shopper's own snacking.",
+      "rationale": "Pet food subscription buyers; premium pet positioning says nothing about their own snacking.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_019",
+      "name": "Strandlab",
+      "category": "beauty",
+      "signals": [
+       {
+        "name": "category",
+        "score": 6,
+        "neutral": false,
+        "detail": "matches replenishment, wellness≈beauty"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$35 vs $48 typical order (0.7×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 4,
+        "neutral": false,
+        "detail": "shares performance≈science_backed"
+       },
+       {
+        "name": "reach",
+        "score": 27,
+        "neutral": false,
+        "detail": "3.8M monthly impressions"
+       }
+      ],
+      "base_fit": 33,
+      "fit": 33,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Haircare personalization buyers; no link to protein snacks.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_010",
@@ -1256,208 +1694,17 @@
        }
       ],
       "base_fit": 32,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 32,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Socks and basics with a gifting skew; no fitness, food or snacking overlap.",
+      "rationale": "Socks and basics gifting; no product or occasion overlap.",
       "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_019",
-      "name": "Strandlab",
-      "category": "beauty",
-      "signals": [
-       {
-        "name": "category",
-        "score": 6,
-        "neutral": false,
-        "detail": "matches replenishment, wellness≈beauty"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$35 vs $48 typical order (0.7×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 27,
-        "neutral": false,
-        "detail": "3.8M monthly impressions"
-       }
-      ],
-      "base_fit": 32,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 32,
-      "tier": "excluded",
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Strandlab sells haircare to a heavily female 18-38 audience with no food or fitness adjacency.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_006",
-      "name": "Everbody",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared interests"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 84,
-        "neutral": false,
-        "detail": "$35 vs $89 typical order (0.4×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 43,
-        "neutral": false,
-        "detail": "7.6M monthly impressions"
-       }
-      ],
-      "base_fit": 29,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 29,
-      "tier": "excluded",
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Everbody is women's apparel with zero shared interests against snacks or fitness.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_004",
-      "name": "Marlowe & Co.",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared interests"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 69,
-        "neutral": false,
-        "detail": "$35 vs $112 typical order (0.3×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 27,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 27,
-      "tier": "excluded",
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Marlowe & Co.'s 45-65 affluent women are off-category and older than this brand's 25-44 target.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_011",
-      "name": "Northbed",
-      "category": "home",
-      "signals": [
-       {
-        "name": "category",
-        "score": 15,
-        "neutral": false,
-        "detail": "matches wellness, supplements≈wellness, fitness≈wellness"
-       },
-       {
-        "name": "audience",
-        "score": 60,
-        "neutral": true,
-        "detail": "brief doesn't narrow the audience"
-       },
-       {
-        "name": "price",
-        "score": 45,
-        "neutral": false,
-        "detail": "$35 vs $164 typical order (0.2×) (price assumed)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 26,
-        "neutral": false,
-        "detail": "3.6M monthly impressions"
-       }
-      ],
-      "base_fit": 27,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 27,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Northbed sells $164 bedding; the wellness crossover is too loose to carry a snack offer.",
-      "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_016",
@@ -1478,7 +1725,7 @@
        },
        {
         "name": "price",
-        "score": 54,
+        "score": 90,
         "neutral": false,
         "detail": "$35 vs $142 typical order (0.2×) (price assumed)"
        },
@@ -1495,17 +1742,116 @@
         "detail": "3.2M monthly impressions"
        }
       ],
-      "base_fit": 27,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 27,
+      "base_fit": 32,
+      "fit": 32,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Footwear for professional women at a $142 order, with no snacking or nutrition hook.",
+      "rationale": "Professional women's footwear at $142; no fueling or snacking intent.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$35 vs $112 typical order (0.3×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "fit": 31,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Older affluent apparel buyers, low impulse, no shared interest with protein bars.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_006",
+      "name": "Everbody",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared interests"
+       },
+       {
+        "name": "audience",
+        "score": 60,
+        "neutral": true,
+        "detail": "brief doesn't narrow the audience"
+       },
+       {
+        "name": "price",
+        "score": 97,
+        "neutral": false,
+        "detail": "$35 vs $89 typical order (0.4×) (price assumed)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 43,
+        "neutral": false,
+        "detail": "7.6M monthly impressions"
+       }
+      ],
+      "base_fit": 31,
+      "fit": 31,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Inclusive-sizing apparel checkout; no purchase connection to protein snacks.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_005",
@@ -1526,7 +1872,7 @@
        },
        {
         "name": "price",
-        "score": 61,
+        "score": 91,
         "neutral": false,
         "detail": "$35 vs $128 typical order (0.3×) (price assumed)"
        },
@@ -1543,22 +1889,18 @@
         "detail": "6.2M monthly impressions"
        }
       ],
-      "base_fit": 25,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 25,
+      "base_fit": 30,
+      "fit": 30,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Linden Park's 50-70 \"Conservative brand sensibility\" audience is the worst match for a playful youth-leaning snack.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Highest-AOV apparel publisher in the catalog. Conservative brand sensibility"
-       }
-      ],
-      "risk": null
+      "rationale": "50-70 classic apparel audience and conservative tone clash with a playful bar brand.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_014",
@@ -1579,7 +1921,7 @@
        },
        {
         "name": "price",
-        "score": 32,
+        "score": 85,
         "neutral": false,
         "detail": "$35 vs $198 typical order (0.2×) (price assumed)"
        },
@@ -1596,306 +1938,316 @@
         "detail": "2.8M monthly impressions"
        }
       ],
-      "base_fit": 21,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 21,
+      "base_fit": 29,
+      "fit": 29,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Hearthstone Goods sells $198 cookware on gifting and new-home occasions, far from a repeat snack purchase.",
+      "rationale": "Cookware gifting at $198; home-cooking intent, not grab-and-go protein.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      }
-    ]
+    ],
+    "offering_type_doubt": null
    }
   },
   {
    "type": "stage",
    "stage": "publishers",
    "status": "done",
-   "ms": 40966
+   "ms": 74433
   },
   {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_009",
-    "persona_id": "persona_009",
-    "persona_name": "The Fitness Enthusiast",
-    "angle": "The post-workout bar you actually want to eat",
-    "headline": "The post-gym bar you look forward to",
-    "body": "Protein bars that taste good instead of like cardboard. Keep a box in the gym bag and stop dreading the after-session snack.",
-    "cta": "Stock up",
-    "claims_used": [
+   "type": "personas",
+   "plan": {
+    "picks": [
      {
-      "claim": "Protein bars that taste good, not like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
-     }
-    ],
-    "offer_suggestion": "Multi-box bundle pricing for first-time buyers, e.g. buy 2 boxes get a third at a reduced price",
-    "tone_notes": "Frames the bar inside a training routine and restocking habit rather than a sedentary snack. No invented protein numbers, athlete endorsements or health outcomes — just the taste claim the brief supports, stated plainly for an audience wary of puffed-up claims.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Only the taste claim, sourced verbatim from the brief."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Frames the bar around post-gym routine without inventing performance or athlete claims the brief can't back."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "The cardboard-taste positioning is this advertiser's distinctive pitch."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Calm, no urgency or pressure language."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No health or efficacy claims, safe for Movewell/Daily Form."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "Read the label yourself, then judge the taste — no tradeoff framing",
-    "headline": "Check the label. Then taste it.",
-    "body": "Protein bars that don't taste like cardboard. That's the whole pitch. Read the ingredients yourself, then judge the flavor.",
-    "cta": "See the bars",
-    "claims_used": [
-     {
-      "claim": "Protein bars that don't taste like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
+      "persona_id": "persona_009",
+      "name": "The Fitness Enthusiast",
+      "score": 69,
+      "rank": 1,
+      "why_plausible": "Works out 4+ times a week and already buys supplements and recovery products, so protein bars are a standing replenishment purchase; price_sensitivity low-medium and AOV $88 make a $35 box trivial.",
+      "lean_into": [
+       "performance claims",
+       "protein that actually fuels training",
+       "brand loyalty to things that perform"
+      ],
+      "avoid": [
+       "sedentary-lifestyle framing",
+       "fashion-only or purely aesthetic positioning",
+       "implying the bar is a treat instead of fuel"
+      ],
+      "ad_angle": "The post-workout bar you'll actually look forward to — same protein numbers, none of the chalk.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_020",
+       "pub_012",
+       "pub_002",
+       "pub_015"
+      ],
+      "conflicts": []
      },
      {
-      "claim": "That's the whole pitch",
-      "source_quote": "That's basically the whole pitch."
-     }
-    ],
-    "offer_suggestion": "First-order variety pack or sampler at a trial price, so she can verify taste before committing",
-    "tone_notes": "Plain and unhyped for a claims-skeptical reader: invites her to inspect the label rather than asserting health outcomes or science. No candy-bar or novelty framing, no invented ingredient or protein figures.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Taste claim and 'whole pitch' framing both trace to brief; no science claims added."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Invites label-reading for the transparency-minded reader without faking science backing."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "'Cardboard' pitch plus the self-aware framing is unique to this brand."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Understated and low-pressure."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No unsubstantiated health claims for Daily Form's skeptical audience."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_007",
-    "persona_id": "persona_007",
-    "persona_name": "The Convenience-First Millennial",
-    "angle": "Fastest lunch you won't regret — desk-drawer stock-up",
-    "headline": "The 30-second lunch, minus the regret",
-    "body": "Protein bars that actually taste good, not like cardboard. Keep a box in the desk drawer and skip the 1pm decision entirely.",
-    "cta": "Stock the drawer",
-    "claims_used": [
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 68,
+      "rank": 2,
+      "why_plausible": "Tracks supplements and workouts and pays premiums for good products (price_sensitivity: low, wellness/supplements affinities), so a protein bar is already in her rotation. Her disinterest in 'ultra-processed food' means the ad must lean on ingredients rather than candy-bar framing.",
+      "lean_into": [
+       "ingredient transparency",
+       "outcome-focused: protein per bar that fits her macros",
+       "a bar that tastes good without being a candy bar"
+      ],
+      "avoid": [
+       "novelty gimmicks",
+       "dessert/indulgence-only framing",
+       "unbacked science-y claims the brand can't support"
+      ],
+      "ad_angle": "Hitting your protein target shouldn't mean choking down chalk — a clean-ingredient bar you'll finish.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_020",
+       "pub_012",
+       "pub_008",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
      {
-      "claim": "Protein bars that actually taste good, not like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
-     }
-    ],
-    "offer_suggestion": "Bundle pricing on a multi-box stock-up order, or a reorder link emailed after first purchase",
-    "tone_notes": "Leads with speed and zero-decision convenience, frames it as a desk-drawer default rather than a considered purchase. No ingredient talk, no shipping promises, no multi-step flow implied. One short idea, plain language.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Taste claim only; 'actually' is emphasis, not an upgrade."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Leans on speed and zero-decision convenience; no subscription perk invented."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Cardboard contrast keeps it tied to this advertiser."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Reads naturally on a confirmation page, no fake urgency."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No health claims; indulgence framing fits Pop & Sip."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_003",
-    "persona_id": "persona_003",
-    "persona_name": "The Gen Z Aesthete",
-    "angle": "Say the cardboard joke out loud, with attitude",
-    "headline": "Cardboard is not a flavor.",
-    "body": "We said it. Protein bars that actually taste good — no chalk, no chewing through a shipping box.",
-    "cta": "Taste the proof",
-    "claims_used": [
+      "persona_id": "persona_007",
+      "name": "The Convenience-First Millennial",
+      "score": 54,
+      "rank": 3,
+      "why_plausible": "Heavy subscription user with snack-replenishment behavior (affinities: quick_commerce, subscription_services) and AOV $55, so a restockable desk/bag snack is an easy default buy.",
+      "lean_into": [
+       "speed and one-click reorder",
+       "subscription perks",
+       "grab-and-go: no thinking required"
+      ],
+      "avoid": [
+       "multi-step signup",
+       "delayed fulfillment",
+       "dense nutrition-science copy"
+      ],
+      "ad_angle": "The default snack in your drawer — auto-restocked, and the one you don't dread eating.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_020",
+       "pub_015",
+       "pub_008",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
      {
-      "claim": "Protein bars that taste good, not like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
-     }
-    ],
-    "offer_suggestion": "First-order bundle: mixed flavor sampler at a trial price",
-    "tone_notes": "Leads with the joke in a blunt, playful voice — no macros, no clinical tone, no corporate hedging. Short punchy lines that read like a caption, flavor-forward rather than performance-forward.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Taste claim sourced; 'no chalk' is flavor restatement, not a new fact."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Playful, non-corporate voice with no dry performance claims."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Cardboard/shipping-box joke is brand-specific."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Light tone, no pressure tactics."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No health assertions anywhere."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "607f7c3de1-persona_002",
-    "persona_id": "persona_002",
-    "persona_name": "The Busy Parent",
-    "angle": "Grab-and-go bars that actually come home finished, not half-eaten",
-    "headline": "No more half-eaten bars in the bag",
-    "body": "Protein bars that taste good instead of like cardboard — so the one you hand out at 3pm actually gets finished.",
-    "cta": "Stock the pantry",
-    "claims_used": [
+      "persona_id": "persona_003",
+      "name": "The Gen Z Aesthete",
+      "score": 46,
+      "rank": 6,
+      "why_plausible": "Her messaging_preferences literally include 'playful' and 'novelty', matching the brand's playful value, and functional_beverages affinity shows she buys better-for-you snackables at ~$48 AOV.",
+      "lean_into": [
+       "playful, funny brand voice",
+       "flavor-forward and aesthetic packaging",
+       "values-aligned personality"
+      ],
+      "avoid": [
+       "corporate voice",
+       "dry performance claims with no vibe",
+       "macro-nerd bodybuilder framing"
+      ],
+      "ad_angle": "A protein bar with a sense of humor — led by flavor and brand voice, not gym talk.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_001",
+       "pub_020",
+       "pub_012"
+      ],
+      "conflicts": []
+     },
      {
-      "claim": "Protein bars that taste good instead of like cardboard",
-      "source_quote": "protein bars that don't taste like cardboard"
+      "persona_id": "persona_002",
+      "name": "The Busy Parent",
+      "score": 48,
+      "rank": 4,
+      "why_plausible": "Time-poor dual-income household that buys in bulk and loves subscriptions; protein bars are a lunchbox/car staple, and 'tastes good' is exactly the claim that gets a snack eaten instead of thrown out.",
+      "lean_into": [
+       "time-saving grab-and-go",
+       "family-friendly, kids will actually eat it",
+       "bulk boxes and trusted-by-parents reviews"
+      ],
+      "avoid": [
+       "luxury positioning",
+       "complicated onboarding",
+       "hardcore athlete imagery"
+      ],
+      "ad_angle": "The protein bar that comes home empty — a bulk-box staple kids and adults both finish.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_015",
+       "pub_008",
+       "pub_003",
+       "pub_002"
+      ],
+      "conflicts": []
      }
     ],
-    "offer_suggestion": "Multi-box bundle price for first-time buyers, no subscription required",
-    "tone_notes": "Plain, household-scale framing: snack everyone finishes, pantry stocking, no gym-bro or luxury language, no subscription sign-up friction.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Only the taste claim; no parent-trust or returns claims invented."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Time-saving, family-snack framing without luxury positioning."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Cardboard contrast keeps it non-transferable."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Calm and relevant beside another order confirmation."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No unsubstantiated wellness claims."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
+    "candidates": [
+     {
+      "persona_id": "persona_009",
+      "score": 69,
+      "affinity": 64,
+      "values": 33,
+      "price": 100,
+      "reach": 86,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012",
+       "pub_002",
+       "pub_003"
+      ],
+      "detail": "shops fitness, supplements, replenishment; responds to performance"
+     },
+     {
+      "persona_id": "persona_001",
+      "score": 68,
+      "affinity": 62,
+      "values": 17,
+      "price": 100,
+      "reach": 100,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012",
+       "pub_003",
+       "pub_002"
+      ],
+      "detail": "shops wellness, supplements, fitness; responds to performance"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 54,
+      "affinity": 36,
+      "values": 0,
+      "price": 100,
+      "reach": 97,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_003",
+       "pub_002",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, impulse, snacks≈convenience"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 48,
+      "affinity": 30,
+      "values": 0,
+      "price": 100,
+      "reach": 85,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_002",
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, snacks≈convenience"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 48,
+      "affinity": 28,
+      "values": 0,
+      "price": 100,
+      "reach": 85,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_002",
+       "pub_020",
+       "pub_003",
+       "pub_012"
+      ],
+      "detail": "shops replenishment, snacks≈natural_food, wellness≈natural_food"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 46,
+      "affinity": 26,
+      "values": 60,
+      "price": 100,
+      "reach": 37,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops impulse, wellness≈functional_beverages, fitness≈functional_beverages; responds to playful"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 44,
+      "affinity": 20,
+      "values": 11,
+      "price": 100,
+      "reach": 74,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_002",
+       "pub_020",
+       "pub_012"
+      ],
+      "detail": "shops replenishment; responds to performance≈science_backed"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 39,
+      "affinity": 24,
+      "values": 0,
+      "price": 100,
+      "reach": 58,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_002"
+      ],
+      "detail": "shops replenishment, snacks≈groceries"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 29,
+      "affinity": 2,
+      "values": 0,
+      "price": 100,
+      "reach": 52,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_002"
+      ],
+      "detail": "shops wellness≈beauty"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 7,
+      "affinity": 7,
+      "values": 0,
+      "price": 30,
+      "reach": 0,
+      "conflicts": [],
+      "reach_publishers": [],
+      "detail": "shops snacks≈natural_food, wellness≈natural_food; price-mismatched for mid"
+     }
+    ],
+    "skipped_note": null
    }
-  },
-  {
-   "type": "stage",
-   "stage": "creative",
-   "status": "done",
-   "ms": 41430
   },
   {
    "type": "stage",
@@ -1908,12 +2260,12 @@
    "config": {
     "schema_version": "1.0",
     "campaign": {
-     "name": "Protein bars marketed on taste · post-purchase launch",
+     "name": "Protein bars · post-purchase launch",
      "status": "draft",
      "objective": "conversions",
      "flight": {
-      "start": "2026-10-04",
-      "end": "2026-11-02",
+      "start": "2026-10-05",
+      "end": "2026-11-03",
       "days": 30
      }
     },
@@ -1926,58 +2278,163 @@
     },
     "bid_strategy": {
      "type": "target_cpa",
-     "target_cpa_usd": 10.5,
-     "max_cpa_usd": 13.65,
-     "allowable_cpa_ratio": 0.3,
+     "target_cpa_usd": 12.25,
+     "max_cpa_usd": 15.93,
+     "allowable_cpa_ratio": 0.35,
      "first_order_value_usd": 35.0,
      "first_order_value_source": "assumed",
      "learning_period_days": 14,
-     "rationale": "$35 first order (assumed) × 0.30 = $10.50 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+     "rationale": "$35 first order (assumed) × 0.35 = $12.25 target CPA: business model unclear; a middle ratio until real margins are known. The max CPA allows headroom while the campaign learns over 14 days."
     },
     "placements": [
+     {
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
      {
       "publisher_id": "pub_020",
       "publisher_name": "Pop & Sip",
       "category": "beverages",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
       "role": "test",
-      "fit_score": 60,
-      "allocation_pct": 25.0,
-      "budget_usd": 2500.0,
-      "est_conversions": 238.1,
-      "capacity_note": null
+      "fit_score": 50,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Pantry/subscription grocery buyers restock snacks on a cycle, but the notes say they are 'Responsive to clean-ingredient, sustainability, and wellness claims' — claims this brand doesn't make — so this is worth a measured test rather than core budget.",
+       "risk": "An organic/natural grocer may already stock competing bars, so the offer can read as redundant; $86 baskets also mean the shopper just spent heavily on food.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
      },
      {
       "publisher_id": "pub_001",
       "publisher_name": "Swiftcart",
       "category": "instant_delivery",
       "role": "test",
-      "fit_score": 59,
-      "allocation_pct": 25.0,
-      "budget_usd": 2500.0,
-      "est_conversions": 238.1,
-      "capacity_note": null
+      "fit_score": 50,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes describe 'High-frequency purchasers' who are 'Impulse-friendly' with a $28 typical order, so a $35 bar box is a plausible impulse add-on at huge scale; what needs measuring is whether late-night snack buyers convert on a multi-bar box.",
+       "risk": "Late-night alcohol/convenience traffic is indulgence-led, and a convenience grocery app likely stocks competing bars the shopper can add to the next order instead.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
      },
      {
-      "publisher_id": "pub_003",
-      "publisher_name": "Studiogrid",
-      "category": "wellness_services",
-      "role": "test",
-      "fit_score": 52,
-      "allocation_pct": 25.0,
-      "budget_usd": 2500.0,
-      "est_conversions": 238.1,
-      "capacity_note": null
-     },
-     {
-      "publisher_id": "pub_002",
-      "publisher_name": "Movewell",
-      "category": "apparel",
+      "publisher_id": "pub_015",
+      "publisher_name": "Kitchenly",
+      "category": "meal_kits",
       "role": "test",
       "fit_score": 50,
-      "allocation_pct": 25.0,
-      "budget_usd": 2500.0,
-      "est_conversions": 238.1,
-      "capacity_note": null
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes call these shoppers 'Convenience-motivated but food-interested' subscription buyers, so a recurring, good-tasting protein snack is a credible next subscription at 36M impressions.",
+       "risk": "A $74 dinner-solution basket signals cooked meals, not grab-and-go fuel; the 28-52 family audience may not be protein-bar buyers at all.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
      }
     ],
     "targeting": {
@@ -1990,15 +2447,11 @@
      ],
      "gender": null,
      "age_range": {
-      "value": "25-44",
+      "value": "25-45",
       "source": "assumed"
      },
      "geo": [
-      "US-East",
-      "US-Midwest",
-      "US-Northeast",
-      "US-South",
-      "US-West"
+      "US (nationwide)"
      ],
      "contextual_interests": [
       "snacks",
@@ -2014,31 +2467,31 @@
     },
     "creatives": [
      {
-      "creative_id": "607f7c3de1-persona_009",
+      "creative_id": "006219b6f0-persona_009",
       "persona_id": "persona_009",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "607f7c3de1-persona_001",
+      "creative_id": "006219b6f0-persona_001",
       "persona_id": "persona_001",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "607f7c3de1-persona_007",
+      "creative_id": "006219b6f0-persona_007",
       "persona_id": "persona_007",
       "weight": 0.2,
-      "status": "passed"
+      "status": "revised"
      },
      {
-      "creative_id": "607f7c3de1-persona_003",
+      "creative_id": "006219b6f0-persona_003",
       "persona_id": "persona_003",
       "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "607f7c3de1-persona_002",
+      "creative_id": "006219b6f0-persona_002",
       "persona_id": "persona_002",
       "weight": 0.2,
       "status": "passed"
@@ -2062,23 +2515,315 @@
     },
     "experiment": {
      "creative_rotation": "even_then_optimize",
-     "test_budget_pct": 100.0,
+     "test_budget_pct": 15.0,
      "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
      "notes": "Creatives rotate evenly until each has enough conversions to compare."
     },
     "review": {
-     "needs_human_review": true,
+     "needs_human_review": false,
      "confidence": "medium",
      "assumptions": [
-      "Assumed a mid price tier and roughly $35 first order, typical for a protein bar multipack.",
-      "Assumed a broad adult audience of 25-44, any gender.",
-      "Assumed one-time purchases rather than a subscription.",
-      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+      "Assumed a mid-tier price and about $35 for a first order.",
+      "Assumed a broad adult audience of 25-45, any gender.",
+      "Assumed one-time purchase and subscription are both possible since the brief doesn't say.",
+      "Allowable CPA is 35% of first order value (unknown); replace with real margin and LTV."
      ],
      "warnings": [
-      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory.",
       "Target CPA is based on an assumed order value. Confirm price before launch."
+     ],
+     "launch_summary": null
+    }
+   }
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Protein bars · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-05",
+      "end": "2026-11-03",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 12.25,
+     "max_cpa_usd": 15.93,
+     "allowable_cpa_ratio": 0.35,
+     "first_order_value_usd": 35.0,
+     "first_order_value_source": "assumed",
+     "learning_period_days": 14,
+     "rationale": "$35 first order (assumed) × 0.35 = $12.25 target CPA: business model unclear; a middle ratio until real margins are known. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_002",
+      "publisher_name": "Movewell",
+      "category": "apparel",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "publisher_name": "Pop & Sip",
+      "category": "beverages",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 21.2,
+      "budget_usd": 2125.0,
+      "est_conversions": 173.5,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
+      "role": "test",
+      "fit_score": 50,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Pantry/subscription grocery buyers restock snacks on a cycle, but the notes say they are 'Responsive to clean-ingredient, sustainability, and wellness claims' — claims this brand doesn't make — so this is worth a measured test rather than core budget.",
+       "risk": "An organic/natural grocer may already stock competing bars, so the offer can read as redundant; $86 baskets also mean the shopper just spent heavily on food.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
+     },
+     {
+      "publisher_id": "pub_001",
+      "publisher_name": "Swiftcart",
+      "category": "instant_delivery",
+      "role": "test",
+      "fit_score": 50,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_003"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes describe 'High-frequency purchasers' who are 'Impulse-friendly' with a $28 typical order, so a $35 bar box is a plausible impulse add-on at huge scale; what needs measuring is whether late-night snack buyers convert on a multi-bar box.",
+       "risk": "Late-night alcohol/convenience traffic is indulgence-led, and a convenience grocery app likely stocks competing bars the shopper can add to the next order instead.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
+     },
+     {
+      "publisher_id": "pub_015",
+      "publisher_name": "Kitchenly",
+      "category": "meal_kits",
+      "role": "test",
+      "fit_score": 50,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 40.8,
+      "capacity_note": null,
+      "creative_ids": [
+       "006219b6f0-persona_009",
+       "006219b6f0-persona_001",
+       "006219b6f0-persona_007",
+       "006219b6f0-persona_002"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes call these shoppers 'Convenience-motivated but food-interested' subscription buyers, so a recurring, good-tasting protein snack is a credible next subscription at 36M impressions.",
+       "risk": "A $74 dinner-solution basket signals cooked meals, not grab-and-go fuel; the 28-52 family audience may not be protein-bar buyers at all.",
+       "promote_if": "CPA at or below the $12.25 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $15.93 maximum, or no conversions after 14 days: stop it."
+      }
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_009",
+      "persona_001",
+      "persona_007",
+      "persona_003",
+      "persona_002"
+     ],
+     "gender": null,
+     "age_range": {
+      "value": "25-45",
+      "source": "assumed"
+     },
+     "geo": [
+      "US (nationwide)"
+     ],
+     "contextual_interests": [
+      "snacks",
+      "fitness",
+      "supplements",
+      "wellness"
+     ],
+     "exclusions": [
+      "protein_snacks",
+      "snack_foods",
+      "sports_nutrition"
      ]
+    },
+    "creatives": [
+     {
+      "creative_id": "006219b6f0-persona_009",
+      "persona_id": "persona_009",
+      "weight": 0.2,
+      "status": "passed"
+     },
+     {
+      "creative_id": "006219b6f0-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.2,
+      "status": "passed"
+     },
+     {
+      "creative_id": "006219b6f0-persona_007",
+      "persona_id": "persona_007",
+      "weight": 0.2,
+      "status": "revised"
+     },
+     {
+      "creative_id": "006219b6f0-persona_003",
+      "persona_id": "persona_003",
+      "weight": 0.2,
+      "status": "passed"
+     },
+     {
+      "creative_id": "006219b6f0-persona_002",
+      "persona_id": "persona_002",
+      "weight": 0.2,
+      "status": "passed"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 15.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": false,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed a mid-tier price and about $35 for a first order.",
+      "Assumed a broad adult audience of 25-45, any gender.",
+      "Assumed one-time purchase and subscription are both possible since the brief doesn't say.",
+      "Allowable CPA is 35% of first order value (unknown); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "Target CPA is based on an assumed order value. Confirm price before launch."
+     ],
+     "launch_summary": {
+      "summary": "$8,500 goes to four core checkouts split evenly — Studiogrid, Movewell, Daily Form and Pop & Sip — where fitness intent or consumable restocking makes a $35 bar box a same-size add-on. A $1,500 test budget across Pantrygood, Swiftcart and Kitchenly asks whether high-reach food and convenience baskets convert on a multi-bar box, or whether those shoppers already buy competing bars nearby. All five personas, from The Fitness Enthusiast to The Busy Parent, run across most placements; pet, beauty, home and non-fitness apparel were excluded.",
+      "uncertainties": [
+       "The $35 first order value is assumed, and the $12.25 target and $15.93 maximum cost per new customer are built on it.",
+       "The business model is unknown, so the 35% allowable ratio stands in for real margin and lifetime value.",
+       "The 25-45, any-gender audience is assumed, and the grocery and meal-kit tests may reach shoppers who aren't protein-bar buyers at all."
+      ],
+      "questions": [
+       "What is your actual average first order value and margin on it?",
+       "Do you sell mainly one-time boxes, subscriptions, or both?",
+       "Do you make clean-ingredient or sustainability claims, which the Pantrygood audience responds to?"
+      ]
+     }
     }
    }
   },
@@ -2086,24 +2831,24 @@
    "type": "stage",
    "stage": "campaign",
    "status": "done",
-   "ms": 0
+   "ms": 6983
   },
   {
    "type": "done",
-   "run_id": "607f7c3de1",
-   "total_ms": 56748,
-   "cost_usd": 0.4353,
+   "run_id": "006219b6f0",
+   "total_ms": 95638,
+   "cost_usd": 0.6391,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v3-754902a",
-     "ms": 15307,
-     "input_tokens": 7336,
-     "output_tokens": 1216,
-     "cost_usd": 0.06708,
+     "prompt_version": "v5-e8eda0f",
+     "ms": 14217,
+     "input_tokens": 7570,
+     "output_tokens": 1085,
+     "cost_usd": 0.064975,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2127,11 +2872,11 @@
      "name": "select_personas",
      "model": "anthropic:claude-opus-5",
      "prompt": "select_personas",
-     "prompt_version": "v2-ab12f6b",
-     "ms": 14936,
-     "input_tokens": 4511,
-     "output_tokens": 1089,
-     "cost_usd": 0.04978,
+     "prompt_version": "v5-f2b41c4",
+     "ms": 16899,
+     "input_tokens": 6670,
+     "output_tokens": 1155,
+     "cost_usd": 0.062225,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2141,25 +2886,11 @@
      "name": "write_creative:persona_002",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 4806,
-     "input_tokens": 2618,
-     "output_tokens": 252,
-     "cost_usd": 0.01939,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_003",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 5110,
-     "input_tokens": 2608,
-     "output_tokens": 248,
-     "cost_usd": 0.01924,
+     "prompt_version": "v4-6284a7a",
+     "ms": 5137,
+     "input_tokens": 2614,
+     "output_tokens": 265,
+     "cost_usd": 0.019695,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2169,25 +2900,25 @@
      "name": "write_creative:persona_007",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 5728,
-     "input_tokens": 2606,
-     "output_tokens": 290,
-     "cost_usd": 0.02028,
+     "prompt_version": "v4-6284a7a",
+     "ms": 5736,
+     "input_tokens": 2580,
+     "output_tokens": 256,
+     "cost_usd": 0.0193,
      "retries": 0,
      "ok": true,
      "error": null
     },
     {
      "stage": "creative",
-     "name": "write_creative:persona_009",
+     "name": "write_creative:persona_003",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 5918,
-     "input_tokens": 2631,
-     "output_tokens": 290,
-     "cost_usd": 0.020405,
+     "prompt_version": "v4-6284a7a",
+     "ms": 5737,
+     "input_tokens": 2609,
+     "output_tokens": 303,
+     "cost_usd": 0.02062,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2197,25 +2928,25 @@
      "name": "write_creative:persona_001",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 10043,
-     "input_tokens": 2617,
-     "output_tokens": 616,
-     "cost_usd": 0.028485,
+     "prompt_version": "v4-6284a7a",
+     "ms": 5977,
+     "input_tokens": 2651,
+     "output_tokens": 437,
+     "cost_usd": 0.02418,
      "retries": 0,
      "ok": true,
      "error": null
     },
     {
-     "stage": "rerank",
-     "name": "rerank_publishers",
+     "stage": "creative",
+     "name": "write_creative:persona_009",
      "model": "anthropic:claude-opus-5",
-     "prompt": "rerank_publishers",
-     "prompt_version": "v2-e92e147",
-     "ms": 40962,
-     "input_tokens": 13826,
-     "output_tokens": 3587,
-     "cost_usd": 0.158805,
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 7015,
+     "input_tokens": 2618,
+     "output_tokens": 401,
+     "cost_usd": 0.023115,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2225,11 +2956,53 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v2-1c6bf10",
-     "ms": 16441,
-     "input_tokens": 3097,
-     "output_tokens": 1453,
-     "cost_usd": 0.05181,
+     "prompt_version": "v3-d8d972b",
+     "ms": 16516,
+     "input_tokens": 3067,
+     "output_tokens": 1458,
+     "cost_usd": 0.051785,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_007",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 5490,
+     "input_tokens": 3226,
+     "output_tokens": 257,
+     "cost_usd": 0.022555,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "critique",
+     "name": "critique_creative",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "critique_creative",
+     "prompt_version": "v3-d8d972b",
+     "ms": 21034,
+     "input_tokens": 3057,
+     "output_tokens": 1676,
+     "cost_usd": 0.057185,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v5-fcbc95b",
+     "ms": 74426,
+     "input_tokens": 16251,
+     "output_tokens": 6013,
+     "cost_usd": 0.23158,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2244,6 +3017,20 @@
      "input_tokens": 0,
      "output_tokens": 0,
      "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "summarize_launch",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "summarize_launch",
+     "prompt_version": "v1-18c2ce5",
+     "ms": 6980,
+     "input_tokens": 6221,
+     "output_tokens": 431,
+     "cost_usd": 0.04188,
      "retries": 0,
      "ok": true,
      "error": null

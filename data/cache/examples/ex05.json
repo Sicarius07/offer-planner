@@ -12,14 +12,14 @@
    "type": "profile",
    "profile": {
     "brief": "We help people feel better.",
-    "business_summary": "The brief says only that the business helps people feel better, which doesn't tell us what is sold.",
+    "business_summary": "The brief says the business helps people feel better, but it doesn't say what is actually sold.",
     "brand_name": null,
     "offering_type": "unclear",
     "product": {
-     "value": "Unknown — the brief describes a benefit (\"feel better\") but no actual product or service",
+     "value": "Unknown — no product or service described",
      "source": "assumed",
      "evidence": null,
-     "note": "No product category is named anywhere in the brief"
+     "note": "Brief only states a benefit, not a product"
     },
     "sells": [
      "other"
@@ -37,13 +37,13 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "No pricing given; mid is a neutral default"
+     "note": "Default while product is unknown"
     },
     "first_order_value_usd": {
-     "value": 50.0,
+     "value": 45.0,
      "source": "assumed",
      "evidence": null,
-     "note": "Placeholder typical first order until the product is known"
+     "note": "Generic default first order value"
     },
     "gender": {
      "value": "any",
@@ -52,68 +52,67 @@
      "note": "No audience described"
     },
     "age_range": {
-     "value": "25-55",
+     "value": "25-54",
      "source": "assumed",
      "evidence": null,
-     "note": "Broad adult default with no audience details"
+     "note": "Broad default while product is unknown"
     },
     "audience": {
-     "value": "General adult consumers, unspecified",
+     "value": "Unknown general consumers",
      "source": "assumed",
      "evidence": null,
-     "note": "Brief gives no customer detail"
+     "note": "No audience information in the brief"
     },
     "business_model": {
      "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "No purchase or subscription details given"
+     "note": "Brief gives no pricing or purchase model"
     },
     "claims": [],
     "clarity": "unusable",
-    "clarity_reason": "The brief states a benefit but never says what the company sells, so any publisher, persona or ad plan would be invented.",
+    "clarity_reason": "The brief describes a benefit ('help people feel better') but never says what product or service is sold, so any plan would be invented.",
     "assumptions": [
-     "We assumed nothing about the product because the brief doesn't name one; all attributes are placeholders until you tell us what you sell."
+     "We assumed nothing about the product because the brief doesn't say what you sell."
     ],
     "clarifying_questions": [
      {
       "question": "What do you actually sell?",
-      "why": "Determines the product category, competitors and which checkout pages we can advertise on",
+      "why": "Determines the product category, which drives publisher and persona selection.",
       "suggested_answers": [
        "Supplements or vitamins",
-       "Skincare or beauty",
-       "A wellness service or classes",
-       "Food or drinks"
+       "Skincare or personal care",
+       "Therapy or coaching service",
+       "Functional drinks"
       ]
      },
      {
-      "question": "Is it a physical product shoppers buy online, or a service/app?",
-      "why": "Disco works best for ecommerce products; services and software change the fit",
+      "question": "Is it a physical product or a service?",
+      "why": "Post-purchase offers work differently for shippable goods vs. bookings or digital services.",
       "suggested_answers": [
-       "Physical product",
-       "Service or appointment",
-       "App or subscription software",
-       "Mix"
-      ]
-     },
-     {
-      "question": "Who buys it most often?",
-      "why": "Sets the persona and publisher audience targeting",
-      "suggested_answers": [
-       "Mostly women 25-45",
-       "Mostly men 25-45",
-       "Older adults 50+",
-       "Anyone"
+       "Physical product shipped to customers",
+       "Online service or app",
+       "In-person service or appointments"
       ]
      },
      {
       "question": "What does a typical first order cost?",
-      "why": "Drives payout economics and which publishers make sense",
+      "why": "Sets expected order value and price tier for targeting and payout modeling.",
       "suggested_answers": [
-       "Under $30",
-       "$30-$60",
-       "$60-$120",
-       "Over $120"
+       "Under $25",
+       "$25-$60",
+       "$60-$150",
+       "Over $150"
+      ]
+     },
+     {
+      "question": "Who is your main customer?",
+      "why": "Shapes persona and publisher matching.",
+      "suggested_answers": [
+       "Women 25-45",
+       "Men 25-45",
+       "Older adults 50+",
+       "Anyone, broad appeal"
       ]
      }
     ],
@@ -125,50 +124,49 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 11439
+   "ms": 11604
   },
   {
    "type": "needs_input",
-   "reason": "The brief states a benefit but never says what the company sells, so any publisher, persona or ad plan would be invented.",
+   "reason": "The brief describes a benefit ('help people feel better') but never says what product or service is sold, so any plan would be invented.",
    "questions": [
     {
      "question": "What do you actually sell?",
-     "why": "Determines the product category, competitors and which checkout pages we can advertise on",
+     "why": "Determines the product category, which drives publisher and persona selection.",
      "suggested_answers": [
       "Supplements or vitamins",
-      "Skincare or beauty",
-      "A wellness service or classes",
-      "Food or drinks"
+      "Skincare or personal care",
+      "Therapy or coaching service",
+      "Functional drinks"
      ]
     },
     {
-     "question": "Is it a physical product shoppers buy online, or a service/app?",
-     "why": "Disco works best for ecommerce products; services and software change the fit",
+     "question": "Is it a physical product or a service?",
+     "why": "Post-purchase offers work differently for shippable goods vs. bookings or digital services.",
      "suggested_answers": [
-      "Physical product",
-      "Service or appointment",
-      "App or subscription software",
-      "Mix"
-     ]
-    },
-    {
-     "question": "Who buys it most often?",
-     "why": "Sets the persona and publisher audience targeting",
-     "suggested_answers": [
-      "Mostly women 25-45",
-      "Mostly men 25-45",
-      "Older adults 50+",
-      "Anyone"
+      "Physical product shipped to customers",
+      "Online service or app",
+      "In-person service or appointments"
      ]
     },
     {
      "question": "What does a typical first order cost?",
-     "why": "Drives payout economics and which publishers make sense",
+     "why": "Sets expected order value and price tier for targeting and payout modeling.",
      "suggested_answers": [
-      "Under $30",
-      "$30-$60",
-      "$60-$120",
-      "Over $120"
+      "Under $25",
+      "$25-$60",
+      "$60-$150",
+      "Over $150"
+     ]
+    },
+    {
+     "question": "Who is your main customer?",
+     "why": "Shapes persona and publisher matching.",
+     "suggested_answers": [
+      "Women 25-45",
+      "Men 25-45",
+      "Older adults 50+",
+      "Anyone, broad appeal"
      ]
     }
    ]
@@ -199,20 +197,20 @@
   },
   {
    "type": "done",
-   "run_id": "d2b44965f8",
-   "total_ms": 11439,
-   "cost_usd": 0.0586,
+   "run_id": "908045af59",
+   "total_ms": 11604,
+   "cost_usd": 0.0584,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v3-754902a",
-     "ms": 11438,
-     "input_tokens": 7314,
-     "output_tokens": 880,
-     "cost_usd": 0.05857,
+     "prompt_version": "v5-e8eda0f",
+     "ms": 11602,
+     "input_tokens": 7548,
+     "output_tokens": 827,
+     "cost_usd": 0.058415,
      "retries": 0,
      "ok": true,
      "error": null

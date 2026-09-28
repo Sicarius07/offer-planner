@@ -12,11 +12,11 @@
    "type": "profile",
    "profile": {
     "brief": "A new kind of thing for moms.",
-    "business_summary": "The brief says only that it is something new for moms, so we can't tell what the product actually is.",
+    "business_summary": "A product or service aimed at moms, but the brief doesn't say what it is.",
     "brand_name": null,
     "offering_type": "unclear",
     "product": {
-     "value": "Unknown product aimed at mothers",
+     "value": "Unspecified product for mothers",
      "source": "stated",
      "evidence": {
       "text": "A new kind of thing for moms",
@@ -41,13 +41,13 @@
      "value": "mid",
      "source": "assumed",
      "evidence": null,
-     "note": "No price given; mid-market is the safest default"
+     "note": "No price given; mid is a neutral default."
     },
     "first_order_value_usd": {
-     "value": 50.0,
+     "value": 45.0,
      "source": "assumed",
      "evidence": null,
-     "note": "No price given; typical mid-market consumer first order"
+     "note": "Generic default until the product is known."
     },
     "gender": {
      "value": "female",
@@ -57,13 +57,13 @@
       "start": 20,
       "end": 28
      },
-     "note": "Moms are the stated audience"
+     "note": "Moms are the stated audience."
     },
     "age_range": {
      "value": "28-45",
      "source": "assumed",
      "evidence": null,
-     "note": "Typical age band for mothers of young children"
+     "note": "Typical age range for parents of young children."
     },
     "audience": {
      "value": "Mothers",
@@ -79,19 +79,18 @@
      "value": "unknown",
      "source": "assumed",
      "evidence": null,
-     "note": "The brief does not say how it is sold"
+     "note": "Brief says nothing about how it's sold."
     },
     "claims": [],
     "clarity": "unusable",
-    "clarity_reason": "We know the intended audience (moms) but not what is being sold, so any publisher or ad plan would be invented.",
+    "clarity_reason": "The brief names an audience but never says what the product is, so any plan would be invented.",
     "assumptions": [
-     "We assumed the buyer is a woman aged roughly 28-45, based only on the word 'moms'.",
-     "We assumed mid-market pricing and a ~$50 first order because no price was given."
+     "We assumed the buyer is a mother aged roughly 28-45 and a mid-priced first order around $45, because no product or price was given."
     ],
     "clarifying_questions": [
      {
       "question": "What do you actually sell?",
-      "why": "This determines which publishers are non-competing and what the ad can say.",
+      "why": "Determines product category, publishers, and ad copy.",
       "suggested_answers": [
        "A physical product",
        "A subscription box",
@@ -101,27 +100,27 @@
      },
      {
       "question": "Which category does it fall into?",
-      "why": "Category drives publisher matching and persona selection.",
+      "why": "Sets the competitor set and which checkout pages we avoid.",
       "suggested_answers": [
        "Baby and kids gear",
        "Wellness or supplements",
-       "Food or snacks",
-       "Apparel"
+       "Apparel",
+       "Home or kitchen"
       ]
      },
      {
-      "question": "What does a first order typically cost?",
-      "why": "Price tier shapes which checkout audiences convert.",
+      "question": "What does a typical first order cost?",
+      "why": "Drives price tier and payout expectations.",
       "suggested_answers": [
-       "Under $30",
-       "$30-$75",
-       "$75-$150",
+       "Under $25",
+       "$25-$60",
+       "$60-$150",
        "Over $150"
       ]
      },
      {
       "question": "Is it a one-time purchase or a subscription?",
-      "why": "Subscription-only offers need different messaging and publisher fit.",
+      "why": "Changes the offer framing and repeat-purchase messaging.",
       "suggested_answers": [
        "One-time",
        "Subscription",
@@ -137,15 +136,15 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 10766
+   "ms": 10212
   },
   {
    "type": "needs_input",
-   "reason": "We know the intended audience (moms) but not what is being sold, so any publisher or ad plan would be invented.",
+   "reason": "The brief names an audience but never says what the product is, so any plan would be invented.",
    "questions": [
     {
      "question": "What do you actually sell?",
-     "why": "This determines which publishers are non-competing and what the ad can say.",
+     "why": "Determines product category, publishers, and ad copy.",
      "suggested_answers": [
       "A physical product",
       "A subscription box",
@@ -155,27 +154,27 @@
     },
     {
      "question": "Which category does it fall into?",
-     "why": "Category drives publisher matching and persona selection.",
+     "why": "Sets the competitor set and which checkout pages we avoid.",
      "suggested_answers": [
       "Baby and kids gear",
       "Wellness or supplements",
-      "Food or snacks",
-      "Apparel"
+      "Apparel",
+      "Home or kitchen"
      ]
     },
     {
-     "question": "What does a first order typically cost?",
-     "why": "Price tier shapes which checkout audiences convert.",
+     "question": "What does a typical first order cost?",
+     "why": "Drives price tier and payout expectations.",
      "suggested_answers": [
-      "Under $30",
-      "$30-$75",
-      "$75-$150",
+      "Under $25",
+      "$25-$60",
+      "$60-$150",
       "Over $150"
      ]
     },
     {
      "question": "Is it a one-time purchase or a subscription?",
-     "why": "Subscription-only offers need different messaging and publisher fit.",
+     "why": "Changes the offer framing and repeat-purchase messaging.",
      "suggested_answers": [
       "One-time",
       "Subscription",
@@ -210,20 +209,20 @@
   },
   {
    "type": "done",
-   "run_id": "b2ff6c8601",
-   "total_ms": 10766,
-   "cost_usd": 0.0589,
+   "run_id": "21fdbd7019",
+   "total_ms": 10213,
+   "cost_usd": 0.0581,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v3-754902a",
-     "ms": 10765,
-     "input_tokens": 7318,
-     "output_tokens": 892,
-     "cost_usd": 0.05889,
+     "prompt_version": "v5-e8eda0f",
+     "ms": 10209,
+     "input_tokens": 7552,
+     "output_tokens": 815,
+     "cost_usd": 0.058135,
      "retries": 0,
      "ok": true,
      "error": null

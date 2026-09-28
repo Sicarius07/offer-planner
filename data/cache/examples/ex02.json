@@ -12,11 +12,11 @@
    "type": "profile",
    "profile": {
     "brief": "A sustainable activewear brand for women. Made from recycled ocean plastic. Price point sits between Lululemon and Girlfriend Collective.",
-    "business_summary": "A women's activewear brand making workout clothes from recycled ocean plastic, priced in the premium range.",
+    "business_summary": "A women's activewear brand making leggings and workout clothing from recycled ocean plastic, priced in the premium range.",
     "brand_name": null,
     "offering_type": "consumer_product",
     "product": {
-     "value": "Women's sustainable activewear made from recycled ocean plastic",
+     "value": "Sustainable women's activewear made from recycled ocean plastic",
      "source": "stated",
      "evidence": {
       "text": "A sustainable activewear brand for women. Made from recycled ocean plastic",
@@ -31,13 +31,12 @@
     "competes_with": [
      "activewear",
      "womens_apparel",
-     "intimates",
-     "footwear"
+     "intimates"
     ],
     "interests": {
      "activewear": 1.0,
-     "apparel_women": 1.0,
-     "fitness": 0.5,
+     "fitness": 1.0,
+     "apparel_women": 0.5,
      "wellness": 0.5
     },
     "values": {
@@ -61,21 +60,21 @@
      "note": "Both reference brands are premium activewear"
     },
     "first_order_value_usd": {
-     "value": 90.0,
+     "value": 85.0,
      "source": "inferred",
      "evidence": {
       "text": "Price point sits between Lululemon and Girlfriend Collective",
       "start": 76,
       "end": 136
      },
-     "note": "Typical single-item price in that range"
+     "note": "Typical leggings price in that range"
     },
     "gender": {
      "value": "female",
      "source": "stated",
      "evidence": {
-      "text": "for women",
-      "start": 31,
+      "text": "activewear brand for women",
+      "start": 14,
       "end": 40
      },
      "note": null
@@ -87,20 +86,20 @@
      "note": "Typical buyer age for premium sustainable activewear"
     },
     "audience": {
-     "value": "Women who work out regularly and prefer sustainably made apparel",
+     "value": "Women who work out regularly and prefer eco-conscious, premium activewear",
      "source": "inferred",
      "evidence": {
       "text": "A sustainable activewear brand for women",
       "start": 0,
       "end": 40
      },
-     "note": "Drawn from product type and stated gender"
+     "note": "Derived from product and sustainability angle"
     },
     "business_model": {
      "value": "one_time",
      "source": "assumed",
      "evidence": null,
-     "note": "Apparel is normally bought one item at a time"
+     "note": "Apparel is normally sold as one-off purchases"
     },
     "claims": [
      {
@@ -121,16 +120,16 @@
      }
     ],
     "clarity": "clear",
-    "clarity_reason": "We know the product, the material story, the audience and the rough price band.",
+    "clarity_reason": "We know the product, audience and rough price level.",
     "assumptions": [
-     "We assumed a first order around $90 based on the named comparison brands.",
-     "We assumed buyers are mostly women aged 25-44.",
-     "We assumed one-time purchases rather than a subscription."
+     "Assumed a typical first order of about $85 based on the stated price positioning.",
+     "Assumed one-time purchases rather than a subscription.",
+     "Assumed a core audience of women roughly 25-44."
     ],
     "clarifying_questions": [
      {
       "question": "What is your average first order value?",
-      "why": "Sets the payout math and which publishers make sense.",
+      "why": "Sets payout economics and which publishers make sense",
       "suggested_answers": [
        "Under $60",
        "$60-$100",
@@ -139,8 +138,8 @@
       ]
      },
      {
-      "question": "Which products lead the line?",
-      "why": "Shapes the ad creative and offer.",
+      "question": "Which product is your best seller to lead with?",
+      "why": "Ad creative will feature that product",
       "suggested_answers": [
        "Leggings",
        "Sports bras",
@@ -149,11 +148,11 @@
       ]
      },
      {
-      "question": "What is the brand name?",
-      "why": "Needed for ad copy.",
+      "question": "What is your brand name?",
+      "why": "Used in ad copy",
       "suggested_answers": [
        "I'll provide it",
-       "Not decided yet"
+       "Prefer not to say yet"
       ]
      }
     ],
@@ -165,7 +164,7 @@
    "type": "stage",
    "stage": "understand",
    "status": "done",
-   "ms": 12437
+   "ms": 12867
   },
   {
    "type": "stage",
@@ -187,42 +186,49 @@
       "persona_id": "persona_006",
       "name": "The Sustainability Buyer",
       "score": 46,
-      "why_plausible": "The brief's core claim is recycled ocean plastic, and this persona makes decisions on environmental footprint and buys sustainable_apparel at a typical AOV of $92, matching the ~$90 first order. Price sensitivity medium is fine at this tier.",
+      "rank": 3,
+      "why_plausible": "Her core affinity is sustainable_apparel and she'll pay more for genuinely sustainable options, which is exactly this brand's central claim of recycled ocean plastic; typical_aov_usd 92 matches the ~$85 first order. The score undercounted her because activewear tags didn't map to sustainable_apparel.",
       "lean_into": [
-       "specific sustainability claims — recycled ocean plastic as the fabric source",
-       "material transparency about what the garment is made of"
+       "specific sustainability claims (recycled ocean plastic, stated material source)",
+       "material and supply chain transparency",
+       "durability as an anti-fast-fashion argument"
       ],
       "avoid": [
-       "vague eco claims like 'good for the planet'",
-       "anything that reads as fast fashion or seasonal drops",
-       "unverified certification claims the brand hasn't stated"
+       "vague eco language like 'eco-friendly' or 'green'",
+       "implying certifications the brand hasn't named",
+       "fast-fashion style urgency or drop culture"
       ],
-      "ad_angle": "The material story: ocean plastic recovered and spun into the fabric you train in — concrete, not vague eco talk.",
+      "ad_angle": "Your leggings were ocean plastic — the specific, traceable material story for a shopper who checks.",
       "confidence": "high",
       "reached_via": [
+       "pub_008",
        "pub_003",
-       "pub_016",
-       "pub_006"
+       "pub_012",
+       "pub_016"
       ],
       "conflicts": []
      },
      {
       "persona_id": "persona_009",
       "name": "The Fitness Enthusiast",
-      "score": 49,
-      "why_plausible": "Works out 4+ times a week and buys performance apparel with low-medium price sensitivity; the brand explicitly values performance and sits in the premium activewear tier. Activewear is their top category affinity.",
+      "score": 54,
+      "rank": 2,
+      "why_plausible": "activewear is her first named affinity and she trains 4+ times weekly, buying performance apparel as identity; price_sensitivity low-medium and AOV $88 fit the premium tier.",
       "lean_into": [
-       "technical fabric performance",
-       "gear that holds up to frequent training"
+       "technical fabric performance (squat-proof, sweat-wicking, holds shape)",
+       "built for people who actually train",
+       "brand-loyalty framing: gear that performs wash after wash"
       ],
       "avoid": [
-       "fashion-only positioning",
-       "athlete endorsement claims the brief doesn't support",
-       "sedentary lifestyle framing"
+       "fashion-only or athleisure-lounging positioning",
+       "sustainability as the sole reason to buy",
+       "athlete endorsements the brand can't substantiate"
       ],
-      "ad_angle": "Performance first: technical activewear that survives four-plus sessions a week — sustainability is a bonus, not an excuse.",
-      "confidence": "medium",
+      "ad_angle": "Recycled material that still performs like technical gear — no trade-off in the gym.",
+      "confidence": "high",
       "reached_via": [
+       "pub_012",
+       "pub_008",
        "pub_003",
        "pub_016"
       ],
@@ -231,42 +237,71 @@
      {
       "persona_id": "persona_001",
       "name": "The Wellness Optimizer",
-      "score": 53,
-      "why_plausible": "Female, 28-40, treats her body as a system and pays premiums for considered products; fitness and wellness are both scored interests in the brief. Low price sensitivity with a $95 AOV matches the $90 first order.",
+      "score": 59,
+      "rank": 1,
+      "why_plausible": "She optimizes her body as a system across fitness and wellness and pays premiums willingly (price_sensitivity: low, AOV $95), so premium workout apparel is an easy add. She wants transparency, which the recycled-material story can honestly serve even without clinical proof.",
       "lean_into": [
-       "transparency about what the product is made of",
-       "outcome-focused framing around training consistently"
+       "material transparency: exactly what the fabric is made of",
+       "outcome-focused — gear that supports a consistent training routine",
+       "clean, non-novelty premium quality"
       ],
       "avoid": [
-       "novelty or hype language",
-       "fast-fashion cues",
-       "pseudo-scientific claims the brief can't back"
+       "fast-fashion framing or trend-chasing",
+       "novelty or gimmicky drops",
+       "fake science or unsupported 'clinically proven' claims"
       ],
-      "ad_angle": "Your kit as part of the routine: the one wardrobe upgrade for a woman who already optimizes sleep, training and food.",
+      "ad_angle": "The last piece of a well-run routine: considered gear for a woman who optimizes everything else.",
       "confidence": "medium",
       "reached_via": [
        "pub_016",
+       "pub_012",
+       "pub_008",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 39,
+      "rank": 6,
+      "why_plausible": "Gifting mode shoppers have low price sensitivity and AOV $95, and apparel plus premium_basics are named affinities; premium leggings are a common, impressive-looking gift for a woman who works out.",
+      "lean_into": [
+       "giftable and premium presentation",
+       "a gift with a story behind it (ocean plastic) that's easy to tell",
+       "apparel sizing/easy exchange reassurance for gift buyers"
+      ],
+      "avoid": [
+       "self-care-only framing",
+       "subscription-only offers",
+       "niche performance jargon that a non-athlete gifter can't evaluate"
+      ],
+      "ad_angle": "A gift that comes with a story — premium activewear she'd pick for herself.",
+      "confidence": "medium",
+      "reached_via": [
        "pub_003",
-       "pub_006"
+       "pub_008"
       ],
       "conflicts": []
      },
      {
       "persona_id": "persona_005",
       "name": "The Affluent Classic",
-      "score": 51,
-      "why_plausible": "Female, low price sensitivity, $145 AOV, and values quality and longevity over trends — the premium price point between Lululemon and Girlfriend Collective supports a durability pitch. Apparel and self-treat are her scored overlaps.",
+      "score": 44,
+      "rank": 4,
+      "why_plausible": "price_sensitivity: low with AOV $145 and an apparel affinity; she buys fewer, longer-lasting pieces and premium activewear for walking, yoga or travel fits quality-over-trends. Score ranked her mid because her tags skew classic apparel, missing that durable premium basics are her pattern.",
       "lean_into": [
-       "quality-focused, built to last",
-       "understated tone"
+       "quality and longevity over trends",
+       "understated design, craftsmanship of the fabric",
+       "buy-less-buy-better rationale"
       ],
       "avoid": [
-       "trendy or hype language",
-       "influencer positioning",
-       "loud aesthetics or gym-bro energy"
+       "influencer or TikTok positioning",
+       "loud aesthetics and trendy slang",
+       "youth-coded 'hot girl gym' framing"
       ],
-      "ad_angle": "Quiet quality: pieces made well enough to keep for years, in a category that usually asks you to replace them.",
-      "confidence": "medium",
+      "ad_angle": "Made to outlast trends: understated, well-constructed pieces worth owning for years.",
+      "confidence": "low",
       "reached_via": [
        "pub_005",
        "pub_004"
@@ -277,42 +312,31 @@
     "candidates": [
      {
       "persona_id": "persona_001",
-      "score": 53,
-      "affinity": 43,
+      "score": 59,
+      "affinity": 52,
       "values": 35,
       "price": 100,
-      "reach": 57,
+      "reach": 67,
       "conflicts": [],
       "reach_publishers": [
        "pub_016",
-       "pub_003",
-       "pub_006"
+       "pub_012",
+       "pub_008",
+       "pub_003"
       ],
       "detail": "shops wellness, fitness, activewear≈fitness; responds to performance, sustainability≈clean_ingredients"
      },
      {
-      "persona_id": "persona_005",
-      "score": 51,
-      "affinity": 51,
-      "values": 25,
-      "price": 100,
-      "reach": 42,
-      "conflicts": [],
-      "reach_publishers": [
-       "pub_005",
-       "pub_004"
-      ],
-      "detail": "shops apparel_women, self_treat, activewear≈apparel_women; responds to premium_quality"
-     },
-     {
       "persona_id": "persona_009",
-      "score": 49,
-      "affinity": 49,
+      "score": 54,
+      "affinity": 56,
       "values": 25,
       "price": 100,
-      "reach": 36,
+      "reach": 48,
       "conflicts": [],
       "reach_publishers": [
+       "pub_012",
+       "pub_008",
        "pub_003",
        "pub_016"
       ],
@@ -321,102 +345,122 @@
      {
       "persona_id": "persona_006",
       "score": 46,
-      "affinity": 22,
+      "affinity": 18,
       "values": 55,
       "price": 100,
-      "reach": 44,
+      "reach": 53,
       "conflicts": [],
       "reach_publishers": [
+       "pub_008",
        "pub_003",
-       "pub_016",
-       "pub_006"
+       "pub_012",
+       "pub_016"
       ],
       "detail": "shops apparel_women, wellness≈natural_food, activewear≈apparel_women; responds to sustainability, premium_quality≈heritage"
      },
      {
+      "persona_id": "persona_005",
+      "score": 44,
+      "affinity": 40,
+      "values": 25,
+      "price": 100,
+      "reach": 31,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_005",
+       "pub_004"
+      ],
+      "detail": "shops apparel_women, self_treat, activewear≈apparel_women; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 39,
+      "affinity": 0,
+      "values": 46,
+      "price": 100,
+      "reach": 58,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_008",
+       "pub_016",
+       "pub_012"
+      ],
+      "detail": "responds to premium_quality, sustainability≈clean_ingredients"
+     },
+     {
       "persona_id": "persona_010",
-      "score": 41,
-      "affinity": 26,
+      "score": 39,
+      "affinity": 21,
       "values": 20,
       "price": 100,
       "reach": 46,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
-       "pub_006"
+       "pub_008"
       ],
       "detail": "shops gift, apparel_women, wellness≈beauty; responds to premium_quality"
      },
      {
-      "persona_id": "persona_004",
-      "score": 38,
-      "affinity": 0,
-      "values": 46,
-      "price": 100,
-      "reach": 54,
-      "conflicts": [],
-      "reach_publishers": [
-       "pub_003",
-       "pub_016",
-       "pub_006"
-      ],
-      "detail": "responds to premium_quality, sustainability≈clean_ingredients"
-     },
-     {
       "persona_id": "persona_003",
-      "score": 30,
-      "affinity": 51,
+      "score": 31,
+      "affinity": 45,
       "values": 28,
       "price": 30,
-      "reach": 0,
+      "reach": 10,
       "conflicts": [],
-      "reach_publishers": [],
+      "reach_publishers": [
+       "pub_012"
+      ],
       "detail": "shops apparel_women, self_treat, wellness≈functional_beverages; responds to sustainability, premium_quality≈aesthetic; price-mismatched for premium"
      },
      {
-      "persona_id": "persona_008",
-      "score": 29,
-      "affinity": 22,
+      "persona_id": "persona_007",
+      "score": 31,
+      "affinity": 0,
       "values": 0,
-      "price": 30,
+      "price": 100,
       "reach": 63,
       "conflicts": [],
       "reach_publishers": [
-       "pub_006",
+       "pub_008",
        "pub_003",
+       "pub_012",
        "pub_016"
       ],
-      "detail": "shops apparel_women, activewear≈apparel_women; price-mismatched for premium"
+      "detail": "little overlap"
      },
      {
       "persona_id": "persona_002",
-      "score": 28,
+      "score": 30,
       "affinity": 0,
       "values": 0,
       "price": 100,
-      "reach": 53,
+      "reach": 59,
       "conflicts": [],
       "reach_publishers": [
+       "pub_008",
        "pub_003",
        "pub_016",
-       "pub_006"
+       "pub_012"
       ],
       "detail": "little overlap"
      },
      {
-      "persona_id": "persona_007",
-      "score": 28,
-      "affinity": 0,
+      "persona_id": "persona_008",
+      "score": 24,
+      "affinity": 14,
       "values": 0,
-      "price": 100,
-      "reach": 50,
+      "price": 30,
+      "reach": 55,
       "conflicts": [],
       "reach_publishers": [
        "pub_003",
        "pub_016",
-       "pub_006"
+       "pub_008"
       ],
-      "detail": "little overlap"
+      "detail": "shops apparel_women, activewear≈apparel_women; price-mismatched for premium"
      }
     ],
     "skipped_note": null
@@ -426,7 +470,7 @@
    "type": "stage",
    "stage": "personas",
    "status": "done",
-   "ms": 13731
+   "ms": 21354
   },
   {
    "type": "stage",
@@ -437,52 +481,25 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "fdf2c48bac-persona_006",
+    "creative_id": "ce8d285a47-persona_006",
     "persona_id": "persona_006",
     "persona_name": "The Sustainability Buyer",
-    "angle": "Material transparency: the fabric is recycled ocean plastic, stated plainly",
-    "headline": "The fabric started as ocean plastic",
-    "body": "Women's activewear made from recycled ocean plastic. That's the material, stated plainly — no vague eco language attached.",
-    "cta": "See the fabric",
+    "angle": "Name the material: these leggings started as recycled ocean plastic",
+    "headline": "These leggings started as ocean plastic",
+    "body": "Women's activewear made from recycled ocean plastic. One material, named plainly, so you can check it before you buy.",
+    "cta": "See the material",
     "claims_used": [
-     {
-      "claim": "The fabric started as ocean plastic / made from recycled ocean plastic",
-      "source_quote": "Made from recycled ocean plastic"
-     },
-     {
-      "claim": "Women's activewear, sustainable",
-      "source_quote": "A sustainable activewear brand for women"
-     }
-    ],
-    "offer_suggestion": "Free returns on a first order, so a skeptical buyer can judge the fabric in person",
-    "tone_notes": "Leads with the concrete material rather than a benefit or eco slogan. No certifications, no supply-chain detail beyond what the brief states, no urgency or seasonal-drop framing. Plain declarative sentences signal transparency to a greenwashing-wary reader.",
-    "status": "draft",
-    "critique": null,
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "fdf2c48bac-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "The kit slots into an already-optimized routine",
-    "headline": "The last input: what you train in",
-    "body": "Sustainable women's activewear made from recycled ocean plastic. You track the sleep and the sets — know your kit too.",
-    "cta": "See the fabric",
-    "claims_used": [
-     {
-      "claim": "Sustainable women's activewear",
-      "source_quote": "A sustainable activewear brand for women"
-     },
      {
       "claim": "made from recycled ocean plastic",
       "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "women's activewear / leggings",
+      "source_quote": "A sustainable activewear brand for women"
      }
     ],
-    "offer_suggestion": "Free returns on a first order, so fit can be tested across a full training week",
-    "tone_notes": "Plain, system-minded framing that treats the wardrobe as one more tracked input. Material stated literally for transparency, no hype, no performance or health outcomes claimed beyond the brief.",
+    "offer_suggestion": "Free returns on a first order, so a skeptical first-time buyer can judge the fabric in person",
+    "tone_notes": "Leads with the specific, traceable material rather than vague eco language. No certifications implied, no urgency, no drop talk. 'Named plainly, so you can check' speaks to a researcher without describing her.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -491,13 +508,13 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "fdf2c48bac-persona_005",
-    "persona_id": "persona_005",
-    "persona_name": "The Affluent Classic",
-    "angle": "Quiet quality over replacement cycles",
-    "headline": "Activewear you keep, not replace",
-    "body": "Women's activewear made from recycled ocean plastic. Plain lines, premium make, for a wardrobe you're not looking to replace each year.",
-    "cta": "See the range",
+    "creative_id": "ce8d285a47-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Premium activewear as a gift with a story worth telling",
+    "headline": "A gift with a story she can tell",
+    "body": "Women's activewear made from recycled ocean plastic. Premium leggings and workout pieces she'd have picked for herself.",
+    "cta": "Shop gifts",
     "claims_used": [
      {
       "claim": "made from recycled ocean plastic",
@@ -506,14 +523,10 @@
      {
       "claim": "Women's activewear",
       "source_quote": "A sustainable activewear brand for women"
-     },
-     {
-      "claim": "premium make (price positioning)",
-      "source_quote": "Price point sits between Lululemon and Girlfriend Collective"
      }
     ],
-    "offer_suggestion": "Free returns or exchanges on a first order, to lower the risk of buying an unfamiliar fit at a premium price",
-    "tone_notes": "Understated, no hype or gym energy. Leads with longevity and considered construction rather than trend or performance language; sustainability is stated as a material fact, not a cause pitch.",
+    "offer_suggestion": "Free gift wrap plus a prepaid size-exchange card for gift recipients",
+    "tone_notes": "Leads with giftability and the ocean-plastic story as easy-to-tell provenance, not self-care. Plain language, no performance jargon; 'she'd have picked for herself' signals premium without inventing quality claims. Exchange reassurance kept out of copy and offered as an incentive to approve.",
     "status": "draft",
     "critique": null,
     "revision_of": null
@@ -522,16 +535,16 @@
   {
    "type": "creative",
    "creative": {
-    "creative_id": "fdf2c48bac-persona_009",
-    "persona_id": "persona_009",
-    "persona_name": "The Fitness Enthusiast",
-    "angle": "Performance first; the recycled fabric is a bonus, not the pitch",
-    "headline": "Built for the fourth session this week",
-    "body": "Women's activewear made from recycled ocean plastic. Bought for how it trains — the fabric's backstory is a bonus, not the pitch.",
-    "cta": "See the gear",
+    "creative_id": "ce8d285a47-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Quiet, well-made activewear meant to be kept, not replaced each season",
+    "headline": "Activewear built to be kept",
+    "body": "Understated women's activewear in fabric made from recycled ocean plastic. Fewer pieces, worn for years, for walking, yoga or travel.",
+    "cta": "See the pieces",
     "claims_used": [
      {
-      "claim": "made from recycled ocean plastic",
+      "claim": "fabric made from recycled ocean plastic",
       "source_quote": "Made from recycled ocean plastic"
      },
      {
@@ -539,76 +552,189 @@
       "source_quote": "A sustainable activewear brand for women"
      }
     ],
-    "offer_suggestion": "First order free returns or 15% off a first set, if the advertiser can support it",
-    "tone_notes": "Leads with training frequency and gear framing for someone who works out 4+ times a week; no fashion styling language, no athlete endorsements, no invented durability or performance test claims. Sustainability is mentioned factually and demoted to secondary, which separates it from the sustainability-led cards.",
+    "offer_suggestion": "Complimentary shipping and returns on a first order, so she can judge fit and fabric in person",
+    "tone_notes": "Plain, understated phrasing with no slang or trend references; leads on longevity and fabric rather than sustainability halo or gym culture. Use cases named are age-appropriate (walking, yoga, travel), and the buy-less-buy-better logic is stated without lecturing.",
     "status": "draft",
     "critique": null,
     "revision_of": null
    }
   },
   {
+   "type": "creative",
+   "creative": {
+    "creative_id": "ce8d285a47-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Considered gear as the last variable in an already-optimized routine",
+    "headline": "The routine's dialed in. The kit?",
+    "body": "Women's activewear made from recycled ocean plastic. You know what's in your supplements. Now you know what's in your leggings.",
+    "cta": "See the fabric",
+    "claims_used": [
+     {
+      "claim": "Women's activewear made from recycled ocean plastic",
+      "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "activewear for women (leggings)",
+      "source_quote": "A sustainable activewear brand for women"
+     }
+    ],
+    "offer_suggestion": "Free returns on a first pair of leggings, so she can test fit before committing",
+    "tone_notes": "Outcome-framed around an existing training routine, with literal material transparency instead of health or performance claims. No trend language, no novelty, no invented science \\u2014 just what the fabric is, stated plainly, which matches her supplement-label mindset.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "ce8d285a47-persona_009",
+    "persona_id": "persona_009",
+    "persona_name": "The Fitness Enthusiast",
+    "angle": "Recycled material, still real training gear — no trade-off",
+    "headline": "Recycled ocean plastic. Still gym kit.",
+    "body": "Leggings and workout clothing made from recycled ocean plastic. Activewear first — the material is just where it comes from.",
+    "cta": "See the gear",
+    "claims_used": [
+     {
+      "claim": "Made from recycled ocean plastic",
+      "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "Women's leggings and workout clothing / activewear",
+      "source_quote": "A women's activewear brand making leggings and workout clothing"
+     }
+    ],
+    "offer_suggestion": "Free returns on first order, or a bundle price on a leggings + top set",
+    "tone_notes": "Frames sustainability as a material fact, not the reason to buy, so the training identity leads. No fashion or lounging language, no invented performance specs or athlete names — plain, gear-focused phrasing for someone who buys apparel to train in.",
+    "status": "draft",
+    "critique": null,
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "ce8d285a47-persona_006",
+    "persona_id": "persona_006",
+    "persona_name": "The Sustainability Buyer",
+    "angle": "Name the material: these leggings started as recycled ocean plastic",
+    "headline": "These leggings started as ocean plastic",
+    "body": "Women's activewear made from recycled ocean plastic. One material, named plainly, so you can check it before you buy.",
+    "cta": "See the material",
+    "claims_used": [
+     {
+      "claim": "made from recycled ocean plastic",
+      "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "women's activewear / leggings",
+      "source_quote": "A sustainable activewear brand for women"
+     }
+    ],
+    "offer_suggestion": "Free returns on a first order, so a skeptical first-time buyer can judge the fabric in person",
+    "tone_notes": "Leads with the specific, traceable material rather than vague eco language. No certifications implied, no urgency, no drop talk. 'Named plainly, so you can check' speaks to a researcher without describing her.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Only the recycled ocean plastic and women's activewear claims appear, both in the brief."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Names one specific material plainly and avoids vague eco language; no certifications invented."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "The ocean-plastic material and 'check it before you buy' framing tie to this brand."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Calm, no urgency or pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health claims; sustainability framing suits Pantrygood and Daily Form."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "ce8d285a47-persona_001",
+    "persona_id": "persona_001",
+    "persona_name": "The Wellness Optimizer",
+    "angle": "Considered gear as the last variable in an already-optimized routine",
+    "headline": "The routine's dialed in. The kit?",
+    "body": "Women's activewear made from recycled ocean plastic. You know what's in your supplements. Now you know what's in your leggings.",
+    "cta": "See the fabric",
+    "claims_used": [
+     {
+      "claim": "Women's activewear made from recycled ocean plastic",
+      "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "activewear for women (leggings)",
+      "source_quote": "A sustainable activewear brand for women"
+     }
+    ],
+    "offer_suggestion": "Free returns on a first pair of leggings, so she can test fit before committing",
+    "tone_notes": "Outcome-framed around an existing training routine, with literal material transparency instead of health or performance claims. No trend language, no novelty, no invented science \\u2014 just what the fabric is, stated plainly, which matches her supplement-label mindset.",
+    "status": "passed",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims limited to women's activewear made from recycled ocean plastic."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Leans on material transparency; avoids fast-fashion and novelty framing, and invents no science claims."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Ocean-plastic fabric reference can't transfer to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Quiet, conversational, no pressure."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "No health benefit asserted, fine for Daily Form's skeptical audience."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": null
+   }
+  },
+  {
    "type": "publishers",
    "plan": {
-    "summary": "Two activewear sellers (Movewell, Cloudfoot) are competitors, so the plan rests on a sustainability-aligned footwear test (Stride & Stem) and fitness-services traffic at Studiogrid, with women's apparel publishers as lower-conviction tests where the audience skews older than the 25-44 target.",
-    "recommended": [],
-    "test": [
-     {
-      "publisher_id": "pub_016",
-      "name": "Stride & Stem",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 41,
-        "neutral": false,
-        "detail": "matches apparel_women, activewear≈footwear, fitness≈footwear"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "94% female; high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$90 vs $142 typical order (0.6×)"
-       },
-       {
-        "name": "values",
-        "score": 50,
-        "neutral": false,
-        "detail": "shares sustainability"
-       },
-       {
-        "name": "reach",
-        "score": 23,
-        "neutral": false,
-        "detail": "3.2M monthly impressions"
-       }
-      ],
-      "base_fit": 61,
-      "adjustment": 8,
-      "adjustment_reason": "Notes state 'Sustainability and machine-washable claims resonate', a direct match to the recycled-ocean-plastic story that the 50 values score underweights.",
-      "fit": 69,
-      "tier": "test",
-      "exclusion_reason": null,
-      "conflict": null,
-      "adjacent_conflict": "sells footwear, a close substitute",
-      "rationale": "Stride & Stem's 94% female professional buyers already respond to sustainability claims, making it the cleanest values match in the catalog for recycled ocean plastic; footwear only lightly overlaps activewear.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Sustainability and machine-washable claims resonate"
-       },
-       {
-        "field": "subcategories",
-        "quote": "sustainable"
-       }
-      ],
-      "risk": "Only 3.2M monthly impressions, so volume will be thin even if conversion is strong."
-     },
+    "summary": "Budget leans to Studiogrid, where a just-booked yoga or training session is a direct trigger for buying activewear, with tests on sustainability-receptive audiences (Stride & Stem, Pantrygood) and fitness-adjacent supplements (Daily Form); activewear sellers and mid-life conservative womenswear are excluded.",
+    "explained": true,
+    "recommended": [
      {
       "publisher_id": "pub_003",
       "name": "Studiogrid",
@@ -616,7 +742,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 50,
+        "score": 62,
         "neutral": false,
         "detail": "matches fitness, wellness, activewear≈fitness"
        },
@@ -628,9 +754,9 @@
        },
        {
         "name": "price",
-        "score": 96,
+        "score": 99,
         "neutral": false,
-        "detail": "$90 vs $42 typical order (2.1×)"
+        "detail": "$85 vs $42 typical order (2.0×)"
        },
        {
         "name": "values",
@@ -645,16 +771,20 @@
         "detail": "13.6M monthly impressions"
        }
       ],
-      "base_fit": 61,
-      "adjustment": 5,
-      "adjustment_reason": "Notes say users are 'actively spending on self-care and fitness', a post-class buying moment that the category score (50) understates for activewear.",
-      "fit": 66,
-      "tier": "test",
+      "base_fit": 67,
+      "fit": 70,
+      "computed_tier": "test",
+      "tier": "recommended",
+      "tier_reason": "The score treated this as a generic wellness-audience match and capped it at test, but the purchase itself is the connection: a shopper who just booked a yoga class or personal training session needs something to wear to it, and the notes confirm they are mid-transaction on fitness spend at high income.",
       "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Studiogrid books fitness classes and spa appointments for a 74% female, high-income audience, so the confirmation page catches women right after committing to a workout habit; notes confirm they are 'actively spending on self-care and fitness'.",
+      "rationale": "Booking a fitness class or personal training session is the single clearest trigger for buying leggings, and the notes say these shoppers are 'actively spending on self-care and fitness' at high income with a 74% female skew.",
       "evidence": [
+       {
+        "field": "subcategories",
+        "quote": "fitness_classes"
+       },
        {
         "field": "notes",
         "quote": "Users are actively spending on self-care and fitness"
@@ -664,276 +794,68 @@
         "quote": "high"
        }
       ],
-      "risk": "Service bookings at $42 are a different purchase mindset than a $90 apparel order, so click-to-buy may lag."
-     },
+      "risk": "$85 is roughly 2x the $42 class booking, so the offer is a bigger commitment than the purchase that preceded it; sustainability messaging may matter less here than fit and performance.",
+      "competitor_dispute": null
+     }
+    ],
+    "test": [
      {
-      "publisher_id": "pub_004",
-      "name": "Marlowe & Co.",
+      "publisher_id": "pub_016",
+      "name": "Stride & Stem",
       "category": "apparel",
       "signals": [
        {
         "name": "category",
-        "score": 41,
+        "score": 37,
         "neutral": false,
-        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
+        "detail": "matches apparel_women, activewear≈footwear, fitness≈footwear"
        },
        {
         "name": "audience",
         "score": 100,
         "neutral": false,
-        "detail": "96% female; high income for premium price"
+        "detail": "94% female; high income for premium price"
        },
        {
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $112 typical order (0.8×)"
+        "detail": "$85 vs $142 typical order (0.6×)"
        },
        {
         "name": "values",
-        "score": 25,
+        "score": 50,
         "neutral": false,
-        "detail": "shares premium_quality"
+        "detail": "shares sustainability"
        },
        {
         "name": "reach",
-        "score": 46,
+        "score": 23,
         "neutral": false,
-        "detail": "8.4M monthly impressions"
+        "detail": "3.2M monthly impressions"
        }
       ],
       "base_fit": 60,
-      "adjustment": -5,
-      "adjustment_reason": "Audience age_skew 45-65 sits well outside the brand's stated 25-44 range, and notes flag 'Lower impulse', which the 100 audience score ignores.",
-      "fit": 55,
+      "fit": 60,
+      "computed_tier": "test",
       "tier": "test",
+      "tier_reason": null,
       "exclusion_reason": null,
       "conflict": null,
-      "adjacent_conflict": "sells womens_apparel, a close substitute",
-      "rationale": "Marlowe & Co. delivers affluent women at a $112 AOV, but they are 45-65 and respond to 'quality messaging' rather than the workout-performance angle this brand leads with.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Older affluent women. Lower impulse but high AOV"
-       },
-       {
-        "field": "audience",
-        "quote": "45-65"
-       }
-      ],
-      "risk": "Age mismatch with a 25-44 activewear brand; sustainability story may not drive this cohort."
-     },
-     {
-      "publisher_id": "pub_006",
-      "name": "Everbody",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 40,
-        "neutral": false,
-        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
-       },
-       {
-        "name": "audience",
-        "score": 82,
-        "neutral": false,
-        "detail": "99% female; mid income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$90 vs $89 typical order (1.0×)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 43,
-        "neutral": false,
-        "detail": "7.6M monthly impressions"
-       }
-      ],
-      "base_fit": 52,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 52,
-      "tier": "test",
-      "exclusion_reason": null,
-      "conflict": null,
-      "adjacent_conflict": "sells intimates, womens_apparel, a close substitute",
-      "rationale": "Everbody's 99% female shoppers at an $89 AOV match the price point exactly, and its 'fit-focused messaging' orientation suits activewear — provided the brand actually offers inclusive sizing.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Audience values representation and fit-focused messaging"
-       },
-       {
-        "field": "avg_order_value_usd",
-        "quote": "89.0"
-       }
-      ],
-      "risk": "Mid-income plus-size audience may balk at a premium price, and a narrow size range would read badly here."
-     },
-     {
-      "publisher_id": "pub_005",
-      "name": "Linden Park",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 40,
-        "neutral": false,
-        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "98% female; high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$90 vs $128 typical order (0.7×)"
-       },
-       {
-        "name": "values",
-        "score": 22,
-        "neutral": false,
-        "detail": "shares premium_quality"
-       },
-       {
-        "name": "reach",
-        "score": 39,
-        "neutral": false,
-        "detail": "6.2M monthly impressions"
-       }
-      ],
-      "base_fit": 58,
-      "adjustment": -8,
-      "adjustment_reason": "Audience age_skew of 50-70 plus a 'Conservative brand sensibility' is a poor match for a 25-44 sustainable activewear brand, which the 100 audience score misses.",
-      "fit": 50,
-      "tier": "test",
-      "exclusion_reason": null,
-      "conflict": null,
-      "adjacent_conflict": "sells womens_apparel, a close substitute",
-      "rationale": "Linden Park has the catalog's highest apparel AOV, but its 50-70 classic-workwear buyer is two decades older than the target and its conservative sensibility clashes with ocean-plastic positioning.",
-      "evidence": [
-       {
-        "field": "notes",
-        "quote": "Conservative brand sensibility"
-       },
-       {
-        "field": "audience",
-        "quote": "50-70"
-       }
-      ],
-      "risk": "Oldest audience in the plan; activewear relevance and sustainability messaging both likely to underperform."
-     }
-    ],
-    "excluded": [
-     {
-      "publisher_id": "pub_002",
-      "name": "Movewell",
-      "category": "apparel",
-      "signals": [
-       {
-        "name": "category",
-        "score": 66,
-        "neutral": false,
-        "detail": "matches activewear, fitness, apparel_women"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "82% female; mid-high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$90 vs $78 typical order (1.2×)"
-       },
-       {
-        "name": "values",
-        "score": 17,
-        "neutral": false,
-        "detail": "shares performance, premium_quality≈aesthetic"
-       },
-       {
-        "name": "reach",
-        "score": 68,
-        "neutral": false,
-        "detail": "22.0M monthly impressions"
-       }
-      ],
-      "base_fit": 71,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 71,
-      "tier": "excluded",
-      "exclusion_reason": "competitor",
-      "conflict": "sells activewear, like you",
       "adjacent_conflict": null,
-      "rationale": "Movewell sells activewear to the same 25-44 female fitness shopper, so it is a direct competitor and stays excluded.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_017",
-      "name": "Cloudfoot",
-      "category": "apparel",
-      "signals": [
+      "rationale": "A 94%-female, high-income base where the notes say 'Sustainability and machine-washable claims resonate' is the right ear for a recycled-ocean-plastic pitch, and at $142 typical spend the $85 offer is easy; the open question is whether professional-shoe buyers are also gym buyers.",
+      "evidence": [
        {
-        "name": "category",
-        "score": 43,
-        "neutral": false,
-        "detail": "matches activewear, fitness≈activewear, apparel_women≈footwear"
+        "field": "notes",
+        "quote": "Professional women. Sustainability and machine-washable claims resonate"
        },
        {
-        "name": "audience",
-        "score": 85,
-        "neutral": false,
-        "detail": "52% female; mid-high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 100,
-        "neutral": false,
-        "detail": "$90 vs $118 typical order (0.8×)"
-       },
-       {
-        "name": "values",
-        "score": 52,
-        "neutral": false,
-        "detail": "shares sustainability, performance"
-       },
-       {
-        "name": "reach",
-        "score": 37,
-        "neutral": false,
-        "detail": "5.8M monthly impressions"
+        "field": "subcategories",
+        "quote": "sustainable"
        }
       ],
-      "base_fit": 61,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 61,
-      "tier": "excluded",
-      "exclusion_reason": "competitor",
-      "conflict": "sells activewear, like you",
-      "adjacent_conflict": null,
-      "rationale": "Cloudfoot sells activewear alongside shoes, making it a competitor despite an otherwise strong sustainability overlap.",
-      "evidence": [],
-      "risk": null
+      "risk": "Workwear-shoe intent is not workout intent, and 3.2M impressions gives a thin read on a test.",
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_008",
@@ -942,7 +864,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 13,
+        "score": 18,
         "neutral": false,
         "detail": "matches wellness, fitness≈wellness"
        },
@@ -956,7 +878,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $86 typical order (1.0×)"
+        "detail": "$85 vs $86 typical order (1.0×)"
        },
        {
         "name": "values",
@@ -971,17 +893,350 @@
         "detail": "10.4M monthly impressions"
        }
       ],
-      "base_fit": 52,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 52,
-      "tier": "excluded",
-      "exclusion_reason": "off_category",
+      "base_fit": 54,
+      "fit": 54,
+      "computed_tier": "test",
+      "tier": "test",
+      "tier_reason": null,
+      "exclusion_reason": null,
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pantrygood's shoppers are 'Responsive to clean-ingredient, sustainability' claims, but they buy groceries, so category overlap with activewear is too thin to place.",
+      "rationale": "Notes describe shoppers 'Responsive to clean-ingredient, sustainability, and wellness claims' at $86 baskets, so the recycled-ocean-plastic story should land; what needs measuring is whether values alignment converts without any activewear intent.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Responsive to clean-ingredient, sustainability, and wellness claims"
+       },
+       {
+        "field": "avg_order_value_usd",
+        "quote": "86.0"
+       }
+      ],
+      "risk": "A pantry restock is a routine grocery moment, not a wardrobe moment; sustainability affinity may not translate into an $85 apparel purchase.",
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_012",
+      "name": "Daily Form",
+      "category": "wellness_dtc",
+      "signals": [
+       {
+        "name": "category",
+        "score": 28,
+        "neutral": false,
+        "detail": "matches wellness, fitness≈supplements"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "89% female; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 93,
+        "neutral": false,
+        "detail": "$85 vs $38 typical order (2.2×)"
+       },
+       {
+        "name": "values",
+        "score": 20,
+        "neutral": false,
+        "detail": "shares performance≈science_backed, sustainability≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 30,
+        "neutral": false,
+        "detail": "4.2M monthly impressions"
+       }
+      ],
+      "base_fit": 51,
+      "fit": 51,
+      "computed_tier": "test",
+      "tier": "test",
+      "tier_reason": null,
+      "exclusion_reason": null,
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "An 89%-female, 22-42 supplement buyer is usually training for something, making activewear a plausible next purchase; the uncertainty is a $38 basket absorbing an $85 offer and a readership the notes call skeptical of thin claims.",
+      "evidence": [
+       {
+        "field": "subcategories",
+        "quote": "supplements"
+       },
+       {
+        "field": "notes",
+        "quote": "Audience skeptical of unsubstantiated health claims"
+       }
+      ],
+      "risk": "$85 is 2.2x the typical order at mid-high income, and 'recycled ocean plastic' needs substantiation for an audience trained to interrogate claims.",
+      "competitor_dispute": null
+     }
+    ],
+    "excluded": [
+     {
+      "publisher_id": "pub_002",
+      "name": "Movewell",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 70,
+        "neutral": false,
+        "detail": "matches activewear, fitness, apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "82% female; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$85 vs $78 typical order (1.1×)"
+       },
+       {
+        "name": "values",
+        "score": 17,
+        "neutral": false,
+        "detail": "shares performance, premium_quality≈aesthetic"
+       },
+       {
+        "name": "reach",
+        "score": 68,
+        "neutral": false,
+        "detail": "22.0M monthly impressions"
+       }
+      ],
+      "base_fit": 72,
+      "fit": 72,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "competitor",
+      "conflict": "sells activewear, like you",
+      "adjacent_conflict": null,
+      "rationale": "Direct competitor: sells activewear and womens_apparel to the same 25-44 female fitness audience.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_017",
+      "name": "Cloudfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 45,
+        "neutral": false,
+        "detail": "matches activewear, fitness≈activewear, apparel_women≈footwear"
+       },
+       {
+        "name": "audience",
+        "score": 85,
+        "neutral": false,
+        "detail": "52% female; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$85 vs $118 typical order (0.7×)"
+       },
+       {
+        "name": "values",
+        "score": 52,
+        "neutral": false,
+        "detail": "shares sustainability, performance"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 62,
+      "fit": 62,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "competitor",
+      "conflict": "sells activewear, like you",
+      "adjacent_conflict": null,
+      "rationale": "Sells activewear alongside footwear, so it is a direct category overlap despite the strong sustainability alignment.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_004",
+      "name": "Marlowe & Co.",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 27,
+        "neutral": false,
+        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "96% female; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$85 vs $112 typical order (0.8×)"
+       },
+       {
+        "name": "values",
+        "score": 25,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 54,
+      "fit": 49,
+      "computed_tier": "test",
+      "tier": "excluded",
+      "tier_reason": "The score is carried almost entirely by audience (96% female, high income) and price, but the record shows a 45-65 workwear shopper with 'Lower impulse' buying habits and no fitness signal anywhere; there is no reason a mid-life workwear purchase leads to premium recycled leggings.",
+      "exclusion_reason": "review",
+      "conflict": null,
+      "adjacent_conflict": "sells womens_apparel, a close substitute",
+      "rationale": "Demographic overlap only, against a 45-65 age skew and low-impulse behaviour, plus a womens_apparel substitute conflict.",
+      "evidence": [
+       {
+        "field": "notes",
+        "quote": "Older affluent women. Lower impulse but high AOV"
+       },
+       {
+        "field": "audience",
+        "quote": "45-65"
+       }
+      ],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_005",
+      "name": "Linden Park",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 27,
+        "neutral": false,
+        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 100,
+        "neutral": false,
+        "detail": "98% female; high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$85 vs $128 typical order (0.7×)"
+       },
+       {
+        "name": "values",
+        "score": 22,
+        "neutral": false,
+        "detail": "shares premium_quality"
+       },
+       {
+        "name": "reach",
+        "score": 39,
+        "neutral": false,
+        "detail": "6.2M monthly impressions"
+       }
+      ],
+      "base_fit": 53,
+      "fit": 49,
+      "computed_tier": "test",
+      "tier": "excluded",
+      "tier_reason": "Audience and price scores mask a 50-70 age skew and a 'Conservative brand sensibility' that is the opposite of a recycled-plastic performance-legging pitch.",
+      "exclusion_reason": "review",
+      "conflict": null,
+      "adjacent_conflict": "sells womens_apparel, a close substitute",
+      "rationale": "Classic workwear buyers aged 50-70 with a conservative sensibility are not the target for premium recycled activewear.",
+      "evidence": [
+       {
+        "field": "audience",
+        "quote": "50-70"
+       },
+       {
+        "field": "notes",
+        "quote": "Conservative brand sensibility"
+       }
+      ],
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_020",
+      "name": "Pop & Sip",
+      "category": "beverages",
+      "signals": [
+       {
+        "name": "category",
+        "score": 23,
+        "neutral": false,
+        "detail": "matches wellness, fitness≈functional_beverages, self_treat"
+       },
+       {
+        "name": "audience",
+        "score": 97,
+        "neutral": false,
+        "detail": "71% female; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 99,
+        "neutral": false,
+        "detail": "$85 vs $42 typical order (2.0×)"
+       },
+       {
+        "name": "values",
+        "score": 12,
+        "neutral": false,
+        "detail": "shares sustainability≈clean_ingredients"
+       },
+       {
+        "name": "reach",
+        "score": 35,
+        "neutral": false,
+        "detail": "5.2M monthly impressions"
+       }
+      ],
+      "base_fit": 49,
+      "fit": 49,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "weak_fit",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Buying a functional soda gives no signal of activewear intent; the overlap is only broad wellness curiosity.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_014",
@@ -1002,9 +1257,9 @@
        },
        {
         "name": "price",
-        "score": 94,
+        "score": 98,
         "neutral": false,
-        "detail": "$90 vs $198 typical order (0.5×)"
+        "detail": "$85 vs $198 typical order (0.4×)"
        },
        {
         "name": "values",
@@ -1020,135 +1275,40 @@
        }
       ],
       "base_fit": 48,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 48,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Sustainability-minded cookware buyers share values but nothing in the purchase context points to activewear.",
+      "rationale": "Shared sustainability values, but a cookware purchase leads nowhere near leggings.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
-      "publisher_id": "pub_012",
-      "name": "Daily Form",
-      "category": "wellness_dtc",
-      "signals": [
-       {
-        "name": "category",
-        "score": 20,
-        "neutral": false,
-        "detail": "matches wellness, fitness≈supplements"
-       },
-       {
-        "name": "audience",
-        "score": 100,
-        "neutral": false,
-        "detail": "89% female; mid-high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 89,
-        "neutral": false,
-        "detail": "$90 vs $38 typical order (2.4×)"
-       },
-       {
-        "name": "values",
-        "score": 20,
-        "neutral": false,
-        "detail": "shares performance≈science_backed, sustainability≈clean_ingredients"
-       },
-       {
-        "name": "reach",
-        "score": 30,
-        "neutral": false,
-        "detail": "4.2M monthly impressions"
-       }
-      ],
-      "base_fit": 47,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 47,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Daily Form's women's supplements audience is adjacent on wellness only; category overlap is too weak to justify a placement.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_020",
-      "name": "Pop & Sip",
-      "category": "beverages",
-      "signals": [
-       {
-        "name": "category",
-        "score": 17,
-        "neutral": false,
-        "detail": "matches wellness, fitness≈functional_beverages, self_treat"
-       },
-       {
-        "name": "audience",
-        "score": 97,
-        "neutral": false,
-        "detail": "71% female; mid-high income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 96,
-        "neutral": false,
-        "detail": "$90 vs $42 typical order (2.1×)"
-       },
-       {
-        "name": "values",
-        "score": 12,
-        "neutral": false,
-        "detail": "shares sustainability≈clean_ingredients"
-       },
-       {
-        "name": "reach",
-        "score": 35,
-        "neutral": false,
-        "detail": "5.2M monthly impressions"
-       }
-      ],
-      "base_fit": 46,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 46,
-      "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Pop & Sip buyers are health-curious but indulgence-driven at $42, far from a $90 apparel purchase.",
-      "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_010",
-      "name": "Heartfoot",
+      "publisher_id": "pub_006",
+      "name": "Everbody",
       "category": "apparel",
       "signals": [
        {
         "name": "category",
-        "score": 18,
+        "score": 27,
         "neutral": false,
-        "detail": "matches gift, apparel_women≈basics, activewear≈apparel_women"
+        "detail": "matches apparel_women, activewear≈apparel_women, self_treat"
        },
        {
         "name": "audience",
-        "score": 89,
+        "score": 82,
         "neutral": false,
-        "detail": "58% female; mid-high income for premium price"
+        "detail": "99% female; mid income for premium price"
        },
        {
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $52 typical order (1.7×)"
+        "detail": "$85 vs $89 typical order (1.0×)"
        },
        {
         "name": "values",
@@ -1158,22 +1318,32 @@
        },
        {
         "name": "reach",
-        "score": 37,
+        "score": 43,
         "neutral": false,
-        "detail": "5.8M monthly impressions"
+        "detail": "7.6M monthly impressions"
        }
       ],
-      "base_fit": 44,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 44,
+      "base_fit": 46,
+      "fit": 46,
+      "computed_tier": "excluded",
       "tier": "excluded",
-      "exclusion_reason": "weak_fit",
-      "conflict": null,
-      "adjacent_conflict": "sells intimates, a close substitute",
-      "rationale": "Heartfoot's basics audience is only 58% female and its social-good angle doesn't extend to premium activewear.",
-      "evidence": [],
-      "risk": null
+      "tier_reason": "Review found a competitor the tags missed: Excluded only as a weak fit, but its subcategories include 'intimates' and it sells womens_apparel and plus_size_apparel — categories the advertiser explicitly competes with, and a shopper could buy a sports bra or basics here instead.",
+      "exclusion_reason": "competitor",
+      "conflict": "Excluded only as a weak fit, but its subcategories include 'intimates' and it sells womens_apparel and plus_size_apparel — categories the advertiser explicitly competes with, and a shopper could buy a sports bra or basics here instead.",
+      "adjacent_conflict": "sells intimates, womens_apparel, a close substitute",
+      "rationale": "Sells womens_apparel and intimates, which the advertiser lists as competing categories, at mid income.",
+      "evidence": [
+       {
+        "field": "subcategories",
+        "quote": "intimates"
+       },
+       {
+        "field": "category",
+        "quote": "apparel"
+       }
+      ],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_011",
@@ -1182,7 +1352,7 @@
       "signals": [
        {
         "name": "category",
-        "score": 12,
+        "score": 15,
         "neutral": false,
         "detail": "matches wellness, self_treat, fitness≈wellness"
        },
@@ -1196,7 +1366,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $164 typical order (0.5×)"
+        "detail": "$85 vs $164 typical order (0.5×)"
        },
        {
         "name": "values",
@@ -1211,17 +1381,18 @@
         "detail": "3.6M monthly impressions"
        }
       ],
-      "base_fit": 44,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 44,
+      "base_fit": 46,
+      "fit": 46,
+      "computed_tier": "excluded",
       "tier": "excluded",
-      "exclusion_reason": "off_category",
+      "tier_reason": null,
+      "exclusion_reason": "weak_fit",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Northbed sells bedding and bath to design-conscious buyers; no meaningful path to activewear.",
+      "rationale": "Bedding buyers show no activewear or fitness intent; overlap is design taste only.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_007",
@@ -1244,7 +1415,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $64 typical order (1.4×)"
+        "detail": "$85 vs $64 typical order (1.3×)"
        },
        {
         "name": "values",
@@ -1260,16 +1431,66 @@
        }
       ],
       "base_fit": 42,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 42,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Pawline is pet food and supplies with zero shared interests with women's activewear.",
+      "rationale": "Pet food subscription checkout has no connection to women's activewear.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_010",
+      "name": "Heartfoot",
+      "category": "apparel",
+      "signals": [
+       {
+        "name": "category",
+        "score": 13,
+        "neutral": false,
+        "detail": "matches gift, apparel_women≈basics, activewear≈apparel_women"
+       },
+       {
+        "name": "audience",
+        "score": 89,
+        "neutral": false,
+        "detail": "58% female; mid-high income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 100,
+        "neutral": false,
+        "detail": "$85 vs $52 typical order (1.6×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 37,
+        "neutral": false,
+        "detail": "5.8M monthly impressions"
+       }
+      ],
+      "base_fit": 42,
+      "fit": 42,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Socks and basics gifting is a different purchase moment, and the 58% female mix is weak for a women-only brand.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_015",
@@ -1292,7 +1513,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $74 typical order (1.2×)"
+        "detail": "$85 vs $74 typical order (1.1×)"
        },
        {
         "name": "values",
@@ -1308,16 +1529,17 @@
        }
       ],
       "base_fit": 42,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 42,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Kitchenly's 36M impressions are tempting, but meal-kit buyers share no category or values signal.",
+      "rationale": "Huge reach but a convenience-driven dinner purchase gives no activewear signal.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_013",
@@ -1340,7 +1562,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $61 typical order (1.5×)"
+        "detail": "$85 vs $61 typical order (1.4×)"
        },
        {
         "name": "values",
@@ -1356,16 +1578,17 @@
        }
       ],
       "base_fit": 40,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 40,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Velvetline skews 18-34 and mid-income, younger and less premium than this brand's target.",
+      "rationale": "Young, mid-income beauty buyers; no purchase link and $85 is steep for this basket.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_009",
@@ -1388,7 +1611,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $73 typical order (1.2×)"
+        "detail": "$85 vs $73 typical order (1.2×)"
        },
        {
         "name": "values",
@@ -1404,16 +1627,17 @@
        }
       ],
       "base_fit": 39,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 39,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Ruffco offers the catalog's largest reach but sells pet supplies to a mid-income, broad audience.",
+      "rationale": "Broad mid-income pet audience with no activewear intent; scale alone is not a reason.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_019",
@@ -1436,7 +1660,7 @@
         "name": "price",
         "score": 100,
         "neutral": false,
-        "detail": "$90 vs $48 typical order (1.9×)"
+        "detail": "$85 vs $48 typical order (1.8×)"
        },
        {
         "name": "values",
@@ -1452,64 +1676,17 @@
        }
       ],
       "base_fit": 36,
-      "adjustment": 0,
-      "adjustment_reason": null,
       "fit": 36,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Strandlab's haircare buyers skew 18-38 and mid-income, with no activewear adjacency.",
+      "rationale": "Haircare purchase gives no fitness or apparel signal, and income tier is mid.",
       "evidence": [],
-      "risk": null
-     },
-     {
-      "publisher_id": "pub_018",
-      "name": "Tailcrate",
-      "category": "pet",
-      "signals": [
-       {
-        "name": "category",
-        "score": 1,
-        "neutral": false,
-        "detail": "matches gift"
-       },
-       {
-        "name": "audience",
-        "score": 81,
-        "neutral": false,
-        "detail": "73% female; mid income for premium price"
-       },
-       {
-        "name": "price",
-        "score": 84,
-        "neutral": false,
-        "detail": "$90 vs $35 typical order (2.6×)"
-       },
-       {
-        "name": "values",
-        "score": 0,
-        "neutral": false,
-        "detail": "no shared values"
-       },
-       {
-        "name": "reach",
-        "score": 46,
-        "neutral": false,
-        "detail": "8.4M monthly impressions"
-       }
-      ],
-      "base_fit": 34,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 34,
-      "tier": "excluded",
-      "exclusion_reason": "off_category",
-      "conflict": null,
-      "adjacent_conflict": null,
-      "rationale": "Tailcrate sells $35 dog subscription boxes in a playful voice; off-category and far below the $90 order.",
-      "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
      },
      {
       "publisher_id": "pub_001",
@@ -1530,9 +1707,9 @@
        },
        {
         "name": "price",
-        "score": 69,
+        "score": 73,
         "neutral": false,
-        "detail": "$90 vs $28 typical order (3.2×)"
+        "detail": "$85 vs $28 typical order (3.0×)"
        },
        {
         "name": "values",
@@ -1547,211 +1724,163 @@
         "detail": "84.0M monthly impressions"
        }
       ],
-      "base_fit": 33,
-      "adjustment": 0,
-      "adjustment_reason": null,
-      "fit": 33,
+      "base_fit": 34,
+      "fit": 34,
+      "computed_tier": "excluded",
       "tier": "excluded",
+      "tier_reason": null,
       "exclusion_reason": "off_category",
       "conflict": null,
       "adjacent_conflict": null,
-      "rationale": "Swiftcart is impulse convenience delivery at a $28 order, half-male and off-category.",
+      "rationale": "Late-night convenience impulse traffic, near 50/50 gender, $28 baskets — wrong moment for an $85 premium apparel offer.",
       "evidence": [],
-      "risk": null
+      "risk": null,
+      "competitor_dispute": null
+     },
+     {
+      "publisher_id": "pub_018",
+      "name": "Tailcrate",
+      "category": "pet",
+      "signals": [
+       {
+        "name": "category",
+        "score": 1,
+        "neutral": false,
+        "detail": "matches gift"
+       },
+       {
+        "name": "audience",
+        "score": 81,
+        "neutral": false,
+        "detail": "73% female; mid income for premium price"
+       },
+       {
+        "name": "price",
+        "score": 87,
+        "neutral": false,
+        "detail": "$85 vs $35 typical order (2.4×)"
+       },
+       {
+        "name": "values",
+        "score": 0,
+        "neutral": false,
+        "detail": "no shared values"
+       },
+       {
+        "name": "reach",
+        "score": 46,
+        "neutral": false,
+        "detail": "8.4M monthly impressions"
+       }
+      ],
+      "base_fit": 34,
+      "fit": 34,
+      "computed_tier": "excluded",
+      "tier": "excluded",
+      "tier_reason": null,
+      "exclusion_reason": "off_category",
+      "conflict": null,
+      "adjacent_conflict": null,
+      "rationale": "Dog-treat subscribers at $35 baskets; no link to premium women's activewear.",
+      "evidence": [],
+      "risk": null,
+      "competitor_dispute": null
      }
-    ]
+    ],
+    "offering_type_doubt": null
    }
   },
   {
    "type": "stage",
    "stage": "publishers",
    "status": "done",
-   "ms": 31235
+   "ms": 61081
   },
   {
    "type": "creative",
    "creative": {
-    "creative_id": "fdf2c48bac-persona_006",
-    "persona_id": "persona_006",
-    "persona_name": "The Sustainability Buyer",
-    "angle": "Material transparency: the fabric is recycled ocean plastic, stated plainly",
-    "headline": "The fabric started as ocean plastic",
-    "body": "Women's activewear made from recycled ocean plastic. That's the material, stated plainly — no vague eco language attached.",
-    "cta": "See the fabric",
-    "claims_used": [
-     {
-      "claim": "The fabric started as ocean plastic / made from recycled ocean plastic",
-      "source_quote": "Made from recycled ocean plastic"
-     },
-     {
-      "claim": "Women's activewear, sustainable",
-      "source_quote": "A sustainable activewear brand for women"
-     }
-    ],
-    "offer_suggestion": "Free returns on a first order, so a skeptical buyer can judge the fabric in person",
-    "tone_notes": "Leads with the concrete material rather than a benefit or eco slogan. No certifications, no supply-chain detail beyond what the brief states, no urgency or seasonal-drop framing. Plain declarative sentences signal transparency to a greenwashing-wary reader.",
-    "status": "passed",
-    "critique": {
-     "checks": [
-      {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Only ocean-plastic and women's activewear claims, both in brief; no invented certifications."
-      },
-      {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "States the material specifically and explicitly avoids vague eco language; no certification invented."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Recycled ocean plastic fabric is the distinguishing hook."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Calm, declarative, no urgency or pressure."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No health or unsubstantiated claims; fits apparel/wellness publishers."
-      }
-     ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "fdf2c48bac-persona_009",
+    "creative_id": "ce8d285a47-persona_009",
     "persona_id": "persona_009",
     "persona_name": "The Fitness Enthusiast",
-    "angle": "Performance first; the recycled fabric is a bonus, not the pitch",
-    "headline": "Built for the fourth session this week",
-    "body": "Women's activewear made from recycled ocean plastic. Bought for how it trains — the fabric's backstory is a bonus, not the pitch.",
+    "angle": "Recycled material, still real training gear — no trade-off",
+    "headline": "Recycled ocean plastic. Still gym kit.",
+    "body": "Women's activewear made from recycled ocean plastic. Made to train in first — the recycled part is just where the fabric comes from.",
     "cta": "See the gear",
     "claims_used": [
      {
-      "claim": "made from recycled ocean plastic",
+      "claim": "Made from recycled ocean plastic",
       "source_quote": "Made from recycled ocean plastic"
      },
      {
-      "claim": "women's activewear",
+      "claim": "Women's activewear",
       "source_quote": "A sustainable activewear brand for women"
      }
     ],
-    "offer_suggestion": "First order free returns or 15% off a first set, if the advertiser can support it",
-    "tone_notes": "Leads with training frequency and gear framing for someone who works out 4+ times a week; no fashion styling language, no athlete endorsements, no invented durability or performance test claims. Sustainability is mentioned factually and demoted to secondary, which separates it from the sustainability-led cards.",
-    "status": "passed",
+    "offer_suggestion": "Free returns on a first order, or a bundle price on a leggings + top set",
+    "tone_notes": "Leads with the training identity and treats the recycled material as a fact about the fabric, not the reason to buy. No fashion or lounging framing, no invented performance specs, fabric tech or athlete names — plain, gear-first phrasing for someone who buys apparel to work out in.",
+    "status": "revised",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Headline is framing, not a performance claim; material claim matches brief."
+       "reason": "Only ocean-plastic and women's activewear claims; 'made to train in' is category positioning, not a performance spec."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Training-focused, avoids fashion-only positioning; no invented performance/technical claims."
+       "reason": "Leads with training use over fashion-only framing; doesn't fabricate athlete endorsements the brief can't support."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Ocean-plastic material anchors it to this brand."
+       "reason": "Recycled ocean plastic sourcing is brand-specific."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Reads naturally, no urgency."
+       "reason": "Calm, no urgency or pressure."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "No health claims; suitable for fitness/apparel audiences."
+       "reason": "No health claims; safe for Daily Form and conservative apparel publishers."
       }
      ],
      "code_issues": [],
      "passed": true,
      "fix": null
     },
-    "revision_of": null
-   }
-  },
-  {
-   "type": "creative",
-   "creative": {
-    "creative_id": "fdf2c48bac-persona_001",
-    "persona_id": "persona_001",
-    "persona_name": "The Wellness Optimizer",
-    "angle": "The kit slots into an already-optimized routine",
-    "headline": "The last input: what you train in",
-    "body": "Sustainable women's activewear made from recycled ocean plastic. You track the sleep and the sets — know your kit too.",
-    "cta": "See the fabric",
-    "claims_used": [
-     {
-      "claim": "Sustainable women's activewear",
-      "source_quote": "A sustainable activewear brand for women"
-     },
-     {
-      "claim": "made from recycled ocean plastic",
-      "source_quote": "Made from recycled ocean plastic"
-     }
-    ],
-    "offer_suggestion": "Free returns on a first order, so fit can be tested across a full training week",
-    "tone_notes": "Plain, system-minded framing that treats the wardrobe as one more tracked input. Material stated literally for transparency, no hype, no performance or health outcomes claimed beyond the brief.",
-    "status": "passed",
-    "critique": {
-     "checks": [
+    "revision_of": {
+     "angle": "Recycled material, still real training gear — no trade-off",
+     "headline": "Recycled ocean plastic. Still gym kit.",
+     "body": "Leggings and workout clothing made from recycled ocean plastic. Activewear first — the material is just where it comes from.",
+     "cta": "See the gear",
+     "claims_used": [
       {
-       "name": "grounded",
-       "passed": true,
-       "reason": "Both claims traceable; no science or outcome claims asserted."
+       "claim": "Made from recycled ocean plastic",
+       "source_quote": "Made from recycled ocean plastic"
       },
       {
-       "name": "persona_fit",
-       "passed": true,
-       "reason": "Material transparency and anti-fast-fashion angle fit; no fabricated science."
-      },
-      {
-       "name": "specific",
-       "passed": true,
-       "reason": "Ocean plastic sourcing is brand-specific."
-      },
-      {
-       "name": "placement",
-       "passed": true,
-       "reason": "Quiet tone, no pressure tactics."
-      },
-      {
-       "name": "publisher_safe",
-       "passed": true,
-       "reason": "No unsubstantiated wellness claims."
+       "claim": "Women's leggings and workout clothing / activewear",
+       "source_quote": "A women's activewear brand making leggings and workout clothing"
       }
      ],
-     "code_issues": [],
-     "passed": true,
-     "fix": null
-    },
-    "revision_of": null
+     "offer_suggestion": "Free returns on first order, or a bundle price on a leggings + top set",
+     "tone_notes": "Frames sustainability as a material fact, not the reason to buy, so the training identity leads. No fashion or lounging language, no invented performance specs or athlete names — plain, gear-focused phrasing for someone who buys apparel to train in."
+    }
    }
   },
   {
    "type": "creative",
    "creative": {
-    "creative_id": "fdf2c48bac-persona_005",
-    "persona_id": "persona_005",
-    "persona_name": "The Affluent Classic",
-    "angle": "Quiet quality, stated plainly rather than sold",
-    "headline": "Activewear, quietly made",
-    "body": "Women's activewear made from recycled ocean plastic. Plain lines, priced between Lululemon and Girlfriend Collective.",
-    "cta": "See the range",
+    "creative_id": "ce8d285a47-persona_010",
+    "persona_id": "persona_010",
+    "persona_name": "The Gifter",
+    "angle": "Premium activewear as a gift with a story worth telling",
+    "headline": "A gift with a story she can tell",
+    "body": "Women's activewear made from recycled ocean plastic. Leggings and workout pieces she'd have picked for herself.",
+    "cta": "See the pieces",
     "claims_used": [
      {
       "claim": "made from recycled ocean plastic",
@@ -1760,41 +1889,37 @@
      {
       "claim": "Women's activewear",
       "source_quote": "A sustainable activewear brand for women"
-     },
-     {
-      "claim": "priced between Lululemon and Girlfriend Collective",
-      "source_quote": "Price point sits between Lululemon and Girlfriend Collective"
      }
     ],
-    "offer_suggestion": "Free returns or exchanges on a first order, to lower the risk of buying an unfamiliar fit",
-    "tone_notes": "Understated and quiet; no hype, no gym energy, no influencer framing. Material and price position are stated as facts, letting her judge quality herself rather than being told about durability or performance.",
+    "offer_suggestion": "Free gift wrap plus a prepaid size-exchange card for gift recipients",
+    "tone_notes": "Leads with giftability and the ocean-plastic story as easy-to-tell provenance, not self-care. Plain language, no performance jargon; 'she'd have picked for herself' signals desirability without inventing quality claims. Exchange reassurance kept out of copy and offered as an incentive to approve.",
     "status": "revised",
     "critique": {
      "checks": [
       {
        "name": "grounded",
        "passed": true,
-       "reason": "Material, category and price positioning all trace directly to the brief."
+       "reason": "Leggings/workout pieces fall within activewear; ocean plastic is allowed."
       },
       {
        "name": "persona_fit",
        "passed": true,
-       "reason": "Understated, quality-toned, no trendy or influencer language."
+       "reason": "Gift framing without self-care-only angle or subscription mention."
       },
       {
        "name": "specific",
        "passed": true,
-       "reason": "Ocean-plastic material plus named price band between Lululemon and Girlfriend Collective."
+       "reason": "Ocean-plastic story anchors it to this brand."
       },
       {
        "name": "placement",
        "passed": true,
-       "reason": "Calm and low-pressure, no urgency devices."
+       "reason": "Reads naturally on a confirmation page, no deadline pressure."
       },
       {
        "name": "publisher_safe",
        "passed": true,
-       "reason": "Conservative tone suits Linden Park and Marlowe & Co.; no health claims."
+       "reason": "No unsubstantiated claims for any listed publisher."
       }
      ],
      "code_issues": [],
@@ -1802,10 +1927,10 @@
      "fix": null
     },
     "revision_of": {
-     "angle": "Quiet quality over replacement cycles",
-     "headline": "Activewear you keep, not replace",
-     "body": "Women's activewear made from recycled ocean plastic. Plain lines, premium make, for a wardrobe you're not looking to replace each year.",
-     "cta": "See the range",
+     "angle": "Premium activewear as a gift with a story worth telling",
+     "headline": "A gift with a story she can tell",
+     "body": "Women's activewear made from recycled ocean plastic. Premium leggings and workout pieces she'd have picked for herself.",
+     "cta": "Shop gifts",
      "claims_used": [
       {
        "claim": "made from recycled ocean plastic",
@@ -1814,14 +1939,85 @@
       {
        "claim": "Women's activewear",
        "source_quote": "A sustainable activewear brand for women"
-      },
-      {
-       "claim": "premium make (price positioning)",
-       "source_quote": "Price point sits between Lululemon and Girlfriend Collective"
       }
      ],
-     "offer_suggestion": "Free returns or exchanges on a first order, to lower the risk of buying an unfamiliar fit at a premium price",
-     "tone_notes": "Understated, no hype or gym energy. Leads with longevity and considered construction rather than trend or performance language; sustainability is stated as a material fact, not a cause pitch."
+     "offer_suggestion": "Free gift wrap plus a prepaid size-exchange card for gift recipients",
+     "tone_notes": "Leads with giftability and the ocean-plastic story as easy-to-tell provenance, not self-care. Plain language, no performance jargon; 'she'd have picked for herself' signals premium without inventing quality claims. Exchange reassurance kept out of copy and offered as an incentive to approve."
+    }
+   }
+  },
+  {
+   "type": "creative",
+   "creative": {
+    "creative_id": "ce8d285a47-persona_005",
+    "persona_id": "persona_005",
+    "persona_name": "The Affluent Classic",
+    "angle": "Understated, quietly made pieces rather than seasonal trend-chasing",
+    "headline": "Activewear, quietly made",
+    "body": "Understated women's activewear in fabric made from recycled ocean plastic. Fewer pieces, chosen for walking, yoga or travel.",
+    "cta": "See the pieces",
+    "claims_used": [
+     {
+      "claim": "fabric made from recycled ocean plastic",
+      "source_quote": "Made from recycled ocean plastic"
+     },
+     {
+      "claim": "women's activewear",
+      "source_quote": "A sustainable activewear brand for women"
+     }
+    ],
+    "offer_suggestion": "Complimentary shipping and returns on a first order, so she can judge fit and fabric in person",
+    "tone_notes": "Plain, understated phrasing with no slang, gym-culture or influencer framing. Leads on quiet design and fabric rather than a sustainability halo, and the buy-fewer rationale is implied by 'fewer pieces' without lecturing. Use cases named are ones she'd actually dress for.",
+    "status": "revised",
+    "critique": {
+     "checks": [
+      {
+       "name": "grounded",
+       "passed": true,
+       "reason": "Claims limited to women's activewear from recycled ocean plastic."
+      },
+      {
+       "name": "persona_fit",
+       "passed": true,
+       "reason": "Understated, quality-leaning tone; no trendy or influencer language."
+      },
+      {
+       "name": "specific",
+       "passed": true,
+       "reason": "Ocean-plastic fabric detail is not portable to a competitor."
+      },
+      {
+       "name": "placement",
+       "passed": true,
+       "reason": "Quiet tone suits an order-confirmation slot."
+      },
+      {
+       "name": "publisher_safe",
+       "passed": true,
+       "reason": "Fits Marlowe & Co. and Linden Park's conservative sensibility."
+      }
+     ],
+     "code_issues": [],
+     "passed": true,
+     "fix": null
+    },
+    "revision_of": {
+     "angle": "Quiet, well-made activewear meant to be kept, not replaced each season",
+     "headline": "Activewear built to be kept",
+     "body": "Understated women's activewear in fabric made from recycled ocean plastic. Fewer pieces, worn for years, for walking, yoga or travel.",
+     "cta": "See the pieces",
+     "claims_used": [
+      {
+       "claim": "fabric made from recycled ocean plastic",
+       "source_quote": "Made from recycled ocean plastic"
+      },
+      {
+       "claim": "women's activewear",
+       "source_quote": "A sustainable activewear brand for women"
+      }
+     ],
+     "offer_suggestion": "Complimentary shipping and returns on a first order, so she can judge fit and fabric in person",
+     "tone_notes": "Plain, understated phrasing with no slang or trend references; leads on longevity and fabric rather than sustainability halo or gym culture. Use cases named are age-appropriate (walking, yoga, travel), and the buy-less-buy-better logic is stated without lecturing."
     }
    }
   },
@@ -1829,7 +2025,292 @@
    "type": "stage",
    "stage": "creative",
    "status": "done",
-   "ms": 57789
+   "ms": 79043
+  },
+  {
+   "type": "personas",
+   "plan": {
+    "picks": [
+     {
+      "persona_id": "persona_006",
+      "name": "The Sustainability Buyer",
+      "score": 46,
+      "rank": 3,
+      "why_plausible": "Her core affinity is sustainable_apparel and she'll pay more for genuinely sustainable options, which is exactly this brand's central claim of recycled ocean plastic; typical_aov_usd 92 matches the ~$85 first order. The score undercounted her because activewear tags didn't map to sustainable_apparel.",
+      "lean_into": [
+       "specific sustainability claims (recycled ocean plastic, stated material source)",
+       "material and supply chain transparency",
+       "durability as an anti-fast-fashion argument"
+      ],
+      "avoid": [
+       "vague eco language like 'eco-friendly' or 'green'",
+       "implying certifications the brand hasn't named",
+       "fast-fashion style urgency or drop culture"
+      ],
+      "ad_angle": "Your leggings were ocean plastic — the specific, traceable material story for a shopper who checks.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_008",
+       "pub_003",
+       "pub_012",
+       "pub_016"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_009",
+      "name": "The Fitness Enthusiast",
+      "score": 54,
+      "rank": 2,
+      "why_plausible": "activewear is her first named affinity and she trains 4+ times weekly, buying performance apparel as identity; price_sensitivity low-medium and AOV $88 fit the premium tier.",
+      "lean_into": [
+       "technical fabric performance (squat-proof, sweat-wicking, holds shape)",
+       "built for people who actually train",
+       "brand-loyalty framing: gear that performs wash after wash"
+      ],
+      "avoid": [
+       "fashion-only or athleisure-lounging positioning",
+       "sustainability as the sole reason to buy",
+       "athlete endorsements the brand can't substantiate"
+      ],
+      "ad_angle": "Recycled material that still performs like technical gear — no trade-off in the gym.",
+      "confidence": "high",
+      "reached_via": [
+       "pub_012",
+       "pub_008",
+       "pub_003",
+       "pub_016"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_001",
+      "name": "The Wellness Optimizer",
+      "score": 59,
+      "rank": 1,
+      "why_plausible": "She optimizes her body as a system across fitness and wellness and pays premiums willingly (price_sensitivity: low, AOV $95), so premium workout apparel is an easy add. She wants transparency, which the recycled-material story can honestly serve even without clinical proof.",
+      "lean_into": [
+       "material transparency: exactly what the fabric is made of",
+       "outcome-focused — gear that supports a consistent training routine",
+       "clean, non-novelty premium quality"
+      ],
+      "avoid": [
+       "fast-fashion framing or trend-chasing",
+       "novelty or gimmicky drops",
+       "fake science or unsupported 'clinically proven' claims"
+      ],
+      "ad_angle": "The last piece of a well-run routine: considered gear for a woman who optimizes everything else.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_016",
+       "pub_012",
+       "pub_008",
+       "pub_003"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_010",
+      "name": "The Gifter",
+      "score": 39,
+      "rank": 6,
+      "why_plausible": "Gifting mode shoppers have low price sensitivity and AOV $95, and apparel plus premium_basics are named affinities; premium leggings are a common, impressive-looking gift for a woman who works out.",
+      "lean_into": [
+       "giftable and premium presentation",
+       "a gift with a story behind it (ocean plastic) that's easy to tell",
+       "apparel sizing/easy exchange reassurance for gift buyers"
+      ],
+      "avoid": [
+       "self-care-only framing",
+       "subscription-only offers",
+       "niche performance jargon that a non-athlete gifter can't evaluate"
+      ],
+      "ad_angle": "A gift that comes with a story — premium activewear she'd pick for herself.",
+      "confidence": "medium",
+      "reached_via": [
+       "pub_003",
+       "pub_008"
+      ],
+      "conflicts": []
+     },
+     {
+      "persona_id": "persona_005",
+      "name": "The Affluent Classic",
+      "score": 44,
+      "rank": 4,
+      "why_plausible": "price_sensitivity: low with AOV $145 and an apparel affinity; she buys fewer, longer-lasting pieces and premium activewear for walking, yoga or travel fits quality-over-trends. Score ranked her mid because her tags skew classic apparel, missing that durable premium basics are her pattern.",
+      "lean_into": [
+       "quality and longevity over trends",
+       "understated design, craftsmanship of the fabric",
+       "buy-less-buy-better rationale"
+      ],
+      "avoid": [
+       "influencer or TikTok positioning",
+       "loud aesthetics and trendy slang",
+       "youth-coded 'hot girl gym' framing"
+      ],
+      "ad_angle": "Made to outlast trends: understated, well-constructed pieces worth owning for years.",
+      "confidence": "low",
+      "reached_via": [],
+      "conflicts": []
+     }
+    ],
+    "candidates": [
+     {
+      "persona_id": "persona_001",
+      "score": 59,
+      "affinity": 52,
+      "values": 35,
+      "price": 100,
+      "reach": 67,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_016",
+       "pub_012",
+       "pub_008",
+       "pub_003"
+      ],
+      "detail": "shops wellness, fitness, activewear≈fitness; responds to performance, sustainability≈clean_ingredients"
+     },
+     {
+      "persona_id": "persona_009",
+      "score": 54,
+      "affinity": 56,
+      "values": 25,
+      "price": 100,
+      "reach": 48,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_012",
+       "pub_008",
+       "pub_003",
+       "pub_016"
+      ],
+      "detail": "shops activewear, fitness, wellness≈supplements; responds to performance"
+     },
+     {
+      "persona_id": "persona_006",
+      "score": 46,
+      "affinity": 18,
+      "values": 55,
+      "price": 100,
+      "reach": 53,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008",
+       "pub_003",
+       "pub_012",
+       "pub_016"
+      ],
+      "detail": "shops apparel_women, wellness≈natural_food, activewear≈apparel_women; responds to sustainability, premium_quality≈heritage"
+     },
+     {
+      "persona_id": "persona_005",
+      "score": 44,
+      "affinity": 40,
+      "values": 25,
+      "price": 100,
+      "reach": 31,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_005",
+       "pub_004"
+      ],
+      "detail": "shops apparel_women, self_treat, activewear≈apparel_women; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_004",
+      "score": 39,
+      "affinity": 0,
+      "values": 46,
+      "price": 100,
+      "reach": 58,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_008",
+       "pub_016",
+       "pub_012"
+      ],
+      "detail": "responds to premium_quality, sustainability≈clean_ingredients"
+     },
+     {
+      "persona_id": "persona_010",
+      "score": 39,
+      "affinity": 21,
+      "values": 20,
+      "price": 100,
+      "reach": 46,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_008"
+      ],
+      "detail": "shops gift, apparel_women, wellness≈beauty; responds to premium_quality"
+     },
+     {
+      "persona_id": "persona_003",
+      "score": 31,
+      "affinity": 45,
+      "values": 28,
+      "price": 30,
+      "reach": 10,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_012"
+      ],
+      "detail": "shops apparel_women, self_treat, wellness≈functional_beverages; responds to sustainability, premium_quality≈aesthetic; price-mismatched for premium"
+     },
+     {
+      "persona_id": "persona_007",
+      "score": 31,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 63,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008",
+       "pub_003",
+       "pub_012",
+       "pub_016"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_002",
+      "score": 30,
+      "affinity": 0,
+      "values": 0,
+      "price": 100,
+      "reach": 59,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_008",
+       "pub_003",
+       "pub_016",
+       "pub_012"
+      ],
+      "detail": "little overlap"
+     },
+     {
+      "persona_id": "persona_008",
+      "score": 24,
+      "affinity": 14,
+      "values": 0,
+      "price": 30,
+      "reach": 55,
+      "conflicts": [],
+      "reach_publishers": [
+       "pub_003",
+       "pub_016",
+       "pub_008"
+      ],
+      "detail": "shops apparel_women, activewear≈apparel_women; price-mismatched for premium"
+     }
+    ],
+    "skipped_note": null
+   }
   },
   {
    "type": "stage",
@@ -1842,12 +2323,12 @@
    "config": {
     "schema_version": "1.0",
     "campaign": {
-     "name": "Women's sustainable activewear made from recycled ocean plastic · post-purchase launch",
+     "name": "Sustainable women's activewear made from recycled ocean plastic · post-purchase launch",
      "status": "draft",
      "objective": "conversions",
      "flight": {
-      "start": "2026-10-04",
-      "end": "2026-11-02",
+      "start": "2026-10-05",
+      "end": "2026-11-03",
       "days": 30
      }
     },
@@ -1860,69 +2341,103 @@
     },
     "bid_strategy": {
      "type": "target_cpa",
-     "target_cpa_usd": 27.0,
-     "max_cpa_usd": 35.1,
+     "target_cpa_usd": 25.5,
+     "max_cpa_usd": 33.15,
      "allowable_cpa_ratio": 0.3,
-     "first_order_value_usd": 90.0,
+     "first_order_value_usd": 85.0,
      "first_order_value_source": "inferred",
      "learning_period_days": 14,
-     "rationale": "$90 first order × 0.30 = $27.00 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+     "rationale": "$85 first order × 0.30 = $25.50 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
     },
     "placements": [
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 85.0,
+      "budget_usd": 8500.0,
+      "est_conversions": 333.3,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001",
+       "ce8d285a47-persona_010"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
      {
       "publisher_id": "pub_016",
       "publisher_name": "Stride & Stem",
       "category": "apparel",
       "role": "test",
-      "fit_score": 69,
-      "allocation_pct": 20.0,
-      "budget_usd": 2000.0,
-      "est_conversions": 74.1,
-      "capacity_note": null
+      "fit_score": 60,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "A 94%-female, high-income base where the notes say 'Sustainability and machine-washable claims resonate' is the right ear for a recycled-ocean-plastic pitch, and at $142 typical spend the $85 offer is easy; the open question is whether professional-shoe buyers are also gym buyers.",
+       "risk": "Workwear-shoe intent is not workout intent, and 3.2M impressions gives a thin read on a test.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
      },
      {
-      "publisher_id": "pub_003",
-      "publisher_name": "Studiogrid",
-      "category": "wellness_services",
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
       "role": "test",
-      "fit_score": 66,
-      "allocation_pct": 20.0,
-      "budget_usd": 2000.0,
-      "est_conversions": 74.1,
-      "capacity_note": null
+      "fit_score": 54,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001",
+       "ce8d285a47-persona_010"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes describe shoppers 'Responsive to clean-ingredient, sustainability, and wellness claims' at $86 baskets, so the recycled-ocean-plastic story should land; what needs measuring is whether values alignment converts without any activewear intent.",
+       "risk": "A pantry restock is a routine grocery moment, not a wardrobe moment; sustainability affinity may not translate into an $85 apparel purchase.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
      },
      {
-      "publisher_id": "pub_004",
-      "publisher_name": "Marlowe & Co.",
-      "category": "apparel",
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
       "role": "test",
-      "fit_score": 55,
-      "allocation_pct": 20.0,
-      "budget_usd": 2000.0,
-      "est_conversions": 74.1,
-      "capacity_note": null
-     },
-     {
-      "publisher_id": "pub_006",
-      "publisher_name": "Everbody",
-      "category": "apparel",
-      "role": "test",
-      "fit_score": 52,
-      "allocation_pct": 20.0,
-      "budget_usd": 2000.0,
-      "est_conversions": 74.1,
-      "capacity_note": null
-     },
-     {
-      "publisher_id": "pub_005",
-      "publisher_name": "Linden Park",
-      "category": "apparel",
-      "role": "test",
-      "fit_score": 50,
-      "allocation_pct": 20.0,
-      "budget_usd": 2000.0,
-      "est_conversions": 74.1,
-      "capacity_note": null
+      "fit_score": 51,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "An 89%-female, 22-42 supplement buyer is usually training for something, making activewear a plausible next purchase; the uncertainty is a $38 basket absorbing an $85 offer and a readership the notes call skeptical of thin claims.",
+       "risk": "$85 is 2.2x the typical order at mid-high income, and 'recycled ocean plastic' needs substantiation for an audience trained to interrogate claims.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
      }
     ],
     "targeting": {
@@ -1930,6 +2445,7 @@
       "persona_006",
       "persona_009",
       "persona_001",
+      "persona_010",
       "persona_005"
      ],
      "gender": {
@@ -1941,47 +2457,50 @@
       "source": "assumed"
      },
      "geo": [
-      "US-Midwest",
       "US-Northeast",
-      "US-South",
       "US-West"
      ],
      "contextual_interests": [
       "activewear",
-      "apparel_women",
       "fitness",
+      "apparel_women",
       "wellness"
      ],
      "exclusions": [
       "activewear",
-      "footwear",
       "intimates",
       "womens_apparel"
      ]
     },
     "creatives": [
      {
-      "creative_id": "fdf2c48bac-persona_006",
+      "creative_id": "ce8d285a47-persona_006",
       "persona_id": "persona_006",
-      "weight": 0.25,
+      "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "fdf2c48bac-persona_009",
+      "creative_id": "ce8d285a47-persona_009",
       "persona_id": "persona_009",
-      "weight": 0.25,
-      "status": "passed"
+      "weight": 0.2,
+      "status": "revised"
      },
      {
-      "creative_id": "fdf2c48bac-persona_001",
+      "creative_id": "ce8d285a47-persona_001",
       "persona_id": "persona_001",
-      "weight": 0.25,
+      "weight": 0.2,
       "status": "passed"
      },
      {
-      "creative_id": "fdf2c48bac-persona_005",
+      "creative_id": "ce8d285a47-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.2,
+      "status": "revised"
+     },
+     {
+      "creative_id": "ce8d285a47-persona_005",
       "persona_id": "persona_005",
-      "weight": 0.25,
+      "weight": 0.2,
       "status": "revised"
      }
     ],
@@ -2003,22 +2522,259 @@
     },
     "experiment": {
      "creative_rotation": "even_then_optimize",
-     "test_budget_pct": 100.0,
+     "test_budget_pct": 15.0,
      "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
      "notes": "Creatives rotate evenly until each has enough conversions to compare."
     },
     "review": {
-     "needs_human_review": true,
+     "needs_human_review": false,
      "confidence": "medium",
      "assumptions": [
-      "We assumed a first order around $90 based on the named comparison brands.",
-      "We assumed buyers are mostly women aged 25-44.",
-      "We assumed one-time purchases rather than a subscription.",
+      "Assumed a typical first order of about $85 based on the stated price positioning.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Assumed a core audience of women roughly 25-44.",
       "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
      ],
      "warnings": [
-      "No publisher cleared the recommended bar, so the whole budget is a test. Treat results as exploratory."
+      "The ad for The Affluent Classic won't run: no placement's shoppers fit that persona."
+     ],
+     "launch_summary": null
+    }
+   }
+  },
+  {
+   "type": "config",
+   "config": {
+    "schema_version": "1.0",
+    "campaign": {
+     "name": "Sustainable women's activewear made from recycled ocean plastic · post-purchase launch",
+     "status": "draft",
+     "objective": "conversions",
+     "flight": {
+      "start": "2026-10-05",
+      "end": "2026-11-03",
+      "days": 30
+     }
+    },
+    "budget": {
+     "total_usd": 10000.0,
+     "monthly_usd": 10000.0,
+     "daily_cap_usd": 333.33,
+     "pacing": "even",
+     "currency": "USD"
+    },
+    "bid_strategy": {
+     "type": "target_cpa",
+     "target_cpa_usd": 25.5,
+     "max_cpa_usd": 33.15,
+     "allowable_cpa_ratio": 0.3,
+     "first_order_value_usd": 85.0,
+     "first_order_value_source": "inferred",
+     "learning_period_days": 14,
+     "rationale": "$85 first order × 0.30 = $25.50 target CPA: one-time purchase, so the first order has to pay back the acquisition. The max CPA allows headroom while the campaign learns over 14 days."
+    },
+    "placements": [
+     {
+      "publisher_id": "pub_003",
+      "publisher_name": "Studiogrid",
+      "category": "wellness_services",
+      "role": "core",
+      "fit_score": 70,
+      "allocation_pct": 85.0,
+      "budget_usd": 8500.0,
+      "est_conversions": 333.3,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001",
+       "ce8d285a47-persona_010"
+      ],
+      "personas_matched": true,
+      "test_plan": null
+     },
+     {
+      "publisher_id": "pub_016",
+      "publisher_name": "Stride & Stem",
+      "category": "apparel",
+      "role": "test",
+      "fit_score": 60,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "A 94%-female, high-income base where the notes say 'Sustainability and machine-washable claims resonate' is the right ear for a recycled-ocean-plastic pitch, and at $142 typical spend the $85 offer is easy; the open question is whether professional-shoe buyers are also gym buyers.",
+       "risk": "Workwear-shoe intent is not workout intent, and 3.2M impressions gives a thin read on a test.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
+     },
+     {
+      "publisher_id": "pub_008",
+      "publisher_name": "Pantrygood",
+      "category": "groceries",
+      "role": "test",
+      "fit_score": 54,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001",
+       "ce8d285a47-persona_010"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "Notes describe shoppers 'Responsive to clean-ingredient, sustainability, and wellness claims' at $86 baskets, so the recycled-ocean-plastic story should land; what needs measuring is whether values alignment converts without any activewear intent.",
+       "risk": "A pantry restock is a routine grocery moment, not a wardrobe moment; sustainability affinity may not translate into an $85 apparel purchase.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
+     },
+     {
+      "publisher_id": "pub_012",
+      "publisher_name": "Daily Form",
+      "category": "wellness_dtc",
+      "role": "test",
+      "fit_score": 51,
+      "allocation_pct": 5.0,
+      "budget_usd": 500.0,
+      "est_conversions": 19.6,
+      "capacity_note": null,
+      "creative_ids": [
+       "ce8d285a47-persona_006",
+       "ce8d285a47-persona_009",
+       "ce8d285a47-persona_001"
+      ],
+      "personas_matched": true,
+      "test_plan": {
+       "hypothesis": "An 89%-female, 22-42 supplement buyer is usually training for something, making activewear a plausible next purchase; the uncertainty is a $38 basket absorbing an $85 offer and a readership the notes call skeptical of thin claims.",
+       "risk": "$85 is 2.2x the typical order at mid-high income, and 'recycled ocean plastic' needs substantiation for an audience trained to interrogate claims.",
+       "promote_if": "CPA at or below the $25.50 target after 14 days: move it to core.",
+       "cut_if": "CPA above the $33.15 maximum, or no conversions after 14 days: stop it."
+      }
+     }
+    ],
+    "targeting": {
+     "personas": [
+      "persona_006",
+      "persona_009",
+      "persona_001",
+      "persona_010",
+      "persona_005"
+     ],
+     "gender": {
+      "value": "female",
+      "source": "stated"
+     },
+     "age_range": {
+      "value": "25-44",
+      "source": "assumed"
+     },
+     "geo": [
+      "US-Northeast",
+      "US-West"
+     ],
+     "contextual_interests": [
+      "activewear",
+      "fitness",
+      "apparel_women",
+      "wellness"
+     ],
+     "exclusions": [
+      "activewear",
+      "intimates",
+      "womens_apparel"
      ]
+    },
+    "creatives": [
+     {
+      "creative_id": "ce8d285a47-persona_006",
+      "persona_id": "persona_006",
+      "weight": 0.2,
+      "status": "passed"
+     },
+     {
+      "creative_id": "ce8d285a47-persona_009",
+      "persona_id": "persona_009",
+      "weight": 0.2,
+      "status": "revised"
+     },
+     {
+      "creative_id": "ce8d285a47-persona_001",
+      "persona_id": "persona_001",
+      "weight": 0.2,
+      "status": "passed"
+     },
+     {
+      "creative_id": "ce8d285a47-persona_010",
+      "persona_id": "persona_010",
+      "weight": 0.2,
+      "status": "revised"
+     },
+     {
+      "creative_id": "ce8d285a47-persona_005",
+      "persona_id": "persona_005",
+      "weight": 0.2,
+      "status": "revised"
+     }
+    ],
+    "frequency_cap": {
+     "impressions": 1,
+     "per_days": 7,
+     "rationale": "Offers appear once, right after checkout; repeating them reads as spam."
+    },
+    "measurement": {
+     "conversion_event": "purchase",
+     "attribution_window_days": 7,
+     "kpis": [
+      "conversions",
+      "cpa",
+      "conversion_rate",
+      "revenue_per_impression"
+     ],
+     "holdout_pct": 5.0
+    },
+    "experiment": {
+     "creative_rotation": "even_then_optimize",
+     "test_budget_pct": 15.0,
+     "graduate_rule": "After 14 days, move a test publisher to core if its CPA is at or below target; cut any placement above max CPA.",
+     "notes": "Creatives rotate evenly until each has enough conversions to compare."
+    },
+    "review": {
+     "needs_human_review": false,
+     "confidence": "medium",
+     "assumptions": [
+      "Assumed a typical first order of about $85 based on the stated price positioning.",
+      "Assumed one-time purchases rather than a subscription.",
+      "Assumed a core audience of women roughly 25-44.",
+      "Allowable CPA is 30% of first order value (one time); replace with real margin and LTV."
+     ],
+     "warnings": [
+      "The ad for The Affluent Classic won't run: no placement's shoppers fit that persona."
+     ],
+     "launch_summary": {
+      "summary": "$8,500 of the $10,000 goes to Studiogrid, where a just-booked yoga or training session makes activewear the obvious next buy. The remaining $1,500 is split evenly across three tests: Stride & Stem and Pantrygood to see whether sustainability-minded shoppers convert without workout intent, and Daily Form to see whether supplement buyers will stretch to an $85 apparel order. Target cost per new customer is $25.50, with $33.15 as the ceiling during the 14-day learning period.",
+      "uncertainties": [
+       "The $85 first order is inferred from price positioning, and both the $25.50 target and $33.15 maximum are built on it rather than on real margin or repeat value.",
+       "The plan assumes one-time purchases, so the first order must pay back acquisition entirely; a subscription or strong repeat rate would change what's affordable.",
+       "The ad written for The Affluent Classic won't run at all, since no placement's shoppers fit that persona."
+      ],
+      "questions": [
+       "What is your actual average first order value and gross margin on it?",
+       "Do customers typically buy again, or is this genuinely a one-time purchase?",
+       "Can you substantiate the recycled-ocean-plastic claim for skeptical readers like Daily Form's audience?"
+      ]
+     }
     }
    }
   },
@@ -2026,24 +2782,24 @@
    "type": "stage",
    "stage": "campaign",
    "status": "done",
-   "ms": 0
+   "ms": 7390
   },
   {
    "type": "done",
-   "run_id": "fdf2c48bac",
-   "total_ms": 70237,
-   "cost_usd": 0.4709,
+   "run_id": "ce8d285a47",
+   "total_ms": 99303,
+   "cost_usd": 0.7091,
    "trace": [
     {
      "stage": "understand",
      "name": "understand_brief",
      "model": "anthropic:claude-opus-5",
      "prompt": "understand_brief",
-     "prompt_version": "v3-754902a",
-     "ms": 12437,
-     "input_tokens": 7355,
-     "output_tokens": 1058,
-     "cost_usd": 0.063225,
+     "prompt_version": "v5-e8eda0f",
+     "ms": 12867,
+     "input_tokens": 7589,
+     "output_tokens": 1067,
+     "cost_usd": 0.06462,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2054,7 +2810,7 @@
      "model": null,
      "prompt": null,
      "prompt_version": null,
-     "ms": 1,
+     "ms": 0,
      "input_tokens": 0,
      "output_tokens": 0,
      "cost_usd": 0.0,
@@ -2067,11 +2823,11 @@
      "name": "select_personas",
      "model": "anthropic:claude-opus-5",
      "prompt": "select_personas",
-     "prompt_version": "v2-ab12f6b",
-     "ms": 13727,
-     "input_tokens": 4660,
-     "output_tokens": 929,
-     "cost_usd": 0.046525,
+     "prompt_version": "v5-f2b41c4",
+     "ms": 21350,
+     "input_tokens": 6818,
+     "output_tokens": 1322,
+     "cost_usd": 0.06714,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2081,11 +2837,39 @@
      "name": "write_creative:persona_006",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 6023,
-     "input_tokens": 2769,
-     "output_tokens": 338,
-     "cost_usd": 0.022295,
+     "prompt_version": "v4-6284a7a",
+     "ms": 5145,
+     "input_tokens": 2855,
+     "output_tokens": 289,
+     "cost_usd": 0.0215,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 5666,
+     "input_tokens": 2814,
+     "output_tokens": 316,
+     "cost_usd": 0.02197,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "write_creative:persona_005",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 6001,
+     "input_tokens": 2801,
+     "output_tokens": 326,
+     "cost_usd": 0.022155,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2095,25 +2879,11 @@
      "name": "write_creative:persona_001",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 9533,
-     "input_tokens": 2839,
-     "output_tokens": 277,
-     "cost_usd": 0.02112,
-     "retries": 1,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "creative",
-     "name": "write_creative:persona_005",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 10774,
-     "input_tokens": 2689,
-     "output_tokens": 696,
-     "cost_usd": 0.030845,
+     "prompt_version": "v4-6284a7a",
+     "ms": 7064,
+     "input_tokens": 2809,
+     "output_tokens": 419,
+     "cost_usd": 0.02452,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2123,25 +2893,11 @@
      "name": "write_creative:persona_009",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 11527,
-     "input_tokens": 2706,
-     "output_tokens": 749,
-     "cost_usd": 0.032255,
-     "retries": 0,
-     "ok": true,
-     "error": null
-    },
-    {
-     "stage": "rerank",
-     "name": "rerank_publishers",
-     "model": "anthropic:claude-opus-5",
-     "prompt": "rerank_publishers",
-     "prompt_version": "v2-e92e147",
-     "ms": 31232,
-     "input_tokens": 13918,
-     "output_tokens": 2701,
-     "cost_usd": 0.137115,
+     "prompt_version": "v4-6284a7a",
+     "ms": 10153,
+     "input_tokens": 2797,
+     "output_tokens": 632,
+     "cost_usd": 0.029785,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2151,11 +2907,25 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v2-1c6bf10",
-     "ms": 12186,
-     "input_tokens": 3082,
-     "output_tokens": 1056,
-     "cost_usd": 0.04181,
+     "prompt_version": "v3-d8d972b",
+     "ms": 20725,
+     "input_tokens": 3405,
+     "output_tokens": 1896,
+     "cost_usd": 0.064425,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_010",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 4104,
+     "input_tokens": 3534,
+     "output_tokens": 314,
+     "cost_usd": 0.02552,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2165,11 +2935,39 @@
      "name": "rewrite_creative:persona_005",
      "model": "anthropic:claude-opus-5",
      "prompt": "write_creative",
-     "prompt_version": "v3-6d75779",
-     "ms": 6025,
-     "input_tokens": 3387,
-     "output_tokens": 445,
-     "cost_usd": 0.02806,
+     "prompt_version": "v4-6284a7a",
+     "ms": 6965,
+     "input_tokens": 3534,
+     "output_tokens": 442,
+     "cost_usd": 0.02872,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "rerank",
+     "name": "rerank_publishers",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "rerank_publishers",
+     "prompt_version": "v5-fcbc95b",
+     "ms": 61074,
+     "input_tokens": 16369,
+     "output_tokens": 5189,
+     "cost_usd": 0.21157,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "creative",
+     "name": "rewrite_creative:persona_009",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "write_creative",
+     "prompt_version": "v4-6284a7a",
+     "ms": 9164,
+     "input_tokens": 3539,
+     "output_tokens": 704,
+     "cost_usd": 0.035295,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2179,11 +2977,11 @@
      "name": "critique_creative",
      "model": "anthropic:claude-opus-5",
      "prompt": "critique_creative",
-     "prompt_version": "v2-1c6bf10",
-     "ms": 14304,
-     "input_tokens": 3086,
-     "output_tokens": 1288,
-     "cost_usd": 0.04763,
+     "prompt_version": "v3-d8d972b",
+     "ms": 17591,
+     "input_tokens": 3387,
+     "output_tokens": 1472,
+     "cost_usd": 0.053735,
      "retries": 0,
      "ok": true,
      "error": null
@@ -2198,6 +2996,20 @@
      "input_tokens": 0,
      "output_tokens": 0,
      "cost_usd": 0.0,
+     "retries": 0,
+     "ok": true,
+     "error": null
+    },
+    {
+     "stage": "campaign",
+     "name": "summarize_launch",
+     "model": "anthropic:claude-opus-5",
+     "prompt": "summarize_launch",
+     "prompt_version": "v1-18c2ce5",
+     "ms": 7384,
+     "input_tokens": 5574,
+     "output_tokens": 412,
+     "cost_usd": 0.03817,
      "retries": 0,
      "ok": true,
      "error": null

@@ -89,3 +89,13 @@ def test_allow_competitors_flags_instead_of_excluding(dog_food):
 def test_b2b_never_places_even_with_overlapping_tags(dental_saas):
     p = dental_saas.model_copy(update={"interests": {"convenience": 1.0}, "values": {"convenience_speed": 1.0}})
     assert all(s.tier == "excluded" for s in score_publishers(p))
+
+
+
+def test_cheap_add_on_is_not_punished_like_an_expensive_offer():
+    from backend import catalog
+    from backend.pipeline.scoring import price_signal
+    pub = catalog.publishers()["pub_014"]  # $198 typical order
+    cheap = price_signal(make_profile(first_order_value_usd=(18.0, "stated")), pub)
+    pricey = price_signal(make_profile(first_order_value_usd=(2178.0, "stated")), pub)  # 11× the basket
+    assert cheap.score >= 70 and pricey.score <= 10

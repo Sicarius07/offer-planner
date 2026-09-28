@@ -8,6 +8,8 @@ import pytest
 from backend.llm import registry
 from backend.llm.base import LLMOutputInvalid, LLMResult, Usage
 from backend.pipeline.run import run_plan
+from backend.pipeline.scoring import score_publishers
+from backend.schemas.campaign import LaunchSummaryDraft
 from backend.schemas.creative import CreativeDraft, CritiqueDraft
 from backend.schemas.events import PlanRequest
 from backend.schemas.persona import PersonaSelectionDraft
@@ -58,12 +60,19 @@ class FakeProvider:
         if schema is ProfileDraft:
             out = PROFILE
         elif schema is RerankDraft:
-            out = RerankDraft.model_validate({"summary": "Pet competitors excluded.", "judgments": [
-                # Tries to rescue a competitor and over-adjust: code must refuse both.
-                {"publisher_id": "pub_007", "adjustment": 15, "adjustment_reason": "great fit",
+            out = RerankDraft.model_validate({"summary": "Pet competitors excluded.", "offering_type_doubt": "", "judgments": [
+                # Tries to rescue a competitor, and to move a tier on an invented quote: code refuses both.
+                {"publisher_id": "pub_007", "tier": "recommended", "tier_reason": "great fit",
+                 "competitor_call": "agree", "competitor_reason": "",
                  "rationale": "Pawline is ideal.", "evidence": [{"field": "notes", "quote": "responsive to premium positioning"}], "risk": ""},
-                {"publisher_id": "pub_018", "adjustment": 40, "adjustment_reason": "dogs as family",
+                {"publisher_id": "pub_018", "tier": "recommended", "tier_reason": "dogs as family",
+                 "competitor_call": "agree", "competitor_reason": "",
                  "rationale": "Tailcrate reaches dog lovers.", "evidence": [{"field": "notes", "quote": "an invented note"}], "risk": ""},
+                # Off-category by tags, but its notes back a move to test.
+                {"publisher_id": "pub_008", "tier": "test", "tier_reason": "clean-ingredient shoppers buy premium pet food too",
+                 "competitor_call": "agree", "competitor_reason": "",
+                 "rationale": "Pantrygood shoppers respond to clean ingredients.",
+                 "evidence": [{"field": "notes", "quote": "Responsive to clean-ingredient"}], "risk": ""},
             ]})
         elif schema is PersonaSelectionDraft:
             out = PersonaSelectionDraft.model_validate({"skipped_note": "", "picks": [
@@ -95,6 +104,12 @@ class FakeProvider:
                 reviews.append({"persona_id": c["persona_id"], "fix": "be specific" if fail else "",
                                 "checks": [{"name": "grounded", "passed": not fail, "reason": "r"}]})
             out = CritiqueDraft.model_validate({"reviews": reviews})
+        elif schema is LaunchSummaryDraft:
+            out = LaunchSummaryDraft.model_validate({
+                "summary": "Most of the budget goes to Tailcrate. It should bring in 9,999 customers.",
+                "uncertainties": ["The order value is assumed."],
+                "questions": ["Is $60 your typical first order?", "Could you offer 37% off?"],
+            })
         else:
             raise AssertionError(schema)
         return LLMResult(parsed=out, model=model, usage=Usage(10, 10), cost_usd=0.001,
@@ -130,11 +145,13 @@ async def test_full_run_event_sequence_and_enforcement(fake):
 
     plan = next(e for e in events if e.type == "publishers").plan
     pawline = next(r for r in plan.excluded if r.publisher_id == "pub_007")
-    assert pawline.exclusion_reason == "competitor" and pawline.adjustment == 0
+    assert pawline.exclusion_reason == "competitor" and pawline.tier_reason is None
     tailcrate = next(r for r in plan.recommended + plan.test + plan.excluded if r.publisher_id == "pub_018")
-    assert tailcrate.adjustment == 15             # clamped from 40
-    assert tailcrate.tier == "test"               # adjacent conflict caps the tier
+    assert tailcrate.tier == "test" and tailcrate.tier_reason is None  # no checked quote, no move
     assert tailcrate.evidence == []               # invented quote dropped
+    pantry = next(r for r in plan.test if r.publisher_id == "pub_008")
+    assert pantry.computed_tier == "excluded" and pantry.exclusion_reason is None
+    assert pantry.fit == 50 and pantry.base_fit < 50
 
     personas = next(e for e in events if e.type == "personas").plan
     assert [p.persona_id for p in personas.picks] == ["persona_004", "persona_002", "persona_001"]
@@ -147,8 +164,17 @@ async def test_full_run_event_sequence_and_enforcement(fake):
     assert final["persona_004"].revision_of is not None
     assert final["persona_002"].status == "passed"
 
-    cfg = next(e for e in events if e.type == "config").config
+    configs = [e.config for e in events if e.type == "config"]
+    assert configs[0].review.launch_summary is None  # the config streams before its summary
+    cfg = configs[-1]
     assert sum(p.allocation_pct for p in cfg.placements) == pytest.approx(100, abs=0.2)
+    # Numbers the config doesn't contain are dropped from the summary.
+    ls = cfg.review.launch_summary
+    assert ls.summary == "Most of the budget goes to Tailcrate."
+    assert ls.questions == ["Is $60 your typical first order?"]
+    for p in cfg.placements:
+        assert p.creative_ids
+        assert (p.test_plan is not None) == (p.role == "test")
     # The value survives the downgrade; only its source changes (and the UI shows it amber).
     assert cfg.bid_strategy.allowable_cpa_ratio == 0.60
     done = events[-1]
@@ -254,3 +280,24 @@ def test_guard_keeps_the_answers_block_as_lines():
     raw = "We sell   candles.\n\n\n\nAnswers to your questions:\n-  What do you sell?  Soy candles \n- Who buys? Women"
     assert guard(raw) == ("We sell candles.\n\nAnswers to your questions:\n"
                           "- What do you sell? Soy candles\n- Who buys? Women")
+
+
+async def test_audience_work_runs_even_when_code_excludes_every_publisher(fake, monkeypatch):
+    from backend.pipeline import run as run_mod
+
+    def nothing_fits(profile, allow):
+        return [s.model_copy(update={"tier": "excluded", "exclusion_reason": s.exclusion_reason or "weak_fit"})
+                for s in score_publishers(profile, allow)]
+    monkeypatch.setattr(run_mod, "score_publishers", nothing_fits)
+    events = await collect(PlanRequest(brief=BRIEF, model="fake:test"))
+    types = [e.type for e in events]
+    assert "personas" in types and "creative" in types
+
+
+async def test_launch_summary_failure_keeps_the_config(fake, monkeypatch):
+    _failing(fake, monkeypatch, LaunchSummaryDraft)
+    events = await collect(PlanRequest(brief=BRIEF, model="fake:test"))
+    cfg = [e for e in events if e.type == "config"][-1].config
+    assert cfg.placements and cfg.review.launch_summary is None
+    assert any(e.type == "error" and "launch summary" in e.message for e in events)
+    assert any(e.type == "stage" and e.stage == "campaign" and e.status == "done" for e in events)

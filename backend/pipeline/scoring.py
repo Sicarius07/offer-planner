@@ -121,9 +121,11 @@ def price_signal(p: AdvertiserProfile, pub: Publisher) -> Signal:
     lo, hi = config.PRICE_BAND
     if lo <= r <= hi:
         score = 100.0
+    elif r > hi:
+        score = 100 - config.PRICE_FALLOFF_PER_DOUBLING * math.log2(r / hi)
     else:
-        doublings_out = math.log2(lo / r) if r < lo else math.log2(r / hi)
-        score = 100 - config.PRICE_FALLOFF_PER_DOUBLING * doublings_out
+        # Much cheaper than the basket is an easy add-on after checkout, so it costs little.
+        score = 100 - config.PRICE_FALLOFF_CHEAPER_PER_DOUBLING * math.log2(lo / r)
     tag = "" if p.first_order_value_usd.source != "assumed" else " (price assumed)"
     return Signal(name="price", score=_clip(score),
                   detail=f"${price:,.0f} vs ${aov:,.0f} typical order ({r:.1f}×){tag}")
@@ -235,6 +237,23 @@ def persona_gender_ok(persona: Persona, pub: Publisher) -> float:
     return 1.0 - max(0.0, abs(female - 0.5) - 0.3)  # balanced: fine unless very one-sided
 
 
+def persona_reach(persona: Persona, pubs: list[Publisher]) -> tuple[float, list[str]]:
+    """Impression-weighted share of `pubs` whose audience fits this persona, and the ids of
+    the ones that fit (best first)."""
+    p_age = parse_age(persona.age_range)
+    num = den = 0.0
+    via: list[tuple[float, str]] = []
+    for pub in pubs:
+        a = parse_age(pub.audience.age_skew)
+        fit = persona_gender_ok(persona, pub) * (age_overlap(p_age, a) if p_age and a else 0.5)
+        w = math.log10(pub.monthly_impressions)
+        num += w * fit
+        den += w
+        if fit >= 0.5:
+            via.append((fit, pub.id))
+    return (100 * num / den if den else 0.0), [pid for _, pid in sorted(via, reverse=True)]
+
+
 def score_persona(p: AdvertiserProfile, persona: Persona, t: PersonaTags,
                   reachable: list[Publisher]) -> PersonaScore:
     want = {**p.interests, **p.occasions}
@@ -244,19 +263,7 @@ def score_persona(p: AdvertiserProfile, persona: Persona, t: PersonaTags,
     price_ok = p.price_tier.value in t.price_tiers
     dislikes = sorted(set(t.dislikes) & set(p.positioning))
 
-    # Reach: impression-weighted share of the plan's publishers whose audience fits this persona.
-    p_age = parse_age(persona.age_range)
-    num = den = 0.0
-    via: list[tuple[float, str]] = []
-    for pub in reachable:
-        a = parse_age(pub.audience.age_skew)
-        fit = persona_gender_ok(persona, pub) * (age_overlap(p_age, a) if p_age and a else 0.5)
-        w = math.log10(pub.monthly_impressions)
-        num += w * fit
-        den += w
-        if fit >= 0.5:
-            via.append((fit, pub.id))
-    reach = 100 * num / den if den else 0.0
+    reach, via = persona_reach(persona, reachable)
 
     affinity = 100 * aff.score
     values = 100 * val.score if val else config.NEUTRAL_SCORE
@@ -277,7 +284,7 @@ def score_persona(p: AdvertiserProfile, persona: Persona, t: PersonaTags,
     return PersonaScore(
         persona_id=persona.id, score=_clip(raw), affinity=_clip(affinity), values=_clip(values),
         price=price, reach=_clip(reach), conflicts=dislikes,
-        reach_publishers=[pid for _, pid in sorted(via, reverse=True)],
+        reach_publishers=via,
         detail="; ".join(bits) or "little overlap",
     )
 

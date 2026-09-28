@@ -229,7 +229,13 @@ export default function App() {
 
               {!skipped("campaign") && plan.stages.understand.status !== "failed" && (
                 <Section id="campaign" title="Campaign">
-                  {plan.config ? <CampaignView cfg={plan.config} /> : <Panel><SkeletonRows rows={4} /></Panel>}
+                  {plan.config ? (
+                    <CampaignView
+                      cfg={plan.config}
+                      personaName={(id) => personas.get(id)?.persona.name ?? id}
+                      summaryPending={plan.stages.campaign.status === "started"}
+                    />
+                  ) : <Panel><SkeletonRows rows={4} /></Panel>}
                 </Section>
               )}
             </div>

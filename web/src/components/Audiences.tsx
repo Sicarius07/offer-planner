@@ -82,7 +82,7 @@ function ReviewLine({ c, settled }: { c: Creative; settled: boolean }) {
   )
 }
 
-function PersonaBlock({ pick, c, persona, pubs, brand, index, settled }: {
+function PersonaBlock({ pick, c, persona, pubs, brand, index, settled, of }: {
   pick: PersonaPick
   c?: Creative
   persona?: CatalogPersona
@@ -90,6 +90,8 @@ function PersonaBlock({ pick, c, persona, pubs, brand, index, settled }: {
   brand: string | null
   index: number
   settled: boolean
+  /** How many personas were scored, for "ranked 8th of 10". */
+  of: number
 }) {
   const via = pick.reached_via.map((id) => pubs.get(id)?.publisher.name).filter(Boolean) as string[]
   return (
@@ -100,6 +102,11 @@ function PersonaBlock({ pick, c, persona, pubs, brand, index, settled }: {
           <span className="text-xs text-soft">
             {pick.confidence} confidence{persona ? `, ${persona.persona.age_range}` : ""}
           </span>
+          {pick.rank > 5 && (
+            <span className="text-xs text-amber" title="The computed score ranked this persona low; the reasoning below says what it missed.">
+              picked over the computed ranking (#{pick.rank} of {of})
+            </span>
+          )}
         </div>
         <p className="mt-2 max-w-prose text-sm leading-relaxed text-ink">{pick.why_plausible}</p>
         <dl className="mt-4 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
@@ -172,7 +179,7 @@ export function Audiences({ plan, creatives, personas, pubs, brand, settled }: {
     <div className="rounded-xl border border-line bg-paper">
       {plan.skipped_note && <p className="border-b border-line px-6 py-3 text-sm text-amber">{plan.skipped_note}</p>}
       {plan.picks.map((p, i) => (
-        <PersonaBlock key={p.persona_id} index={i} pick={p} c={creatives[p.persona_id]} persona={personas.get(p.persona_id)} pubs={pubs} brand={brand} settled={settled} />
+        <PersonaBlock key={p.persona_id} index={i} pick={p} c={creatives[p.persona_id]} persona={personas.get(p.persona_id)} pubs={pubs} brand={brand} settled={settled} of={plan.candidates.length} />
       ))}
     </div>
   )

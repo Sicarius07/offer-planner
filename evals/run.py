@@ -131,6 +131,22 @@ def ranking(r: dict) -> list[str]:
     return [x.publisher_id for x in (p.recommended + p.test + p.excluded)] if p else []
 
 
+def tiers(r: dict) -> dict[str, list[str]]:
+    p = r.get("publishers")
+    return {t: [x.publisher_id for x in getattr(p, t)] for t in ("recommended", "test", "excluded")} if p else {}
+
+
+def moves(r: dict) -> list[dict]:
+    """Publishers the review moved out of their computed tier, or disputed as competitors."""
+    p = r.get("publishers")
+    if not p:
+        return []
+    return [{"publisher_id": x.publisher_id, "from": x.computed_tier, "to": x.tier,
+             "reason": x.tier_reason or x.competitor_dispute}
+            for x in p.recommended + p.test + p.excluded
+            if (x.tier_reason and x.tier != x.computed_tier) or x.competitor_dispute]
+
+
 async def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--repeats", type=int, default=1)
@@ -193,7 +209,9 @@ async def main() -> None:
         passed += n_ok
         lines.append(f"| {c['id']} | {n_ok}/{n} | {'<br>'.join(sorted(set(fails)))[:400] or ''} | {tau} | "
                      f"${c_cost:.3f} | {c_ms / 1000:.0f}s |")
-        raw[c["id"]] = [{"ranking": ranking(r), "personas": [p.persona_id for p in r["personas"].picks] if r.get("personas") else [],
+        raw[c["id"]] = [{"ranking": ranking(r), "tiers": tiers(r), "moves": moves(r),
+                         "personas": [p.persona_id for p in r["personas"].picks] if r.get("personas") else [],
+                         "persona_ranks": [p.rank for p in r["personas"].picks] if r.get("personas") else [],
                          "errors": r["errors"]} for r in runs]
     lines += ["", f"**{passed}/{total} checks passed ({100 * passed / max(1, total):.0f}%). Total cost ${cost:.2f}.**"]
     report = "\n".join(lines)

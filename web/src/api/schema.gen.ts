@@ -568,6 +568,19 @@ export interface components {
             /** Detail */
             detail?: components["schemas"]["ValidationError"][];
         };
+        /**
+         * LaunchSummary
+         * @description Written by the LLM from the finished config. Read-only: it never changes a field above,
+         *     and any number it states must appear in the config or the brief.
+         */
+        LaunchSummary: {
+            /** Summary */
+            summary: string;
+            /** Uncertainties */
+            uncertainties: string[];
+            /** Questions */
+            questions: string[];
+        };
         /** Measurement */
         Measurement: {
             /**
@@ -659,6 +672,8 @@ export interface components {
             name: string;
             /** Score */
             score: number;
+            /** Rank */
+            rank: number;
             /** Why Plausible */
             why_plausible: string;
             /** Lean Into */
@@ -768,6 +783,11 @@ export interface components {
             est_conversions: number;
             /** Capacity Note */
             capacity_note?: string | null;
+            /** Creative Ids */
+            creative_ids: string[];
+            /** Personas Matched */
+            personas_matched: boolean;
+            test_plan?: components["schemas"]["TestPlan"] | null;
         };
         /** PlanRequest */
         PlanRequest: {
@@ -851,6 +871,8 @@ export interface components {
             test: components["schemas"]["PublisherResult"][];
             /** Excluded */
             excluded: components["schemas"]["PublisherResult"][];
+            /** Offering Type Doubt */
+            offering_type_doubt?: string | null;
         };
         /**
          * PublisherResult
@@ -867,19 +889,22 @@ export interface components {
             signals: components["schemas"]["Signal"][];
             /** Base Fit */
             base_fit: number;
-            /** Adjustment */
-            adjustment: number;
-            /** Adjustment Reason */
-            adjustment_reason: string | null;
             /** Fit */
             fit: number;
+            /**
+             * Computed Tier
+             * @enum {string}
+             */
+            computed_tier: "recommended" | "test" | "excluded";
             /**
              * Tier
              * @enum {string}
              */
             tier: "recommended" | "test" | "excluded";
+            /** Tier Reason */
+            tier_reason: string | null;
             /** Exclusion Reason */
-            exclusion_reason: ("competitor" | "off_category" | "weak_fit") | null;
+            exclusion_reason: ("competitor" | "off_category" | "weak_fit" | "review") | null;
             /** Conflict */
             conflict: string | null;
             /** Adjacent Conflict */
@@ -890,6 +915,8 @@ export interface components {
             evidence: components["schemas"]["EvidenceRef"][];
             /** Risk */
             risk: string | null;
+            /** Competitor Dispute */
+            competitor_dispute?: string | null;
         };
         /** PublisherTags */
         PublisherTags: {
@@ -944,6 +971,7 @@ export interface components {
             assumptions: string[];
             /** Warnings */
             warnings: string[];
+            launch_summary?: components["schemas"]["LaunchSummary"] | null;
         };
         /** RubricCheck */
         RubricCheck: {
@@ -1057,6 +1085,20 @@ export interface components {
             contextual_interests: string[];
             /** Exclusions */
             exclusions: string[];
+        };
+        /**
+         * TestPlan
+         * @description What a test placement is for, and the rule that ends the test.
+         */
+        TestPlan: {
+            /** Hypothesis */
+            hypothesis: string;
+            /** Risk */
+            risk: string | null;
+            /** Promote If */
+            promote_if: string;
+            /** Cut If */
+            cut_if: string;
         };
         /** TextAttr */
         TextAttr: {

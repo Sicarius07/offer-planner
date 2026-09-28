@@ -44,6 +44,7 @@ class PersonaPick(BaseModel):
     persona_id: str
     name: str
     score: int
+    rank: int                  # 1-based position by computed score, out of every persona
     why_plausible: str
     lean_into: list[str]
     avoid: list[str]

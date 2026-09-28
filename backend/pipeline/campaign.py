@@ -5,9 +5,11 @@ from __future__ import annotations
 from datetime import date, timedelta
 
 from backend import catalog, config
+from backend.schemas.catalog import Publisher
+from backend.pipeline.scoring import persona_reach
 from backend.schemas.campaign import (
     BidStrategy, Budget, CampaignConfig, CampaignMeta, CreativeRef, Demographic, Experiment,
-    Flight, FrequencyCap, Measurement, Placement, Review, Targeting,
+    Flight, FrequencyCap, Measurement, Placement, Review, Targeting, TestPlan,
 )
 from backend.schemas.creative import Creative
 from backend.schemas.persona import PersonaPlan
@@ -107,6 +109,22 @@ def _capped_proportional(weights: list[float], total: float, cap: float, floor: 
         active[min(low, key=lambda i: shares[i])] = False
 
 
+def ads_for(pub: Publisher, ads: list[Creative]) -> list[Creative]:
+    """The ads whose persona this publisher's audience fits (same test as persona reach)."""
+    personas = catalog.personas()
+    return [c for c in ads if persona_reach(personas[c.persona_id], [pub])[1]]
+
+
+def test_plan(pub: PublisherResult, bid: BidStrategy) -> TestPlan:
+    days = config.LEARNING_PERIOD_DAYS
+    return TestPlan(
+        hypothesis=pub.rationale,
+        risk=pub.risk,
+        promote_if=f"CPA at or below the ${bid.target_cpa_usd:,.2f} target after {days} days: move it to core.",
+        cut_if=f"CPA above the ${bid.max_cpa_usd:,.2f} maximum, or no conversions after {days} days: stop it.",
+    )
+
+
 def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPlan,
                  creatives: list[Creative], monthly_budget: float, flight_days: int,
                  start: date | None = None) -> CampaignConfig:
@@ -117,6 +135,8 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
 
     placements: list[Placement] = []
     warnings: list[str] = []
+    active = [c for c in creatives if c.status != "flagged"]
+    unmatched: list[str] = []
     for pub, role, share in allocate(pubs.recommended, pubs.test, total):
         budget = round(total * share, 2)
         est = round(budget / bid.target_cpa_usd, 1) if bid.target_cpa_usd else 0.0
@@ -127,11 +147,24 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
             note = (f"{est:.0f} conversions would exceed ~{ceiling:.0f} this publisher can likely "
                     "deliver; expect under-delivery or raise the CPA")
             warnings.append(f"{pub.name}: {note}.")
+        ads = ads_for(catalog_pubs[pub.publisher_id], active)
+        if active and not ads:
+            unmatched.append(pub.name)
         placements.append(Placement(
             publisher_id=pub.publisher_id, publisher_name=pub.name, category=pub.category,
             role=role, fit_score=pub.fit, allocation_pct=round(100 * share, 1),
             budget_usd=budget, est_conversions=est, capacity_note=note,
+            creative_ids=[c.creative_id for c in (ads or active)], personas_matched=bool(ads),
+            test_plan=test_plan(pub, bid) if role == "test" else None,
         ))
+    if unmatched:
+        warnings.append(f"No chosen persona fits the audience at {', '.join(unmatched)}, so every ad "
+                        "rotates there. Consider writing an ad for that audience.")
+    placed = {cid for pl in placements for cid in pl.creative_ids}
+    idle = [c for c in active if c.creative_id not in placed]
+    if placements and idle:
+        warnings.append(f"The ad{'s' if len(idle) > 1 else ''} for {', '.join(c.persona_name for c in idle)} "
+                        f"won't run: no placement's shoppers fit {'those personas' if len(idle) > 1 else 'that persona'}.")
 
     plan_pubs = [catalog_pubs[x.publisher_id] for x in placements]
     geos = sorted({g for pub in plan_pubs for g in pub.audience.top_geos})
@@ -164,7 +197,14 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
                         + ", ".join(c.persona_name for c in flagged) + ".")
     if not pubs.explained:
         warnings.append("Publisher review was unavailable, so placements come from computed scores "
-                        "alone, without explanations or adjustments. Check them before launch.")
+                        "alone, without explanations or a check of the tiers. Check them before launch.")
+    disputed = [r for r in pubs.excluded if r.competitor_dispute]
+    for r in disputed:
+        warnings.append(f"{r.name} was excluded as a competitor, but the review disagrees: "
+                        f"{r.competitor_dispute} Decide whether it should run.")
+    if pubs.offering_type_doubt:
+        warnings.append(f"The review questions whether this is a B2B or consumer business: "
+                        f"{pubs.offering_type_doubt}")
     if not placements:
         warnings.append("No publisher in this catalog is a good fit; nothing would run.")
     elif not pubs.recommended:
@@ -179,7 +219,7 @@ def build_config(p: AdvertiserProfile, pubs: PublisherPlan, personas: PersonaPla
     confidence = ("low" if p.clarity == "unusable" or not placements
                   else "medium" if p.clarity == "partial" or warnings else "high")
     needs_review = (p.clarity != "clear" or bool(flagged) or not pubs.recommended
-                    or not pubs.explained)
+                    or not pubs.explained or bool(disputed) or bool(pubs.offering_type_doubt))
 
     product = p.product.value if p.product.source != "assumed" else "new advertiser"
     return CampaignConfig(

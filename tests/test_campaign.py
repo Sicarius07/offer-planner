@@ -10,8 +10,8 @@ from backend.schemas.publisher import PublisherPlan, PublisherResult
 
 def pr(pid, fit, tier="recommended"):
     return PublisherResult(
-        publisher_id=pid, name=pid, category="pet", signals=[], base_fit=fit, adjustment=0,
-        adjustment_reason=None, fit=fit, tier=tier, exclusion_reason=None, conflict=None,
+        publisher_id=pid, name=pid, category="pet", signals=[], base_fit=fit, fit=fit,
+        computed_tier=tier, tier=tier, tier_reason=None, exclusion_reason=None, conflict=None,
         adjacent_conflict=None, rationale="", evidence=[], risk=None,
     )
 
@@ -63,3 +63,27 @@ def test_build_config_end_to_end(dog_food):
     assert cfg.campaign.flight.end == "2026-10-30"
     assert "pet_food" in cfg.targeting.exclusions
     assert any("assumed order value" in w for w in cfg.review.warnings)
+
+
+def test_ads_run_only_where_their_persona_shops():
+    from types import SimpleNamespace
+
+    from backend import catalog
+    from backend.pipeline.campaign import ads_for
+    pubs = catalog.publishers()
+    gen_z, parent = SimpleNamespace(persona_id="persona_003"), SimpleNamespace(persona_id="persona_002")
+    assert ads_for(pubs["pub_005"], [gen_z, parent]) == []        # ages 50-70: neither fits
+    assert ads_for(pubs["pub_015"], [gen_z, parent]) == [parent]  # family households
+
+
+def test_an_ad_no_placement_can_use_is_called_out(dog_food):
+    from backend.schemas.creative import Creative
+    cards = [Creative(creative_id=f"c_{pid}", persona_id=pid, persona_name=name, angle="a", headline="h",
+                      body="b", cta="c", claims_used=[], offer_suggestion=None, tone_notes="",
+                      status="passed")
+             for pid, name in (("persona_002", "The Busy Parent"), ("persona_003", "The Gen Z Aesthete"))]
+    pubs = PublisherPlan(summary="", recommended=[pr("pub_015", 80)], test=[], excluded=[])
+    cfg = build_config(dog_food, pubs, PersonaPlan(picks=[], candidates=[], skipped_note=None), cards,
+                       10_000, 30, start=date(2026, 1, 1))
+    assert cfg.placements[0].creative_ids == ["c_persona_002"]
+    assert any("The Gen Z Aesthete won't run" in w for w in cfg.review.warnings)

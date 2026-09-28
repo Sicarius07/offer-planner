@@ -19,7 +19,10 @@ const REASON: Record<string, string> = {
   competitor: "Competitor",
   off_category: "Off-category",
   weak_fit: "Weak fit",
+  review: "Excluded on review",
 }
+
+const RANK: Record<string, number> = { excluded: 0, test: 1, recommended: 2 }
 
 function HeatCell({ s, dim }: { s: Signal; dim?: boolean }) {
   if (s.neutral)
@@ -39,18 +42,19 @@ function HeatCell({ s, dim }: { s: Signal; dim?: boolean }) {
   )
 }
 
-function Adjustment({ r }: { r: PublisherResult }) {
-  if (!r.adjustment) return null
-  const up = r.adjustment > 0
+/** The review moved this publisher out of the tier its computed fit put it in. */
+function Moved({ r }: { r: PublisherResult }) {
+  if (!r.tier_reason || r.tier === r.computed_tier) return null
+  const up = RANK[r.tier] > RANK[r.computed_tier]
   return (
     <span
-      title={r.adjustment_reason ?? ""}
+      title={`Computed fit ${r.base_fit} put this in ${humanize(r.computed_tier).toLowerCase()}. ${r.tier_reason}`}
       className={cn(
         "rounded-full px-1.5 py-px text-2xs",
         up ? "bg-emerald-wash text-emerald" : "bg-rust-wash text-rust",
       )}
     >
-      {up ? "+" : "−"}{Math.abs(r.adjustment)}
+      {up ? "Moved up" : "Moved down"}
     </span>
   )
 }
@@ -86,6 +90,7 @@ function Row({ r, pub, open, onToggle, excluded }: {
               </span>
             )}
             {!r.exclusion_reason && r.adjacent_conflict && <span className="text-2xs text-amber">Overlaps</span>}
+            {r.competitor_dispute && <span className="text-2xs text-amber">Disputed</span>}
           </div>
           <div className="pl-4.5 text-2xs text-soft">{humanize(r.category)}</div>
         </td>
@@ -96,7 +101,7 @@ function Row({ r, pub, open, onToggle, excluded }: {
         ))}
         <td className="py-2 pr-5 pl-3 text-right">
           <span className="inline-flex items-center gap-1.5">
-            <Adjustment r={r} />
+            <Moved r={r} />
             <span className={cn("w-7 text-base font-medium", excluded ? "text-soft" : "text-ink")}>{r.fit}</span>
           </span>
         </td>
@@ -118,11 +123,17 @@ function Detail({ r, pub }: { r: PublisherResult; pub?: CatalogPublisher }) {
       <div className="space-y-3">
         <p className="max-w-prose leading-relaxed text-ink">{r.rationale}</p>
         {r.conflict && <p className="text-rust">Excluded: {r.conflict}. Offers only run on non-competing brands.</p>}
-        {r.adjacent_conflict && <p className="text-amber">Held to a test budget: {r.adjacent_conflict}.</p>}
-        {r.adjustment !== 0 && r.adjustment_reason && (
+        {r.competitor_dispute && (
+          <p className="text-amber">The review doesn’t think this is a competitor: {r.competitor_dispute} It stays excluded until you decide.</p>
+        )}
+        {r.adjacent_conflict && r.tier === "test" && !r.tier_reason && <p className="text-amber">Held to a test budget: {r.adjacent_conflict}.</p>}
+        {r.tier_reason && r.tier !== r.computed_tier && (
           <p className="text-soft">
-            <span className="text-ink">Adjusted {r.adjustment > 0 ? "up" : "down"} {Math.abs(r.adjustment)} from {r.base_fit}:</span>{" "}
-            {r.adjustment_reason}
+            <span className="text-ink">
+              Moved from {humanize(r.computed_tier).toLowerCase()} to {humanize(r.tier).toLowerCase()} on review
+              {r.fit !== r.base_fit ? ` (computed fit ${r.base_fit})` : ""}:
+            </span>{" "}
+            {r.tier_reason}
           </p>
         )}
         {r.risk && <p className="text-soft"><span className="text-ink">Risk:</span> {r.risk}</p>}
@@ -193,6 +204,11 @@ export function FitMatrix({ plan, catalog }: { plan: PublisherPlan; catalog: Map
   return (
     <div className="overflow-hidden rounded-xl border border-line bg-paper">
       <p className="px-5 pt-5 pb-4 text-sm leading-relaxed text-ink sm:max-w-[75ch]">{plan.summary}</p>
+      {plan.offering_type_doubt && (
+        <p className="mx-5 mb-4 rounded-md bg-amber-wash/60 px-3 py-2 text-sm text-amber">
+          The review questions whether this is a business or consumer product: {plan.offering_type_doubt}
+        </p>
+      )}
       {noFit && (
         <p className="mx-5 mb-4 rounded-md bg-rust-wash/60 px-3 py-2 text-sm text-rust">
           None of the {plan.excluded.length} publishers are a real fit. This network is consumer checkout traffic;
