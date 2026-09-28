@@ -10,7 +10,7 @@ dev:                ## API on :8000 and Vite on :5173 (proxying /api)
 build:              ## Build the frontend into web/dist (served by FastAPI)
 	cd web && pnpm build
 
-start: build        ## Single process: API + built UI on :8000
+start: install build  ## One command: install, build the UI, serve UI + API on :8000
 	uv run uvicorn backend.main:app --port 8000
 
 test:

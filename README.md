@@ -2,7 +2,7 @@
 
 Type a one-line business description and get a launchable Disco campaign: publishers ranked with reasons (and why the others were excluded), 3–5 personas with their reasoning, one reviewed ad per persona, and a campaign config you can download as JSON. Results stream in stage by stage. The 15 sample briefs are pre-recorded, so they replay instantly without spending tokens.
 
-**Run it:** `cp .env.example .env` and add `ANTHROPIC_API_KEY`, then `make install && make dev` and open http://localhost:5173. For a single process, `make start` serves the built UI and API on :8000. Other targets: `make test` (49 tests, no network) and `make eval` (golden set, `N=3` for stability). All prompts are in `prompts/`.
+**Run it:** `cp .env.example .env` and add `ANTHROPIC_API_KEY`, then `make start` and open http://localhost:8000. Other targets: `make dev` (hot reload, UI on :5173), `make test` (49 tests, no network) and `make eval` (golden set, `N=3` for stability). All prompts are in `prompts/`.
 
 ## How it works
 
